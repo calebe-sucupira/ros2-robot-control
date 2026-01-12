@@ -1,0 +1,668 @@
+��������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a064h ( 41060) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a08c vaddr=3ffb0000 size=022c8h (  8904) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c35c vaddr=40080000 size=03cbch ( 15548) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=101ech ( 66028) map[0m
+[0;32mI (157) esp_image: segment 4: paddr=00030214 vaddr=40083cbc size=08ca8h ( 36008) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) cpu_start: Application information:[0m
+[0;32mI (201) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (207) cpu_start: App version:      e18ea92[0m
+[0;32mI (212) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (218) cpu_start: ELF file SHA256:  1987c9b71...[0m
+[0;32mI (224) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (230) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (235) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (258) heap_init: At 3FFB2BB8 len 0002D448 (181 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (270) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 4008C964 len 0001369C (77 KiB): IRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (291) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (305) main_task: Started on CPU0[0m
+[0;32mI (315) main_task: Calling app_main()[0m
+[0;32mI (315) MAIN: === DIAGNÓSTICO DE ENCODERS ===[0m
+[0;32mI (315) TEST: Configurando encoders no modo SIMPLES...[0m
+[0;32mI (315) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (325) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;31mE (335) gpio: gpio_pullup_en(80): GPIO number error (input-only pad has no internal PU)[0m
+[0;32mI (345) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;31mE (355) gpio: gpio_pullup_en(80): GPIO number error (input-only pad has no internal PU)[0m
+[0;32mI (365) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (375) TEST: Encoders configurados no modo simples[0m
+[0;32mI (1375) TEST: === TESTE DE LEITURA DIRETA ===[0m
+[0;32mI (1375) TEST: Gire cada roda lentamente e observe os valores[0m
+[0;32mI (1375) TEST: Cada volta do encoder deve gerar ~20 pulsos[0m
+[0;32mI (1375) TEST: --------------------------------------------[0m
+[0;32mI (1385) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=0, DIR_B=0[0m
+[0;32mI (5845) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=485, DIR_B=520[0m
+[0;32mI (5995) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=515, DIR_B=552[0m
+[0;32mI (6045) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=534, DIR_B=583[0m
+[0;32mI (6945) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=570, DIR_B=615[0m
+[0;32mI (6995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=583, DIR_B=638[0m
+[0;32mI (7095) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=600, DIR_B=649[0m
+[0;32mI (7145) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=617, DIR_B=680[0m
+[0;32mI (7245) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=638, DIR_B=703[0m
+[0;32mI (7345) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=669, DIR_B=737[0m
+[0;32mI (8545) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=700, DIR_B=775[0m
+[0;32mI (8595) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=709, DIR_B=794[0m
+[0;32mI (8645) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=729, DIR_B=811[0m
+[0;32mI (8695) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=748, DIR_B=836[0m
+[0;32mI (8795) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=762, DIR_B=845[0m
+[0;32mI (8845) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=777, DIR_B=868[0m
+[0;32mI (8895) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=792, DIR_B=880[0m
+[0;32mI (8995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=840, DIR_B=921[0m
+[0;32mI (9095) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1037, DIR_B=980[0m
+[0;32mI (9395) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1267, DIR_B=1030[0m
+[0;32mI (9795) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1299, DIR_B=1066[0m
+[0;32mI (9845) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1318, DIR_B=1095[0m
+[0;32mI (9945) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1333, DIR_B=1109[0m
+[0;32mI (9995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1340, DIR_B=1130[0m
+[0;32mI (10045) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1354, DIR_B=1140[0m
+[0;32mI (10095) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1373, DIR_B=1166[0m
+[0;32mI (10895) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1754, DIR_B=1567[0m
+[0;32mI (11145) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1763, DIR_B=1584[0m
+[0;32mI (11195) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1772, DIR_B=1591[0m
+[0;32mI (11245) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1783, DIR_B=1610[0m
+[0;32mI (11295) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1795, DIR_B=1619[0m
+[0;32mI (11345) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1807, DIR_B=1646[0m
+[0;32mI (11395) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1812, DIR_B=1653[0m
+[0;32mI (11445) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1827, DIR_B=1679[0m
+[0;32mI (11495) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=1843, DIR_B=1691[0m
+[0;32mI (12145) TEST: ESQ: A=1, B=1 | DIR: A=1, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=3410, DIR_B=2026[0m
+[0;32mI (12195) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4251, DIR_B=2026[0m
+[0;32mI (12845) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4284, DIR_B=2047[0m
+[0;32mI (12895) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4293, DIR_B=2067[0m
+[0;32mI (12945) TEST: ESQ: A=1, B=1 | DIR: A=1, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4303, DIR_B=2067[0m
+[0;32mI (12995) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4303, DIR_B=2093[0m
+[0;32mI (13045) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4311, DIR_B=2111[0m
+[0;32mI (13095) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4325, DIR_B=2123[0m
+[0;32mI (13145) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4336, DIR_B=2138[0m
+[0;32mI (13195) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4351, DIR_B=2148[0m
+[0;32mI (13245) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4361, DIR_B=2163[0m
+[0;32mI (13345) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4405, DIR_B=2213[0m
+[0;32mI (13645) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4417, DIR_B=2238[0m
+[0;32mI (13945) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4483, DIR_B=2286[0m
+[0;32mI (13995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4492, DIR_B=2300[0m
+[0;32mI (14045) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4512, DIR_B=2320[0m
+[0;32mI (14445) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4577, DIR_B=2456[0m
+[0;32mI (14695) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4638, DIR_B=2515[0m
+[0;32mI (14745) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4647, DIR_B=2532[0m
+[0;32mI (15195) TEST: ESQ: A=1, B=1 | DIR: A=1, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4666, DIR_B=2560[0m
+[0;32mI (15245) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4685, DIR_B=2572[0m
+[0;32mI (15745) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4751, DIR_B=2640[0m
+[0;32mI (15795) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4767, DIR_B=2649[0m
+[0;32mI (15995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4815, DIR_B=2719[0m
+[0;32mI (16395) TEST: ESQ: A=1, B=1 | DIR: A=1, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4954, DIR_B=2719[0m
+[0;32mI (16445) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4954, DIR_B=2859[0m
+[0;32mI (16545) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=4961, DIR_B=2871[0m
+[0;32mI (16645) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5000, DIR_B=2909[0m
+[0;32mI (16695) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5007, DIR_B=2920[0m
+[0;32mI (16795) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5056, DIR_B=2967[0m
+[0;32mI (17045) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5093, DIR_B=3005[0m
+[0;32mI (17845) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5185, DIR_B=3104[0m
+[0;32mI (18045) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5191, DIR_B=3114[0m
+[0;32mI (18245) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5256, DIR_B=3188[0m
+[0;32mI (18295) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5270, DIR_B=3209[0m
+[0;32mI (18345) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5281, DIR_B=3216[0m
+[0;32mI (18745) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5340, DIR_B=3299[0m
+[0;32mI (19295) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5470, DIR_B=3431[0m
+[0;32mI (19345) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5484, DIR_B=3453[0m
+[0;32mI (19595) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5557, DIR_B=3548[0m
+[0;32mI (19695) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5569, DIR_B=3568[0m
+[0;32mI (19745) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5579, DIR_B=3575[0m
+[0;32mI (19795) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5602, DIR_B=3597[0m
+[0;32mI (19995) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5648, DIR_B=3654[0m
+[0;32mI (20045) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5665, DIR_B=3681[0m
+[0;32mI (20095) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5673, DIR_B=3686[0m
+[0;32mI (20395) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5749, DIR_B=3805[0m
+[0;32mI (20595) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5824, DIR_B=3887[0m
+[0;32mI (20645) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5843, DIR_B=3903[0m
+[0;32mI (20795) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5954, DIR_B=3999[0m
+[0;32mI (20845) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5987, DIR_B=4042[0m
+[0;32mI (20895) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=5999, DIR_B=4049[0m
+[0;32mI (20995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6035, DIR_B=4095[0m
+[0;32mI (21195) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6106, DIR_B=4174[0m
+[0;32mI (21245) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6119, DIR_B=4198[0m
+[0;32mI (21295) TEST: ESQ: A=1, B=1 | DIR: A=1, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6137, DIR_B=4198[0m
+[0;32mI (21345) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6142, DIR_B=4221[0m
+[0;32mI (21395) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6158, DIR_B=4240[0m
+[0;32mI (21495) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6186, DIR_B=4272[0m
+[0;32mI (21945) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6275, DIR_B=4363[0m
+[0;32mI (21995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6280, DIR_B=4377[0m
+[0;32mI (22795) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6423, DIR_B=4546[0m
+[0;32mI (22845) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6432, DIR_B=4558[0m
+[0;32mI (22945) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6476, DIR_B=4601[0m
+[0;32mI (23095) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=6520, DIR_B=4658[0m
+[0;32mI (23145) TEST: === TESTE DE QUADRATURE MANUAL ===[0m
+[0;32mI (23145) TEST: Gire a roda ESQUERDA para FRENTE (sentido horário)[0m
+[0;32mI (23145) TEST: A sequência deve ser: 00 -> 01 -> 11 -> 10 -> 00[0m
+[0;32mI (23145) TEST: Gire a roda ESQUERDA para TRÁS (sentido anti-horário)[0m
+[0;32mI (23155) TEST: A sequência deve ser: 00 -> 10 -> 11 -> 01 -> 00[0m
+[0;32mI (23165) TEST: --------------------------------------------[0m
+[0;32mI (23165) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (1375) TEST: === TESTE DE LEITURA DIRETA ===[0m
+[0;32mI (1375) TEST: Gire cada roda lentamente e observe os valores[0m
+[0;32mI (1375) TEST: Cada volta do encoder deve gerar ~20 pulsos[0m
+[0;32mI (1375) TEST: --------------------------------------------[0m
+[0;32mI (1385) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=0, DIR_B=0[0m
+[0;32mI (12145) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=29, DIR_B=13[0m
+[0;32mI (13195) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=37, DIR_B=21[0m
+[0;32mI (13245) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=53, DIR_B=31[0m
+[0;32mI (14595) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=74, DIR_B=58[0m
+[0;32mI (14745) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=91, DIR_B=71[0m
+[0;32mI (14895) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=110, DIR_B=82[0m
+[0;32mI (15895) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=325, DIR_B=376[0m
+[0;32mI (17645) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=333, DIR_B=380[0m
+[0;32mI (17695) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=349, DIR_B=391[0m
+[0;32mI (18145) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=424, DIR_B=575[0m
+[0;32mI (18195) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=436, DIR_B=578[0m
+[0;32mI (18245) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=452, DIR_B=588[0m
+[0;32mI (18495) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=457, DIR_B=594[0m
+[0;32mI (18545) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=469, DIR_B=599[0m
+[0;32mI (18645) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=480, DIR_B=605[0m
+[0;32mI (20895) TEST: ESQ: A=1, B=1 | DIR: A=1, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=536, DIR_B=1253[0m
+[0;32mI (20945) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=724, DIR_B=1253[0m
+[0;32mI (20995) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=737, DIR_B=1257[0m
+[0;32mI (21045) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=765, DIR_B=1275[0m
+[0;32mI (24295) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=777, DIR_B=1284[0m
+[0;32mI (24345) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=793, DIR_B=1296[0m
+[0;32mI (24945) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=835, DIR_B=1314[0m
+[0;32mI (24995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=844, DIR_B=1323[0m
+[0;32mI (25495) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1154, DIR_B=1449[0m
+[0;32mI (25845) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1155, DIR_B=1452[0m
+[0;32mI (25895) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1160, DIR_B=1457[0m
+[0;32mI (25945) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1173, DIR_B=1464[0m
+[0;32mI (26145) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1200, DIR_B=1473[0m
+[0;32mI (26195) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1211, DIR_B=1478[0m
+[0;32mI (26595) TEST: ESQ: A=1, B=1 | DIR: A=1, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1224, DIR_B=1478[0m
+[0;32mI (26645) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1228, DIR_B=1485[0m
+[0;32mI (26695) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1243, DIR_B=1490[0m
+[0;32mI (26795) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1263, DIR_B=1499[0m
+[0;32mI (27095) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1275, DIR_B=1504[0m
+[0;32mI (27145) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1283, DIR_B=1509[0m
+[0;32mI (27195) TEST: ESQ: A=1, B=1 | DIR: A=1, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1323, DIR_B=1509[0m
+[0;32mI (27245) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1323, DIR_B=1562[0m
+[0;32mI (27345) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1331, DIR_B=1568[0m
+[0;32mI (27445) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1361, DIR_B=1598[0m
+[0;32mI (27695) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1369, DIR_B=1602[0m
+[0;32mI (27745) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1403, DIR_B=1619[0m
+[0;32mI (28095) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1415, DIR_B=1625[0m
+[0;32mI (28195) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1463, DIR_B=1670[0m
+[0;32mI (28295) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1473, DIR_B=1679[0m
+[0;32mI (28345) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1487, DIR_B=1683[0m
+[0;32mI (28395) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1495, DIR_B=1689[0m
+[0;32mI (28545) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1521, DIR_B=1712[0m
+[0;32mI (28595) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1529, DIR_B=1724[0m
+[0;32mI (28645) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1542, DIR_B=1733[0m
+[0;32mI (28745) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1569, DIR_B=1749[0m
+[0;32mI (28945) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1596, DIR_B=1763[0m
+[0;32mI (28995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1605, DIR_B=1767[0m
+[0;32mI (29145) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1622, DIR_B=1773[0m
+[0;32mI (29195) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1633, DIR_B=1779[0m
+[0;32mI (29745) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1659, DIR_B=1787[0m
+[0;32mI (29845) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1665, DIR_B=1791[0m
+[0;32mI (29895) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1675, DIR_B=1796[0m
+[0;32mI (29945) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1679, DIR_B=1799[0m
+[0;32mI (30095) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1714, DIR_B=1811[0m
+[0;32mI (30145) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1720, DIR_B=1815[0m
+[0;32mI (30195) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1737, DIR_B=1823[0m
+[0;32mI (30245) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1744, DIR_B=1825[0m
+[0;32mI (30295) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1757, DIR_B=1828[0m
+[0;32mI (30345) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1767, DIR_B=1832[0m
+[0;32mI (30895) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1778, DIR_B=1836[0m
+[0;32mI (31045) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1802, DIR_B=1853[0m
+[0;32mI (31145) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1831, DIR_B=1860[0m
+[0;32mI (31195) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1840, DIR_B=1864[0m
+[0;32mI (31245) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1852, DIR_B=1867[0m
+[0;32mI (31295) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1860, DIR_B=1872[0m
+[0;32mI (31345) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1868, DIR_B=1875[0m
+[0;32mI (31395) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1878, DIR_B=1881[0m
+[0;32mI (31445) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1886, DIR_B=1884[0m
+[0;32mI (31495) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1906, DIR_B=1894[0m
+[0;32mI (31645) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1942, DIR_B=1912[0m
+[0;32mI (31995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1950, DIR_B=1917[0m
+[0;32mI (32095) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1973, DIR_B=1929[0m
+[0;32mI (32145) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1981, DIR_B=1933[0m
+[0;32mI (32195) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1994, DIR_B=1940[0m
+[0;32mI (32245) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=1999, DIR_B=1944[0m
+[0;32mI (32295) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2012, DIR_B=1946[0m
+[0;32mI (32345) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2018, DIR_B=1950[0m
+[0;32mI (32445) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2051, DIR_B=1959[0m
+[0;32mI (32495) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2058, DIR_B=1963[0m
+[0;32mI (32545) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2068, DIR_B=1973[0m
+[0;32mI (32895) TEST: ESQ: A=1, B=1 | DIR: A=1, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2068, DIR_B=2076[0m
+[0;32mI (32945) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2580, DIR_B=2076[0m
+[0;32mI (33095) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2602, DIR_B=2087[0m
+[0;32mI (33145) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2610, DIR_B=2089[0m
+[0;32mI (33195) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2618, DIR_B=2091[0m
+[0;32mI (33245) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2622, DIR_B=2096[0m
+[0;32mI (33345) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2650, DIR_B=2109[0m
+[0;32mI (33395) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2661, DIR_B=2115[0m
+[0;32mI (33445) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2674, DIR_B=2118[0m
+[0;32mI (33495) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2683, DIR_B=2123[0m
+[0;32mI (33595) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2695, DIR_B=2126[0m
+[0;32mI (33845) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2934, DIR_B=2242[0m
+[0;32mI (33945) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2944, DIR_B=2245[0m
+[0;32mI (33995) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=1, DIR_A=2949, DIR_B=2246[0m
+[0;32mI (34045) TEST: === TESTE DE QUADRATURE MANUAL ===[0m
+[0;32mI (34045) TEST: Gire a roda ESQUERDA para FRENTE (sentido horário)[0m
+[0;32mI (34045) TEST: A sequência deve ser: 00 -> 01 -> 11 -> 10 -> 00[0m
+[0;32mI (34045) TEST: Gire a roda ESQUERDA para TRÁS (sentido anti-horário)[0m
+[0;32mI (34055) TEST: A sequência deve ser: 00 -> 10 -> 11 -> 01 -> 00[0m
+[0;32mI (34065) TEST: --------------------------------------------[0m
+[0;32mI (34065) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (38965) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (38975) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (40105) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (40135) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (40195) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (40205) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (40545) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (40585) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (40615) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (40675) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (41005) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (41045) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (41065) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (41105) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (41165) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (41285) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (41335) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (41345) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (41455) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (41465) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (41475) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (41485) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (41515) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (41795) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (42095) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (42105) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (42135) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (42165) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (42215) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (42675) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (42705) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (42735) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (42755) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (42795) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (42855) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (43105) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (43115) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (43145) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (43165) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (43195) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (43235) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (43985) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (43995) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (44045) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (44055) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (44075) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (44095) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (44115) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (44145) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (44155) MAIN: === TESTE CONCLUÍDO ===[0m
+[0;32mI (44155) MAIN: Resultados finais:[0m
+[0;32mI (44155) MAIN: Contador ESQ_A: 761[0m
+[0;32mI (44155) MAIN: Contador ESQ_B: 407[0m
+[0;32mI (44155) MAIN: Contador DIR_A: 3383[0m
+[0;32mI (44165) MAIN: Contador DIR_B: 3102[0m
+[0;32mI (44165) MAIN: Status: ESQ_A=761, ESQ_B=407, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (45175) MAIN: Status: ESQ_A=814, ESQ_B=420, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (46175) MAIN: Status: ESQ_A=851, ESQ_B=432, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (47175) MAIN: Status: ESQ_A=980, ESQ_B=477, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (48175) MAIN: Status: ESQ_A=1054, ESQ_B=503, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (49175) MAIN: Status: ESQ_A=1126, ESQ_B=536, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (50175) MAIN: Status: ESQ_A=1455, ESQ_B=667, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (51175) MAIN: Status: ESQ_A=1515, ESQ_B=862, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (52175) MAIN: Status: ESQ_A=1835, ESQ_B=934, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (53175) MAIN: Status: ESQ_A=1928, ESQ_B=966, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (54175) MAIN: Status: ESQ_A=2000, ESQ_B=991, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (55175) MAIN: Status: ESQ_A=2159, ESQ_B=1079, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (56175) MAIN: Status: ESQ_A=2203, ESQ_B=1093, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (57175) MAIN: Status: ESQ_A=2458, ESQ_B=1556, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (58175) MAIN: Status: ESQ_A=2542, ESQ_B=1585, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (59175) MAIN: Status: ESQ_A=2663, ESQ_B=1622, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (60175) MAIN: Status: ESQ_A=2899, ESQ_B=1735, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (61175) MAIN: Status: ESQ_A=3209, ESQ_B=1841, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (62175) MAIN: Status: ESQ_A=3360, ESQ_B=1898, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (63175) MAIN: Status: ESQ_A=3585, ESQ_B=1986, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (64175) MAIN: Status: ESQ_A=3745, ESQ_B=2042, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (65175) MAIN: Status: ESQ_A=4054, ESQ_B=2180, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (66175) MAIN: Status: ESQ_A=4365, ESQ_B=2342, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (67175) MAIN: Status: ESQ_A=4529, ESQ_B=2402, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (68175) MAIN: Status: ESQ_A=4715, ESQ_B=2464, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (69175) MAIN: Status: ESQ_A=4889, ESQ_B=2529, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (70175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (71175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (72175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (73175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (74175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (75175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (76175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (77175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (78175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (79175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (80175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (81175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (82175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (83175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (84175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (85175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (86175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (87175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (88175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (89175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (90175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (91175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (92175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (93175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (94175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (95175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (96175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (97175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (98175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (99175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (100175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (101175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (102175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (103175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (104175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (105175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (106175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (107175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (108175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (109175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (110175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+[0;32mI (111175) MAIN: Status: ESQ_A=4998, ESQ_B=2570, DIR_A=3383, DIR_B=3102[0m
+������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a064h ( 41060) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=0001a08c vaddr=3ffb0000 size=022c8h (  8904) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=0001c35c vaddr=40080000 size=03cbch ( 15548) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=101ech ( 66028) map[0m
+[0;32mI (188) esp_image: segment 4: paddr=00030214 vaddr=40083cbc size=08ca8h ( 36008) load[0m
+[0;32mI (209) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (209) boot: Disabling RNG early entropy source...[0m
+[0;32mI (220) cpu_start: Multicore app[0m
+[0;32mI (229) cpu_start: Pro cpu start user code[0m
+[0;32mI (229) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (229) cpu_start: Application information:[0m
+[0;32mI (232) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (238) cpu_start: App version:      e18ea92[0m
+[0;32mI (243) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (250) cpu_start: ELF file SHA256:  1987c9b71...[0m
+[0;32mI (255) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (261) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (266) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (276) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (283) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 3FFB2BB8 len 0002D448 (181 KiB): DRAM[0m
+[0;32mI (295) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (308) heap_init: At 4008C964 len 0001369C (77 KiB): IRAM[0m
+[0;32mI (315) spi_flash: detected chip: generic[0m
+[0;32mI (319) spi_flash: flash io: dio[0m
+[0;33mW (322) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (346) MAIN: === DIAGNÓSTICO DE ENCODERS ===[0m
+[0;32mI (346) TEST: Configurando encoders no modo SIMPLES...[0m
+[0;32mI (346) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (356) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;31mE (366) gpio: gpio_pullup_en(80): GPIO number error (input-only pad has no internal PU)[0m
+[0;32mI (376) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;31mE (386) gpio: gpio_pullup_en(80): GPIO number error (input-only pad has no internal PU)[0m
+[0;32mI (396) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (406) TEST: Encoders configurados no modo simples[0m
+[0;32mI (1406) TEST: === TESTE DE LEITURA DIRETA ===[0m
+[0;32mI (1406) TEST: Gire cada roda lentamente e observe os valores[0m
+[0;32mI (1406) TEST: Cada volta do encoder deve gerar ~20 pulsos[0m
+[0;32mI (1406) TEST: --------------------------------------------[0m
+[0;32mI (1416) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=0, DIR_B=0[0m
+[0;32mI (8226) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=78, DIR_B=103[0m
+[0;32mI (9526) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=85, DIR_B=106[0m
+[0;32mI (9626) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=0, ESQ_B=0, DIR_A=105, DIR_B=114[0m
+[0;32mI (12576) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=38, ESQ_B=21, DIR_A=105, DIR_B=114[0m
+[0;32mI (12626) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=46, ESQ_B=22, DIR_A=105, DIR_B=114[0m
+[0;32mI (12676) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=54, ESQ_B=23, DIR_A=105, DIR_B=114[0m
+[0;32mI (12726) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=69, ESQ_B=25, DIR_A=105, DIR_B=114[0m
+[0;32mI (13326) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=336, ESQ_B=55, DIR_A=105, DIR_B=114[0m
+[0;32mI (13426) TEST: ESQ: A=1, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=3874, ESQ_B=55, DIR_A=105, DIR_B=114[0m
+[0;32mI (13476) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=3948, ESQ_B=76, DIR_A=105, DIR_B=114[0m
+[0;32mI (13826) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=3961, ESQ_B=80, DIR_A=105, DIR_B=114[0m
+[0;32mI (13926) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=3992, ESQ_B=91, DIR_A=105, DIR_B=114[0m
+[0;32mI (13976) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4003, ESQ_B=92, DIR_A=105, DIR_B=114[0m
+[0;32mI (14176) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4007, ESQ_B=95, DIR_A=105, DIR_B=114[0m
+[0;32mI (14276) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4029, ESQ_B=101, DIR_A=105, DIR_B=114[0m
+[0;32mI (14326) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4038, ESQ_B=106, DIR_A=105, DIR_B=114[0m
+[0;32mI (14426) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4055, ESQ_B=116, DIR_A=105, DIR_B=114[0m
+[0;32mI (14476) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4073, ESQ_B=119, DIR_A=105, DIR_B=114[0m
+[0;32mI (14526) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4085, ESQ_B=122, DIR_A=105, DIR_B=114[0m
+[0;32mI (14626) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4120, ESQ_B=130, DIR_A=105, DIR_B=114[0m
+[0;32mI (15326) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4151, ESQ_B=135, DIR_A=105, DIR_B=114[0m
+[0;32mI (15576) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4162, ESQ_B=138, DIR_A=105, DIR_B=114[0m
+[0;32mI (15626) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4168, ESQ_B=139, DIR_A=105, DIR_B=114[0m
+[0;32mI (15726) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4199, ESQ_B=145, DIR_A=105, DIR_B=114[0m
+[0;32mI (15826) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4211, ESQ_B=150, DIR_A=105, DIR_B=114[0m
+[0;32mI (15876) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4225, ESQ_B=156, DIR_A=105, DIR_B=114[0m
+[0;32mI (15926) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4243, ESQ_B=161, DIR_A=105, DIR_B=114[0m
+[0;32mI (16076) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4266, ESQ_B=163, DIR_A=105, DIR_B=114[0m
+[0;32mI (17126) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4273, ESQ_B=166, DIR_A=105, DIR_B=114[0m
+[0;32mI (17276) TEST: ESQ: A=1, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4320, ESQ_B=172, DIR_A=105, DIR_B=114[0m
+[0;32mI (17326) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4320, ESQ_B=174, DIR_A=105, DIR_B=114[0m
+[0;32mI (17426) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4328, ESQ_B=178, DIR_A=105, DIR_B=114[0m
+[0;32mI (17526) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4351, ESQ_B=183, DIR_A=105, DIR_B=114[0m
+[0;32mI (17876) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4377, ESQ_B=191, DIR_A=105, DIR_B=114[0m
+[0;32mI (17976) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4395, ESQ_B=196, DIR_A=105, DIR_B=114[0m
+[0;32mI (18026) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4402, ESQ_B=197, DIR_A=105, DIR_B=114[0m
+[0;32mI (18076) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4413, ESQ_B=200, DIR_A=105, DIR_B=114[0m
+[0;32mI (18126) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4424, ESQ_B=201, DIR_A=105, DIR_B=114[0m
+[0;32mI (18176) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4440, ESQ_B=204, DIR_A=105, DIR_B=114[0m
+[0;32mI (18226) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4456, ESQ_B=209, DIR_A=105, DIR_B=114[0m
+[0;32mI (18326) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4468, ESQ_B=212, DIR_A=105, DIR_B=114[0m
+[0;32mI (18526) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4484, ESQ_B=215, DIR_A=105, DIR_B=114[0m
+[0;32mI (18576) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4493, ESQ_B=216, DIR_A=105, DIR_B=114[0m
+[0;32mI (18826) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4505, ESQ_B=220, DIR_A=105, DIR_B=114[0m
+[0;32mI (19026) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4533, ESQ_B=228, DIR_A=105, DIR_B=114[0m
+[0;32mI (19126) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4553, ESQ_B=233, DIR_A=105, DIR_B=114[0m
+[0;32mI (19176) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4577, ESQ_B=241, DIR_A=105, DIR_B=114[0m
+[0;32mI (19226) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4600, ESQ_B=247, DIR_A=105, DIR_B=114[0m
+[0;32mI (20026) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4668, ESQ_B=270, DIR_A=105, DIR_B=114[0m
+[0;32mI (20126) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4695, ESQ_B=278, DIR_A=105, DIR_B=114[0m
+[0;32mI (20776) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4710, ESQ_B=282, DIR_A=105, DIR_B=114[0m
+[0;32mI (20926) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4744, ESQ_B=292, DIR_A=105, DIR_B=114[0m
+[0;32mI (21026) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4763, ESQ_B=296, DIR_A=105, DIR_B=114[0m
+[0;32mI (21176) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4791, ESQ_B=304, DIR_A=105, DIR_B=114[0m
+[0;32mI (21226) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4811, ESQ_B=306, DIR_A=105, DIR_B=114[0m
+[0;32mI (21326) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4829, ESQ_B=310, DIR_A=105, DIR_B=114[0m
+[0;32mI (21626) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4840, ESQ_B=312, DIR_A=105, DIR_B=114[0m
+[0;32mI (21826) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4883, ESQ_B=323, DIR_A=105, DIR_B=114[0m
+[0;32mI (22026) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4938, ESQ_B=338, DIR_A=105, DIR_B=114[0m
+[0;32mI (22576) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4945, ESQ_B=341, DIR_A=105, DIR_B=114[0m
+[0;32mI (22626) TEST: ESQ: A=1, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4955, ESQ_B=343, DIR_A=105, DIR_B=114[0m
+[0;32mI (22676) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=4969, ESQ_B=345, DIR_A=105, DIR_B=114[0m
+[0;32mI (22726) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=4978, ESQ_B=346, DIR_A=105, DIR_B=114[0m
+[0;32mI (22976) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5033, ESQ_B=363, DIR_A=105, DIR_B=114[0m
+[0;32mI (23276) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5098, ESQ_B=393, DIR_A=105, DIR_B=114[0m
+[0;32mI (23426) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5133, ESQ_B=404, DIR_A=105, DIR_B=114[0m
+[0;32mI (23626) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5180, ESQ_B=416, DIR_A=105, DIR_B=114[0m
+[0;32mI (23676) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5193, ESQ_B=417, DIR_A=105, DIR_B=114[0m
+[0;32mI (24326) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5302, ESQ_B=485, DIR_A=105, DIR_B=114[0m
+[0;32mI (24476) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5336, ESQ_B=496, DIR_A=105, DIR_B=114[0m
+[0;32mI (24526) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5342, ESQ_B=498, DIR_A=105, DIR_B=114[0m
+[0;32mI (24626) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5364, ESQ_B=507, DIR_A=105, DIR_B=114[0m
+[0;32mI (24826) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5407, ESQ_B=520, DIR_A=105, DIR_B=114[0m
+[0;32mI (24876) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5424, ESQ_B=525, DIR_A=105, DIR_B=114[0m
+[0;32mI (25076) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5435, ESQ_B=526, DIR_A=105, DIR_B=114[0m
+[0;32mI (25626) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5487, ESQ_B=539, DIR_A=105, DIR_B=114[0m
+[0;32mI (25726) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5515, ESQ_B=547, DIR_A=105, DIR_B=114[0m
+[0;32mI (26926) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5582, ESQ_B=559, DIR_A=105, DIR_B=114[0m
+[0;32mI (27126) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5630, ESQ_B=575, DIR_A=105, DIR_B=114[0m
+[0;32mI (27226) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5646, ESQ_B=580, DIR_A=105, DIR_B=114[0m
+[0;32mI (27276) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5658, ESQ_B=585, DIR_A=105, DIR_B=114[0m
+[0;32mI (27376) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5680, ESQ_B=591, DIR_A=105, DIR_B=114[0m
+[0;32mI (27426) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5689, ESQ_B=593, DIR_A=105, DIR_B=114[0m
+[0;32mI (27476) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5695, ESQ_B=596, DIR_A=105, DIR_B=114[0m
+[0;32mI (27526) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5712, ESQ_B=600, DIR_A=105, DIR_B=114[0m
+[0;32mI (27626) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5734, ESQ_B=607, DIR_A=105, DIR_B=114[0m
+[0;32mI (27676) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5750, ESQ_B=611, DIR_A=105, DIR_B=114[0m
+[0;32mI (27776) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5766, ESQ_B=614, DIR_A=105, DIR_B=114[0m
+[0;32mI (27826) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5779, ESQ_B=618, DIR_A=105, DIR_B=114[0m
+[0;32mI (27926) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5817, ESQ_B=642, DIR_A=105, DIR_B=114[0m
+[0;32mI (28076) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5850, ESQ_B=653, DIR_A=105, DIR_B=114[0m
+[0;32mI (28126) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5864, ESQ_B=656, DIR_A=105, DIR_B=114[0m
+[0;32mI (28176) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5880, ESQ_B=662, DIR_A=105, DIR_B=114[0m
+[0;32mI (28226) TEST: ESQ: A=0, B=0 | DIR: A=0, B=0 | Contadores: ESQ_A=5885, ESQ_B=663, DIR_A=105, DIR_B=114[0m
+[0;32mI (28426) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5986, ESQ_B=705, DIR_A=105, DIR_B=114[0m
+[0;32mI (30476) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=5986, ESQ_B=705, DIR_A=155, DIR_B=166[0m
+[0;32mI (30576) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5986, ESQ_B=705, DIR_A=162, DIR_B=176[0m
+[0;32mI (31076) TEST: ESQ: A=1, B=1 | DIR: A=1, B=1 | Contadores: ESQ_A=5986, ESQ_B=705, DIR_A=258, DIR_B=273[0m
+[0;32mI (31126) TEST: ESQ: A=1, B=1 | DIR: A=0, B=0 | Contadores: ESQ_A=5986, ESQ_B=705, DIR_A=271, DIR_B=287[0m
+[0;32mI (31176) TEST: === TESTE DE QUADRATURE MANUAL ===[0m
+[0;32mI (31176) TEST: Gire a roda ESQUERDA para FRENTE (sentido horário)[0m
+[0;32mI (31176) TEST: A sequência deve ser: 00 -> 01 -> 11 -> 10 -> 00[0m
+[0;32mI (31176) TEST: Gire a roda ESQUERDA para TRÁS (sentido anti-horário)[0m
+[0;32mI (31186) TEST: A sequência deve ser: 00 -> 10 -> 11 -> 01 -> 00[0m
+[0;32mI (31196) TEST: --------------------------------------------[0m
+[0;32mI (31196) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (42306) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (42316) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (42336) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (42376) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (42386) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (42706) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (42726) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (42756) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (42796) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (42856) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (43096) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (43116) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (43136) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (43156) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (43176) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (43186) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (43206) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (43246) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (44886) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (46246) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (46256) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (48516) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (48546) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (48576) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (48586) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (48596) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (48616) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (48636) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (48666) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (48696) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (48736) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (48786) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (48856) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (48906) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (48986) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (49086) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (49096) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (49456) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (49486) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (49506) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (49526) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (49556) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (49576) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (49596) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (49616) TEST: Encoder Esquerdo: A=1, B=0 -> Estado=2[0m
+[0;32mI (49626) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (49646) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (49676) TEST: Encoder Esquerdo: A=0, B=0 -> Estado=0[0m
+[0;32mI (49716) TEST: Encoder Esquerdo: A=1, B=1 -> Estado=3[0m
+[0;32mI (49726) MAIN: === TESTE CONCLUÍDO ===[0m
+[0;32mI (49726) MAIN: Resultados finais:[0m
+[0;32mI (49726) MAIN: Contador ESQ_A: 6420[0m
+[0;32mI (49726) MAIN: Contador ESQ_B: 1014[0m
+[0;32mI (49726) MAIN: Contador DIR_A: 17134[0m
+[0;32mI (49736) MAIN: Contador DIR_B: 1681[0m
+[0;32mI (49736) MAIN: Status: ESQ_A=6427, ESQ_B=1017, DIR_A=17134, DIR_B=1681[0m
+[0;32mI (50746) MAIN: Status: ESQ_A=6585, ESQ_B=1060, DIR_A=17134, DIR_B=1681[0m
+[0;32mI (51746) MAIN: Status: ESQ_A=6767, ESQ_B=1084, DIR_A=17134, DIR_B=1681[0m
+[0;32mI (52746) MAIN: Status: ESQ_A=6974, ESQ_B=1158, DIR_A=17134, DIR_B=1681[0m
+[0;32mI (53746) MAIN: Status: ESQ_A=7194, ESQ_B=1238, DIR_A=17134, DIR_B=1681[0m
+[0;32mI (54746) MAIN: Status: ESQ_A=7429, ESQ_B=1325, DIR_A=17134, DIR_B=1681[0m
+[0;32mI (55746) MAIN: Status: ESQ_A=7514, ESQ_B=1345, DIR_A=17134, DIR_B=1681[0m
+[0;32mI (56746) MAIN: Status: ESQ_A=7514, ESQ_B=1345, DIR_A=17134, DIR_B=1681[0m
+[0;32mI (57746) MAIN: Status: ESQ_A=7514, ESQ_B=1626, DIR_A=17362, DIR_B=1773[0m
+[0;32mI (58746) MAIN: Status: ESQ_A=7965, ESQ_B=2182, DIR_A=17589, DIR_B=1879[0m
+[0;32mI (59746) MAIN: Status: ESQ_A=8071, ESQ_B=2237, DIR_A=17840, DIR_B=1992[0m
+[0;32mI (60746) MAIN: Status: ESQ_A=8530, ESQ_B=2582, DIR_A=18068, DIR_B=2093[0m
+[0;32mI (61746) MAIN: Status: ESQ_A=8790, ESQ_B=2706, DIR_A=18243, DIR_B=2182[0m
+[0;32mI (62746) MAIN: Status: ESQ_A=8790, ESQ_B=2706, DIR_A=18294, DIR_B=2195[0m
+[0;32mI (63746) MAIN: Status: ESQ_A=8790, ESQ_B=2706, DIR_A=18294, DIR_B=2195[0m
+[0;32mI (64746) MAIN: Status: ESQ_A=8790, ESQ_B=2706, DIR_A=18294, DIR_B=2195[0m
+[0;32mI (65746) MAIN: Status: ESQ_A=8790, ESQ_B=2706, DIR_A=18334, DIR_B=2195[0m
+[0;32mI (66746) MAIN: Status: ESQ_A=8790, ESQ_B=2706, DIR_A=18334, DIR_B=2195[0m
+[0;32mI (67746) MAIN: Status: ESQ_A=8790, ESQ_B=2706, DIR_A=18334, DIR_B=2195[0m
+[0;32mI (68746) MAIN: Status: ESQ_A=8790, ESQ_B=2706, DIR_A=18334, DIR_B=2195[0m
+[0;32mI (69746) MAIN: Status: ESQ_A=8790, ESQ_B=2706, DIR_A=18334, DIR_B=2195[0m
+[0;32mI (70746) MAIN: Status: ESQ_A=8996, ESQ_B=2860, DIR_A=18396, DIR_B=2293[0m
+[0;32mI (71746) MAIN: Status: ESQ_A=8996, ESQ_B=2860, DIR_A=18396, DIR_B=2293[0m
+[0;32mI (72746) MAIN: Status: ESQ_A=8996, ESQ_B=2860, DIR_A=18396, DIR_B=2293[0m
+[0;32mI (73746) MAIN: Status: ESQ_A=8996, ESQ_B=2860, DIR_A=18396, DIR_B=2293[0m

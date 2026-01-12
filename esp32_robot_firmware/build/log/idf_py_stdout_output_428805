@@ -1,0 +1,384 @@
+���������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a7d0h (108496) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002a7f8 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002ee5c vaddr=40080000 size=011bch (  4540) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93274h (602740) map[0m
+[0;32mI (364) esp_image: segment 4: paddr=000c329c vaddr=400811bc size=163fch ( 91132) load[0m
+[0;32mI (411) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (411) boot: Disabling RNG early entropy source...[0m
+[0;32mI (423) cpu_start: Multicore app[0m
+[0;32mI (432) cpu_start: Pro cpu start user code[0m
+[0;32mI (432) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (432) cpu_start: Application information:[0m
+[0;32mI (435) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (441) cpu_start: App version:      e18ea92[0m
+[0;32mI (446) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (452) cpu_start: ELF file SHA256:  eeb9ada4f...[0m
+[0;32mI (458) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (464) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (469) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (474) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (479) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (486) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFBB0F8 len 00024F08 (147 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (504) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 400975B8 len 00008A48 (34 KiB): IRAM[0m
+[0;32mI (518) spi_flash: detected chip: generic[0m
+[0;32mI (521) spi_flash: flash io: dio[0m
+[0;33mW (525) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (539) main_task: Started on CPU0[0m
+[0;32mI (549) main_task: Calling app_main()[0m
+[0;32mI (589) wifi:wifi driver task: 3ffc323c, prio:23, stack:6656, core=0[0m
+[0;32mI (599) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (599) wifi:wifi certification version: v7.0[0m
+[0;32mI (599) wifi:config NVS flash: enabled[0m
+[0;32mI (599) wifi:config nano formating: disabled[0m
+[0;32mI (609) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (609) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (619) wifi:Init management short buffer num: 32[0m
+[0;32mI (619) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (619) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (629) wifi:Init static rx buffer num: 10[0m
+[0;32mI (629) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (639) wifi_init: tcpip mbox: 32[0m
+[0;32mI (639) wifi_init: udp mbox: 6[0m
+[0;32mI (649) wifi_init: tcp mbox: 6[0m
+[0;32mI (649) wifi_init: tcp tx win: 5760[0m
+[0;32mI (659) wifi_init: tcp rx win: 5760[0m
+[0;32mI (659) wifi_init: tcp mss: 1440[0m
+[0;32mI (659) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (669) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (669) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (679) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (769) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (789) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (789) wifi:enable tsf[0m
+[0;32mI (789) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (789) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (799) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (809) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (819) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (829) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (839) wifi:new:<2,0>, old:<1,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (849) wifi:state: init -> auth (b0)[0m
+[0;32mI (849) wifi:state: auth -> assoc (0)[0m
+[0;32mI (859) wifi:state: assoc -> init (4a0)[0m
+[0;32mI (859) main_task: Returned from app_main()[0m
+[0;32mI (869) wifi:new:<2,0>, old:<2,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (1799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (2799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (3799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (4799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (5799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (6799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (7799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (8799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (9799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (10799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (11799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (12799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (13799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (14799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (15799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (16799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (17799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (18799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (19799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (20799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (21799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (22799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (23799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (24799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (25799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (26799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (27799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (28799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (29799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (30799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (31799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (32799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (33799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (34799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (35799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (36799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (37799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (38799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (39799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (40799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (41799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (42799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (43799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (44799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (45799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (46799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (47799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (48799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (49799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (50799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (51799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (52799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (53799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (54799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (55799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (56799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (57799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (58799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (59799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (60799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (61799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (62799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (63799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (64799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (65799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (66799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (67799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (68799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (69799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (70799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (71799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (72799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (73799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (74799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (75799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (76799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (77799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (78799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (79799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (80799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (81799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (82799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (83799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (84799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (85799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (86799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (87799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (88799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (89799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (90799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (91799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (92799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (93799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (94799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (95799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (96799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (97799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (98799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (99799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (100799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (101799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (102799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (103799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (104799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (105799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (106799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (107799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (108799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (109799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (110799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (111799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (112799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (113799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (114799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (115799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (116799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (117799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (118799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (119799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (120799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (121799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (122799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (123799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (124799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (125799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (126799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (127799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (128799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (129799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (130799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (131799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (132799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (133799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (134799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (135799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (136799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (137799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (138799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (139799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (140799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (141799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (142799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (143799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (144799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (145799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (146799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (147799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (148799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (149799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (150799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (151799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (152799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (153799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (154799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (155799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (156799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (157799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (158799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (159799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (160799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (161799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (162799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (163799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (164799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (165799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (166799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (167799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (168799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (169799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (170799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (171799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (172799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (173799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (174799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (175799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (176799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (177799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (178799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (179799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (180799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (181799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (182799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (183799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (184799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (185799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (186799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (187799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (188799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (189799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (190799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (191799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (192799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (193799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (194799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (195799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (196799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (197799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (198799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (199799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (200799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (201799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (202799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (203799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (204799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (205799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (206799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (207799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (208799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (209799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (210799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (211799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (212799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (213799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (214799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (215799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (216799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (217799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (218799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (219799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (220799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (221799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (222799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (223799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (224799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (225799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (226799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (227799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (228799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (229799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (230799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (231799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (232799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (233799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (234799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (235799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (236799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (237799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (238799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (239799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (240799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (241799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (242799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (243799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (244799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (245799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (246799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (247799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (248799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (249799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (250799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (251799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (252799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (253799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (254799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (255799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (256799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (257799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (258799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (259799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (260799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (261799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (262799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (263799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (264799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (265799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (266799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (267799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (268799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (269799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (270799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (271799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (272799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (273799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (274799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (275799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (276799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (277799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (278799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (279799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (280799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (281799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (282799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (283799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (284799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (285799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (286799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (287799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m
+[0;32mI (288799) ODOM: X:-0.00 Vel:0.00 SP:0.0[0m

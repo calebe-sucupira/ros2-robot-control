@@ -1,0 +1,2 @@
+source /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/gdbinit/symbols
+source /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/gdbinit/connect

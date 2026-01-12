@@ -1,0 +1,132 @@
+Rձ�29 2019 12:21:46
+
+rst:0x1 (POWERON_RES�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a784h ( 42884) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a7ac vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cad4 vaddr=40080000 size=03544h ( 13636) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11828h ( 71720) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=00031850 vaddr=40083544 size=09618h ( 38424) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (211) cpu_start: App version:      e18ea92[0m
+[0;32mI (216) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  f9d38ffb8...[0m
+[0;32mI (227) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (238) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (243) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (248) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (255) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (261) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (267) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (288) spi_flash: detected chip: generic[0m
+[0;32mI (291) spi_flash: flash io: dio[0m
+[0;33mW (295) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (309) main_task: Started on CPU0[0m
+[0;32mI (319) main_task: Calling app_main()[0m
+[0;32mI (319) MAIN: ========================================[0m
+[0;32mI (319) MAIN:    CALIBRAÇÃO DE MOTORES[0m
+[0;32mI (319) MAIN: ========================================[0m
+[0;32mI (329) CALIB: ========================================[0m
+[0;32mI (329) CALIB:    CALIBRAÇÃO SISTEMÁTICA[0m
+[0;32mI (339) CALIB: ========================================[0m
+[0;32mI (349) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (359) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (359) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (369) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (379) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (399) CALIB: 
+--- TESTE INDIVIDUAL DOS MOTORES ---[0m
+[0;32mI (2409) CALIB: Motor ESQ (50%): 249.5 ticks/s[0m
+[0;32mI (5409) CALIB: Motor DIR (50%): 363.5 ticks/s[0m
+[0;32mI (5409) CALIB: Relação DIR/ESQ: 1.457[0m
+[0;32mI (5409) CALIB: 
+--- VARREURA DE VELOCIDADES ---[0m
+[0;32mI (7409) CALIB: Vel 30%: ESQ=166.5, DIR=258.5, Relação=1.553[0m
+[0;32mI (9909) CALIB: Vel 40%: ESQ=219.5, DIR=335.5, Relação=1.528[0m
+[0;32mI (12409) CALIB: Vel 50%: ESQ=250.5, DIR=364.0, Relação=1.453[0m
+[0;32mI (14909) CALIB: Vel 60%: ESQ=266.0, DIR=400.5, Relação=1.506[0m
+[0;32mI (17409) CALIB: Vel 70%: ESQ=284.5, DIR=432.0, Relação=1.518[0m
+[0;32mI (19909) CALIB: Vel 80%: ESQ=292.0, DIR=443.0, Relação=1.517[0m
+[0;32mI (22409) TESTE: ========================================[0m
+[0;32mI (22409) TESTE:    TESTE NOVA COMPENSAÇÃO[0m
+[0;32mI (22409) TESTE: ========================================[0m
+[0;32mI (22409) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (22419) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;31mE (22429) gpio: gpio_install_isr_service(508): GPIO isr service already installed[0m
+[0;32mI (22439) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22449) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22459) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22469) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22479) TESTE: 
+--- Teste 1 ---[0m
+[0;32mI (22479) MOTOR: Original: ESQ=50%, DIR=50%[0m
+[0;32mI (22479) MOTOR: Ajustado: ESQ=50%, DIR=35%[0m
+[0;32mI (24489) TESTE: Resultado: ESQ=239.5/s, DIR=259.0/s[0m
+[0;32mI (24489) TESTE: Diferença: 7.8%[0m
+[0;32mI (25489) TESTE: 
+--- Teste 2 ---[0m
+[0;32mI (25489) MOTOR: Original: ESQ=70%, DIR=70%[0m
+[0;32mI (25489) MOTOR: Ajustado: ESQ=70%, DIR=35%[0m
+[0;32mI (27489) TESTE: Resultado: ESQ=262.5/s, DIR=279.5/s[0m
+[0;32mI (27489) TESTE: Diferença: 6.3%[0m
+[0;32mI (28489) TESTE: 
+--- Teste 3 ---[0m
+[0;32mI (28489) MOTOR: Original: ESQ=40%, DIR=60%[0m
+[0;32mI (28489) MOTOR: Ajustado: ESQ=40%, DIR=35%[0m
+[0;32mI (30489) TESTE: Resultado: ESQ=206.0/s, DIR=286.0/s[0m
+[0;32mI (30489) TESTE: Diferença: 32.5%[0m
+[0;32mI (31489) TESTE: 
+--- Teste 4 ---[0m
+[0;32mI (31489) MOTOR: Original: ESQ=30%, DIR=30%[0m
+[0;32mI (31489) MOTOR: Ajustado: ESQ=35%, DIR=35%[0m
+[0;32mI (33489) TESTE: Resultado: ESQ=186.5/s, DIR=296.0/s[0m
+[0;32mI (33489) TESTE: Diferença: 45.4%[0m
+[0;32mI (34489) TESTE: 
+--- Teste 5 ---[0m
+[0;32mI (34489) MOTOR: Original: ESQ=80%, DIR=80%[0m
+[0;32mI (34489) MOTOR: Ajustado: ESQ=80%, DIR=36%[0m
+[0;32mI (36489) TESTE: Resultado: ESQ=274.5/s, DIR=301.0/s[0m
+[0;32mI (36489) TESTE: Diferença: 9.2%[0m
+[0;32mI (37489) MAIN: 
+========================================[0m
+[0;32mI (37489) MAIN:    RECOMENDAÇÕES:[0m
+[0;32mI (37489) MAIN: ========================================[0m
+[0;32mI (37489) MAIN: 1. Execute a calibração sistemática[0m
+[0;32mI (37499) MAIN: 2. Anote as relações DIR/ESQ para cada velocidade[0m
+[0;32mI (37499) MAIN: 3. Ajuste a tabela de compensação baseada nos dados[0m
+[0;32mI (37509) MAIN: 4. Execute o teste da nova compensação[0m
+[0;32mI (37519) MAIN: 5. Repita até obter diferenças < 5%[0m

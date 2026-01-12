@@ -1,0 +1,5 @@
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm-install/pioasm/pioasm
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm-install/pioasm/pioasmTargets.cmake
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm-install/pioasm/pioasmTargets-release.cmake
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm-install/pioasm/pioasmConfig.cmake
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm-install/pioasm/pioasmConfigVersion.cmake

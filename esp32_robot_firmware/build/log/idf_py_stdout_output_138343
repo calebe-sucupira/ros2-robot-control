@@ -1,0 +1,571 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b344h ( 45892) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b36c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d694 vaddr=40080000 size=02984h ( 10628) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11fc8h ( 73672) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00031ff0 vaddr=40082984 size=0a1d8h ( 41432) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) cpu_start: Application information:[0m
+[0;32mI (208) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (214) cpu_start: App version:      e18ea92[0m
+[0;32mI (219) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a72d4befa...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) MAIN: ========================================[0m
+[0;32mI (322) MAIN:     DIAGNOSTICO MOTOR ESQUERDO[0m
+[0;32mI (322) MAIN: ========================================[0m
+[0;32mI (332) SEGURANCA: ========================================[0m
+[0;32mI (342) SEGURANCA:        AVISO DE SEGURANCA[0m
+[0;32mI (342) SEGURANCA: ========================================[0m
+[0;32mI (352) SEGURANCA: 1. LEVANTE O ROBÔ COMPLETAMENTE[0m
+[0;32mI (352) SEGURANCA: 2. RODAS DEVEM FICAR LIVRES NO AR[0m
+[0;32mI (362) SEGURANCA: 3. VERIFIQUE QUE NADA OBSTRUI AS RODAS[0m
+[0;32mI (362) SEGURANCA: ========================================[0m
+[0;32mI (372) SEGURANCA: Iniciando em 5...[0m
+[0;32mI (1372) SEGURANCA: Iniciando em 4...[0m
+[0;32mI (2372) SEGURANCA: Iniciando em 3...[0m
+[0;32mI (3372) SEGURANCA: Iniciando em 2...[0m
+[0;32mI (4372) SEGURANCA: Iniciando em 1...[0m
+[0;32mI (5372) FISICO: ========================================[0m
+[0;32mI (5372) FISICO:     TESTE DE CONEXOES FISICAS[0m
+[0;32mI (5372) FISICO: ========================================[0m
+[0;32mI (5372) FISICO: VERIFIQUE:[0m
+[0;32mI (5372) FISICO: 1. Fios do motor esquerdo no L298N[0m
+[0;32mI (5382) FISICO: 2. Jumpers nos pinos ENA e ENB do L298N[0m
+[0;32mI (5392) FISICO: 3. Alimentacao 12V para motores[0m
+[0;32mI (5392) FISICO: 4. GND do ESP32 conectado ao GND do L298N[0m
+[0;32mI (5402) FISICO: 5. Fios do encoder esquerdo (pino 33)[0m
+[0;32mI (5402) FISICO: Aguardando 5s para verificacao...[0m
+[0;32mI (5412) FISICO: 5...[0m
+[0;32mI (6412) FISICO: 4...[0m
+[0;32mI (7412) FISICO: 3...[0m
+[0;32mI (8412) FISICO: 2...[0m
+[0;32mI (9412) FISICO: 1...[0m
+[0;32mI (10412) TESTE: ========================================[0m
+[0;32mI (10412) TESTE:     TESTE 1: MOTOR ESQUERDO 100%[0m
+[0;32mI (10412) TESTE: ========================================[0m
+[0;32mI (10412) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10422) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10432) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (10442) TESTE: SENTIDO PARA FRENTE[0m
+[0;32mI (10442) TESTE: IN3=0, IN4=1, PWM=0% (maximo)[0m
+[0;32mI (10452) TESTE: Motor deve girar AGORA![0m
+[0;32mI (10452) TESTE: Contando ticks por 3 segundos...[0m
+[0;32mI (10462) TESTE: Segundo 0.0: 0 ticks[0m
+[0;32mI (10562) TESTE: Segundo 0.1: 0 ticks[0m
+[0;32mI (10662) TESTE: Segundo 0.2: 0 ticks[0m
+[0;32mI (10762) TESTE: Segundo 0.3: 0 ticks[0m
+[0;32mI (10862) TESTE: Segundo 0.4: 0 ticks[0m
+[0;32mI (10962) TESTE: Segundo 0.5: 0 ticks[0m
+[0;32mI (11062) TESTE: Segundo 0.6: 0 ticks[0m
+[0;32mI (11162) TESTE: Segundo 0.7: 0 ticks[0m
+[0;32mI (11262) TESTE: Segundo 0.8: 0 ticks[0m
+[0;32mI (11362) TESTE: Segundo 0.9: 0 ticks[0m
+[0;32mI (11462) TESTE: Segundo 1.0: 0 ticks[0m
+[0;32mI (11562) TESTE: Segundo 1.1: 0 ticks[0m
+[0;32mI (11662) TESTE: Segundo 1.2: 0 ticks[0m
+[0;32mI (11762) TESTE: Segundo 1.3: 0 ticks[0m
+[0;32mI (11862) TESTE: Segundo 1.4: 0 ticks[0m
+[0;32mI (11962) TESTE: Segundo 1.5: 0 ticks[0m
+[0;32mI (12062) TESTE: Segundo 1.6: 0 ticks[0m
+[0;32mI (12162) TESTE: Segundo 1.7: 0 ticks[0m
+[0;32mI (12262) TESTE: Segundo 1.8: 0 ticks[0m
+[0;32mI (12362) TESTE: Segundo 1.9: 0 ticks[0m
+[0;32mI (12462) TESTE: Segundo 2.0: 0 ticks[0m
+[0;32mI (12562) TESTE: Segundo 2.1: 0 ticks[0m
+[0;32mI (12662) TESTE: Segundo 2.2: 0 ticks[0m
+[0;32mI (12762) TESTE: Segundo 2.3: 5 ticks[0m
+[0;32mI (12862) TESTE: Segundo 2.4: 13 ticks[0m
+[0;32mI (12962) TESTE: Segundo 2.5: 21 ticks[0m
+[0;32mI (13062) TESTE: Segundo 2.6: 36 ticks[0m
+[0;32mI (13162) TESTE: Segundo 2.7: 51 ticks[0m
+[0;32mI (13262) TESTE: Segundo 2.8: 70 ticks[0m
+[0;32mI (13362) TESTE: Segundo 2.9: 83 ticks[0m
+[0;32mI (13462) TESTE: RESULTADO[0m
+[0;32mI (13462) TESTE: Ticks totais em 3s: 90[0m
+[0;32mI (13462) TESTE: ATENCAO: Motor esquerdo funciona FRACO[0m
+[0;32mI (13462) TESTE: Verifique alimentacao ou motor[0m
+[0;32mI (15462) CONSIST: ========================================[0m
+[0;32mI (15462) CONSIST:     TESTE 2: CONSISTENCIA PWM[0m
+[0;32mI (15462) CONSIST: ========================================[0m
+[0;32mI (15462) CONSIST: Testando 10 ciclos de 2 segundos cada[0m
+[0;32mI (15472) CICLO: Ciclo 1: 10% PWM[0m
+́Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b344h ( 45892) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=0001b36c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (156) esp_image: segment 2: paddr=0001d694 vaddr=40080000 size=02984h ( 10628) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11fc8h ( 73672) map[0m
+[0;32mI (192) esp_image: segment 4: paddr=00031ff0 vaddr=40082984 size=0a1d8h ( 41432) load[0m
+[0;32mI (215) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (215) boot: Disabling RNG early entropy source...[0m
+[0;32mI (226) cpu_start: Multicore app[0m
+[0;32mI (236) cpu_start: Pro cpu start user code[0m
+[0;32mI (236) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (236) cpu_start: Application information:[0m
+[0;32mI (239) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (245) cpu_start: App version:      e18ea92[0m
+[0;32mI (250) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (256) cpu_start: ELF file SHA256:  a72d4befa...[0m
+[0;32mI (261) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (268) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (272) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (277) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (282) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (289) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (295) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (301) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (308) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (314) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (322) spi_flash: detected chip: generic[0m
+[0;32mI (325) spi_flash: flash io: dio[0m
+[0;33mW (329) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (343) main_task: Started on CPU0[0m
+[0;32mI (353) main_task: Calling app_main()[0m
+[0;32mI (353) MAIN: ========================================[0m
+[0;32mI (353) MAIN:     DIAGNOSTICO MOTOR ESQUERDO[0m
+[0;32mI (353) MAIN: ========================================[0m
+[0;32mI (363) SEGURANCA: ========================================[0m
+[0;32mI (373) SEGURANCA:        AVISO DE SEGURANCA[0m
+[0;32mI (373) SEGURANCA: ========================================[0m
+[0;32mI (383) SEGURANCA: 1. LEVANTE O ROBÔ COMPLETAMENTE[0m
+[0;32mI (383) SEGURANCA: 2. RODAS DEVEM FICAR LIVRES NO AR[0m
+[0;32mI (393) SEGURANCA: 3. VERIFIQUE QUE NADA OBSTRUI AS RODAS[0m
+[0;32mI (393) SEGURANCA: ========================================[0m
+[0;32mI (403) SEGURANCA: Iniciando em 5...[0m
+[0;32mI (1403) SEGURANCA: Iniciando em 4...[0m
+[0;32mI (2403) SEGURANCA: Iniciando em 3...[0m
+[0;32mI (3403) SEGURANCA: Iniciando em 2...[0m
+[0;32mI (4403) SEGURANCA: Iniciando em 1...[0m
+[0;32mI (5403) FISICO: ========================================[0m
+[0;32mI (5403) FISICO:     TESTE DE CONEXOES FISICAS[0m
+[0;32mI (5403) FISICO: ========================================[0m
+[0;32mI (5403) FISICO: VERIFIQUE:[0m
+[0;32mI (5403) FISICO: 1. Fios do motor esquerdo no L298N[0m
+[0;32mI (5413) FISICO: 2. Jumpers nos pinos ENA e ENB do L298N[0m
+[0;32mI (5423) FISICO: 3. Alimentacao 12V para motores[0m
+[0;32mI (5423) FISICO: 4. GND do ESP32 conectado ao GND do L298N[0m
+[0;32mI (5433) FISICO: 5. Fios do encoder esquerdo (pino 33)[0m
+[0;32mI (5433) FISICO: Aguardando 5s para verificacao...[0m
+[0;32mI (5443) FISICO: 5...[0m
+[0;32mI (6443) FISICO: 4...[0m
+[0;32mI (7443) FISICO: 3...[0m
+[0;32mI (8443) FISICO: 2...[0m
+[0;32mI (9443) FISICO: 1...[0m
+[0;32mI (10443) TESTE: ========================================[0m
+[0;32mI (10443) TESTE:     TESTE 1: MOTOR ESQUERDO 100%[0m
+[0;32mI (10443) TESTE: ========================================[0m
+[0;32mI (10443) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10453) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10463) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (10473) TESTE: SENTIDO PARA FRENTE[0m
+[0;32mI (10473) TESTE: IN3=0, IN4=1, PWM=0% (maximo)[0m
+[0;32mI (10483) TESTE: Motor deve girar AGORA![0m
+[0;32mI (10483) TESTE: Contando ticks por 3 segundos...[0m
+[0;32mI (10493) TESTE: Segundo 0.0: 0 ticks[0m
+[0;32mI (10593) TESTE: Segundo 0.1: 27 ticks[0m
+[0;32mI (10693) TESTE: Segundo 0.2: 70 ticks[0m
+[0;32mI (10793) TESTE: Segundo 0.3: 115 ticks[0m
+[0;32mI (10893) TESTE: Segundo 0.4: 159 ticks[0m
+[0;32mI (10993) TESTE: Segundo 0.5: 203 ticks[0m
+[0;32mI (11093) TESTE: Segundo 0.6: 243 ticks[0m
+[0;32mI (11193) TESTE: Segundo 0.7: 288 ticks[0m
+[0;32mI (11293) TESTE: Segundo 0.8: 328 ticks[0m
+[0;32mI (11393) TESTE: Segundo 0.9: 368 ticks[0m
+[0;32mI (11493) TESTE: Segundo 1.0: 412 ticks[0m
+[0;32mI (11593) TESTE: Segundo 1.1: 458 ticks[0m
+[0;32mI (11693) TESTE: Segundo 1.2: 499 ticks[0m
+[0;32mI (11793) TESTE: Segundo 1.3: 544 ticks[0m
+[0;32mI (11893) TESTE: Segundo 1.4: 590 ticks[0m
+[0;32mI (11993) TESTE: Segundo 1.5: 636 ticks[0m
+[0;32mI (12093) TESTE: Segundo 1.6: 673 ticks[0m
+[0;32mI (12193) TESTE: Segundo 1.7: 718 ticks[0m
+[0;32mI (12293) TESTE: Segundo 1.8: 759 ticks[0m
+[0;32mI (12393) TESTE: Segundo 1.9: 799 ticks[0m
+[0;32mI (12493) TESTE: Segundo 2.0: 843 ticks[0m
+[0;32mI (12593) TESTE: Segundo 2.1: 883 ticks[0m
+[0;32mI (12693) TESTE: Segundo 2.2: 927 ticks[0m
+[0;32mI (12793) TESTE: Segundo 2.3: 965 ticks[0m
+[0;32mI (12893) TESTE: Segundo 2.4: 1008 ticks[0m
+[0;32mI (12993) TESTE: Segundo 2.5: 1050 ticks[0m
+[0;32mI (13093) TESTE: Segundo 2.6: 1092 ticks[0m
+[0;32mI (13193) TESTE: Segundo 2.7: 1138 ticks[0m
+[0;32mI (13293) TESTE: Segundo 2.8: 1181 ticks[0m
+[0;32mI (13393) TESTE: Segundo 2.9: 1221 ticks[0m
+[0;32mI (13493) TESTE: RESULTADO[0m
+[0;32mI (13493) TESTE: Ticks totais em 3s: 1266[0m
+[0;32mI (13493) TESTE: SUCESSO: Motor esquerdo FUNCIONA bem![0m
+[0;32mI (13493) TESTE: Ticks/s: 422.0[0m
+[0;32mI (15493) CONSIST: ========================================[0m
+[0;32mI (15493) CONSIST:     TESTE 2: CONSISTENCIA PWM[0m
+[0;32mI (15493) CONSIST: ========================================[0m
+[0;32mI (15493) CONSIST: Testando 10 ciclos de 2 segundos cada[0m
+[0;32mI (15503) CICLO: Ciclo 1: 10% PWM[0m
+� (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (67) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b344h ( 45892) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=0001b36c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (156) esp_image: segment 2: paddr=0001d694 vaddr=40080000 size=02984h ( 10628) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11fc8h ( 73672) map[0m
+[0;32mI (192) esp_image: segment 4: paddr=00031ff0 vaddr=40082984 size=0a1d8h ( 41432) load[0m
+[0;32mI (215) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (215) boot: Disabling RNG early entropy source...[0m
+[0;32mI (226) cpu_start: Multicore app[0m
+���29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (67) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b344h ( 45892) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=0001b36c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (156) esp_image: segment 2: paddr=0001d694 vaddr=40080000 size=02984h ( 10628) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11fc8h ( 73672) map[0m
+[0;32mI (192) esp_image: segment 4: paddr=00031ff0 vaddr=40082984 size=0a1d8h ( 41432) load[0m
+[0;32mI (215) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (215) boot: Disabling RNG early entropy source...[0m
+[0;32mI (226) cpu_start: Multicore app[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (32) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b344h ( 45892) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b36c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d694 vaddr=40080000 size=02984h ( 10628) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11fc8h ( 73672) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00031ff0 vaddr=40082984 size=0a1d8h ( 41432) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) cpu_start: Application information:[0m
+[0;32mI (208) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (214) cpu_start: App version:      e18ea92[0m
+[0;32mI (219) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a72d4befa...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) MAIN: ========================================[0m
+[0;32mI (322) MAIN:     DIAGNOSTICO MOTOR ESQUERDO[0m
+[0;32mI (322) MAIN: ========================================[0m
+[0;32mI (332) SEGURANCA: ========================================[0m
+[0;32mI (342) SEGURANCA:        AVISO DE SEGURANCA[0m
+[0;32mI (342) SEGURANCA: ========================================[0m
+[0;32mI (352) SEGURANCA: 1. LEVANTE O ROBÔ COMPLETAMENTE[0m
+[0;32mI (352) SEGURANCA: 2. RODAS DEVEM FICAR LIVRES NO AR[0m
+[0;32mI (362) SEGURANCA: 3. VERIFIQUE QUE NADA OBSTRUI AS RODAS[0m
+[0;32mI (362) SEGURANCA: ========================================[0m
+[0;32mI (372) SEGURANCA: Iniciando em 5...[0m
+[0;32mI (1372) SEGURANCA: Iniciando em 4...[0m
+[0;32mI (2372) SEGURANCA: Iniciando em 3...[0m
+[0;32mI (3372) SEGURANCA: Iniciando em 2...[0m
+[0;32mI (4372) SEGURANCA: Iniciando em 1...[0m
+[0;32mI (5372) FISICO: ========================================[0m
+[0;32mI (5372) FISICO:     TESTE DE CONEXOES FISICAS[0m
+[0;32mI (5372) FISICO: ========================================[0m
+[0;32mI (5372) FISICO: VERIFIQUE:[0m
+[0;32mI (5372) FISICO: 1. Fios do motor esquerdo no L298N[0m
+[0;32mI (5382) FISICO: 2. Jumpers nos pinos ENA e ENB do L298N[0m
+[0;32mI (5392) FISICO: 3. Alimentacao 12V para motores[0m
+[0;32mI (5392) FISICO: 4. GND do ESP32 conectado ao GND do L298N[0m
+[0;32mI (5402) FISICO: 5. Fios do encoder esquerdo (pino 33)[0m
+[0;32mI (5402) FISICO: Aguardando 5s para verificacao...[0m
+[0;32mI (5412) FISICO: 5...[0m
+[0;32mI (6412) FISICO: 4...[0m
+[0;32mI (7412) FISICO: 3...[0m
+[0;32mI (8412) FISICO: 2...[0m
+[0;32mI (9412) FISICO: 1...[0m
+[0;32mI (10412) TESTE: ========================================[0m
+[0;32mI (10412) TESTE:     TESTE 1: MOTOR ESQUERDO 100%[0m
+[0;32mI (10412) TESTE: ========================================[0m
+[0;32mI (10412) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10422) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10432) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (10442) TESTE: SENTIDO PARA FRENTE[0m
+[0;32mI (10442) TESTE: IN3=0, IN4=1, PWM=0% (maximo)[0m
+[0;32mI (10452) TESTE: Motor deve girar AGORA![0m
+[0;32mI (10452) TESTE: Contando ticks por 3 segundos...[0m
+[0;32mI (10462) TESTE: Segundo 0.0: 16 ticks[0m
+[0;32mI (10562) TESTE: Segundo 0.1: 37 ticks[0m
+[0;32mI (10662) TESTE: Segundo 0.2: 71 ticks[0m
+[0;32mI (10762) TESTE: Segundo 0.3: 108 ticks[0m
+[0;32mI (10862) TESTE: Segundo 0.4: 140 ticks[0m
+[0;32mI (10962) TESTE: Segundo 0.5: 175 ticks[0m
+[0;32mI (11062) TESTE: Segundo 0.6: 206 ticks[0m
+[0;32mI (11162) TESTE: Segundo 0.7: 243 ticks[0m
+[0;32mI (11262) TESTE: Segundo 0.8: 274 ticks[0m
+[0;32mI (11362) TESTE: Segundo 0.9: 304 ticks[0m
+[0;32mI (11462) TESTE: Segundo 1.0: 340 ticks[0m
+[0;32mI (11562) TESTE: Segundo 1.1: 374 ticks[0m
+[0;32mI (11662) TESTE: Segundo 1.2: 404 ticks[0m
+[0;32mI (11762) TESTE: Segundo 1.3: 435 ticks[0m
+[0;32mI (11862) TESTE: Segundo 1.4: 467 ticks[0m
+[0;32mI (11962) TESTE: Segundo 1.5: 500 ticks[0m
+[0;32mI (12062) TESTE: Segundo 1.6: 534 ticks[0m
+[0;32mI (12162) TESTE: Segundo 1.7: 566 ticks[0m
+[0;32mI (12262) TESTE: Segundo 1.8: 598 ticks[0m
+[0;32mI (12362) TESTE: Segundo 1.9: 635 ticks[0m
+[0;32mI (12462) TESTE: Segundo 2.0: 668 ticks[0m
+[0;32mI (12562) TESTE: Segundo 2.1: 701 ticks[0m
+[0;32mI (12662) TESTE: Segundo 2.2: 736 ticks[0m
+[0;32mI (12762) TESTE: Segundo 2.3: 771 ticks[0m
+[0;32mI (12862) TESTE: Segundo 2.4: 808 ticks[0m
+[0;32mI (12962) TESTE: Segundo 2.5: 839 ticks[0m
+[0;32mI (13062) TESTE: Segundo 2.6: 870 ticks[0m
+[0;32mI (13162) TESTE: Segundo 2.7: 905 ticks[0m
+[0;32mI (13262) TESTE: Segundo 2.8: 938 ticks[0m
+[0;32mI (13362) TESTE: Segundo 2.9: 973 ticks[0m
+[0;32mI (13462) TESTE: RESULTADO[0m
+[0;32mI (13462) TESTE: Ticks totais em 3s: 1006[0m
+[0;32mI (13462) TESTE: SUCESSO: Motor esquerdo FUNCIONA bem![0m
+[0;32mI (13462) TESTE: Ticks/s: 335.3[0m
+[0;32mI (15462) CONSIST: ========================================[0m
+[0;32mI (15462) CONSIST:     TESTE 2: CONSISTENCIA PWM[0m
+[0;32mI (15462) CONSIST: ========================================[0m
+[0;32mI (15462) CONSIST: Testando 10 ciclos de 2 segundos cada[0m
+[0;32mI (15472) CICLO: Ciclo 1: 10% PWM[0m
+[0;32mI (17472) RESULT: Ciclo 1: 0 ticks (0.0/s)[0m
+[0;32mI (18472) CICLO: Ciclo 2: 20% PWM[0m
+[0;32mI (20472) RESULT: Ciclo 2: 0 ticks (0.0/s)[0m
+[0;32mI (21472) CICLO: Ciclo 3: 30% PWM[0m
+[0;32mI (23472) RESULT: Ciclo 3: 388 ticks (194.0/s)[0m
+[0;32mI (24472) CICLO: Ciclo 4: 40% PWM[0m
+[0;32mI (26472) RESULT: Ciclo 4: 439 ticks (219.5/s)[0m
+[0;32mI (27472) CICLO: Ciclo 5: 50% PWM[0m
+[0;32mI (29472) RESULT: Ciclo 5: 489 ticks (244.5/s)[0m
+[0;32mI (30472) CICLO: Ciclo 6: 30% PWM[0m
+[0;32mI (32472) RESULT: Ciclo 6: 0 ticks (0.0/s)[0m
+[0;32mI (33472) CICLO: Ciclo 7: 30% PWM[0m
+[0;32mI (35472) RESULT: Ciclo 7: 0 ticks (0.0/s)[0m
+[0;32mI (35472) VAR: Variacao: nan% da media[0m
+[0;32mI (35472) VAR: OTIMO: Muito consistente[0m
+[0;32mI (36472) CICLO: Ciclo 8: 30% PWM[0m
+[0;32mI (38472) RESULT: Ciclo 8: 0 ticks (0.0/s)[0m
+[0;32mI (38472) VAR: Variacao: nan% da media[0m
+[0;32mI (38472) VAR: OTIMO: Muito consistente[0m
+[0;32mI (39472) CICLO: Ciclo 9: 30% PWM[0m
+[0;32mI (41472) RESULT: Ciclo 9: 0 ticks (0.0/s)[0m
+[0;32mI (41472) VAR: Variacao: nan% da media[0m
+[0;32mI (41472) VAR: OTIMO: Muito consistente[0m
+[0;32mI (42472) CICLO: Ciclo 10: 30% PWM[0m
+[0;32mI (44472) RESULT: Ciclo 10: 0 ticks (0.0/s)[0m
+[0;32mI (44472) VAR: Variacao: nan% da media[0m
+[0;32mI (44472) VAR: OTIMO: Muito consistente[0m
+[0;32mI (45472) CONSIST: Media final em 30% PWM: 0.0 ticks/s[0m
+[0;32mI (45472) COMP: ========================================[0m
+[0;32mI (45472) COMP:     TESTE 3: COMPARACAO MOTORES[0m
+[0;32mI (45472) COMP: ========================================[0m
+[0;32mI (45482) SETUP: Configurando hardware completo...[0m
+[0;32mI (45482) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (45492) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;31mE (45502) gpio: gpio_install_isr_service(508): GPIO isr service already installed[0m
+[0;32mI (45512) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (45522) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (45532) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (45542) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (45552) SETUP: Hardware configurado com sucesso[0m
+[0;32mI (45552) COMP: Testando ambos motores com 30% PWM[0m
+[0;32mI (45562) COMP: LEVANTE O ROBO (rodas livres)[0m
+[0;32mI (48562) COMP: Repeticao 1[0m
+[0;32mI (51562) COMP: ESQ: 0 ticks (0.0/s)[0m
+[0;32mI (51562) COMP: DIR: 583 ticks (194.3/s)[0m
+[0;32mI (51562) COMP: Relacao DIR/ESQ: inf[0m
+[0;31mE (51562) COMP: FALHA: MOTOR ESQUERDO PARADO![0m
+[0;31mE (51562) COMP: Problema GRAVE no circuito esquerdo[0m
+[0;32mI (53572) COMP: Repeticao 2[0m
+[0;32mI (56572) COMP: ESQ: 0 ticks (0.0/s)[0m
+[0;32mI (56572) COMP: DIR: 637 ticks (212.3/s)[0m
+[0;32mI (56572) COMP: Relacao DIR/ESQ: inf[0m
+[0;31mE (56572) COMP: FALHA: MOTOR ESQUERDO PARADO![0m
+[0;31mE (56572) COMP: Problema GRAVE no circuito esquerdo[0m
+[0;32mI (58582) COMP: Repeticao 3[0m
+[0;32mI (61582) COMP: ESQ: 0 ticks (0.0/s)[0m
+[0;32mI (61582) COMP: DIR: 679 ticks (226.3/s)[0m
+[0;32mI (61582) COMP: Relacao DIR/ESQ: inf[0m
+[0;31mE (61582) COMP: FALHA: MOTOR ESQUERDO PARADO![0m
+[0;31mE (61582) COMP: Problema GRAVE no circuito esquerdo[0m
+[0;32mI (63592) COMP: ========================================[0m
+[0;32mI (63592) COMP:     CALCULO DE COMPENSACAO[0m
+[0;32mI (63592) COMP: ========================================[0m
+[0;32mI (63592) SETUP: Configurando hardware completo...[0m
+[0;32mI (63602) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (63612) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;31mE (63622) gpio: gpio_install_isr_service(508): GPIO isr service already installed[0m
+[0;32mI (63622) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (63632) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (63642) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (63652) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (63662) SETUP: Hardware configurado com sucesso[0m
+[0;32mI (65672) COMP: Resultados:[0m
+[0;32mI (65672) COMP: Ticks ESQ: 488[0m
+[0;32mI (65672) COMP: Ticks DIR: 625[0m
+[0;32mI (65672) COMP: Fator de compensacao: 0.781[0m
+[0;32mI (65672) COMP: [0m
+[0;32mI (65672) COMP: PARA USAR NO SEU CODIGO:[0m
+[0;32mI (65682) COMP: float fator_compensacao = 0.781;[0m
+[0;32mI (65682) COMP: [0m
+[0;32mI (65682) COMP: Motor direito e mais rapido[0m
+[0;32mI (65692) COMP: Ajuste: esquerdo = 78% do direito[0m
+[0;32mI (65692) MAIN: ========================================[0m
+[0;32mI (65702) MAIN:     CONCLUSÃO[0m
+[0;32mI (65702) MAIN: ========================================[0m
+[0;32mI (65712) MAIN: 1. Motor esquerdo funciona? (Teste 1)[0m
+[0;32mI (65722) MAIN: 2. E consistente? (Teste 2)[0m
+[0;32mI (65722) MAIN: 3. Comparado ao direito? (Teste 3)[0m
+[0;32mI (65732) MAIN: 4. Fator de compensacao calculado[0m
+[0;32mI (65732) MAIN: [0m
+[0;32mI (65732) MAIN: Se todos os testes passaram:[0m
+[0;32mI (65742) MAIN:  - Use o fator de compensacao no seu codigo[0m
+[0;32mI (65752) MAIN: [0m
+[0;32mI (65752) MAIN: Se algum teste falhou:[0m
+[0;32mI (65752) MAIN:  - Verifique conexoes fisicas[0m
+[0;32mI (65762) MAIN:  - Verifique alimentacao 12V[0m
+[0;32mI (65762) MAIN:  - Verifique motor/L298N[0m
+[0;32mI (65772) MAIN: ========================================[0m

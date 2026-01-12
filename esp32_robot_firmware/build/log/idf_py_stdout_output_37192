@@ -1,0 +1,212 @@
+Rձ�29 2019 12:21:46
+
+rst:0x1 (POWERON_RESEets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a990h (108944) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002a9b8 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002f01c vaddr=40080000 size=00ffch (  4092) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93418h (603160) map[0m
+[0;32mI (364) esp_image: segment 4: paddr=000c3440 vaddr=40080ffc size=166ach ( 91820) load[0m
+[0;32mI (412) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (412) boot: Disabling RNG early entropy source...[0m
+[0;32mI (423) cpu_start: Multicore app[0m
+[0;32mI (433) cpu_start: Pro cpu start user code[0m
+[0;32mI (433) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (433) cpu_start: Application information:[0m
+[0;32mI (436) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (442) cpu_start: App version:      e18ea92[0m
+[0;32mI (447) cpu_start: Compile time:     Jan  7 2026 11:36:47[0m
+[0;32mI (453) cpu_start: ELF file SHA256:  c7ae30f19...[0m
+[0;32mI (458) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (465) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (469) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (474) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (479) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (486) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFBB0F8 len 00024F08 (147 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (505) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 400976A8 len 00008958 (34 KiB): IRAM[0m
+[0;32mI (519) spi_flash: detected chip: generic[0m
+[0;32mI (522) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) main_task: Started on CPU0[0m
+[0;32mI (550) main_task: Calling app_main()[0m
+[0;32mI (590) wifi:wifi driver task: 3ffc323c, prio:23, stack:6656, core=0[0m
+[0;32mI (600) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (600) wifi:wifi certification version: v7.0[0m
+[0;32mI (600) wifi:config NVS flash: enabled[0m
+[0;32mI (600) wifi:config nano formating: disabled[0m
+[0;32mI (610) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (610) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (620) wifi:Init management short buffer num: 32[0m
+[0;32mI (620) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (620) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (630) wifi:Init static rx buffer num: 10[0m
+[0;32mI (630) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (640) wifi_init: rx ba win: 6[0m
+[0;32mI (640) wifi_init: tcpip mbox: 32[0m
+[0;32mI (640) wifi_init: udp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp tx win: 5760[0m
+[0;32mI (660) wifi_init: tcp rx win: 5760[0m
+[0;32mI (660) wifi_init: tcp mss: 1440[0m
+[0;32mI (660) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (670) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (670) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (680) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (770) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (770) wifi:enable tsf[0m
+[0;32mI (780) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (780) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (790) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (800) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (810) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (820) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (830) main_task: Returned from app_main()[0m
+[0;32mI (830) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (840) wifi:state: init -> auth (b0)[0m
+[0;32mI (850) wifi:state: auth -> assoc (0)[0m
+[0;32mI (860) wifi:state: assoc -> run (10)[0m
+[0;32mI (910) wifi:connected with Calebe, aid = 5, channel 1, BW20, bssid = 9e:18:b6:c8:60:4e[0m
+[0;32mI (910) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (920) wifi:pm start, type: 1[0m
+
+[0;32mI (920) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (930) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (930) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1280) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (1780) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (1930) esp_netif_handlers: sta ip: 10.243.102.207, mask: 255.255.255.0, gw: 10.243.102.152[0m
+[0;32mI (1940) wifi:<ba-add>idx:0 (ifx:0, 9e:18:b6:c8:60:4e), tid:0, ssn:3, winSize:64[0m
+[0;32mI (2280) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (2780) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (3280) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (3780) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (4280) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (4780) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (5280) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (5780) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (6280) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (6780) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (7280) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (7780) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (8280) CTRL: Set:19.6 | Vel:0.0/0.0 | Pwr:14/14 | Ticks:0/0[0m
+[0;32mI (8780) CTRL: Set:19.6 | Vel:12.8/11.9 | Pwr:16/18 | Ticks:9/8[0m
+[0;32mI (9280) CTRL: Set:19.6 | Vel:12.1/12.0 | Pwr:20/20 | Ticks:17/17[0m
+[0;32mI (9780) CTRL: Set:19.6 | Vel:20.7/20.7 | Pwr:16/16 | Ticks:29/29[0m
+[0;32mI (10280) CTRL: Set:19.6 | Vel:15.4/28.4 | Pwr:19/12 | Ticks:37/41[0m
+[0;32mI (10780) CTRL: Set:19.6 | Vel:24.8/21.1 | Pwr:13/15 | Ticks:50/49[0m
+[0;32mI (11280) CTRL: Set:19.6 | Vel:18.1/15.4 | Pwr:16/18 | Ticks:58/57[0m
+[0;32mI (11780) CTRL: Set:0.0 | Vel:6.8/5.8 | Pwr:-4/-3 | Ticks:62/61[0m
+[0;32mI (12280) CTRL: Set:0.0 | Vel:1.3/1.1 | Pwr:-1/-1 | Ticks:62/61[0m
+[0;32mI (12780) CTRL: Set:19.6 | Vel:14.8/7.6 | Pwr:16/19 | Ticks:68/65[0m
+[0;32mI (13280) CTRL: Set:19.6 | Vel:16.4/22.9 | Pwr:17/14 | Ticks:77/78[0m
+[0;32mI (13780) CTRL: Set:19.6 | Vel:27.8/17.7 | Pwr:12/17 | Ticks:90/86[0m
+[0;32mI (14280) CTRL: Set:19.6 | Vel:5.5/3.5 | Pwr:9/11 | Ticks:90/86[0m
+[0;32mI (14780) CTRL: Set:19.6 | Vel:7.3/16.2 | Pwr:6/0 | Ticks:94/94[0m
+[0;32mI (15280) CTRL: Set:19.6 | Vel:25.9/3.2 | Pwr:9/19 | Ticks:103/94[0m
+[0;32mI (15780) CTRL: Set:19.6 | Vel:22.6/21.5 | Pwr:13/14 | Ticks:111/107[0m
+[0;32mI (16280) CTRL: Set:19.6 | Vel:19.5/17.4 | Pwr:14/17 | Ticks:120/115[0m
+[0;32mI (16780) CTRL: Set:19.6 | Vel:16.4/28.0 | Pwr:17/11 | Ticks:128/128[0m
+[0;32mI (17280) CTRL: Set:19.6 | Vel:27.8/21.0 | Pwr:12/14 | Ticks:141/136[0m
+[0;32mI (17780) CTRL: Set:19.6 | Vel:18.1/17.3 | Pwr:17/18 | Ticks:148/144[0m
+[0;32mI (18280) CTRL: Set:19.6 | Vel:28.2/14.5 | Pwr:11/19 | Ticks:161/153[0m
+[0;32mI (18780) CTRL: Set:19.6 | Vel:20.4/18.1 | Pwr:16/17 | Ticks:168/164[0m
+[0;32mI (19280) CTRL: Set:19.6 | Vel:15.3/14.7 | Pwr:19/18 | Ticks:176/173[0m
+[0;32mI (19780) CTRL: Set:19.6 | Vel:27.7/12.3 | Pwr:12/20 | Ticks:190/182[0m
+[0;32mI (20280) CTRL: Set:19.6 | Vel:21.0/20.7 | Pwr:15/16 | Ticks:198/194[0m
+[0;32mI (20780) CTRL: Set:19.6 | Vel:14.8/19.0 | Pwr:18/15 | Ticks:206/204[0m
+[0;32mI (21280) CTRL: Set:19.6 | Vel:24.0/24.9 | Pwr:14/13 | Ticks:218/215[0m
+[0;32mI (21780) CTRL: Set:19.6 | Vel:20.1/18.1 | Pwr:16/16 | Ticks:227/223[0m
+[0;32mI (22280) CTRL: Set:19.6 | Vel:15.2/14.7 | Pwr:19/18 | Ticks:235/232[0m
+[0;32mI (22780) CTRL: Set:19.6 | Vel:24.7/24.4 | Pwr:13/14 | Ticks:248/244[0m
+[0;32mI (23280) CTRL: Set:19.6 | Vel:18.1/17.4 | Pwr:16/17 | Ticks:256/252[0m
+[0;32mI (23780) CTRL: Set:19.6 | Vel:14.3/25.0 | Pwr:20/13 | Ticks:264/264[0m
+[0;32mI (24280) CTRL: Set:0.0 | Vel:10.9/18.1 | Pwr:-7/-11 | Ticks:272/272[0m
+[0;32mI (24780) CTRL: Set:0.0 | Vel:2.1/3.6 | Pwr:-1/-2 | Ticks:272/272[0m
+[0;32mI (25280) CTRL: Set:-19.6 | Vel:-6.1/-5.8 | Pwr:-19/-19 | Ticks:269/269[0m
+[0;32mI (25780) CTRL: Set:-19.6 | Vel:-19.6/-19.4 | Pwr:-15/-16 | Ticks:257/257[0m
+[0;32mI (26280) CTRL: Set:0.0 | Vel:-15.1/-15.0 | Pwr:9/9 | Ticks:249/249[0m
+[0;32mI (26780) CTRL: Set:-19.6 | Vel:-3.0/-3.0 | Pwr:-18/-18 | Ticks:249/249[0m
+[0;32mI (27280) CTRL: Set:-19.6 | Vel:-21.3/-14.2 | Pwr:-14/-18 | Ticks:237/239[0m
+[0;32mI (27780) CTRL: Set:-19.6 | Vel:-15.0/-24.3 | Pwr:-20/-14 | Ticks:230/227[0m
+[0;32mI (28280) CTRL: Set:-19.6 | Vel:-21.2/-18.0 | Pwr:-16/-17 | Ticks:218/219[0m
+[0;32mI (28780) CTRL: Set:-19.6 | Vel:-15.6/-25.1 | Pwr:-19/-13 | Ticks:210/207[0m
+[0;32mI (29280) CTRL: Set:-19.6 | Vel:-21.4/-18.1 | Pwr:-15/-16 | Ticks:198/199[0m
+[0;32mI (29780) CTRL: Set:-19.6 | Vel:-13.6/-21.7 | Pwr:-20/-14 | Ticks:191/188[0m
+[0;32mI (30280) CTRL: Set:-19.6 | Vel:-18.4/-17.5 | Pwr:-18/-18 | Ticks:180/180[0m
+[0;32mI (30780) CTRL: Set:-19.6 | Vel:-25.2/-28.0 | Pwr:-14/-12 | Ticks:168/167[0m
+[0;32mI (31280) CTRL: Set:-19.6 | Vel:-18.1/-21.0 | Pwr:-17/-15 | Ticks:160/159[0m
+[0;32mI (31780) CTRL: Set:-19.6 | Vel:-15.0/-14.9 | Pwr:-18/-18 | Ticks:151/151[0m
+[0;32mI (32280) CTRL: Set:-19.6 | Vel:-23.1/-20.0 | Pwr:-14/-16 | Ticks:139/140[0m
+[0;32mI (32780) CTRL: Set:-19.6 | Vel:-17.7/-17.8 | Pwr:-18/-18 | Ticks:131/131[0m
+[0;32mI (33280) CTRL: Set:-19.6 | Vel:-25.0/-25.0 | Pwr:-14/-14 | Ticks:119/119[0m
+[0;32mI (33780) CTRL: Set:-19.6 | Vel:-18.1/-16.0 | Pwr:-17/-19 | Ticks:111/112[0m
+[0;32mI (34280) CTRL: Set:-19.6 | Vel:-14.7/-21.4 | Pwr:-18/-15 | Ticks:102/100[0m
+[0;32mI (34780) CTRL: Set:-19.6 | Vel:-23.1/-16.7 | Pwr:-14/-18 | Ticks:90/92[0m
+[0;32mI (35280) CTRL: Set:-19.6 | Vel:-4.6/-6.6 | Pwr:-14/-10 | Ticks:90/88[0m
+[0;32mI (35780) CTRL: Set:0.0 | Vel:-10.0/-20.3 | Pwr:6/12 | Ticks:83/79[0m
+[0;32mI (36280) CTRL: Set:0.0 | Vel:-2.0/-4.0 | Pwr:1/2 | Ticks:83/79[0m
+[0;32mI (36780) CTRL: Set:0.0 | Vel:-0.4/-0.8 | Pwr:0/0 | Ticks:83/79[0m
+[0;32mI (37280) CTRL: Set:0.0 | Vel:-0.1/-0.2 | Pwr:0/0 | Ticks:83/79[0m
+[0;32mI (37780) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:83/79[0m
+[0;32mI (38280) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:83/79[0m
+[0;32mI (38780) CTRL: Set:-19.6 | Vel:-21.5/-8.7 | Pwr:-11/-18 | Ticks:75/75[0m
+[0;32mI (39280) CTRL: Set:-19.6 | Vel:-19.1/-22.6 | Pwr:-14/-13 | Ticks:67/62[0m
+[0;32mI (39780) CTRL: Set:-19.6 | Vel:-16.4/-19.3 | Pwr:-18/-16 | Ticks:59/54[0m
+[0;32mI (40280) CTRL: Set:-19.6 | Vel:-5.7/-6.7 | Pwr:-11/-10 | Ticks:56/51[0m
+[0;32mI (40780) CTRL: Set:-19.0 | Vel:-15.9/-18.8 | Pwr:-14/-13 | Ticks:48/43[0m
+[0;32mI (41280) CTRL: Set:0.0 | Vel:-6.5/-7.1 | Pwr:4/4 | Ticks:45/40[0m
+[0;32mI (41780) CTRL: Set:0.0 | Vel:-1.3/-1.4 | Pwr:1/1 | Ticks:45/40[0m
+[0;32mI (42280) CTRL: Set:19.0 | Vel:7.1/19.1 | Pwr:20/13 | Ticks:49/48[0m
+[0;32mI (42780) CTRL: Set:19.0 | Vel:19.7/18.6 | Pwr:16/16 | Ticks:61/56[0m
+[0;32mI (43280) CTRL: Set:19.0 | Vel:15.1/14.4 | Pwr:18/18 | Ticks:69/64[0m
+[0;32mI (43780) CTRL: Set:19.0 | Vel:24.0/19.6 | Pwr:14/16 | Ticks:81/75[0m
+[0;32mI (44280) CTRL: Set:19.0 | Vel:20.1/15.1 | Pwr:15/18 | Ticks:90/83[0m
+[0;32mI (44780) CTRL: Set:19.0 | Vel:16.6/24.0 | Pwr:17/14 | Ticks:98/95[0m
+[0;32mI (45280) CTRL: Set:19.0 | Vel:24.4/17.9 | Pwr:13/16 | Ticks:110/103[0m
+[0;32mI (45780) CTRL: Set:19.0 | Vel:20.3/24.3 | Pwr:15/14 | Ticks:118/114[0m
+[0;32mI (46280) CTRL: Set:19.0 | Vel:15.2/18.0 | Pwr:18/16 | Ticks:126/122[0m
+[0;32mI (46780) CTRL: Set:17.1 | Vel:13.8/14.2 | Pwr:17/17 | Ticks:135/130[0m
+[0;32mI (47280) CTRL: Set:12.4 | Vel:13.8/12.6 | Pwr:15/15 | Ticks:142/137[0m
+[0;32mI (47780) CTRL: Set:11.2 | Vel:7.3/7.0 | Pwr:17/17 | Ticks:146/141[0m
+[0;32mI (48280) CTRL: Set:10.1 | Vel:14.1/11.5 | Pwr:13/15 | Ticks:153/147[0m
+[0;32mI (48780) CTRL: Set:0.0 | Vel:10.1/17.7 | Pwr:-6/-11 | Ticks:157/154[0m
+[0;32mI (49280) CTRL: Set:10.1 | Vel:2.0/3.5 | Pwr:8/4 | Ticks:157/154[0m
+[0;32mI (49780) CTRL: Set:10.1 | Vel:0.4/0.7 | Pwr:18/13 | Ticks:157/154[0m
+[0;32mI (50280) CTRL: Set:10.1 | Vel:7.7/6.4 | Pwr:17/16 | Ticks:163/158[0m
+[0;32mI (50780) CTRL: Set:10.1 | Vel:13.1/5.8 | Pwr:13/18 | Ticks:170/162[0m
+[0;32mI (51280) CTRL: Set:10.1 | Vel:7.3/9.1 | Pwr:17/16 | Ticks:173/168[0m
+[0;32mI (51780) CTRL: Set:10.1 | Vel:12.6/5.8 | Pwr:14/18 | Ticks:180/172[0m
+[0;32mI (52280) CTRL: Set:10.1 | Vel:7.2/14.1 | Pwr:17/13 | Ticks:183/180[0m
+[0;32mI (52780) CTRL: Set:10.1 | Vel:16.7/10.2 | Pwr:12/15 | Ticks:191/184[0m
+[0;32mI (53280) CTRL: Set:10.1 | Vel:9.8/6.0 | Pwr:16/18 | Ticks:194/187[0m
+[0;32mI (53780) CTRL: Set:10.1 | Vel:14.3/10.6 | Pwr:14/15 | Ticks:200/194[0m
+[0;32mI (54280) CTRL: Set:10.1 | Vel:9.1/6.1 | Pwr:16/19 | Ticks:204/197[0m
+[0;32mI (54780) CTRL: Set:10.1 | Vel:14.2/11.6 | Pwr:14/15 | Ticks:210/204[0m
+[0;32mI (55280) CTRL: Set:10.1 | Vel:9.1/6.3 | Pwr:16/19 | Ticks:214/207[0m

@@ -1,0 +1,335 @@
+ Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RES�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a9c0h (108992) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002a9e8 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002f04c vaddr=40080000 size=00fcch (  4044) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93194h (602516) map[0m
+[0;32mI (364) esp_image: segment 4: paddr=000c31bc vaddr=40080fcc size=165ech ( 91628) load[0m
+[0;32mI (412) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (412) boot: Disabling RNG early entropy source...[0m
+[0;32mI (423) cpu_start: Multicore app[0m
+[0;32mI (433) cpu_start: Pro cpu start user code[0m
+[0;32mI (433) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (433) cpu_start: Application information:[0m
+[0;32mI (436) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (442) cpu_start: App version:      e18ea92[0m
+[0;32mI (447) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (453) cpu_start: ELF file SHA256:  4d729ce72...[0m
+[0;32mI (458) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (464) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (469) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (474) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (479) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (486) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFBB108 len 00024EF8 (147 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (504) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 400975B8 len 00008A48 (34 KiB): IRAM[0m
+[0;32mI (519) spi_flash: detected chip: generic[0m
+[0;32mI (522) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) main_task: Started on CPU0[0m
+[0;32mI (550) main_task: Calling app_main()[0m
+[0;32mI (590) wifi:wifi driver task: 3ffc324c, prio:23, stack:6656, core=0[0m
+[0;32mI (600) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (600) wifi:wifi certification version: v7.0[0m
+[0;32mI (600) wifi:config NVS flash: enabled[0m
+[0;32mI (600) wifi:config nano formating: disabled[0m
+[0;32mI (610) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (610) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (620) wifi:Init management short buffer num: 32[0m
+[0;32mI (620) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (620) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (630) wifi:Init static rx buffer num: 10[0m
+[0;32mI (630) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (640) wifi_init: rx ba win: 6[0m
+[0;32mI (640) wifi_init: tcpip mbox: 32[0m
+[0;32mI (640) wifi_init: udp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp tx win: 5760[0m
+[0;32mI (660) wifi_init: tcp rx win: 5760[0m
+[0;32mI (660) wifi_init: tcp mss: 1440[0m
+[0;32mI (660) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (670) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (670) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (680) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (770) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (780) wifi:enable tsf[0m
+[0;32mI (780) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (780) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (790) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (800) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (810) wifi:new:<2,0>, old:<1,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (820) wifi:state: init -> auth (b0)[0m
+[0;32mI (820) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (820) wifi:state: auth -> assoc (0)[0m
+[0;32mI (830) wifi:state: assoc -> init (4a0)[0m
+[0;32mI (840) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (850) wifi:new:<2,0>, old:<2,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (860) main_task: Returned from app_main()[0m
+[0;32mI (1810) ODOM_CHECK: X: 0.00 | Ticks_E: 0[0m
+[0;32mI (2810) ODOM_CHECK: X: 0.00 | Ticks_E: 0[0m
+[0;32mI (3370) wifi:new:<2,0>, old:<2,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (3370) wifi:state: init -> auth (b0)[0m
+[0;32mI (3380) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3380) wifi:state: assoc -> run (10)[0m
+[0;32mI (3410) wifi:connected with MOB-ALTOS, aid = 21, channel 2, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (3410) wifi:security: WPA2-PSK, phy: bgn, rssi: -65[0m
+[0;32mI (3410) wifi:pm start, type: 1[0m
+
+[0;32mI (3410) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3470) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3810) ODOM_CHECK: X: 0.00 | Ticks_E: 0[0m
+[0;32mI (4810) ODOM_CHECK: X: 0.00 | Ticks_E: 0[0m
+[0;32mI (5810) ODOM_CHECK: X: 0.00 | Ticks_E: 0[0m
+[0;32mI (6430) esp_netif_handlers: sta ip: 192.168.18.158, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (6430) ROBOT_CORE: Conectado! IP: 192.168.18.158[0m
+[0;32mI (6580) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:5, winSize:64[0m
+[0;32mI (6810) ODOM_CHECK: X: 0.00 | Ticks_E: 0[0m
+[0;32mI (7810) ODOM_CHECK: X: 0.09 | Ticks_E: 120[0m
+[0;32mI (8810) ODOM_CHECK: X: 0.19 | Ticks_E: 277[0m
+[0;32mI (9810) ODOM_CHECK: X: 0.30 | Ticks_E: 431[0m
+[0;32mI (10810) ODOM_CHECK: X: 0.40 | Ticks_E: 585[0m
+[0;32mI (11810) ODOM_CHECK: X: 0.51 | Ticks_E: 740[0m
+[0;32mI (12810) ODOM_CHECK: X: 0.61 | Ticks_E: 891[0m
+[0;32mI (13810) ODOM_CHECK: X: 0.71 | Ticks_E: 1046[0m
+[0;32mI (14810) ODOM_CHECK: X: 0.82 | Ticks_E: 1192[0m
+[0;32mI (15810) ODOM_CHECK: X: 0.92 | Ticks_E: 1348[0m
+[0;32mI (16810) ODOM_CHECK: X: 1.02 | Ticks_E: 1503[0m
+[0;32mI (17810) ODOM_CHECK: X: 1.13 | Ticks_E: 1661[0m
+[0;32mI (18810) ODOM_CHECK: X: 1.22 | Ticks_E: 1797[0m
+[0;32mI (19810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (20810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (21810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (22810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (23810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (24810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (25810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (26810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (27810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (28810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (29810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (30810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (31810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (32810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (33810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (34810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (35810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (36810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (37810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (38810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (39810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (40810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (41810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (42810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (43810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (44810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (45810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (46810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (47810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (48810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (49810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (50810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (51810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (52810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (53810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (54810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (55810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (56810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (57810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (58810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (59810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (60810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (61810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (62810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (63810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (64810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (65810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (66810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (67810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (68810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (69810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (70810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (71810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (72810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (73810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (74810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (75810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (76810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (77810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (78810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (79810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (80810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (81810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (82810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (83810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (84810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (85810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (86810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (87810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (88810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (89810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (90810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (91810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (92810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (93810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (94810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (95810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (96810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (97810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (98810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (99810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (100810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (101810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (102810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (103810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (104810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (105810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (106810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (107810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (108810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (109810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (110810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (111810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (112810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (113810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (114810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (115810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (116810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (117810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (118810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (119810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (120810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (121810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (122810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (123810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (124810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (125810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (126810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (127810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (128810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (129810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;33mW (130620) wifi:[ADDBA]rx delba, code:1, delete tid:0[0m
+[0;32mI (130620) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (130810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (130810) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:3536, winSize:64[0m
+[0;32mI (131810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (132810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (133810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (134810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (135810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (136810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (137810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (138810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (139810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (140810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (141810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (142810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (143810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (144810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (145810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (146810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (147810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (148810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (149810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (150810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (151810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (152810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (153810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (154810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (155810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (156810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (157810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (158810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (159810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (160810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (161810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (162810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (163810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (164810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (165810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (166810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (167810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (168810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (169810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (170810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (171810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (172810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (173810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (174810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (175810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (176810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (177810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (178810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (179810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (180810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (181810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (182810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (183810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (184810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (185810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (186810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (187810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (188810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (189810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (190810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (191810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (192810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (193810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (194810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (195810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (196810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (197810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (198810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (199810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (200810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (201810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (202810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (203810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (204810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (205810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (206810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (207810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (208810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (209810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (210810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (211810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (212810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (213810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (214810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (215810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (216810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (217810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (218810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (219810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (220810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (221810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (222810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (223810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m
+[0;32mI (224810) ODOM_CHECK: X: 1.23 | Ticks_E: 1813[0m

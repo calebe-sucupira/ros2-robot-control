@@ -1,0 +1,73 @@
+[0/2] Re-checking globbed directories...
+[1/5] cd /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/esp-idf/esptool_py && /home/calebe/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/calebe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/partition_table/partition-table.bin /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/esp32_robot_firmware.bin
+esp32_robot_firmware.bin binary size 0xcacc0 bytes. Smallest app partition is 0x100000 bytes. 0x35340 bytes (21%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/bootloader/esp-idf/esptool_py && /home/calebe/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/calebe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/bootloader/bootloader.bin
+Bootloader binary size 0x68c0 bytes. 0x740 bytes (6%) free.
+[2/3] cd /home/calebe/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/calebe/esp/esp-idf -D "SERIAL_TOOL=/home/calebe/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/calebe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build -P /home/calebe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 esp32_robot_firmware.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port /dev/ttyACM0
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ec:e3:34:48:40:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000dafff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26816 bytes to 16424...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000789f... (100 %)
+Wrote 26816 bytes (16424 compressed) at 0x00001000 in 0.5 seconds (effective 415.6 kbit/s)...
+Hash of data verified.
+Compressed 830656 bytes to 525225...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cc00... (6 %)
+Writing at 0x00025740... (9 %)
+Writing at 0x00030afc... (12 %)
+Writing at 0x000365d6... (15 %)
+Writing at 0x0003ced5... (18 %)
+Writing at 0x00042988... (21 %)
+Writing at 0x00048355... (24 %)
+Writing at 0x0004e11e... (27 %)
+Writing at 0x000538ea... (30 %)
+Writing at 0x0005951f... (33 %)
+Writing at 0x0005f2c0... (36 %)
+Writing at 0x00064ed5... (39 %)
+Writing at 0x0006ae6c... (42 %)
+Writing at 0x00070909... (45 %)
+Writing at 0x00076a88... (48 %)
+Writing at 0x0007bf1b... (51 %)
+Writing at 0x00081b14... (54 %)
+Writing at 0x00087647... (57 %)
+Writing at 0x0008ce61... (60 %)
+Writing at 0x0009252f... (63 %)
+Writing at 0x000983a1... (66 %)
+Writing at 0x0009ddb8... (69 %)
+Writing at 0x000a3a47... (72 %)
+Writing at 0x000a95a8... (75 %)
+Writing at 0x000aedc2... (78 %)
+Writing at 0x000b52c1... (81 %)
+Writing at 0x000bd981... (84 %)
+Writing at 0x000c3703... (87 %)
+Writing at 0x000c9480... (90 %)
+Writing at 0x000cefee... (93 %)
+Writing at 0x000d4f19... (96 %)
+Writing at 0x000da6ac... (100 %)
+Wrote 830656 bytes (525225 compressed) at 0x00010000 in 11.8 seconds (effective 562.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1451.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

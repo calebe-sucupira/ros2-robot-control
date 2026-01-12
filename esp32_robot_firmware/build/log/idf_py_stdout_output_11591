@@ -1,0 +1,1158 @@
+d on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a29ch ( 41628) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2c4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c5fc vaddr=40080000 size=03a1ch ( 14876) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=111a8h ( 70056) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000311d0 vaddr=40083a1c size=09180h ( 37248) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (209) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  94b235806...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB9C len 00013464 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+
+--- MODO DE CALIBRACAO ---
+1. Marque uma linha no chão na frente da roda.
+2. Empurre o robô para frente EXATAMENTE 1 metro (ou 10 voltas da roda).
+3. Anote o valor final dos contadores.
+
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: -66 | Dir: 0
+Esq: -66 | Dir: -96
+Esq: -133 | Dir: -168
+Esq: -226 | Dir: -241
+Esq: -315 | Dir: -308
+Esq: -403 | Dir: -375
+Esq: -498 | Dir: -439
+Esq: -551 | Dir: -502
+Esq: -551 | Dir: -502
+Esq: -939 | Dir: -524
+Esq: -954 | Dir: -531
+Esq: -954 | Dir: -531
+Esq: -997 | Dir: -632
+Esq: -1071 | Dir: -685
+Esq: -1161 | Dir: -736
+Esq: -1247 | Dir: -802
+Esq: -1317 | Dir: -913
+Esq: -1382 | Dir: -1009
+Esq: -1456 | Dir: -1100
+Esq: -1537 | Dir: -1186
+Esq: -1605 | Dir: -1255
+Esq: -1639 | Dir: -1296
+Esq: -1714 | Dir: -1390
+Esq: -1714 | Dir: -1390
+Esq: -1714 | Dir: -1390
+Esq: -1714 | Dir: -1390
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: -10070 | Dir: 0
+Esq: -10070 | Dir: 0
+Esq: -10269 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -10910 | Dir: 0
+Esq: -11082 | Dir: 0
+Esq: -11458 | Dir: 0
+Esq: -11534 | Dir: -1001
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a29ch ( 41628) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2c4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c5fc vaddr=40080000 size=03a1ch ( 14876) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=111a8h ( 70056) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000311d0 vaddr=40083a1c size=09180h ( 37248) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (209) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  94b235806...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB9C len 00013464 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+
+--- MODO DE CALIBRACAO ---
+1. Marque uma linha no chão na frente da roda.
+2. Empurre o robô para frente EXATAMENTE 1 metro (ou 10 voltas da roda).
+3. Anote o valor final dos contadores.
+
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: -101 | Dir: 0
+Esq: -101 | Dir: 0
+Esq: -101 | Dir: 0
+Esq: -101 | Dir: 0
+Esq: -101 | Dir: 0
+Esq: -101 | Dir: 0
+Esq: -101 | Dir: 0
+Esq: -101 | Dir: 0
+Esq: -381 | Dir: 0
+Esq: -898 | Dir: -739
+Esq: -969 | Dir: -739
+Esq: -969 | Dir: -739
+Esq: -969 | Dir: -739
+Esq: -969 | Dir: -1662
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a29ch ( 41628) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2c4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c5fc vaddr=40080000 size=03a1ch ( 14876) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=111a8h ( 70056) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000311d0 vaddr=40083a1c size=09180h ( 37248) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (209) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  94b235806...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB9C len 00013464 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+
+--- MODO DE CALIBRACAO ---
+1. Marque uma linha no chão na frente da roda.
+2. Empurre o robô para frente EXATAMENTE 1 metro (ou 10 voltas da roda).
+3. Anote o valor final dos contadores.
+
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: -106
+Esq: -54 | Dir: -112
+Esq: -134 | Dir: -181
+Esq: -189 | Dir: -249
+Esq: -1565 | Dir: -249
+Esq: -1565 | Dir: -284
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+Esq: -1565 | Dir: -392
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a29ch ( 41628) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2c4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c5fc vaddr=40080000 size=03a1ch ( 14876) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=111a8h ( 70056) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000311d0 vaddr=40083a1c size=09180h ( 37248) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (209) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  94b235806...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB9C len 00013464 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+
+--- MODO DE CALIBRACAO ---
+1. Marque uma linha no chão na frente da roda.
+2. Empurre o robô para frente EXATAMENTE 1 metro (ou 10 voltas da roda).
+3. Anote o valor final dos contadores.
+
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: -124
+Esq: -24 | Dir: -151
+Esq: -69 | Dir: -193
+Esq: -157 | Dir: -253
+Esq: -248 | Dir: -321
+Esq: -332 | Dir: -384
+Esq: -408 | Dir: -475
+Esq: -536 | Dir: -550
+Esq: -623 | Dir: -610
+Esq: -748 | Dir: -683
+Esq: -2427 | Dir: -683
+Esq: -2427 | Dir: -683
+Esq: -3945 | Dir: -683
+Esq: -3945 | Dir: -683
+Esq: -4116 | Dir: -683
+Esq: -5977 | Dir: -683
+Esq: -5977 | Dir: -683
+Esq: -5977 | Dir: -683
+Esq: -5977 | Dir: -683
+Esq: -5977 | Dir: -683
+Esq: -5977 | Dir: -683
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a29ch ( 41628) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2c4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c5fc vaddr=40080000 size=03a1ch ( 14876) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=111a8h ( 70056) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000311d0 vaddr=40083a1c size=09180h ( 37248) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (209) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  94b235806...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB9C len 00013464 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+
+--- MODO DE CALIBRACAO ---
+1. Marque uma linha no chão na frente da roda.
+2. Empurre o robô para frente EXATAMENTE 1 metro (ou 10 voltas da roda).
+3. Anote o valor final dos contadores.
+
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: -81 | Dir: 0
+Esq: -81 | Dir: 0
+Esq: -81 | Dir: 0
+Esq: -138 | Dir: -90
+Esq: -156 | Dir: -139
+Esq: -224 | Dir: -195
+Esq: -442 | Dir: -237
+Esq: -632 | Dir: -237
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+Esq: -708 | Dir: -268
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a29ch ( 41628) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2c4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c5fc vaddr=40080000 size=03a1ch ( 14876) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=111a8h ( 70056) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000311d0 vaddr=40083a1c size=09180h ( 37248) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (209) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  94b235806...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB9C len 00013464 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+
+--- MODO DE CALIBRACAO ---
+1. Marque uma linha no chão na frente da roda.
+2. Empurre o robô para frente EXATAMENTE 1 metro (ou 10 voltas da roda).
+3. Anote o valor final dos contadores.
+
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: -129 | Dir: -300
+Esq: -170 | Dir: -323
+Esq: -256 | Dir: -375
+Esq: -333 | Dir: -422
+Esq: -419 | Dir: -475
+Esq: -499 | Dir: -530
+Esq: -590 | Dir: -585
+Esq: -672 | Dir: -633
+Esq: -753 | Dir: -698
+Esq: -846 | Dir: -779
+Esq: -932 | Dir: -865
+Esq: -1021 | Dir: -941
+Esq: -1109 | Dir: -1017
+Esq: -1218 | Dir: -1098
+Esq: -1257 | Dir: -1136
+Esq: -1257 | Dir: -1152
+Esq: -1257 | Dir: -1152
+Esq: -1257 | Dir: -1170
+Esq: -1356 | Dir: -1197
+Esq: -1365 | Dir: -1202
+Esq: -1365 | Dir: -1202
+Esq: -1365 | Dir: -1202
+Esq: -1365 | Dir: -1412
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1459
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+Esq: -1365 | Dir: -1788
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a29ch ( 41628) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2c4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c5fc vaddr=40080000 size=03a1ch ( 14876) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=111a8h ( 70056) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000311d0 vaddr=40083a1c size=09180h ( 37248) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (209) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  94b235806...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB9C len 00013464 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+
+--- MODO DE CALIBRACAO ---
+1. Marque uma linha no chão na frente da roda.
+2. Empurre o robô para frente EXATAMENTE 1 metro (ou 10 voltas da roda).
+3. Anote o valor final dos contadores.
+
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a29ch ( 41628) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2c4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c5fc vaddr=40080000 size=03a1ch ( 14876) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=111a8h ( 70056) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000311d0 vaddr=40083a1c size=09180h ( 37248) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (209) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  94b235806...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB9C len 00013464 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+
+--- MODO DE CALIBRACAO ---
+1. Marque uma linha no chão na frente da roda.
+2. Empurre o robô para frente EXATAMENTE 1 metro (ou 10 voltas da roda).
+3. Anote o valor final dos contadores.
+
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: -220 | Dir: -34
+Esq: -304 | Dir: -72
+Esq: -397 | Dir: -125
+Esq: -498 | Dir: -165
+Esq: -537 | Dir: -200
+Esq: -630 | Dir: -242
+Esq: -707 | Dir: -341
+Esq: -749 | Dir: -409
+Esq: -765 | Dir: -471
+Esq: -868 | Dir: -539
+Esq: -974 | Dir: -616
+Esq: -1095 | Dir: -686
+Esq: -1201 | Dir: -753
+Esq: -1314 | Dir: -805
+Esq: -1603 | Dir: -853
+Esq: -1729 | Dir: -853
+Esq: -1729 | Dir: -853
+Esq: -1729 | Dir: -853
+Esq: -1729 | Dir: -853
+Esq: -1729 | Dir: -853
+Esq: -1729 | Dir: -853
+Esq: -1729 | Dir: -853
+Esq: -1729 | Dir: -853
+Esq: -1729 | Dir: -853
+Esq: -1729 | Dir: -853
+Esq: -1936 | Dir: -853
+Esq: -1937 | Dir: -853
+Esq: -1937 | Dir: -853
+Esq: -2041 | Dir: -1103
+Esq: -2041 | Dir: -1322
+Esq: -2041 | Dir: -1322
+Esq: -2041 | Dir: -1322
+Esq: -2041 | Dir: -1322
+Esq: -2154 | Dir: -1322
+Esq: -2876 | Dir: -1322
+Esq: -2975 | Dir: -1322
+Esq: -3286 | Dir: -1322
+Esq: -3392 | Dir: -1361
+Esq: -3392 | Dir: -1860
+Esq: -3399 | Dir: -2949
+Esq: -3465 | Dir: -2949
+Esq: -3484 | Dir: -7249
+Esq: -3484 | Dir: -7372
+Esq: -3484 | Dir: -7372
+Esq: -3484 | Dir: -7372
+Esq: -3548 | Dir: -7372
+Esq: -3598 | Dir: -7372
+Esq: -4048 | Dir: -7372
+Esq: -4048 | Dir: -7372
+Esq: -4088 | Dir: -7372
+Esq: -4275 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+Esq: -4385 | Dir: -7372
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a29ch ( 41628) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2c4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c5fc vaddr=40080000 size=03a1ch ( 14876) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=111a8h ( 70056) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000311d0 vaddr=40083a1c size=09180h ( 37248) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (209) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  94b235806...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB9C len 00013464 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+
+--- MODO DE CALIBRACAO ---
+1. Marque uma linha no chão na frente da roda.
+2. Empurre o robô para frente EXATAMENTE 1 metro (ou 10 voltas da roda).
+3. Anote o valor final dos contadores.
+
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: -16 | Dir: -114
+Esq: -91 | Dir: -194
+Esq: -181 | Dir: -284
+Esq: -266 | Dir: -385
+Esq: -345 | Dir: -499
+Esq: -420 | Dir: -594
+Esq: -499 | Dir: -695
+Esq: -590 | Dir: -785
+Esq: -670 | Dir: -868
+Esq: -762 | Dir: -970
+Esq: -849 | Dir: -1079
+Esq: -937 | Dir: -1183
+Esq: -1006 | Dir: -1271
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: -1050 | Dir: -1309
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: -128 | Dir: -28
+Esq: -181 | Dir: -86
+Esq: -244 | Dir: -145
+Esq: -307 | Dir: -208
+Esq: -377 | Dir: -281
+Esq: -466 | Dir: -356
+Esq: -556 | Dir: -441
+Esq: -624 | Dir: -519
+Esq: -722 | Dir: -598
+Esq: -807 | Dir: -668
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: -817 | Dir: -690
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: -129 | Dir: -38
+Esq: -192 | Dir: -120
+Esq: -268 | Dir: -195
+Esq: -348 | Dir: -274
+Esq: -420 | Dir: -360
+Esq: -481 | Dir: -413
+Esq: -481 | Dir: -413
+Esq: -481 | Dir: -413
+Esq: -481 | Dir: -413
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: -143 | Dir: -121
+Esq: -174 | Dir: -183
+Esq: -224 | Dir: -245
+Esq: -280 | Dir: -307
+Esq: -336 | Dir: -373
+Esq: -413 | Dir: -466
+Esq: -477 | Dir: -523
+Esq: -518 | Dir: -552
+Esq: -518 | Dir: -552
+Esq: -518 | Dir: -552
+Esq: -518 | Dir: -552
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0
+Esq: 0 | Dir: 0

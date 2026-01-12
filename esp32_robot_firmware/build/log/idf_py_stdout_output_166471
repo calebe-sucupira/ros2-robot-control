@@ -1,0 +1,193 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0adf4h ( 44532) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ae1c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d144 vaddr=40080000 size=02ed4h ( 11988) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11b90h ( 72592) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031bb8 vaddr=40082ed4 size=09c88h ( 40072) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  733093773...[0m
+[0;32mI (229) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (235) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (240) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (245) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (275) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (282) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN:    SISTEMA DE CONTROLE PRECISO[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) MAIN: 
+--- CALCULANDO RELAÇÃO ATUAL ---[0m
+[0;32mI (330) CALC: Calculando relação para 50%[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (360) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1900) CALC: ESQ: 262.0 ticks/s, DIR: 378.0 ticks/s[0m
+[0;32mI (1900) CALC: Relação DIR/ESQ: 1.443[0m
+[0;32mI (1900) CALC: Fator correção sugerido: 0.693[0m
+[0;32mI (2900) PRECISAO: ========================================[0m
+[0;32mI (2900) PRECISAO:    TESTE DE PRECISÃO FINAL[0m
+[0;32mI (2900) PRECISAO: ========================================[0m
+[0;32mI (2900) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (2910) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;31mE (2920) gpio: gpio_install_isr_service(508): GPIO isr service already installed[0m
+[0;32mI (2930) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2940) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2950) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2960) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2970) PRECISAO: 
+--- TESTE VELOCIDADES IGUAIS ---[0m
+[0;32mI (2970) PRECISAO: 
+Teste 1: Velocidade = 30%[0m
+[0;32mI (2980) MOTOR: Original: ESQ=30%, DIR=30%[0m
+[0;32mI (2980) MOTOR: Ajustado: ESQ=35%, DIR=22% (fator=0.75)[0m
+[0;32mI (4590) PRECISAO: ESQ: 202.0 ticks/s[0m
+[0;32mI (4590) PRECISAO: DIR: 214.7 ticks/s[0m
+[0;32mI (4590) PRECISAO: Diferença: 6.1%[0m
+[0;32mI (4590) PRECISAO: ✅ BOM[0m
+[0;32mI (5090) PRECISAO: 
+Teste 2: Velocidade = 40%[0m
+[0;32mI (5090) MOTOR: Original: ESQ=40%, DIR=40%[0m
+[0;32mI (5090) MOTOR: Ajustado: ESQ=40%, DIR=28% (fator=0.72)[0m
+[0;32mI (6690) PRECISAO: ESQ: 216.7 ticks/s[0m
+[0;32mI (6690) PRECISAO: DIR: 224.7 ticks/s[0m
+[0;32mI (6690) PRECISAO: Diferença: 3.6%[0m
+[0;32mI (6690) PRECISAO: ✅ EXCELENTE[0m
+[0;32mI (7190) PRECISAO: 
+Teste 3: Velocidade = 50%[0m
+[0;32mI (7190) MOTOR: Original: ESQ=50%, DIR=50%[0m
+[0;32mI (7190) MOTOR: Ajustado: ESQ=50%, DIR=35% (fator=0.70)[0m
+[0;32mI (8790) PRECISAO: ESQ: 252.0 ticks/s[0m
+[0;32mI (8790) PRECISAO: DIR: 284.7 ticks/s[0m
+[0;32mI (8790) PRECISAO: Diferença: 12.2%[0m
+[0;33mW (8790) PRECISAO: ❌ PRECISA AJUSTE[0m
+[0;32mI (9290) PRECISAO: 
+Teste 4: Velocidade = 60%[0m
+[0;32mI (9290) MOTOR: Original: ESQ=60%, DIR=60%[0m
+[0;32mI (9290) MOTOR: Ajustado: ESQ=60%, DIR=40% (fator=0.68)[0m
+[0;32mI (10890) PRECISAO: ESQ: 262.7 ticks/s[0m
+[0;32mI (10890) PRECISAO: DIR: 314.7 ticks/s[0m
+[0;32mI (10890) PRECISAO: Diferença: 18.0%[0m
+[0;33mW (10890) PRECISAO: ❌ PRECISA AJUSTE[0m
+[0;32mI (11390) PRECISAO: 
+Teste 5: Velocidade = 70%[0m
+[0;32mI (11390) MOTOR: Original: ESQ=70%, DIR=70%[0m
+[0;32mI (11390) MOTOR: Ajustado: ESQ=70%, DIR=45% (fator=0.65)[0m
+[0;32mI (12990) PRECISAO: ESQ: 286.7 ticks/s[0m
+[0;32mI (12990) PRECISAO: DIR: 343.3 ticks/s[0m
+[0;32mI (12990) PRECISAO: Diferença: 18.0%[0m
+[0;33mW (12990) PRECISAO: ❌ PRECISA AJUSTE[0m
+[0;32mI (13490) PRECISAO: 
+Teste 6: Velocidade = 80%[0m
+[0;32mI (13490) MOTOR: Original: ESQ=80%, DIR=80%[0m
+[0;32mI (13490) MOTOR: Ajustado: ESQ=80%, DIR=50% (fator=0.63)[0m
+[0;32mI (15090) PRECISAO: ESQ: 308.7 ticks/s[0m
+[0;32mI (15090) PRECISAO: DIR: 391.3 ticks/s[0m
+[0;32mI (15090) PRECISAO: Diferença: 23.6%[0m
+[0;33mW (15090) PRECISAO: ❌ PRECISA AJUSTE[0m
+[0;32mI (15590) PRECISAO: 
+--- TESTE DE CURVAS ---[0m
+[0;32mI (15590) PRECISAO: 
+Curva 1: ESQ=60%, DIR=40%[0m
+[0;32mI (15590) MOTOR: Original: ESQ=60%, DIR=40%[0m
+[0;32mI (15590) MOTOR: Ajustado: ESQ=60%, DIR=28% (fator=0.72)[0m
+[0;32mI (17200) PRECISAO: Razão real: 0.90 (esperada: 0.67)[0m
+[0;33mW (17200) PRECISAO: ⚠️ CURVA IMPRECISA[0m
+[0;32mI (17700) PRECISAO: 
+Curva 2: ESQ=70%, DIR=50%[0m
+[0;32mI (17700) MOTOR: Original: ESQ=70%, DIR=50%[0m
+[0;32mI (17700) MOTOR: Ajustado: ESQ=70%, DIR=35% (fator=0.70)[0m
+[0;32mI (19300) PRECISAO: Razão real: 0.99 (esperada: 0.71)[0m
+[0;33mW (19300) PRECISAO: ⚠️ CURVA IMPRECISA[0m
+[0;32mI (19800) PRECISAO: 
+Curva 3: ESQ=40%, DIR=60%[0m
+[0;32mI (19800) MOTOR: Original: ESQ=40%, DIR=60%[0m
+[0;32mI (19800) MOTOR: Ajustado: ESQ=40%, DIR=40% (fator=0.68)[0m
+[0;32mI (21400) PRECISAO: Razão real: 1.41 (esperada: 1.50)[0m
+[0;32mI (21400) PRECISAO: ✅ CURVA PRECISA[0m
+[0;32mI (21900) PRECISAO: 
+Curva 4: ESQ=50%, DIR=70%[0m
+[0;32mI (21900) MOTOR: Original: ESQ=50%, DIR=70%[0m
+[0;32mI (21900) MOTOR: Ajustado: ESQ=50%, DIR=45% (fator=0.65)[0m
+[0;32mI (23500) PRECISAO: Razão real: 1.33 (esperada: 1.40)[0m
+[0;32mI (23500) PRECISAO: ✅ CURVA PRECISA[0m
+[0;32mI (24000) MAIN: 
+========================================[0m
+[0;32mI (24000) MAIN:    FUNÇÃO FINAL OTIMIZADA[0m
+[0;32mI (24000) MAIN: ========================================[0m
+[0;32mI (24000) MAIN: [0m
+[0;32mI (24000) MAIN: // COPIE ESTA FUNÇÃO PARA SEU PROJETO:[0m
+[0;32mI (24010) MAIN: void mover_robo(int vel_esq, int vel_dir) {[0m
+[0;32mI (24020) MAIN:     // Compensação não-linear baseada em testes[0m
+[0;32mI (24020) MAIN:     float fator;[0m
+[0;32mI (24030) MAIN:     if (vel_dir <= 30)      fator = 0.75f;[0m
+[0;32mI (24030) MAIN:     else if (vel_dir <= 40) fator = 0.72f;[0m
+[0;32mI (24040) MAIN:     else if (vel_dir <= 50) fator = 0.70f;[0m
+[0;32mI (24040) MAIN:     else if (vel_dir <= 60) fator = 0.68f;[0m
+[0;32mI (24050) MAIN:     else if (vel_dir <= 70) fator = 0.65f;[0m
+[0;32mI (24060) MAIN:     else                    fator = 0.63f;[0m
+[0;32mI (24060) MAIN:     [0m
+[0;32mI (24070) MAIN:     int vel_dir_ajust = (int)(vel_dir * fator);[0m
+[0;32mI (24070) MAIN:     [0m
+[0;32mI (24080) MAIN:     // Limiares mínimos[0m
+[0;32mI (24080) MAIN:     if (vel_esq > 0 && vel_esq < 35) vel_esq = 35;[0m
+[0;32mI (24090) MAIN:     if (vel_dir_ajust > 0 && vel_dir_ajust < 22) vel_dir_ajust = 22;[0m
+[0;32mI (24100) MAIN:     [0m
+[0;32mI (24100) MAIN:     // Aplica (substitua pelas suas funções)[0m
+[0;32mI (24110) MAIN:     motor_esquerdo(vel_esq);[0m
+[0;32mI (24110) MAIN:     motor_direito(vel_dir_ajust);[0m
+[0;32mI (24120) MAIN: }[0m
+[0;32mI (24120) MAIN: [0m
+[0;32mI (24120) MAIN: // Para odometria precisa:[0m
+[0;32mI (24130) MAIN: // - Motor esquerdo: ~234 ticks/s a 50% PWM[0m
+[0;32mI (24130) MAIN: // - Motor direito:  ~321 ticks/s a 50% PWM[0m
+[0;32mI (24140) MAIN: // - Relação DIR/ESQ: 1.443[0m
+[0;32mI (24140) MAIN: // - Fator correção: 0.693[0m
+[0;32mI (24150) MAIN: [0m
+[0;32mI (24150) MAIN: ========================================[0m

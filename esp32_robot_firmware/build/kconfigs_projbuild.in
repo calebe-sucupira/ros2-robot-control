@@ -1,0 +1,6 @@
+source "/home/calebe/esp/esp-idf/components/bootloader/Kconfig.projbuild"
+source "/home/calebe/esp/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "/home/calebe/esp/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "/home/calebe/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "/home/calebe/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/Kconfig.projbuild"

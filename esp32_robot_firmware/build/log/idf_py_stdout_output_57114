@@ -1,0 +1,547 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ab30h (109360) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002ab58 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002f1bc vaddr=40080000 size=00e5ch (  3676) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=938cch (604364) map[0m
+[0;32mI (364) esp_image: segment 4: paddr=000c38f4 vaddr=40080e5c size=16768h ( 92008) load[0m
+[0;32mI (413) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (424) cpu_start: Multicore app[0m
+[0;32mI (433) cpu_start: Pro cpu start user code[0m
+[0;32mI (433) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (434) cpu_start: Application information:[0m
+[0;32mI (437) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (443) cpu_start: App version:      e18ea92[0m
+[0;32mI (448) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (454) cpu_start: ELF file SHA256:  5b3220d21...[0m
+[0;32mI (459) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (465) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (470) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (475) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (480) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (487) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFBB3D0 len 00024C30 (147 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (505) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 400975C4 len 00008A3C (34 KiB): IRAM[0m
+[0;32mI (520) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (541) main_task: Started on CPU0[0m
+[0;32mI (551) main_task: Calling app_main()[0m
+[0;32mI (551) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (551) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (561) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (571) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (581) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (591) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (631) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (641) wifi:wifi driver task: 3ffc36fc, prio:23, stack:6656, core=0[0m
+[0;32mI (651) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (651) wifi:wifi certification version: v7.0[0m
+[0;32mI (651) wifi:config NVS flash: enabled[0m
+[0;32mI (651) wifi:config nano formating: disabled[0m
+[0;32mI (661) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (661) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (671) wifi:Init management short buffer num: 32[0m
+[0;32mI (671) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (671) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (681) wifi:Init static rx buffer num: 10[0m
+[0;32mI (681) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (691) wifi_init: rx ba win: 6[0m
+[0;32mI (691) wifi_init: tcpip mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp tx win: 5760[0m
+[0;32mI (711) wifi_init: tcp rx win: 5760[0m
+[0;32mI (711) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (721) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (721) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (731) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (821) wifi:mode : sta (3c:8a:1f:5d:78:cc)[0m
+[0;32mI (821) wifi:enable tsf[0m
+[0;32mI (821) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (881) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (881) wifi:state: init -> auth (b0)[0m
+[0;32mI (891) wifi:state: auth -> assoc (0)[0m
+[0;32mI (891) wifi:state: assoc -> run (10)[0m
+[0;32mI (891) wifi:state: run -> init (4a0)[0m
+[0;32mI (911) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (911) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (911) wifi_station_netif: connect to the AP fail[0m
+[0;33mW (1191) wifi:tx null, bss is null[0m
+[0;32mI (3331) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (3331) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3331) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (3331) wifi:state: init -> auth (b0)[0m
+[0;32mI (3361) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3381) wifi:state: assoc -> run (10)[0m
+[0;32mI (3421) wifi:connected with MOB-ALTOS, aid = 78, channel 3, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (3421) wifi:security: WPA2-PSK, phy: bgn, rssi: -73[0m
+[0;32mI (3421) wifi:pm start, type: 1[0m
+
+[0;32mI (3421) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3431) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (6811) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:5, winSize:64[0m
+[0;32mI (17431) esp_netif_handlers: sta ip: 192.168.18.253, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (17431) wifi_station_netif: got ip:192.168.18.253[0m
+[0;32mI (17431) wifi_station_netif: connected to ap SSID:MOB-ALTOS password:mob3876150[0m
+TICKS DETECTADOS: Esq=-2 Dir=-1
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ab30h (109360) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002ab58 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002f1bc vaddr=40080000 size=00e5ch (  3676) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=938cch (604364) map[0m
+[0;32mI (365) esp_image: segment 4: paddr=000c38f4 vaddr=40080e5c size=16768h ( 92008) load[0m
+[0;32mI (413) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (424) cpu_start: Multicore app[0m
+[0;32mI (433) cpu_start: Pro cpu start user code[0m
+[0;32mI (433) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (434) cpu_start: Application information:[0m
+[0;32mI (437) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (443) cpu_start: App version:      e18ea92[0m
+[0;32mI (448) cpu_start: Compile time:     Nov 28 2025 21:50:04[0m
+[0;32mI (454) cpu_start: ELF file SHA256:  5b3220d21...[0m
+[0;32mI (459) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (465) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (470) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (475) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (480) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (487) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFBB3D0 len 00024C30 (147 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (505) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 400975C4 len 00008A3C (34 KiB): IRAM[0m
+[0;32mI (520) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (541) main_task: Started on CPU0[0m
+[0;32mI (551) main_task: Calling app_main()[0m
+[0;32mI (551) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (551) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (561) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (571) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (581) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (591) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (631) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (641) wifi:wifi driver task: 3ffc36fc, prio:23, stack:6656, core=0[0m
+[0;32mI (651) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (651) wifi:wifi certification version: v7.0[0m
+[0;32mI (651) wifi:config NVS flash: enabled[0m
+[0;32mI (651) wifi:config nano formating: disabled[0m
+[0;32mI (661) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (661) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (671) wifi:Init management short buffer num: 32[0m
+[0;32mI (671) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (671) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (681) wifi:Init static rx buffer num: 10[0m
+[0;32mI (681) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (691) wifi_init: rx ba win: 6[0m
+[0;32mI (691) wifi_init: tcpip mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp tx win: 5760[0m
+[0;32mI (711) wifi_init: tcp rx win: 5760[0m
+[0;32mI (711) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (721) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (721) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (731) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (821) wifi:mode : sta (3c:8a:1f:5d:78:cc)[0m
+[0;32mI (821) wifi:enable tsf[0m
+[0;32mI (821) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (851) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (851) wifi:state: init -> auth (b0)[0m
+[0;32mI (871) wifi:state: auth -> assoc (0)[0m
+[0;32mI (891) wifi:state: assoc -> init (9c0)[0m
+[0;32mI (911) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (911) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (911) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3331) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (3331) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3411) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (3411) wifi:state: init -> auth (b0)[0m
+[0;32mI (3421) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3431) wifi:state: assoc -> run (10)[0m
+[0;32mI (3461) wifi:connected with MOB-ALTOS, aid = 15, channel 3, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (3461) wifi:security: WPA2-PSK, phy: bgn, rssi: -89[0m
+[0;32mI (3461) wifi:pm start, type: 1[0m
+
+[0;32mI (3461) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3511) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (6471) esp_netif_handlers: sta ip: 192.168.18.253, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (6471) wifi_station_netif: got ip:192.168.18.253[0m
+[0;32mI (6471) wifi_station_netif: connected to ap SSID:MOB-ALTOS password:mob3876150[0m
+[0;32mI (6851) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:5, winSize:64[0m
+ mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp tx win: 5760[0m
+[0;32mI (711) wifi_init: tcp rx win: 5760[0m
+[0;32mI (711) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (721) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (721) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (731) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (821) wifi:mode : sta (3c:8a:1f:5d:78:cc)[0m
+[0;32mI (821) wifi:enable tsf[0m
+[0;32mI (821) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (841) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (841) wifi:state: init -> auth (b0)[0m
+[0;32mI (851) wifi:state: auth -> assoc (0)[0m
+[0;32mI (851) wifi:state: assoc -> init (4a0)[0m
+[0;32mI (861) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (861) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (861) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3271) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (3281) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3281) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (3281) wifi:state: init -> auth (b0)[0m
+[0;32mI (3301) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3311) wifi:state: assoc -> run (10)[0m
+[0;32mI (3331) wifi:connected with MOB-ALTOS, aid = 70, channel 3, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (3341) wifi:security: WPA2-PSK, phy: bgn, rssi: -83[0m
+[0;32mI (3341) wifi:pm start, type: 1[0m
+
+[0;32mI (3341) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3361) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3321) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (3331) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3331) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (3331) wifi:state: init -> auth (b0)[0m
+[0;32mI (3351) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3371) wifi:state: assoc -> run (10)[0m
+[0;32mI (4411) wifi:connected with MOB-ALTOS, aid = 91, channel 3, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (4411) wifi:security: WPA2-PSK, phy: bgn, rssi: -84[0m
+[0;32mI (4411) wifi:pm start, type: 1[0m
+
+[0;32mI (4411) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4471) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (7361) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:5, winSize:64[0m
+[0;32mI (7921) esp_netif_handlers: sta ip: 192.168.18.253, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (7921) wifi_station_netif: got ip:192.168.18.253[0m
+[0;32mI (7921) wifi_station_netif: connected to ap SSID:MOB-ALTOS password:mob3876150[0m
+ (671) wifi:Init dynamic tx buffer num: 32
+[0;32mI (671) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (681) wifi:Init static rx buffer num: 10[0m
+[0;32mI (681) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (691) wifi_init: rx ba win: 6[0m
+[0;32mI (691) wifi_init: tcpip mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp tx win: 5760[0m
+[0;32mI (711) wifi_init: tcp rx win: 5760[0m
+[0;32mI (711) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (721) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (721) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (731) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (821) wifi:mode : sta (3c:8a:1f:5d:78:cc)[0m
+[0;32mI (821) wifi:enable tsf[0m
+[0;32mI (821) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (921) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (921) wifi:state: init -> auth (b0)[0m
+[0;32mI (961) wifi:state: auth -> assoc (0)[0m
+[0;32mI (991) wifi:state: assoc -> run (10)[0m
+[0;32mI (1041) wifi:connected with MOB-ALTOS, aid = 83, channel 3, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (1041) wifi:security: WPA2-PSK, phy: bgn, rssi: -79[0m
+[0;32mI (1051) wifi:pm start, type: 1[0m
+
+[0;32mI (1051) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1121) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (11561) esp_netif_handlers: sta ip: 192.168.18.253, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (11561) wifi_station_netif: got ip:192.168.18.253[0m
+[0;32mI (11561) wifi_station_netif: connected to ap SSID:MOB-ALTOS password:mob3876150[0m
+[0;32mI (11841) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:5, winSize:64[0m
+[0;32mI (821) wifi:mode : sta (3c:8a:1f:5d:78:cc)[0m
+[0;32mI (821) wifi:enable tsf[0m
+[0;32mI (821) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (841) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (841) wifi:state: init -> auth (b0)[0m
+[0;32mI (881) wifi:state: auth -> assoc (0)[0m
+[0;32mI (881) wifi:state: assoc -> init (4a0)[0m
+[0;32mI (901) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (901) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (901) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3311) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (3321) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3401) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (3401) wifi:state: init -> auth (b0)[0m
+[0;32mI (3411) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3451) wifi:state: assoc -> run (10)[0m
+[0;32mI (3511) wifi:connected with MOB-ALTOS, aid = 69, channel 3, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (3511) wifi:security: WPA2-PSK, phy: bgn, rssi: -80[0m
+[0;32mI (3511) wifi:pm start, type: 1[0m
+
+[0;32mI (3511) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3601) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (8021) esp_netif_handlers: sta ip: 192.168.18.253, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (8021) wifi_station_netif: got ip:192.168.18.253[0m
+[0;32mI (8021) wifi_station_netif: connected to ap SSID:MOB-ALTOS password:mob3876150[0m
+[0;32mI (8191) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:3, winSize:64[0m
+[0;32mI (3271) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (3281) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3291) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (3291) wifi:state: init -> auth (b0)[0m
+[0;32mI (3301) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3311) wifi:state: assoc -> run (10)[0m
+[0;32mI (3331) wifi:connected with MOB-ALTOS, aid = 76, channel 3, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (3331) wifi:security: WPA2-PSK, phy: bgn, rssi: -75[0m
+[0;32mI (3341) wifi:pm start, type: 1[0m
+
+[0;32mI (3341) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3391) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4511) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:3, winSize:64[0m
+[0;32mI (6351) esp_netif_handlers: sta ip: 192.168.18.253, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (6351) wifi_station_netif: got ip:192.168.18.253[0m
+[0;32mI (6351) wifi_station_netif: connected to ap SSID:MOB-ALTOS password:mob3876150[0m
+[0;32mI (3271) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (3281) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3311) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1[0m
+[0;32mI (3311) wifi:state: init -> auth (b0)[0m
+[0;32mI (3331) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3341) wifi:state: assoc -> run (10)[0m
+[0;32mI (3361) wifi:connected with MOB-ALTOS, aid = 57, channel 3, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (3371) wifi:security: WPA2-PSK, phy: bgn, rssi: -89[0m
+[0;32mI (3371) wifi:pm start, type: 1[0m
+
+[0;32mI (3371) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3411) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (6381) esp_netif_handlers: sta ip: 192.168.18.253, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (6381) wifi_station_netif: got ip:192.168.18.253[0m
+[0;32mI (6381) wifi_station_netif: connected to ap SSID:MOB-ALTOS password:mob3876150[0m
+[0;32mI (6831) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:5, winSize:64[0m
+TICKS DETECTADOS: Esq=-1 Dir=0
+TICKS DETECTADOS: Esq=-7 Dir=0
+TICKS DETECTADOS: Esq=-6 Dir=0
+TICKS DETECTADOS: Esq=-3 Dir=0
+TICKS DETECTADOS: Esq=-8 Dir=0
+TICKS DETECTADOS: Esq=-4 Dir=0
+TICKS DETECTADOS: Esq=-14 Dir=0
+TICKS DETECTADOS: Esq=-1 Dir=0
+TICKS DETECTADOS: Esq=-8 Dir=0
+TICKS DETECTADOS: Esq=-7 Dir=0
+TICKS DETECTADOS: Esq=0 Dir=-7
+TICKS DETECTADOS: Esq=0 Dir=-34
+TICKS DETECTADOS: Esq=0 Dir=-45
+TICKS DETECTADOS: Esq=0 Dir=-21
+TICKS DETECTADOS: Esq=-185 Dir=-114
+TICKS DETECTADOS: Esq=-194 Dir=-137
+TICKS DETECTADOS: Esq=-199 Dir=-141
+TICKS DETECTADOS: Esq=-220 Dir=-158
+TICKS DETECTADOS: Esq=-184 Dir=-134
+TICKS DETECTADOS: Esq=-162 Dir=-118
+TICKS DETECTADOS: Esq=-64 Dir=-46
+TICKS DETECTADOS: Esq=-209 Dir=-118
+[0;33mW (38011) wifi:[ADDBA]rx delba, code:1, delete tid:0[0m
+[0;32mI (38021) wifi:<ba-del>idx:0, tid:0[0m
+TICKS DETECTADOS: Esq=-160 Dir=-66
+[0;32mI (38341) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:2455, winSize:64[0m
+TICKS DETECTADOS: Esq=-41 Dir=-17
+TICKS DETECTADOS: Esq=-32 Dir=-14
+TICKS DETECTADOS: Esq=-33 Dir=-14
+TICKS DETECTADOS: Esq=-35 Dir=-17
+TICKS DETECTADOS: Esq=-34 Dir=-15
+TICKS DETECTADOS: Esq=-33 Dir=-15
+TICKS DETECTADOS: Esq=-34 Dir=-15
+TICKS DETECTADOS: Esq=-34 Dir=-16
+TICKS DETECTADOS: Esq=-24 Dir=-10
+TICKS DETECTADOS: Esq=-29 Dir=-14
+TICKS DETECTADOS: Esq=-27 Dir=-13
+TICKS DETECTADOS: Esq=-21 Dir=-10
+TICKS DETECTADOS: Esq=-24 Dir=-11
+TICKS DETECTADOS: Esq=-24 Dir=-11
+TICKS DETECTADOS: Esq=-20 Dir=-9
+TICKS DETECTADOS: Esq=-129 Dir=-58
+TICKS DETECTADOS: Esq=-24 Dir=-10
+TICKS DETECTADOS: Esq=-19 Dir=-8
+TICKS DETECTADOS: Esq=-21 Dir=-8
+TICKS DETECTADOS: Esq=-22 Dir=-8
+TICKS DETECTADOS: Esq=-20 Dir=-7
+TICKS DETECTADOS: Esq=-17 Dir=-5
+TICKS DETECTADOS: Esq=-16 Dir=-5
+TICKS DETECTADOS: Esq=-20 Dir=-6
+TICKS DETECTADOS: Esq=-43 Dir=-14
+TICKS DETECTADOS: Esq=-48 Dir=-15
+TICKS DETECTADOS: Esq=-21 Dir=-8
+TICKS DETECTADOS: Esq=-14 Dir=-4
+TICKS DETECTADOS: Esq=-12 Dir=-4
+TICKS DETECTADOS: Esq=-13 Dir=-4
+TICKS DETECTADOS: Esq=-14 Dir=-4
+TICKS DETECTADOS: Esq=-15 Dir=-4
+TICKS DETECTADOS: Esq=-15 Dir=-3
+TICKS DETECTADOS: Esq=-14 Dir=-4
+TICKS DETECTADOS: Esq=-15 Dir=-3
+TICKS DETECTADOS: Esq=-15 Dir=-3
+TICKS DETECTADOS: Esq=-15 Dir=-4
+TICKS DETECTADOS: Esq=-14 Dir=-3
+TICKS DETECTADOS: Esq=-14 Dir=-3
+TICKS DETECTADOS: Esq=-14 Dir=-2
+TICKS DETECTADOS: Esq=-15 Dir=-3
+TICKS DETECTADOS: Esq=-15 Dir=-2
+TICKS DETECTADOS: Esq=-14 Dir=-3
+TICKS DETECTADOS: Esq=-15 Dir=-2
+TICKS DETECTADOS: Esq=-27 Dir=-4
+TICKS DETECTADOS: Esq=-74 Dir=-14
+TICKS DETECTADOS: Esq=-22 Dir=-4
+TICKS DETECTADOS: Esq=-14 Dir=-3
+TICKS DETECTADOS: Esq=-19 Dir=-5
+TICKS DETECTADOS: Esq=-14 Dir=-4
+TICKS DETECTADOS: Esq=-14 Dir=-4
+TICKS DETECTADOS: Esq=-12 Dir=-4
+TICKS DETECTADOS: Esq=-10 Dir=-4
+TICKS DETECTADOS: Esq=-15 Dir=-5
+TICKS DETECTADOS: Esq=-15 Dir=-5
+TICKS DETECTADOS: Esq=-15 Dir=-5
+TICKS DETECTADOS: Esq=-18 Dir=-6
+TICKS DETECTADOS: Esq=-36 Dir=-10
+TICKS DETECTADOS: Esq=-32 Dir=-8
+TICKS DETECTADOS: Esq=-33 Dir=-8
+TICKS DETECTADOS: Esq=-15 Dir=-3
+TICKS DETECTADOS: Esq=-17 Dir=-3
+TICKS DETECTADOS: Esq=-16 Dir=-3
+TICKS DETECTADOS: Esq=-50 Dir=-19
+TICKS DETECTADOS: Esq=-33 Dir=-22
+TICKS DETECTADOS: Esq=-16 Dir=-11
+TICKS DETECTADOS: Esq=-14 Dir=-12
+TICKS DETECTADOS: Esq=-16 Dir=-11
+TICKS DETECTADOS: Esq=-18 Dir=-13
+TICKS DETECTADOS: Esq=-14 Dir=-12
+TICKS DETECTADOS: Esq=-16 Dir=-11
+TICKS DETECTADOS: Esq=-18 Dir=-14
+TICKS DETECTADOS: Esq=-63 Dir=-47
+TICKS DETECTADOS: Esq=-63 Dir=-47
+TICKS DETECTADOS: Esq=-23 Dir=-18
+TICKS DETECTADOS: Esq=-21 Dir=-14
+TICKS DETECTADOS: Esq=-19 Dir=-14
+TICKS DETECTADOS: Esq=-14 Dir=-10
+TICKS DETECTADOS: Esq=-17 Dir=-13
+TICKS DETECTADOS: Esq=-4385 Dir=-1898
+TICKS DETECTADOS: Esq=-19 Dir=-12
+TICKS DETECTADOS: Esq=-18 Dir=-12
+TICKS DETECTADOS: Esq=-20 Dir=-12
+TICKS DETECTADOS: Esq=-217 Dir=-142
+TICKS DETECTADOS: Esq=-14 Dir=-10
+TICKS DETECTADOS: Esq=-21 Dir=-13
+TICKS DETECTADOS: Esq=-20 Dir=-13
+TICKS DETECTADOS: Esq=-125 Dir=-83
+TICKS DETECTADOS: Esq=-11 Dir=-7
+TICKS DETECTADOS: Esq=-19 Dir=-12
+TICKS DETECTADOS: Esq=-19 Dir=-14
+TICKS DETECTADOS: Esq=-19 Dir=-13
+TICKS DETECTADOS: Esq=-18 Dir=-12
+TICKS DETECTADOS: Esq=-18 Dir=-13
+TICKS DETECTADOS: Esq=-58 Dir=-38
+TICKS DETECTADOS: Esq=-24 Dir=-15
+TICKS DETECTADOS: Esq=-20 Dir=-14
+TICKS DETECTADOS: Esq=-21 Dir=-14
+TICKS DETECTADOS: Esq=-21 Dir=-15
+TICKS DETECTADOS: Esq=-20 Dir=-14
+TICKS DETECTADOS: Esq=-28 Dir=-19
+TICKS DETECTADOS: Esq=-21 Dir=-14
+TICKS DETECTADOS: Esq=-29 Dir=-19
+TICKS DETECTADOS: Esq=-24 Dir=-16
+TICKS DETECTADOS: Esq=-22 Dir=-16
+TICKS DETECTADOS: Esq=-20 Dir=-13
+TICKS DETECTADOS: Esq=-16 Dir=-11
+TICKS DETECTADOS: Esq=-14 Dir=-9
+TICKS DETECTADOS: Esq=-19 Dir=-13
+TICKS DETECTADOS: Esq=-23 Dir=-15
+TICKS DETECTADOS: Esq=-20 Dir=-14
+TICKS DETECTADOS: Esq=-17 Dir=-12
+TICKS DETECTADOS: Esq=-14 Dir=-8
+TICKS DETECTADOS: Esq=-16 Dir=-11
+TICKS DETECTADOS: Esq=-19 Dir=-13
+TICKS DETECTADOS: Esq=-18 Dir=-13
+TICKS DETECTADOS: Esq=-19 Dir=-12
+TICKS DETECTADOS: Esq=-18 Dir=-12
+TICKS DETECTADOS: Esq=-19 Dir=-14
+TICKS DETECTADOS: Esq=-18 Dir=-12
+TICKS DETECTADOS: Esq=-19 Dir=-13
+TICKS DETECTADOS: Esq=-19 Dir=-14
+TICKS DETECTADOS: Esq=-168 Dir=-113
+TICKS DETECTADOS: Esq=-41 Dir=-29
+TICKS DETECTADOS: Esq=-27 Dir=-19
+TICKS DETECTADOS: Esq=-19 Dir=-14
+TICKS DETECTADOS: Esq=-24 Dir=-17
+TICKS DETECTADOS: Esq=-23 Dir=-16
+TICKS DETECTADOS: Esq=-25 Dir=-17
+TICKS DETECTADOS: Esq=-23 Dir=-17
+TICKS DETECTADOS: Esq=-27 Dir=-18
+TICKS DETECTADOS: Esq=-20 Dir=-14
+TICKS DETECTADOS: Esq=-21 Dir=-15
+TICKS DETECTADOS: Esq=-16 Dir=-10
+TICKS DETECTADOS: Esq=-17 Dir=-12
+TICKS DETECTADOS: Esq=-18 Dir=-12
+TICKS DETECTADOS: Esq=-20 Dir=-14
+TICKS DETECTADOS: Esq=-18 Dir=-12
+TICKS DETECTADOS: Esq=-21 Dir=-16
+TICKS DETECTADOS: Esq=-25 Dir=-17
+TICKS DETECTADOS: Esq=-20 Dir=-13
+TICKS DETECTADOS: Esq=-25 Dir=-18
+TICKS DETECTADOS: Esq=-19 Dir=-14
+TICKS DETECTADOS: Esq=-27 Dir=-19
+TICKS DETECTADOS: Esq=-16 Dir=-10
+TICKS DETECTADOS: Esq=-15 Dir=-12
+TICKS DETECTADOS: Esq=-17 Dir=-11
+TICKS DETECTADOS: Esq=-19 Dir=-13
+TICKS DETECTADOS: Esq=-19 Dir=-13
+TICKS DETECTADOS: Esq=-19 Dir=-12
+TICKS DETECTADOS: Esq=-19 Dir=-12
+TICKS DETECTADOS: Esq=-19 Dir=-13
+TICKS DETECTADOS: Esq=-19 Dir=-12
+TICKS DETECTADOS: Esq=-19 Dir=-13
+TICKS DETECTADOS: Esq=-19 Dir=-12
+TICKS DETECTADOS: Esq=-19 Dir=-13

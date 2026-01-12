@@ -1,0 +1,401 @@
+-- IDF_TARGET is not set, guessed 'esp32' from sdkconfig '/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/sdkconfig'
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- Component directory /home/calebe/esp/esp-idf/components/esp_vfs_console does not contain a CMakeLists.txt file. No component will be added
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/calebe/.espressif/python_env/idf5.2_py3.10_env/bin/python (found version "3.10.12") found components: Interpreter 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- USING O3
+-- App "esp32_robot_firmware" version: e18ea92
+-- Adding linker script /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/calebe/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/calebe/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/calebe/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/calebe/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/calebe/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/calebe/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/calebe/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Using Micro XRCE-DDS middleware
+rm -rf micro_ros_dev; \
+mkdir micro_ros_dev; cd micro_ros_dev; \
+git clone -b humble https://github.com/ament/ament_cmake src/ament_cmake; \
+git clone -b humble https://github.com/ament/ament_lint src/ament_lint; \
+git clone -b humble https://github.com/ament/ament_package src/ament_package; \
+git clone -b humble https://github.com/ament/googletest src/googletest; \
+git clone -b humble https://github.com/ros2/ament_cmake_ros src/ament_cmake_ros; \
+git clone -b humble https://github.com/ament/ament_index src/ament_index; \
+colcon build --cmake-args -DBUILD_TESTING=OFF -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++;
+rm -rf micro_ros_src; \
+mkdir micro_ros_src; cd micro_ros_src; \
+if [ "microxrcedds" = "embeddedrtps" ]; then \
+	git clone -b humble https://github.com/micro-ROS/embeddedRTPS src/embeddedRTPS; \
+	git clone -b humble https://github.com/micro-ROS/rmw_embeddedrtps src/rmw_embeddedrtps; \
+else \
+	git clone -b ros2 https://github.com/eProsima/Micro-XRCE-DDS-Client src/Micro-XRCE-DDS-Client; \
+	git clone -b humble https://github.com/micro-ROS/rmw_microxrcedds src/rmw_microxrcedds; \
+fi; \
+git clone -b ros2 https://github.com/eProsima/micro-CDR src/micro-CDR; \
+git clone -b humble https://github.com/micro-ROS/rcl src/rcl; \
+git clone -b humble https://github.com/ros2/rclc src/rclc; \
+git clone -b humble https://github.com/micro-ROS/rcutils src/rcutils; \
+git clone -b humble https://github.com/micro-ROS/micro_ros_msgs src/micro_ros_msgs; \
+git clone -b humble https://github.com/micro-ROS/rosidl_typesupport src/rosidl_typesupport; \
+git clone -b humble https://github.com/micro-ROS/rosidl_typesupport_microxrcedds src/rosidl_typesupport_microxrcedds; \
+git clone -b humble https://github.com/ros2/rosidl src/rosidl; \
+git clone -b humble https://github.com/ros2/rmw src/rmw; \
+git clone -b humble https://github.com/ros2/rcl_interfaces src/rcl_interfaces; \
+git clone -b humble https://github.com/ros2/rosidl_defaults src/rosidl_defaults; \
+git clone -b humble https://github.com/ros2/unique_identifier_msgs src/unique_identifier_msgs; \
+git clone -b humble https://github.com/ros2/common_interfaces src/common_interfaces; \
+git clone -b galactic https://github.com/ros2/example_interfaces src/example_interfaces; \
+git clone -b humble https://github.com/ros2/test_interface_files src/test_interface_files; \
+git clone -b humble https://github.com/ros2/rmw_implementation src/rmw_implementation; \
+git clone -b humble https://github.com/ros2/rcl_logging src/rcl_logging; \
+git clone -b humble https://gitlab.com/ros-tracing/ros2_tracing src/ros2_tracing; \
+git clone -b humble https://github.com/micro-ROS/micro_ros_utilities src/micro_ros_utilities; \
+    touch src/rosidl/rosidl_typesupport_introspection_cpp/COLCON_IGNORE; \
+    touch src/rcl_logging/rcl_logging_log4cxx/COLCON_IGNORE; \
+    touch src/rcl_logging/rcl_logging_spdlog/COLCON_IGNORE; \
+    touch src/rclc/rclc_examples/COLCON_IGNORE; \
+touch src/rcl/rcl_yaml_param_parser/COLCON_IGNORE; \
+cp -rf /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/extra_packages src/extra_packages || :; \
+test -f src/extra_packages/extra_packages.repos && cd src/extra_packages && vcs import --input extra_packages.repos || :;
+Starting >>> ament_package
+Starting >>> ament_lint
+Starting >>> ament_pycodestyle
+Starting >>> gtest_vendor
+Starting >>> ament_cppcheck
+Finished <<< gtest_vendor [0.91s]
+Starting >>> gmock_vendor
+Finished <<< gmock_vendor [0.12s]
+Finished <<< ament_lint [1.85s]
+Starting >>> ament_flake8
+Finished <<< ament_pycodestyle [2.04s]
+Finished <<< ament_cppcheck [2.04s]
+Finished <<< ament_package [2.07s]
+Starting >>> ament_cmake_core
+Starting >>> ament_pyflakes
+Finished <<< ament_cmake_core [0.68s]
+Starting >>> ament_cmake_python
+Starting >>> ament_cmake_libraries
+Starting >>> ament_cmake_export_libraries
+Starting >>> ament_cmake_include_directories
+Starting >>> ament_cmake_export_definitions
+Starting >>> ament_cmake_export_include_directories
+Starting >>> ament_cmake_export_link_flags
+Starting >>> ament_cmake_version
+Finished <<< ament_flake8 [1.34s]
+Starting >>> ament_pep257
+Starting >>> ament_mypy
+Finished <<< ament_pyflakes [1.68s]
+Finished <<< ament_cmake_include_directories [1.61s]
+Finished <<< ament_cmake_export_libraries [1.65s]
+Finished <<< ament_cmake_version [1.65s]
+Starting >>> ament_cmake_export_interfaces
+Starting >>> ament_cmake_export_targets
+Finished <<< ament_cmake_export_link_flags [1.70s]
+Finished <<< ament_cmake_export_definitions [1.74s]
+Finished <<< ament_cmake_libraries [1.77s]
+Finished <<< ament_cmake_export_include_directories [1.78s]
+Starting >>> ament_cmake_export_dependencies
+Starting >>> ament_cmake_target_dependencies
+Finished <<< ament_cmake_python [1.83s]
+Starting >>> ament_cmake_test
+Finished <<< ament_cmake_export_targets [0.95s]
+Finished <<< ament_cmake_export_interfaces [0.98s]
+Finished <<< ament_pep257 [2.30s]
+Starting >>> ament_copyright
+Finished <<< ament_mypy [2.31s]
+Finished <<< ament_cmake_export_dependencies [0.98s]
+Finished <<< ament_cmake_target_dependencies [0.99s]
+Finished <<< ament_cmake_test [1.61s]
+Starting >>> ament_cmake_gtest
+Starting >>> ament_lint_auto
+Starting >>> ament_cmake_pytest
+Starting >>> ament_cmake_google_benchmark
+Starting >>> ament_cmake_nose
+Starting >>> ament_cmake_vendor_package
+Finished <<< ament_copyright [1.37s]
+Starting >>> ament_lint_cmake
+Starting >>> ament_cpplint
+Starting >>> ament_uncrustify
+Starting >>> ament_xmllint
+Starting >>> ament_clang_format
+Starting >>> ament_clang_tidy
+Starting >>> ament_pclint
+Starting >>> domain_coordinator
+Starting >>> ament_index_python
+Finished <<< ament_lint_auto [2.73s]
+Finished <<< ament_cmake_gtest [2.76s]
+Finished <<< ament_cmake_nose [2.79s]
+Starting >>> ament_cmake_gen_version_h
+Starting >>> ament_cmake_gmock
+Finished <<< ament_cmake_vendor_package [2.85s]
+Finished <<< ament_cmake_pytest [2.89s]
+Finished <<< ament_cmake_google_benchmark [3.06s]
+Finished <<< ament_cpplint [3.47s]
+Finished <<< ament_xmllint [3.46s]
+Finished <<< domain_coordinator [3.51s]
+Finished <<< ament_uncrustify [3.60s]
+Finished <<< ament_cmake_gmock [1.52s]
+Finished <<< ament_pclint [3.60s]
+Finished <<< ament_index_python [3.62s]
+Finished <<< ament_clang_tidy [3.67s]
+Finished <<< ament_lint_cmake [3.79s]
+Starting >>> ament_cmake_lint_cmake
+Finished <<< ament_clang_format [3.76s]
+Finished <<< ament_cmake_gen_version_h [1.81s]
+Starting >>> ament_cmake
+Finished <<< ament_cmake_lint_cmake [0.63s]
+Starting >>> ament_cmake_copyright
+Finished <<< ament_cmake [0.61s]
+Starting >>> ament_cmake_auto
+Finished <<< ament_cmake_copyright [0.64s]
+Starting >>> ament_cmake_cppcheck
+Starting >>> ament_cmake_cpplint
+Starting >>> ament_cmake_flake8
+Starting >>> ament_cmake_pep257
+Starting >>> ament_cmake_uncrustify
+Starting >>> ament_cmake_xmllint
+Starting >>> ament_cmake_clang_format
+Starting >>> ament_cmake_clang_tidy
+Starting >>> ament_cmake_mypy
+Starting >>> ament_cmake_pclint
+Starting >>> ament_cmake_pycodestyle
+Starting >>> ament_cmake_pyflakes
+Finished <<< ament_cmake_auto [0.83s]
+Finished <<< ament_cmake_cppcheck [1.59s]
+Finished <<< ament_cmake_flake8 [1.65s]
+Finished <<< ament_cmake_cpplint [1.70s]
+Finished <<< ament_cmake_uncrustify [1.82s]
+Finished <<< ament_cmake_mypy [1.82s]
+Finished <<< ament_cmake_clang_tidy [1.87s]
+Finished <<< ament_cmake_xmllint [1.90s]
+Finished <<< ament_cmake_pep257 [1.93s]
+Finished <<< ament_cmake_clang_format [1.92s]
+Starting >>> ament_lint_common
+Finished <<< ament_cmake_pclint [1.93s]
+Finished <<< ament_cmake_pycodestyle [1.95s]
+Finished <<< ament_cmake_pyflakes [1.95s]
+Finished <<< ament_lint_common [0.66s]
+Starting >>> ament_cmake_ros
+Starting >>> ament_index_cpp
+Finished <<< ament_cmake_ros [0.75s]
+Finished <<< ament_index_cpp [1.61s]
+
+Summary: 61 packages finished [16.4s]
+  57 packages had stderr output: ament_clang_format ament_clang_tidy ament_cmake ament_cmake_auto ament_cmake_clang_format ament_cmake_clang_tidy ament_cmake_copyright ament_cmake_core ament_cmake_cppcheck ament_cmake_cpplint ament_cmake_export_definitions ament_cmake_export_dependencies ament_cmake_export_include_directories ament_cmake_export_interfaces ament_cmake_export_libraries ament_cmake_export_link_flags ament_cmake_export_targets ament_cmake_flake8 ament_cmake_gmock ament_cmake_google_benchmark ament_cmake_gtest ament_cmake_include_directories ament_cmake_libraries ament_cmake_lint_cmake ament_cmake_mypy ament_cmake_nose ament_cmake_pclint ament_cmake_pep257 ament_cmake_pycodestyle ament_cmake_pyflakes ament_cmake_pytest ament_cmake_python ament_cmake_ros ament_cmake_target_dependencies ament_cmake_test ament_cmake_uncrustify ament_cmake_vendor_package ament_cmake_version ament_cmake_xmllint ament_copyright ament_cppcheck ament_cpplint ament_flake8 ament_index_python ament_lint ament_lint_auto ament_lint_cmake ament_lint_common ament_mypy ament_pep257 ament_pycodestyle ament_pyflakes ament_uncrustify ament_xmllint domain_coordinator gmock_vendor gtest_vendor
+cd /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src; \
+unset AMENT_PREFIX_PATH; \
+PATH="/home/calebe/esp/esp-idf/components/espcoredump:/home/calebe/esp/esp-idf/components/partition_table:/home/calebe/esp/esp-idf/components/app_update:/home/calebe/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/calebe/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin:/home/calebe/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20250707/riscv32-esp-elf/bin:/home/calebe/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/calebe/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin:/home/calebe/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/calebe/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin:/home/calebe/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20250707/riscv32-esp-elf/bin:/home/calebe/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/calebe/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin:/home/calebe/.espressif/python_env/idf5.2_py3.10_env/bin:/home/calebe/esp/esp-idf/tools::/home/calebe/.local/bin:/home/calebe/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin"; \
+. ../micro_ros_dev/install/local_setup.sh; \
+colcon build \
+	--merge-install \
+	--packages-ignore-regex=.*_cpp \
+	--metas /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/colcon.meta  \
+	--cmake-args \
+	"--no-warn-unused-cli" \
+	-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=OFF \
+	-DTHIRDPARTY=ON \
+	-DBUILD_SHARED_LIBS=OFF \
+	-DBUILD_TESTING=OFF \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_TOOLCHAIN_FILE=/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/esp32_toolchain.cmake \
+	-DCMAKE_VERBOSE_MAKEFILE=OFF \
+        -DIDF_INCLUDES='-I/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include_override -I/home/calebe/esp/esp-idf/components/xtensa/esp32/include -I/home/calebe/esp/esp-idf/components/xtensa/include -I/home/calebe/esp/esp-idf/components/xtensa/deprecated_include -I/home/calebe/esp/esp-idf/components/esp_ringbuf/include -I/home/calebe/esp/esp-idf/components/efuse/include -I/home/calebe/esp/esp-idf/components/efuse/esp32/include -I/home/calebe/esp/esp-idf/components/esp_mm/include -I/home/calebe/esp/esp-idf/components/driver/include -I/home/calebe/esp/esp-idf/components/driver/deprecated -I/home/calebe/esp/esp-idf/components/driver/analog_comparator/include -I/home/calebe/esp/esp-idf/components/driver/dac/include -I/home/calebe/esp/esp-idf/components/driver/gpio/include -I/home/calebe/esp/esp-idf/components/driver/gptimer/include -I/home/calebe/esp/esp-idf/components/driver/i2c/include -I/home/calebe/esp/esp-idf/components/driver/i2s/include -I/home/calebe/esp/esp-idf/components/driver/ledc/include -I/home/calebe/esp/esp-idf/components/driver/mcpwm/include -I/home/calebe/esp/esp-idf/components/driver/parlio/include -I/home/calebe/esp/esp-idf/components/driver/pcnt/include -I/home/calebe/esp/esp-idf/components/driver/rmt/include -I/home/calebe/esp/esp-idf/components/driver/sdio_slave/include -I/home/calebe/esp/esp-idf/components/driver/sdmmc/include -I/home/calebe/esp/esp-idf/components/driver/sigma_delta/include -I/home/calebe/esp/esp-idf/components/driver/spi/include -I/home/calebe/esp/esp-idf/components/driver/temperature_sensor/include -I/home/calebe/esp/esp-idf/components/driver/touch_sensor/include -I/home/calebe/esp/esp-idf/components/driver/twai/include -I/home/calebe/esp/esp-idf/components/driver/uart/include -I/home/calebe/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/calebe/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/calebe/esp/esp-idf/components/esp_pm/include -I/home/calebe/esp/esp-idf/components/mbedtls/port/include -I/home/calebe/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/calebe/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/calebe/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/calebe/esp/esp-idf/components/esp_bootloader_format/include -I/home/calebe/esp/esp-idf/components/esp_app_format/include -I/home/calebe/esp/esp-idf/components/bootloader_support/include -I/home/calebe/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/calebe/esp/esp-idf/components/esp_partition/include -I/home/calebe/esp/esp-idf/components/app_update/include -I/home/calebe/esp/esp-idf/components/spi_flash/include -I/home/calebe/esp/esp-idf/components/pthread/include -I/home/calebe/esp/esp-idf/components/esp_system/include -I/home/calebe/esp/esp-idf/components/esp_rom/include -I/home/calebe/esp/esp-idf/components/esp_rom/include/esp32 -I/home/calebe/esp/esp-idf/components/esp_rom/esp32 -I/home/calebe/esp/esp-idf/components/hal/platform_port/include -I/home/calebe/esp/esp-idf/components/hal/esp32/include -I/home/calebe/esp/esp-idf/components/hal/include -I/home/calebe/esp/esp-idf/components/log/include -I/home/calebe/esp/esp-idf/components/heap/include -I/home/calebe/esp/esp-idf/components/soc/include -I/home/calebe/esp/esp-idf/components/soc/esp32 -I/home/calebe/esp/esp-idf/components/soc/esp32/include -I/home/calebe/esp/esp-idf/components/esp_hw_support/include -I/home/calebe/esp/esp-idf/components/esp_hw_support/include/soc -I/home/calebe/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/calebe/esp/esp-idf/components/freertos/config/include -I/home/calebe/esp/esp-idf/components/freertos/config/include/freertos -I/home/calebe/esp/esp-idf/components/freertos/config/xtensa/include -I/home/calebe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/calebe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/calebe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/calebe/esp/esp-idf/components/freertos/esp_additions/include -I/home/calebe/esp/esp-idf/components/newlib/platform_include -I/home/calebe/esp/esp-idf/components/esp_common/include -I/home/calebe/esp/esp-idf/components/esp_timer/include -I/home/calebe/esp/esp-idf/components/app_trace/include -I/home/calebe/esp/esp-idf/components/esp_event/include -I/home/calebe/esp/esp-idf/components/nvs_flash/include -I/home/calebe/esp/esp-idf/components/nvs_flash/../spi_flash/include -I/home/calebe/esp/esp-idf/components/esp_phy/include -I/home/calebe/esp/esp-idf/components/esp_phy/esp32/include -I/home/calebe/esp/esp-idf/components/vfs/include -I/home/calebe/esp/esp-idf/components/lwip/include -I/home/calebe/esp/esp-idf/components/lwip/include/apps -I/home/calebe/esp/esp-idf/components/lwip/include/apps/sntp -I/home/calebe/esp/esp-idf/components/lwip/lwip/src/include -I/home/calebe/esp/esp-idf/components/lwip/port/include -I/home/calebe/esp/esp-idf/components/lwip/port/freertos/include/ -I/home/calebe/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/calebe/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/calebe/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/calebe/esp/esp-idf/components/esp_netif/include -I/home/calebe/esp/esp-idf/components/wpa_supplicant/include -I/home/calebe/esp/esp-idf/components/wpa_supplicant/port/include -I/home/calebe/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/calebe/esp/esp-idf/components/esp_coex/include -I/home/calebe/esp/esp-idf/components/esp_wifi/include -I/home/calebe/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/calebe/esp/esp-idf/components/esp_gdbstub/include -I/home/calebe/esp/esp-idf/components/unity/include -I/home/calebe/esp/esp-idf/components/unity/unity/src -I/home/calebe/esp/esp-idf/components/cmock/CMock/src -I/home/calebe/esp/esp-idf/components/console//home/calebe/esp/esp-idf/components/console -I/home/calebe/esp/esp-idf/components/http_parser/. -I/home/calebe/esp/esp-idf/components/esp-tls//home/calebe/esp/esp-idf/components/esp-tls -I/home/calebe/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/home/calebe/esp/esp-idf/components/esp_adc/include -I/home/calebe/esp/esp-idf/components/esp_adc/interface -I/home/calebe/esp/esp-idf/components/esp_adc/esp32/include -I/home/calebe/esp/esp-idf/components/esp_adc/deprecated/include -I/home/calebe/esp/esp-idf/components/esp_eth/include -I/home/calebe/esp/esp-idf/components/esp_hid/include -I/home/calebe/esp/esp-idf/components/tcp_transport/include -I/home/calebe/esp/esp-idf/components/esp_http_client/include -I/home/calebe/esp/esp-idf/components/esp_http_server/include -I/home/calebe/esp/esp-idf/components/esp_https_ota/include -I/home/calebe/esp/esp-idf/components/esp_psram/include -I/home/calebe/esp/esp-idf/components/esp_lcd/include -I/home/calebe/esp/esp-idf/components/esp_lcd/interface -I/home/calebe/esp/esp-idf/components/protobuf-c/protobuf-c -I/home/calebe/esp/esp-idf/components/protocomm/include/common -I/home/calebe/esp/esp-idf/components/protocomm/include/security -I/home/calebe/esp/esp-idf/components/protocomm/include/transports -I/home/calebe/esp/esp-idf/components/protocomm/include/crypto/srp6a -I/home/calebe/esp/esp-idf/components/protocomm/proto-c -I/home/calebe/esp/esp-idf/components/esp_local_ctrl/include -I/home/calebe/esp/esp-idf/components/espcoredump/include -I/home/calebe/esp/esp-idf/components/espcoredump/include/port/xtensa -I/home/calebe/esp/esp-idf/components/wear_levelling/include -I/home/calebe/esp/esp-idf/components/sdmmc/include -I/home/calebe/esp/esp-idf/components/fatfs/diskio -I/home/calebe/esp/esp-idf/components/fatfs/src -I/home/calebe/esp/esp-idf/components/fatfs/vfs -I/home/calebe/esp/esp-idf/components/idf_test/include -I/home/calebe/esp/esp-idf/components/idf_test/include/esp32 -I/home/calebe/esp/esp-idf/components/ieee802154/include -I/home/calebe/esp/esp-idf/components/json/cJSON -I/home/calebe/esp/esp-idf/components/mqtt//home/calebe/esp/esp-idf/components/mqtt/esp-mqtt/include -I/home/calebe/esp/esp-idf/components/nvs_sec_provider/include -I/home/calebe/esp/esp-idf/components/perfmon/include -I/home/calebe/esp/esp-idf/components/spiffs/include -I/home/calebe/esp/esp-idf/components/wifi_provisioning/include -I/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/network_interfaces -I/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/.' \
+	-DCMAKE_C_STANDARD=17 \
+	-DUCLIENT_C_STANDARD=17;
+Starting >>> rcutils
+Starting >>> rosidl_cli
+Starting >>> rosidl_typesupport_interface
+Starting >>> microcdr
+Starting >>> test_interface_files
+Starting >>> rmw_implementation_cmake
+Starting >>> tracetools
+Starting >>> tracetools_trace
+Starting >>> tracetools_read
+Finished <<< test_interface_files [1.78s]
+Finished <<< rmw_implementation_cmake [1.86s]
+Finished <<< rosidl_typesupport_interface [1.94s]
+Finished <<< tracetools [2.48s]
+Finished <<< tracetools_read [3.47s]
+Finished <<< tracetools_trace [3.53s]
+Starting >>> tracetools_launch
+Starting >>> ros2trace
+Finished <<< rosidl_cli [3.63s]
+Starting >>> rosidl_adapter
+Finished <<< rcutils [4.30s]
+Starting >>> rosidl_runtime_c
+Starting >>> rcl_logging_interface
+Finished <<< microcdr [4.31s]
+Starting >>> microxrcedds_client
+Finished <<< tracetools_launch [2.85s]
+Starting >>> tracetools_test
+Finished <<< ros2trace [3.27s]
+Finished <<< rcl_logging_interface [2.62s]
+Starting >>> rcl_logging_noop
+Finished <<< rosidl_runtime_c [2.72s]
+Starting >>> rmw
+Finished <<< rosidl_adapter [3.43s]
+Starting >>> rosidl_parser
+Finished <<< microxrcedds_client [2.78s]
+Finished <<< tracetools_test [1.76s]
+Finished <<< rcl_logging_noop [1.53s]
+Finished <<< rosidl_parser [1.82s]
+Starting >>> rosidl_cmake
+Finished <<< rmw [1.90s]
+Finished <<< rosidl_cmake [1.23s]
+Starting >>> rosidl_typesupport_introspection_c
+Starting >>> rosidl_typesupport_microxrcedds_c
+Starting >>> rosidl_generator_c
+Finished <<< rosidl_generator_c [1.69s]
+Finished <<< rosidl_typesupport_microxrcedds_c [1.73s]
+Finished <<< rosidl_typesupport_introspection_c [1.76s]
+Starting >>> rosidl_typesupport_c
+Starting >>> micro_ros_utilities
+Starting >>> rosidl_typesupport_introspection_tests
+Finished <<< rosidl_typesupport_introspection_tests [1.22s]
+Finished <<< rosidl_typesupport_c [1.87s]
+Starting >>> rosidl_default_generators
+Starting >>> rosidl_default_runtime
+Finished <<< micro_ros_utilities [2.01s]
+Finished <<< rosidl_default_generators [0.83s]
+Finished <<< rosidl_default_runtime [0.87s]
+Starting >>> builtin_interfaces
+Starting >>> micro_ros_msgs
+Starting >>> unique_identifier_msgs
+Starting >>> lifecycle_msgs
+Starting >>> std_srvs
+Finished <<< unique_identifier_msgs [4.08s]
+Finished <<< builtin_interfaces [4.27s]
+Starting >>> std_msgs
+Starting >>> action_msgs
+Starting >>> rcl_interfaces
+Starting >>> rosgraph_msgs
+Starting >>> statistics_msgs
+Finished <<< micro_ros_msgs [4.56s]
+Starting >>> rmw_microxrcedds
+Finished <<< std_srvs [5.16s]
+Finished <<< rmw_microxrcedds [3.70s]
+Starting >>> rmw_implementation
+Starting >>> rosidl_typesupport_microxrcedds_test_msg
+Finished <<< lifecycle_msgs [8.49s]
+Finished <<< rosgraph_msgs [5.94s]
+Finished <<< rmw_implementation [2.05s]
+Finished <<< rosidl_typesupport_microxrcedds_test_msg [2.10s]
+Starting >>> rosidl_typesupport_microxrcedds_c_tests
+Finished <<< statistics_msgs [6.85s]
+Finished <<< action_msgs [7.50s]
+Starting >>> test_msgs
+Starting >>> example_interfaces
+Finished <<< rosidl_typesupport_microxrcedds_c_tests [2.09s]
+Finished <<< rcl_interfaces [13.2s]
+Starting >>> composition_interfaces
+Finished <<< std_msgs [13.5s]
+Starting >>> geometry_msgs
+Starting >>> actionlib_msgs
+Starting >>> test_tracetools
+Finished <<< test_tracetools [1.64s]
+Starting >>> test_tracetools_launch
+Finished <<< test_tracetools_launch [3.66s]
+Finished <<< actionlib_msgs [6.50s]
+Finished <<< composition_interfaces [6.99s]
+Finished <<< example_interfaces [17.2s]
+Finished <<< geometry_msgs [14.6s]
+Starting >>> sensor_msgs
+Starting >>> diagnostic_msgs
+Starting >>> nav_msgs
+Starting >>> shape_msgs
+Starting >>> trajectory_msgs
+Finished <<< test_msgs [21.3s]
+Starting >>> rcl
+Starting >>> test_rmw_implementation
+Finished <<< test_rmw_implementation [1.85s]
+Finished <<< rcl [3.38s]
+Starting >>> rcl_action
+Starting >>> rcl_lifecycle
+Finished <<< shape_msgs [7.40s]
+Finished <<< trajectory_msgs [7.49s]
+Finished <<< diagnostic_msgs [7.57s]
+Finished <<< rcl_lifecycle [4.43s]
+Finished <<< rcl_action [4.80s]
+Starting >>> rclc
+Finished <<< nav_msgs [9.47s]
+Finished <<< rclc [3.16s]
+Starting >>> rclc_lifecycle
+Starting >>> rclc_parameter
+Finished <<< rclc_lifecycle [2.51s]
+Finished <<< rclc_parameter [2.94s]
+Finished <<< sensor_msgs [17.3s]
+Starting >>> stereo_msgs
+Starting >>> visualization_msgs
+Starting >>> sensor_msgs_py
+Finished <<< sensor_msgs_py [1.86s]
+Finished <<< stereo_msgs [3.86s]
+Finished <<< visualization_msgs [8.03s]
+Starting >>> common_interfaces
+Finished <<< common_interfaces [0.94s]
+
+Summary: 65 packages finished [1min 14s]
+  17 packages had stderr output: micro_ros_utilities microxrcedds_client rcl rcl_action rcl_lifecycle rclc rclc_parameter rcutils rmw rmw_microxrcedds ros2trace sensor_msgs_py test_tracetools_launch tracetools_launch tracetools_read tracetools_test tracetools_trace
+echo /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/atomic_workaround; \
+	mkdir /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/atomic_workaround; cd /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/atomic_workaround; \
+	/home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-ar x /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/install/lib/librcutils.a; \
+	/home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-strip atomic_64bits.c.obj --strip-symbol=__atomic_fetch_add_8; \
+	if [ 5 -ge 5 ] && [ 2 -ge 3 ]; then \
+		/home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-strip atomic_64bits.c.obj --strip-symbol=__atomic_load_8; \
+		/home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-strip atomic_64bits.c.obj --strip-symbol=__atomic_store_8; \
+		/home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-strip atomic_64bits.c.obj --strip-symbol=__atomic_exchange_8; \
+	fi; \
+	/home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-ar rc -s librcutils.a *.obj; \
+	cp -rf librcutils.a  /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/install/lib/librcutils.a; \
+	cd ..; \
+	rm -rf /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/atomic_workaround;
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/atomic_workaround
+mkdir -p /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/libmicroros; cd /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/libmicroros; \
+for file in $(find /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/install/lib/ -name '*.a'); do \
+	folder=$(echo $file | sed -E "s/(.+)\/(.+).a/\2/"); \
+	mkdir -p $folder; cd $folder; /home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-ar x $file; \
+	for f in *; do \
+		mv $f ../$folder-$f; \
+	done; \
+	cd ..; rm -rf $folder; \
+done ; \
+/home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-ar rc -s libmicroros.a *.obj; cp libmicroros.a /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component; \
+cd ..; rm -rf libmicroros; \
+cp -R /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/micro_ros_src/install/include /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include;
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls micro_ros_espidf_component mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/calebe/esp/esp-idf/components/app_trace /home/calebe/esp/esp-idf/components/app_update /home/calebe/esp/esp-idf/components/bootloader /home/calebe/esp/esp-idf/components/bootloader_support /home/calebe/esp/esp-idf/components/bt /home/calebe/esp/esp-idf/components/cmock /home/calebe/esp/esp-idf/components/console /home/calebe/esp/esp-idf/components/cxx /home/calebe/esp/esp-idf/components/driver /home/calebe/esp/esp-idf/components/efuse /home/calebe/esp/esp-idf/components/esp-tls /home/calebe/esp/esp-idf/components/esp_adc /home/calebe/esp/esp-idf/components/esp_app_format /home/calebe/esp/esp-idf/components/esp_bootloader_format /home/calebe/esp/esp-idf/components/esp_coex /home/calebe/esp/esp-idf/components/esp_common /home/calebe/esp/esp-idf/components/esp_eth /home/calebe/esp/esp-idf/components/esp_event /home/calebe/esp/esp-idf/components/esp_gdbstub /home/calebe/esp/esp-idf/components/esp_hid /home/calebe/esp/esp-idf/components/esp_http_client /home/calebe/esp/esp-idf/components/esp_http_server /home/calebe/esp/esp-idf/components/esp_https_ota /home/calebe/esp/esp-idf/components/esp_https_server /home/calebe/esp/esp-idf/components/esp_hw_support /home/calebe/esp/esp-idf/components/esp_lcd /home/calebe/esp/esp-idf/components/esp_local_ctrl /home/calebe/esp/esp-idf/components/esp_mm /home/calebe/esp/esp-idf/components/esp_netif /home/calebe/esp/esp-idf/components/esp_netif_stack /home/calebe/esp/esp-idf/components/esp_partition /home/calebe/esp/esp-idf/components/esp_phy /home/calebe/esp/esp-idf/components/esp_pm /home/calebe/esp/esp-idf/components/esp_psram /home/calebe/esp/esp-idf/components/esp_ringbuf /home/calebe/esp/esp-idf/components/esp_rom /home/calebe/esp/esp-idf/components/esp_system /home/calebe/esp/esp-idf/components/esp_timer /home/calebe/esp/esp-idf/components/esp_wifi /home/calebe/esp/esp-idf/components/espcoredump /home/calebe/esp/esp-idf/components/esptool_py /home/calebe/esp/esp-idf/components/fatfs /home/calebe/esp/esp-idf/components/freertos /home/calebe/esp/esp-idf/components/hal /home/calebe/esp/esp-idf/components/heap /home/calebe/esp/esp-idf/components/http_parser /home/calebe/esp/esp-idf/components/idf_test /home/calebe/esp/esp-idf/components/ieee802154 /home/calebe/esp/esp-idf/components/json /home/calebe/esp/esp-idf/components/log /home/calebe/esp/esp-idf/components/lwip /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main /home/calebe/esp/esp-idf/components/mbedtls /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component /home/calebe/esp/esp-idf/components/mqtt /home/calebe/esp/esp-idf/components/newlib /home/calebe/esp/esp-idf/components/nvs_flash /home/calebe/esp/esp-idf/components/nvs_sec_provider /home/calebe/esp/esp-idf/components/openthread /home/calebe/esp/esp-idf/components/partition_table /home/calebe/esp/esp-idf/components/perfmon /home/calebe/esp/esp-idf/components/protobuf-c /home/calebe/esp/esp-idf/components/protocomm /home/calebe/esp/esp-idf/components/pthread /home/calebe/esp/esp-idf/components/sdmmc /home/calebe/esp/esp-idf/components/soc /home/calebe/esp/esp-idf/components/spi_flash /home/calebe/esp/esp-idf/components/spiffs /home/calebe/esp/esp-idf/components/tcp_transport /home/calebe/esp/esp-idf/components/ulp /home/calebe/esp/esp-idf/components/unity /home/calebe/esp/esp-idf/components/usb /home/calebe/esp/esp-idf/components/vfs /home/calebe/esp/esp-idf/components/wear_levelling /home/calebe/esp/esp-idf/components/wifi_provisioning /home/calebe/esp/esp-idf/components/wpa_supplicant /home/calebe/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build

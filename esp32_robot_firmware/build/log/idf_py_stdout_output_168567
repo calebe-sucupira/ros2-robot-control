@@ -1,0 +1,134 @@
+������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),bo�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae64h ( 44644) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ae8c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d1b4 vaddr=40080000 size=02e64h ( 11876) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11818h ( 71704) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031840 vaddr=40082e64 size=09cf8h ( 40184) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  00ebfd742...[0m
+[0;32mI (229) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (235) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (275) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN:    SISTEMA DE CONTROLE - VERSÃO FINAL[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) VALID: ========================================[0m
+[0;32mI (340) VALID:    VALIDAÇÃO FINAL[0m
+[0;32mI (340) VALID: ========================================[0m
+[0;32mI (350) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (360) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (370) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) VALID: 
+Teste 1: ESQ=40, DIR=40[0m
+[0;32mI (2610) VALID: ESQ: 233.5/s, DIR: 221.5/s, Diff: 5.3%[0m
+[0;32mI (2610) VALID: ✅ BOM[0m
+[0;32mI (3610) VALID: 
+Teste 2: ESQ=50, DIR=50[0m
+[0;32mI (5810) VALID: ESQ: 263.0/s, DIR: 276.0/s, Diff: 4.8%[0m
+[0;32mI (5810) VALID: ✅ PERFEITO[0m
+[0;32mI (6810) VALID: 
+Teste 3: ESQ=60, DIR=60[0m
+[0;32mI (9010) VALID: ESQ: 282.5/s, DIR: 292.0/s, Diff: 3.3%[0m
+[0;32mI (9010) VALID: ✅ PERFEITO[0m
+[0;32mI (10010) VALID: 
+Teste 4: ESQ=30, DIR=60[0m
+[0;32mI (12210) VALID: ESQ: 526.5/s, DIR: 287.5/s, Diff: 58.7%[0m
+[0;33mW (12210) VALID: ❌ PROBLEMA[0m
+[0;32mI (13210) VALID: 
+Teste 5: ESQ=60, DIR=30[0m
+[0;32mI (15410) VALID: ESQ: 277.0/s, DIR: 689.0/s, Diff: 85.3%[0m
+[0;33mW (15410) VALID: ❌ PROBLEMA[0m
+[0;32mI (16410) MAIN: 
+========================================[0m
+[0;32mI (16410) MAIN:    CÓDIGO FINAL PARA SEU PROJETO[0m
+[0;32mI (16410) MAIN: ========================================[0m
+[0;32mI (16410) MAIN: 
+// FUNÇÃO DE CONTROLE OTIMIZADA[0m
+[0;32mI (16420) MAIN: // Baseada em testes com relação DIR/ESQ = 1.443[0m
+[0;32mI (16420) MAIN: void mover_robo(int vel_esq, int vel_dir) {[0m
+[0;32mI (16430) MAIN:     // Compensação não-linear para motor direito[0m
+[0;32mI (16440) MAIN:     float fator_dir;[0m
+[0;32mI (16440) MAIN:     if (vel_dir < 25)      fator_dir = 0.80f;[0m
+[0;32mI (16450) MAIN:     else if (vel_dir < 40) fator_dir = 0.75f;[0m
+[0;32mI (16450) MAIN:     else if (vel_dir < 55) fator_dir = 0.65f;[0m
+[0;32mI (16460) MAIN:     else if (vel_dir < 70) fator_dir = 0.55f;[0m
+[0;32mI (16470) MAIN:     else                   fator_dir = 0.50f;[0m
+[0;32mI (16470) MAIN:     [0m
+[0;32mI (16480) MAIN:     int vel_dir_ajust = (int)(vel_dir * fator_dir);[0m
+[0;32mI (16480) MAIN:     [0m
+[0;32mI (16490) MAIN:     // Limiares mínimos[0m
+[0;32mI (16490) MAIN:     if (vel_esq > 0 && vel_esq < 30) vel_esq = 30;[0m
+[0;32mI (16500) MAIN:     if (vel_dir_ajust > 0 && vel_dir_ajust < 20) vel_dir_ajust = 20;[0m
+[0;32mI (16510) MAIN:     [0m
+[0;32mI (16510) MAIN:     // Aplica (substitua motor_esquerdo() e motor_direito())[0m
+[0;32mI (16520) MAIN:     // motor_esquerdo(vel_esq);[0m
+[0;32mI (16520) MAIN:     // motor_direito(vel_dir_ajust);[0m
+[0;32mI (16530) MAIN: }[0m
+[0;32mI (16530) MAIN: 
+// Exemplos de uso:[0m
+[0;32mI (16530) MAIN: // mover_robo(50, 50);   // Anda reto[0m
+[0;32mI (16540) MAIN: // mover_robo(60, 40);   // Curva direita[0m
+[0;32mI (16550) MAIN: // mover_robo(40, 60);   // Curva esquerda[0m
+[0;32mI (16550) MAIN: // mover_robo(0, 0);     // Para[0m
+[0;32mI (16560) MAIN: 
+// Para odometria:[0m
+[0;32mI (16560) MAIN: // - A 50% PWM: ESQ ~262 ticks/s, DIR ~378 ticks/s[0m
+[0;32mI (16570) MAIN: // - Calibre: 1 tick = X cm (meça no seu robô)[0m
+[0;32mI (16580) MAIN: // - Use encoders para correção em tempo real[0m
+[0;32mI (16580) MAIN: 
+========================================[0m
+[0;32mI (16590) MAIN: Próximos passos:[0m
+[0;32mI (16590) MAIN: 1. Use a função mover_robo() no seu projeto[0m
+[0;32mI (16600) MAIN: 2. Para mais precisão, implemente PID usando os encoders[0m
+[0;32mI (16610) MAIN: 3. Calibre a odometria (ticks por metro)[0m
+[0;32mI (16610) MAIN: ========================================[0m

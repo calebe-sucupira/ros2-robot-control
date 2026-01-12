@@ -1,0 +1,411 @@
+��������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),bets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a7f0h (108528) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002a818 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002ee7c vaddr=40080000 size=0119ch (  4508) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93254h (602708) map[0m
+[0;32mI (364) esp_image: segment 4: paddr=000c327c vaddr=4008119c size=1641ch ( 91164) load[0m
+[0;32mI (411) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (411) boot: Disabling RNG early entropy source...[0m
+[0;32mI (423) cpu_start: Multicore app[0m
+[0;32mI (432) cpu_start: Pro cpu start user code[0m
+[0;32mI (432) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (432) cpu_start: Application information:[0m
+[0;32mI (435) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (441) cpu_start: App version:      e18ea92[0m
+[0;32mI (446) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (453) cpu_start: ELF file SHA256:  685fdd496...[0m
+[0;32mI (458) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (464) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (469) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (474) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (479) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (486) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFBB0F8 len 00024F08 (147 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (504) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 400975B8 len 00008A48 (34 KiB): IRAM[0m
+[0;32mI (518) spi_flash: detected chip: generic[0m
+[0;32mI (522) spi_flash: flash io: dio[0m
+[0;33mW (525) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) main_task: Started on CPU0[0m
+[0;32mI (550) main_task: Calling app_main()[0m
+[0;32mI (590) wifi:wifi driver task: 3ffc323c, prio:23, stack:6656, core=0[0m
+[0;32mI (600) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (600) wifi:wifi certification version: v7.0[0m
+[0;32mI (600) wifi:config NVS flash: enabled[0m
+[0;32mI (600) wifi:config nano formating: disabled[0m
+[0;32mI (610) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (610) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (620) wifi:Init management short buffer num: 32[0m
+[0;32mI (620) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (620) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (630) wifi:Init static rx buffer num: 10[0m
+[0;32mI (630) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (640) wifi_init: rx ba win: 6[0m
+[0;32mI (640) wifi_init: tcpip mbox: 32[0m
+[0;32mI (640) wifi_init: udp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp tx win: 5760[0m
+[0;32mI (660) wifi_init: tcp rx win: 5760[0m
+[0;32mI (660) wifi_init: tcp mss: 1440[0m
+[0;32mI (660) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (670) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (670) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (680) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (770) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (790) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (800) wifi:enable tsf[0m
+[0;32mI (800) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (800) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (810) wifi:new:<2,0>, old:<1,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (820) wifi:state: init -> auth (b0)[0m
+[0;32mI (820) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (820) wifi:state: auth -> assoc (0)[0m
+[0;32mI (830) wifi:state: assoc -> init (4a0)[0m
+[0;32mI (840) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (850) wifi:new:<2,0>, old:<2,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (860) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (860) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (870) main_task: Returned from app_main()[0m
+[0;32mI (1820) STATUS: X:-0.00 | V:0.00 | PwrE:0.0 | PwrD:0.5[0m
+[0;32mI (2820) STATUS: X:-0.00 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (3280) wifi:new:<2,0>, old:<2,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (3280) wifi:state: init -> auth (b0)[0m
+[0;32mI (3290) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3300) wifi:state: assoc -> run (10)[0m
+[0;32mI (3320) wifi:connected with MOB-ALTOS, aid = 69, channel 2, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (3330) wifi:security: WPA2-PSK, phy: bgn, rssi: -58[0m
+[0;32mI (3330) wifi:pm start, type: 1[0m
+
+[0;32mI (3330) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3340) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3820) STATUS: X:-0.00 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (4820) STATUS: X:-0.00 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (5820) STATUS: X:-0.00 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (6350) esp_netif_handlers: sta ip: 192.168.18.158, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (6640) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:5, winSize:64[0m
+[0;32mI (6820) STATUS: X:-0.00 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (7820) STATUS: X:-0.00 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (8820) STATUS: X:-0.00 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (9820) STATUS: X:-0.00 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (10820) STATUS: X:0.09 | V:0.12 | PwrE:18.4 | PwrD:15.7[0m
+[0;32mI (11820) STATUS: X:0.20 | V:0.11 | PwrE:14.3 | PwrD:13.9[0m
+[0;32mI (12820) STATUS: X:0.25 | V:-0.07 | PwrE:0.0 | PwrD:-5.2[0m
+[0;32mI (13820) STATUS: X:0.25 | V:0.00 | PwrE:2.5 | PwrD:-2.6[0m
+[0;32mI (14820) STATUS: X:0.25 | V:0.00 | PwrE:2.7 | PwrD:-2.7[0m
+[0;32mI (15820) STATUS: X:0.25 | V:0.00 | PwrE:2.9 | PwrD:-2.9[0m
+[0;32mI (16820) STATUS: X:0.25 | V:0.00 | PwrE:-2.8 | PwrD:2.8[0m
+[0;32mI (17820) STATUS: X:0.25 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (18820) STATUS: X:0.34 | V:0.11 | PwrE:20.1 | PwrD:17.2[0m
+[0;32mI (19820) STATUS: X:0.44 | V:0.10 | PwrE:12.9 | PwrD:15.7[0m
+[0;32mI (20820) STATUS: X:0.55 | V:0.09 | PwrE:15.7 | PwrD:13.2[0m
+[0;32mI (21820) STATUS: X:0.65 | V:0.10 | PwrE:14.5 | PwrD:13.0[0m
+[0;32mI (22820) STATUS: X:0.75 | V:0.10 | PwrE:14.5 | PwrD:11.5[0m
+[0;32mI (23820) STATUS: X:0.84 | V:0.09 | PwrE:15.5 | PwrD:14.6[0m
+[0;32mI (24820) STATUS: X:0.94 | V:0.11 | PwrE:13.7 | PwrD:15.2[0m
+[0;32mI (25820) STATUS: X:1.03 | V:0.10 | PwrE:16.3 | PwrD:12.5[0m
+[0;32mI (26820) STATUS: X:1.09 | V:-0.05 | PwrE:-0.7 | PwrD:-4.6[0m
+[0;32mI (27820) STATUS: X:1.07 | V:-0.14 | PwrE:-24.3 | PwrD:-27.5[0m
+[0;32mI (28820) STATUS: X:0.96 | V:-0.10 | PwrE:-13.6 | PwrD:-13.3[0m
+[0;32mI (29820) STATUS: X:0.91 | V:0.00 | PwrE:2.9 | PwrD:0.4[0m
+[0;32mI (30820) STATUS: X:0.91 | V:0.00 | PwrE:-2.6 | PwrD:2.7[0m
+[0;32mI (31820) STATUS: X:0.91 | V:0.00 | PwrE:2.4 | PwrD:-2.4[0m
+[0;32mI (32820) STATUS: X:0.91 | V:0.00 | PwrE:-2.9 | PwrD:2.9[0m
+[0;32mI (33820) STATUS: X:0.91 | V:0.00 | PwrE:2.4 | PwrD:-2.3[0m
+[0;32mI (34820) STATUS: X:0.91 | V:0.00 | PwrE:2.5 | PwrD:-2.4[0m
+[0;32mI (35820) STATUS: X:0.91 | V:0.00 | PwrE:2.6 | PwrD:-2.6[0m
+[0;32mI (36820) STATUS: X:1.02 | V:0.11 | PwrE:15.6 | PwrD:13.1[0m
+[0;32mI (37820) STATUS: X:1.12 | V:0.08 | PwrE:17.9 | PwrD:13.1[0m
+[0;32mI (38820) STATUS: X:1.23 | V:0.10 | PwrE:14.5 | PwrD:13.7[0m
+[0;32mI (39820) STATUS: X:1.25 | V:0.00 | PwrE:1.5 | PwrD:-0.2[0m
+[0;32mI (40820) STATUS: X:1.27 | V:0.14 | PwrE:29.1 | PwrD:27.3[0m
+[0;32mI (41820) STATUS: X:1.39 | V:0.10 | PwrE:15.9 | PwrD:14.7[0m
+[0;32mI (42820) STATUS: X:1.43 | V:-0.30 | PwrE:13.9 | PwrD:2.7[0m
+[0;32mI (43820) STATUS: X:1.43 | V:0.00 | PwrE:-0.6 | PwrD:0.0[0m
+[0;32mI (44820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (45820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (46820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (47820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (48820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (49820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (50820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (51820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (52820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (53820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (54820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (55820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (56820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (57820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (58820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (59820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (60820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (61820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (62820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (63820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (64820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (65820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (66820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (67820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (68820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (69820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (70820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (71820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (72820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (73820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (74820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (75820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (76820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (77820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (78820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (79820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (80820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (81820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (82820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (83820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (84820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (85820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (86820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (87820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (88820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (89820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (90820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (91820) STATUS: X:1.43 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (92820) STATUS: X:1.39 | V:-0.17 | PwrE:-17.8 | PwrD:-16.9[0m
+[0;32mI (93820) STATUS: X:1.29 | V:-0.07 | PwrE:-16.9 | PwrD:-16.2[0m
+[0;32mI (94820) STATUS: X:1.19 | V:-0.12 | PwrE:24.1 | PwrD:25.0[0m
+[0;32mI (95820) STATUS: X:1.20 | V:0.00 | PwrE:1.1 | PwrD:0.2[0m
+[0;32mI (96820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (97820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (98820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (99820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (100820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (101820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (102820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (103820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (104820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (105820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (106820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (107820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (108820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (109820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (110820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (111820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (112820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (113820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (114820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (115820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (116820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (117820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (118820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (119820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (120820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (121820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (122820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (123820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (124820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (125820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (126820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (127820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (128820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (129820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (130820) STATUS: X:1.20 | V:0.00 | PwrE:3.5 | PwrD:-3.5[0m
+[0;32mI (131820) STATUS: X:1.20 | V:0.00 | PwrE:6.7 | PwrD:-6.7[0m
+[0;32mI (132820) STATUS: X:1.20 | V:0.00 | PwrE:8.4 | PwrD:-8.4[0m
+[0;32mI (133820) STATUS: X:1.20 | V:0.00 | PwrE:-4.0 | PwrD:4.0[0m
+[0;32mI (134820) STATUS: X:1.20 | V:0.00 | PwrE:-9.3 | PwrD:9.3[0m
+[0;32mI (135820) STATUS: X:1.20 | V:0.00 | PwrE:-9.8 | PwrD:9.8[0m
+[0;32mI (136820) STATUS: X:1.20 | V:0.00 | PwrE:11.6 | PwrD:-11.6[0m
+[0;32mI (137820) STATUS: X:1.20 | V:0.02 | PwrE:-11.1 | PwrD:9.2[0m
+[0;32mI (138820) STATUS: X:1.20 | V:0.01 | PwrE:-6.6 | PwrD:6.6[0m
+[0;32mI (139820) STATUS: X:1.20 | V:0.04 | PwrE:-20.6 | PwrD:13.8[0m
+[0;32mI (140820) STATUS: X:1.20 | V:0.00 | PwrE:-22.6 | PwrD:23.7[0m
+[0;32mI (141820) STATUS: X:1.19 | V:0.03 | PwrE:-9.7 | PwrD:6.0[0m
+[0;32mI (142820) STATUS: X:1.20 | V:-0.01 | PwrE:27.2 | PwrD:-26.4[0m
+[0;32mI (143820) STATUS: X:1.20 | V:0.03 | PwrE:8.7 | PwrD:-13.0[0m
+[0;32mI (144820) STATUS: X:1.20 | V:0.03 | PwrE:-28.7 | PwrD:33.4[0m
+[0;32mI (145820) STATUS: X:1.19 | V:-0.09 | PwrE:-3.2 | PwrD:7.1[0m
+[0;32mI (146820) STATUS: X:1.18 | V:0.03 | PwrE:-22.1 | PwrD:7.7[0m
+[0;32mI (147820) STATUS: X:1.18 | V:0.00 | PwrE:-0.3 | PwrD:-0.5[0m
+[0;32mI (148820) STATUS: X:1.18 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (149820) STATUS: X:1.18 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (150820) STATUS: X:1.18 | V:-0.01 | PwrE:6.7 | PwrD:-6.5[0m
+[0;32mI (151820) STATUS: X:1.18 | V:0.00 | PwrE:-1.0 | PwrD:-1.9[0m
+[0;32mI (152820) STATUS: X:1.17 | V:0.00 | PwrE:-8.2 | PwrD:5.6[0m
+[0;32mI (153820) STATUS: X:1.17 | V:0.00 | PwrE:0.4 | PwrD:-1.2[0m
+[0;32mI (154820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (155820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (156820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (157820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (158820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (159820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (160820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (161820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (162820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (163820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (164820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (165820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (166820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (167820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (168820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (169820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (170820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (171820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (172820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (173820) STATUS: X:1.17 | V:-0.03 | PwrE:-10.2 | PwrD:8.1[0m
+[0;32mI (174820) STATUS: X:1.17 | V:0.00 | PwrE:0.8 | PwrD:-0.9[0m
+[0;32mI (175820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (176820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (177820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (178820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (179820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (180820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (181820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (182820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (183820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (184820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (185820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (186820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (187820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (188820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (189820) STATUS: X:1.17 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (190820) STATUS: X:1.16 | V:-0.04 | PwrE:27.1 | PwrD:-7.6[0m
+[0;32mI (191820) STATUS: X:1.17 | V:-0.03 | PwrE:31.4 | PwrD:-9.3[0m
+[0;32mI (192820) STATUS: X:1.20 | V:0.00 | PwrE:35.7 | PwrD:-6.0[0m
+[0;32mI (193820) STATUS: X:1.22 | V:-0.02 | PwrE:37.8 | PwrD:-6.5[0m
+[0;32mI (194820) STATUS: X:1.19 | V:0.03 | PwrE:15.5 | PwrD:-16.9[0m
+[0;32mI (195820) STATUS: X:1.19 | V:0.01 | PwrE:13.8 | PwrD:-7.6[0m
+[0;32mI (196820) STATUS: X:1.20 | V:0.00 | PwrE:0.4 | PwrD:0.0[0m
+[0;32mI (197820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (198820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (199820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (200820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (201820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (202820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (203820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (204820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (205820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (206820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (207820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (208820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (209820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (210820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (211820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (212820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (213820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (214820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (215820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (216820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (217820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (218820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (219820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (220820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (221820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (222820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (223820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (224820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (225820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (226820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (227820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (228820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (229820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (230820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (231820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (232820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (233820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (234820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (235820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (236820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (237820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (238820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (239820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (240820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (241820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (242820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (243820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (244820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (245820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (246820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (247820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (248820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (249820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (250820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (251820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (252820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (253820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (254820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (255820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (256820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (257820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (258820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (259820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (260820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (261820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (262820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (263820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (264820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (265820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (266820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (267820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (268820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (269820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (270820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (271820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (272820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (273820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (274820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (275820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (276820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (277820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (278820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (279820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (280820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (281820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (282820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (283820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (284820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (285820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (286820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (287820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (288820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (289820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (290820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (291820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (292820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (293820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (294820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (295820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (296820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (297820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (298820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (299820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (300820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (301820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (302820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m
+[0;32mI (303820) STATUS: X:1.20 | V:0.00 | PwrE:0.0 | PwrD:0.0[0m

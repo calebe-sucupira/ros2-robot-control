@@ -1,0 +1,319 @@
+�s Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RE�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1af20h (110368) map[0m
+[0;32mI (144) esp_image: segment 1: paddr=0002af48 vaddr=3ffb0000 size=0470ch ( 18188) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002f65c vaddr=40080000 size=009bch (  2492) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=942ech (606956) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c4314 vaddr=400809bc size=16b80h ( 93056) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (426) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (435) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) cpu_start: Application information:[0m
+[0;32mI (438) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (444) cpu_start: App version:      e18ea92[0m
+[0;32mI (449) cpu_start: Compile time:     Dec 12 2025 10:43:53[0m
+[0;32mI (455) cpu_start: ELF file SHA256:  0ed8b0550...[0m
+[0;32mI (461) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (467) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (472) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (476) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (489) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFBB490 len 00024B70 (146 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 4009753C len 00008AC4 (34 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (552) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (552) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (562) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (572) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (582) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (592) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+
+
+=== SISTEMA COM FREIO ATIVO E MÁXIMA POTÊNCIA ===
+Mudanças CRÍTICAS:
+1. METROS_POR_TICK: 0.00010 (DOBRO!)
+2. PWM BASE: ESQ=0.75, DIR=0.72
+3. FREIO ATIVO: BRAKE_PWM=0.3
+4. KP=0.8, KI=0.4, KD=0.1
+5. Filtro mais responsivo (alpha=0.7)
+
+Objetivo: Velocidade REAL próxima da TARGET e freio ativo!
+[0;32mI (652) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (662) wifi:wifi driver task: 3ffc379c, prio:23, stack:6656, core=0[0m
+[0;32mI (672) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (672) wifi:wifi certification version: v7.0[0m
+[0;32mI (672) wifi:config NVS flash: enabled[0m
+[0;32mI (672) wifi:config nano formating: disabled[0m
+[0;32mI (672) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (682) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (682) wifi:Init management short buffer num: 32[0m
+[0;32mI (692) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (692) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (702) wifi:Init static rx buffer num: 10[0m
+[0;32mI (702) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (702) wifi_init: rx ba win: 6[0m
+[0;32mI (712) wifi_init: tcpip mbox: 32[0m
+[0;32mI (712) wifi_init: udp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp mbox: 6[0m
+[0;32mI (722) wifi_init: tcp tx win: 5760[0m
+[0;32mI (722) wifi_init: tcp rx win: 5760[0m
+[0;32mI (732) wifi_init: tcp mss: 1440[0m
+[0;32mI (732) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (732) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (742) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (752) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (842) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (862) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (862) wifi:enable tsf[0m
+[0;32mI (872) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (882) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (882) wifi:state: init -> auth (b0)[0m
+[0;32mI (1882) wifi:state: auth -> init (200)[0m
+[0;32mI (1892) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1892) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (1892) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (4312) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (4312) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (4312) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4312) wifi:state: init -> auth (b0)[0m
+[0;32mI (4332) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4342) wifi:state: assoc -> run (10)[0m
+[0;32mI (4362) wifi:connected with Calebe, aid = 6, channel 1, BW20, bssid = b2:30:89:00:82:83[0m
+[0;32mI (4362) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (4362) wifi:pm start, type: 1[0m
+
+[0;32mI (4362) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4372) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4382) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5392) esp_netif_handlers: sta ip: 10.250.183.207, mask: 255.255.255.0, gw: 10.250.183.108[0m
+[0;32mI (5392) wifi_station_netif: got ip:10.250.183.207[0m
+[0;32mI (5392) wifi_station_netif: connected to ap SSID:Calebe password:88111447[0m
+[0;32mI (5402) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5442) wifi:<ba-add>idx:0 (ifx:0, b2:30:89:00:82:83), tid:0, ssn:3, winSize:64[0m
+
+=== SISTEMA PRONTO - TESTE COM FREIO ===
+
+Testes sugeridos:
+1. 0.3 m/s por 3 segundos
+2. PARAR (deve frear ativamente)
+3. 0.5 m/s por 3 segundos
+4. PARAR (deve frear ativamente)
+
+Observe: Se aparecer [BRAKE], o freio está funcionando!
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.00 Cur=0.00 Erro=0.00 PWM=0.00 KS=0 I=0.000
+DIR: Tgt=0.00 Cur=0.00 Erro=0.00 PWM=0.00 KS=0 I=0.000
+Ticks/50ms: ESQ=0 DIR=0
+================================
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.00 Cur=0.00 Erro=0.00 PWM=0.00 KS=0 I=0.000
+DIR: Tgt=0.00 Cur=0.00 Erro=0.00 PWM=0.00 KS=0 I=0.000
+Ticks/50ms: ESQ=0 DIR=0
+================================
+[CMD] linear_x=0.20, angular_z=0.30 -> ESQ=0.18, DIR=0.22
+[KICK] Motor 0: PWM=0.90 por 400ms
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.04 Erro=0.15 PWM=0.95 KS=1 I=0.032
+DIR: Tgt=0.22 Cur=0.05 Erro=0.17 PWM=0.95 KS=0 I=0.038
+Ticks/50ms: ESQ=20 DIR=25
+================================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.90 por 400ms
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.04 Erro=0.14 PWM=0.95 KS=1 I=0.070
+DIR: Tgt=0.22 Cur=0.04 Erro=0.17 PWM=0.95 KS=0 I=0.083
+Ticks/50ms: ESQ=23 DIR=26
+================================
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.01 Erro=0.17 PWM=0.95 KS=1 I=0.109
+DIR: Tgt=0.22 Cur=0.02 Erro=0.20 PWM=0.95 KS=0 I=0.131
+Ticks/50ms: ESQ=4 DIR=5
+================================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.90 por 400ms
+[CMD] linear_x=0.20, angular_z=0.30 -> ESQ=0.18, DIR=0.22
+[CMD] linear_x=0.20, angular_z=0.30 -> ESQ=0.18, DIR=0.22
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.11 Erro=0.07 PWM=0.95 KS=0 I=0.129
+DIR: Tgt=0.22 Cur=0.11 Erro=0.10 PWM=0.95 KS=0 I=0.159
+Ticks/50ms: ESQ=6 DIR=6
+================================
+[KICK] Motor 0: PWM=0.90 por 400ms
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.03 Erro=0.16 PWM=0.95 KS=1 I=0.166
+DIR: Tgt=0.22 Cur=0.02 Erro=0.19 PWM=0.95 KS=0 I=0.204
+Ticks/50ms: ESQ=12 DIR=11
+================================
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.02 Erro=0.16 PWM=0.95 KS=1 I=0.207
+DIR: Tgt=0.22 Cur=0.02 Erro=0.19 PWM=0.95 KS=0 I=0.253
+Ticks/50ms: ESQ=11 DIR=12
+================================
+[CMD] linear_x=0.20, angular_z=0.30 -> ESQ=0.18, DIR=0.22
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.02 Erro=0.16 PWM=0.95 KS=0 I=0.238
+DIR: Tgt=0.22 Cur=0.02 Erro=0.20 PWM=0.95 KS=0 I=0.292
+Ticks/50ms: ESQ=6 DIR=6
+================================
+[CMD] linear_x=0.20, angular_z=0.30 -> ESQ=0.18, DIR=0.22
+[CMD] linear_x=0.20, angular_z=0.30 -> ESQ=0.18, DIR=0.22
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.13 Erro=0.06 PWM=0.95 KS=0 I=0.238
+DIR: Tgt=0.22 Cur=0.13 Erro=0.09 PWM=0.95 KS=0 I=0.301
+Ticks/50ms: ESQ=11 DIR=13
+================================
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.02 Erro=0.16 PWM=0.95 KS=0 I=0.275
+DIR: Tgt=0.22 Cur=0.02 Erro=0.20 PWM=0.95 KS=0 I=0.348
+Ticks/50ms: ESQ=7 DIR=5
+================================
+[CMD] linear_x=0.20, angular_z=0.30 -> ESQ=0.18, DIR=0.22
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.02 Erro=0.16 PWM=0.95 KS=0 I=0.300
+DIR: Tgt=0.22 Cur=0.02 Erro=0.20 PWM=0.95 KS=0 I=0.381
+Ticks/50ms: ESQ=5 DIR=5
+================================
+[CMD] linear_x=0.20, angular_z=0.30 -> ESQ=0.18, DIR=0.22
+[CMD] linear_x=0.20, angular_z=0.30 -> ESQ=0.18, DIR=0.22
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.18 Cur=0.34 Erro=-0.16 PWM=0.60 KS=0 I=0.305
+DIR: Tgt=0.22 Cur=0.33 Erro=-0.12 PWM=0.60 KS=0 I=0.396
+Ticks/50ms: ESQ=233 DIR=228
+================================
+[CMD] linear_x=0.00, angular_z=0.00 -> ESQ=0.00, DIR=0.00
+[BRAKE] Motor 0: Vel=0.13, Brake PWM=-0.30
+[BRAKE] Motor 1: Vel=0.12, Brake PWM=-0.30
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.00 Cur=0.00 Erro=-0.00 PWM=0.00 KS=0 I=0.000
+DIR: Tgt=0.00 Cur=0.00 Erro=-0.00 PWM=0.00 KS=0 I=0.000
+Ticks/50ms: ESQ=0 DIR=0
+================================
+[CMD] linear_x=0.00, angular_z=0.00 -> ESQ=0.00, DIR=0.00
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.00 Cur=0.00 Erro=-0.00 PWM=0.00 KS=0 I=0.000
+DIR: Tgt=0.00 Cur=0.00 Erro=-0.00 PWM=0.00 KS=0 I=0.000
+Ticks/50ms: ESQ=0 DIR=0
+================================
+[CMD] linear_x=0.00, angular_z=0.00 -> ESQ=0.00, DIR=0.00
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.00 Cur=0.00 Erro=-0.00 PWM=0.00 KS=0 I=0.000
+DIR: Tgt=0.00 Cur=0.00 Erro=-0.00 PWM=0.00 KS=0 I=0.000
+Ticks/50ms: ESQ=0 DIR=0
+================================
+[CMD] linear_x=0.00, angular_z=0.00 -> ESQ=0.00, DIR=0.00
+[CMD] linear_x=0.00, angular_z=0.00 -> ESQ=0.00, DIR=0.00
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.00 Cur=0.00 Erro=-0.00 PWM=0.00 KS=0 I=0.000
+DIR: Tgt=0.00 Cur=0.00 Erro=-0.00 PWM=0.00 KS=0 I=0.000
+Ticks/50ms: ESQ=0 DIR=0
+================================
+[CMD] linear_x=0.00, angular_z=0.00 -> ESQ=0.00, DIR=0.00
+[CMD] linear_x=0.50, angular_z=0.00 -> ESQ=0.50, DIR=0.50
+[KICK] Motor 0: PWM=0.90 por 400ms
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.50 Cur=0.01 Erro=0.49 PWM=0.95 KS=1 I=0.074
+DIR: Tgt=0.50 Cur=0.01 Erro=0.49 PWM=0.95 KS=0 I=0.074
+Ticks/50ms: ESQ=4 DIR=4
+================================
+[CMD] linear_x=0.50, angular_z=0.00 -> ESQ=0.50, DIR=0.50
+[KICK] Motor 0: Finalizado
+[CMD] linear_x=0.50, angular_z=0.00 -> ESQ=0.50, DIR=0.50
+[CMD] linear_x=0.50, angular_z=0.00 -> ESQ=0.50, DIR=0.50
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.50 Cur=0.37 Erro=0.13 PWM=0.68 KS=0 I=0.138
+DIR: Tgt=0.50 Cur=0.35 Erro=0.15 PWM=0.66 KS=0 I=0.144
+Ticks/50ms: ESQ=236 DIR=226
+================================
+[CMD] linear_x=0.50, angular_z=0.00 -> ESQ=0.50, DIR=0.50
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.50 Cur=0.10 Erro=0.40 PWM=0.95 KS=0 I=0.231
+DIR: Tgt=0.50 Cur=0.09 Erro=0.41 PWM=0.95 KS=0 I=0.239
+Ticks/50ms: ESQ=6 DIR=7
+================================
+[CMD] linear_x=0.50, angular_z=0.00 -> ESQ=0.50, DIR=0.50
+[CMD] linear_x=0.50, angular_z=0.00 -> ESQ=0.50, DIR=0.50
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.50 Cur=0.39 Erro=0.11 PWM=0.95 KS=0 I=0.316
+DIR: Tgt=0.50 Cur=0.36 Erro=0.14 PWM=0.95 KS=0 I=0.327
+Ticks/50ms: ESQ=217 DIR=195
+================================
+[CMD] linear_x=0.50, angular_z=0.00 -> ESQ=0.50, DIR=0.50
+[CMD] linear_x=0.50, angular_z=0.00 -> ESQ=0.50, DIR=0.50
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.50 Cur=0.36 Erro=0.14 PWM=0.79 KS=0 I=0.391
+DIR: Tgt=0.50 Cur=0.34 Erro=0.16 PWM=0.81 KS=0 I=0.405
+Ticks/50ms: ESQ=231 DIR=218
+================================
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.50 Cur=0.02 Erro=0.48 PWM=0.95 KS=0 I=0.501
+DIR: Tgt=0.50 Cur=0.03 Erro=0.47 PWM=0.95 KS=0 I=0.516
+Ticks/50ms: ESQ=9 DIR=11
+================================
+[CMD] linear_x=0.50, angular_z=0.00 -> ESQ=0.50, DIR=0.50
+
+=== CONTROLE COM FREIO ATIVO ===
+ESQ: Tgt=0.50 Cur=0.03 Erro=0.47 PWM=0.95 KS=0 I=0.604
+DIR: Tgt=0.50 Cur=0.03 Erro=0.47 PWM=0.95 KS=0 I=0.620
+Ticks/50ms: ESQ=14 DIR=14
+================================

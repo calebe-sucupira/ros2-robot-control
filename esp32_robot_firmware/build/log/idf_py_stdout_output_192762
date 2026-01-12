@@ -1,0 +1,118 @@
+���29 2019 12:21:46
+
+rst:0x1 (POWERON_RESETets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a534h ( 42292) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a55c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c884 vaddr=40080000 size=03794h ( 14228) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1138ch ( 70540) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=000313b4 vaddr=40083794 size=093c8h ( 37832) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (201) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (210) cpu_start: App version:      e18ea92[0m
+[0;32mI (215) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  9b2d4e9f7...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (233) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (273) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (287) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (294) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (308) main_task: Started on CPU0[0m
+[0;32mI (318) main_task: Calling app_main()[0m
+[0;32mI (318) MAIN: ========================================[0m
+[0;32mI (318) MAIN:    CONTROLE DE ROBÔ - SOLUÇÃO PRÁTICA[0m
+[0;32mI (318) MAIN: ========================================[0m
+[0;32mI (328) MAIN: Escolha o método (mude o número):[0m
+[0;32mI (338) MAIN: 1. PID Avançado (recomendado)[0m
+[0;32mI (338) MAIN: 2. Ajuste Automático Simples[0m
+[0;32mI (348) MAIN: 3. Calibração Rápida[0m
+[0;32mI (348) MAIN: 
+Executando AJUSTE AUTOMÁTICO...[0m
+[0;32mI (358) MAIN: Começa com 50% e ajusta baseado na diferença[0m
+[0;32mI (358) MAIN: Mais simples e prático![0m
+[0;32mI (368) AUTO: ========================================[0m
+[0;32mI (368) AUTO:    ANDAR RETO COM AJUSTE AUTOMÁTICO[0m
+[0;32mI (378) AUTO: ========================================[0m
+[0;32mI (378) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (388) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (398) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (408) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (418) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (428) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1448) AUTO: ESQ: 50%, DIR: 46%, Diff: 63[0m
+[0;32mI (2458) AUTO: ESQ: 50%, DIR: 42%, Diff: 109[0m
+[0;32mI (3468) AUTO: ESQ: 50%, DIR: 33%, Diff: 272[0m
+[0;32mI (4478) AUTO: ESQ: 50%, DIR: 25%, Diff: 365[0m
+[0;32mI (5488) AUTO: ESQ: 50%, DIR: 20%, Diff: 423[0m
+[0;32mI (6498) AUTO: ESQ: 50%, DIR: 20%, Diff: 441[0m
+[0;32mI (7508) AUTO: ESQ: 49%, DIR: 20%, Diff: 448[0m
+[0;32mI (8518) AUTO: ESQ: 49%, DIR: 20%, Diff: 473[0m
+[0;32mI (9528) AUTO: ESQ: 49%, DIR: 20%, Diff: 561[0m
+[0;32mI (10538) AUTO: ESQ: 49%, DIR: 20%, Diff: 675[0m
+[0;32mI (11548) AUTO: ESQ: 49%, DIR: 20%, Diff: 805[0m
+[0;32mI (12558) AUTO: ESQ: 49%, DIR: 20%, Diff: 939[0m
+[0;32mI (13568) AUTO: ESQ: 49%, DIR: 20%, Diff: 1064[0m
+[0;32mI (14578) AUTO: ESQ: 49%, DIR: 20%, Diff: 1191[0m
+[0;32mI (15588) AUTO: ESQ: 49%, DIR: 20%, Diff: 1313[0m
+[0;32mI (16598) AUTO: ESQ: 49%, DIR: 20%, Diff: 1441[0m
+[0;32mI (17608) AUTO: ESQ: 49%, DIR: 20%, Diff: 1565[0m
+[0;32mI (18618) AUTO: ESQ: 49%, DIR: 20%, Diff: 1682[0m
+[0;32mI (19628) AUTO: ESQ: 49%, DIR: 20%, Diff: 1779[0m
+[0;32mI (20638) AUTO: ESQ: 49%, DIR: 20%, Diff: 1919[0m
+[0;32mI (21648) AUTO: ESQ: 49%, DIR: 20%, Diff: 2040[0m
+[0;32mI (22658) AUTO: ESQ: 49%, DIR: 20%, Diff: 2169[0m
+[0;32mI (23668) AUTO: ESQ: 49%, DIR: 20%, Diff: 2256[0m
+[0;32mI (24678) AUTO: ESQ: 46%, DIR: 20%, Diff: 2193[0m
+[0;32mI (25688) AUTO: ESQ: 45%, DIR: 20%, Diff: 2207[0m
+[0;32mI (26698) AUTO: ESQ: 45%, DIR: 20%, Diff: 2262[0m
+[0;32mI (27708) AUTO: ESQ: 45%, DIR: 20%, Diff: 2262[0m
+[0;32mI (28718) AUTO: ESQ: 45%, DIR: 20%, Diff: 2262[0m
+[0;32mI (29728) AUTO: ESQ: 45%, DIR: 20%, Diff: 2262[0m
+[0;32mI (30738) AUTO: ESQ: 45%, DIR: 20%, Diff: 2262[0m
+[0;32mI (31748) AUTO: ESQ: 43%, DIR: 20%, Diff: 1976[0m
+[0;32mI (32758) AUTO: ESQ: 43%, DIR: 20%, Diff: 1792[0m
+[0;32mI (33768) AUTO: ESQ: 42%, DIR: 20%, Diff: 1810[0m
+[0;32mI (34778) AUTO: ESQ: 41%, DIR: 20%, Diff: 963[0m
+[0;32mI (35788) AUTO: ESQ: 41%, DIR: 20%, Diff: 1046[0m
+[0;32mI (36798) AUTO: ESQ: 39%, DIR: 20%, Diff: -3183[0m
+[0;32mI (37808) AUTO: ESQ: 37%, DIR: 20%, Diff: -4966[0m
+[0;32mI (38818) AUTO: ESQ: 34%, DIR: 20%, Diff: -5421[0m
+[0;32mI (39828) AUTO: ESQ: 29%, DIR: 20%, Diff: -5483[0m
+[0;32mI (40838) AUTO: ESQ: 29%, DIR: 20%, Diff: -5483[0m

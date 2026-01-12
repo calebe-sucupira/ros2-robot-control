@@ -1,0 +1,209 @@
+�ul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b934h ( 47412) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b95c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001dc84 vaddr=40080000 size=02394h (  9108) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=12078h ( 73848) map[0m
+[0;32mI (162) esp_image: segment 4: paddr=000320a0 vaddr=40082394 size=0a7c8h ( 42952) load[0m
+[0;32mI (185) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) cpu_start: Application information:[0m
+[0;32mI (209) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (215) cpu_start: App version:      e18ea92[0m
+[0;32mI (220) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  fa26147b4...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (238) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (242) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (247) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (252) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (259) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (292) spi_flash: detected chip: generic[0m
+[0;32mI (295) spi_flash: flash io: dio[0m
+[0;33mW (299) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (313) main_task: Started on CPU0[0m
+[0;32mI (323) main_task: Calling app_main()[0m
+[0;32mI (323) MAIN: ========================================[0m
+[0;32mI (323) MAIN:    SOLUÇÃO FINAL: PROBLEMA DE ALIMENTAÇÃO[0m
+[0;32mI (323) MAIN: ========================================[0m
+[0;32mI (333) MAIN: SEUS RESULTADOS CONFIRMAM:[0m
+[0;32mI (343) MAIN: 1. Motor esquerdo FUNCIONA isolado[0m
+[0;32mI (343) MAIN: 2. Com ambos ligados, esquerdo PARA[0m
+[0;32mI (353) MAIN: 3. Fonte não aguenta dois motores em baixa PWM[0m
+[0;32mI (353) MAIN: [0m
+[0;32mI (353) MAIN: SOLUÇÃO DE SOFTWARE:[0m
+[0;32mI (363) MAIN: - Limiar dinâmico (maior quando ambos ativos)[0m
+[0;32mI (373) MAIN: - Compensação de 0.781 para o direito[0m
+[0;32mI (373) MAIN: ========================================[0m
+[0;32mI (383) ALIM: ========================================[0m
+[0;32mI (383) ALIM:    TESTE CRÍTICO: ALIMENTAÇÃO[0m
+[0;32mI (393) ALIM: ========================================[0m
+[0;32mI (393) ALIM: HIPÓTESE: Fonte não aguenta dois motores[0m
+[0;32mI (403) ALIM: Vamos testar individualmente e juntos[0m
+[0;32mI (413) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (413) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (423) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (433) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (443) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (453) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (463) ALIM: Teste 1: Apenas motor DIREITO (30% PWM)[0m
+[0;32mI (2473) ALIM: Direito sozinho: 452 ticks (226.0/s)[0m
+[0;32mI (4473) ALIM: Teste 2: Apenas motor ESQUERDO (30% PWM)[0m
+[0;32mI (6473) ALIM: Esquerdo sozinho: 326 ticks (163.0/s)[0m
+[0;32mI (8473) ALIM: Teste 3: AMBOS motores (30% PWM)[0m
+[0;32mI (10473) ALIM: AMBOS ligados:[0m
+[0;32mI (10473) ALIM:   Esquerdo: 372 ticks (186.0/s)[0m
+[0;32mI (10473) ALIM:   Direito:  515 ticks (257.5/s)[0m
+[0;32mI (10473) ALIM: ========================================[0m
+[0;32mI (10473) ALIM: ANÁLISE:[0m
+[0;32mI (10483) ALIM: ❓ Outro problema além da fonte[0m
+[0;32mI (12483) CAL: ========================================[0m
+[0;32mI (12483) CAL:    CALIBRAÇÃO COM LIMIAR DINÂMICO[0m
+[0;32mI (12483) CAL: ========================================[0m
+[0;32mI (12483) CAL: ESTRATÉGIA DE COMPENSAÇÃO INTELIGENTE:[0m
+[0;32mI (12493) CAL: 1. Se AMBOS motores ligados: usar limiar 50%[0m
+[0;32mI (12493) CAL: 2. Se apenas ESQUERDO: usar limiar 40%[0m
+[0;32mI (12503) CAL: 3. Compensação: direito = 78.1% do esquerdo[0m
+[0;32mI (12513) CAL: [0m
+[0;32mI (12513) CAL: TESTANDO ESTRATÉGIA:[0m
+[0;32mI (12513) CAL: --- Caso 1: Ambos 30% (deveria ajustar para 50%) ---[0m
+[0;32mI (12523) CAL: Original: ESQ=30%, DIR=30%[0m
+[0;32mI (12523) CAL: Ajustado: ESQ=50%, DIR=23%[0m
+[0;32mI (12533) CAL: --- Caso 2: Ambos 60% ---[0m
+[0;32mI (12533) CAL: Original: ESQ=60%, DIR=60%[0m
+[0;32mI (12543) CAL: Ajustado: ESQ=60%, DIR=46%[0m
+[0;32mI (12543) CAL: --- Caso 3: Curva suave ESQ=40%, DIR=70% ---[0m
+[0;32mI (12553) CAL: Ajustado para curva: ESQ=50%, DIR=54%[0m
+[0;32mI (12553) CAL: ========================================[0m
+[0;32mI (12563) CAL: FUNÇÃO FINAL DE COMPENSAÇÃO:[0m
+[0;32mI (12573) CAL: [0m
+[0;32mI (12573) CAL: void mover_compensado(int esq, int dir, bool ambos_ativos) {[0m
+[0;32mI (12583) CAL:     // Limiar dinâmico baseado na carga[0m
+[0;32mI (12583) CAL:     int limiar = ambos_ativos ? 50 : 40;[0m
+[0;32mI (12593) CAL:     [0m
+[0;32mI (12593) CAL:     // Ajusta motor esquerdo[0m
+[0;32mI (12603) CAL:     if (esq > 0 && esq < limiar) {[0m
+[0;32mI (12603) CAL:         esq = limiar;[0m
+[0;32mI (12603) CAL:     }[0m
+[0;32mI (12613) CAL:     [0m
+[0;32mI (12613) CAL:     // Compensa diferença de velocidade[0m
+[0;32mI (12623) CAL:     float compensacao = 0.781f;[0m
+[0;32mI (12623) CAL:     dir = (int)(dir * compensacao);[0m
+[0;32mI (12633) CAL:     [0m
+[0;32mI (12633) CAL:     // Aplica aos motores[0m
+[0;32mI (12633) CAL:     motor_esquerdo(esq);[0m
+[0;32mI (12643) CAL:     motor_direito(dir);[0m
+[0;32mI (12643) CAL: }[0m
+[0;32mI (14653) TESTE: ========================================[0m
+[0;32mI (14653) TESTE:    TESTE PRÁTICO COMPENSAÇÃO AVANÇADA[0m
+[0;32mI (14653) TESTE: ========================================[0m
+[0;32mI (14653) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (14663) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (14673) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (14683) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (14693) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (14703) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;31mE (14713) gpio: gpio_install_isr_service(508): GPIO isr service already installed[0m
+[0;32mI (14723) TESTE: Testando estratégia: ambos ativos -> limiar 50%[0m
+[0;32mI (14723) TESTE: --- Cenário 1: ESQ=30%, DIR=30% ---[0m
+[0;32mI (14733) TESTE: Ajustado para: ESQ=50%, DIR=23%[0m
+[0;32mI (16743) TESTE: Resultado: ESQ=245.0/s, DIR=0.0/s[0m
+[0;32mI (16743) TESTE: Diferença: ±200.0%[0m
+[0;33mW (16743) TESTE: ⚠️ Ajuste necessário[0m
+[0;32mI (17743) TESTE: --- Cenário 2: ESQ=50%, DIR=50% ---[0m
+[0;32mI (17743) TESTE: Ajustado para: ESQ=50%, DIR=39%[0m
+[0;32mI (19743) TESTE: Resultado: ESQ=256.0/s, DIR=310.5/s[0m
+[0;32mI (19743) TESTE: Diferença: ±19.2%[0m
+[0;33mW (19743) TESTE: ⚠️ Ajuste necessário[0m
+[0;32mI (20743) TESTE: --- Cenário 3: ESQ=70%, DIR=70% ---[0m
+[0;32mI (20743) TESTE: Ajustado para: ESQ=70%, DIR=54%[0m
+[0;32mI (22743) TESTE: Resultado: ESQ=294.5/s, DIR=402.5/s[0m
+[0;32mI (22743) TESTE: Diferença: ±31.0%[0m
+[0;33mW (22743) TESTE: ⚠️ Ajuste necessário[0m
+[0;32mI (23743) MAIN: ========================================[0m
+[0;32mI (23743) MAIN:    CÓDIGO FINAL PARA SEU PROJETO[0m
+[0;32mI (23743) MAIN: ========================================[0m
+[0;32mI (23743) MAIN: [0m
+[0;32mI (23743) MAIN: // Função de compensação inteligente[0m
+[0;32mI (23753) MAIN: // Parâmetros calibrados dos seus testes:[0m
+[0;32mI (23763) MAIN: // - Compensação: 0.781 (direito 21.9% mais rápido)[0m
+[0;32mI (23763) MAIN: // - Limiar esquerdo sozinho: 40%[0m
+[0;32mI (23773) MAIN: // - Limiar esquerdo com direito: 50%[0m
+[0;32mI (23773) MAIN: [0m
+[0;32mI (23783) MAIN: void mover_robo_inteligente(int vel_esq, int vel_dir) {[0m
+[0;32mI (23783) MAIN:     static bool ultimo_esq_zero = false;[0m
+[0;32mI (23793) MAIN:     static bool ultimo_dir_zero = false;[0m
+[0;32mI (23803) MAIN:     [0m
+[0;32mI (23803) MAIN:     // Detecta se ambos estão ativos[0m
+[0;32mI (23803) MAIN:     bool ambos_ativos = (vel_esq != 0 && vel_dir != 0);[0m
+[0;32mI (23813) MAIN:     [0m
+[0;32mI (23813) MAIN:     // Limiar dinâmico baseado na carga[0m
+[0;32mI (23823) MAIN:     int limiar = ambos_ativos ? 50 : 40;[0m
+[0;32mI (23833) MAIN:     [0m
+[0;32mI (23833) MAIN:     // Ajusta motor esquerdo (problema de fonte)[0m
+[0;32mI (23843) MAIN:     if (vel_esq > 0 && vel_esq < limiar) {[0m
+[0;32mI (23843) MAIN:         vel_esq = limiar;[0m
+[0;32mI (23853) MAIN:     }[0m
+[0;32mI (23853) MAIN:     [0m
+[0;32mI (23853) MAIN:     // Compensação de velocidade (seu teste: 0.781)[0m
+[0;32mI (23863) MAIN:     float compensacao = 0.781f;[0m
+[0;32mI (23873) MAIN:     vel_dir = (int)(vel_dir * compensacao);[0m
+[0;32mI (23873) MAIN:     [0m
+[0;32mI (23873) MAIN:     // Limita máximo[0m
+[0;32mI (23883) MAIN:     if (vel_esq > 100) vel_esq = 100;[0m
+[0;32mI (23883) MAIN:     if (vel_dir > 100) vel_dir = 100;[0m
+[0;32mI (23893) MAIN:     [0m
+[0;32mI (23893) MAIN:     // Aplica aos motores[0m
+[0;32mI (23903) MAIN:     set_motor_left(vel_esq);[0m
+[0;32mI (23903) MAIN:     set_motor_right(vel_dir);[0m
+[0;32mI (23913) MAIN:     [0m
+[0;32mI (23913) MAIN:     // Atualiza estado[0m
+[0;32mI (23923) MAIN:     ultimo_esq_zero = (vel_esq == 0);[0m
+[0;32mI (23923) MAIN:     ultimo_dir_zero = (vel_dir == 0);[0m
+[0;32mI (23933) MAIN: }[0m
+[0;32mI (23933) MAIN: [0m
+[0;32mI (23933) MAIN: // EXEMPLOS DE USO:[0m
+[0;32mI (23943) MAIN: // mover_robo_inteligente(30, 30); // Ajusta para (50, 23)[0m
+[0;32mI (23943) MAIN: // mover_robo_inteligente(60, 60); // Ajusta para (60, 47)[0m
+[0;32mI (23953) MAIN: // mover_robo_inteligente(0, 40);  // Apenas direito: (0, 31)[0m
+[0;32mI (23963) MAIN: // mover_robo_inteligente(40, 0);  // Apenas esquerdo: (40, 0)[0m
+[0;32mI (23973) MAIN: [0m
+[0;32mI (23973) MAIN: ========================================[0m
+[0;32mI (23983) MAIN: RECOMENDAÇÃO DE HARDWARE:[0m
+[0;32mI (23983) MAIN: 1. Use fonte 12V com MINIMO 2A POR MOTOR[0m
+[0;32mI (23993) MAIN: 2. Adicione capacitor 1000uF na entrada do L298N[0m
+[0;32mI (23993) MAIN: 3. Verifique todas as conexões de energia[0m
+[0;32mI (24003) MAIN: ========================================[0m

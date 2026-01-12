@@ -1,0 +1,841 @@
+������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),bo�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2cch ( 41676) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a2f4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001c62c vaddr=40080000 size=039ech ( 14828) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1125ch ( 70236) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=00031284 vaddr=400839ec size=0918ch ( 37260) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (210) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Dec 12 2025 10:43:53[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  aa72dff82...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CB78 len 00013488 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+=== INICIANDO TESTE BRUTO (HARDWARE ONLY) ===
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+>>> Hardware Configurado. Ligando motores em 3 segundos...
+>>> APLICANDO PWM 0 (Logica Invertida = MAX POWER)
+Encoder A (Esq): 108 (Delta: 108) | Encoder B (Dir): 10 (Delta: 10)
+Encoder A (Esq): 222 (Delta: 114) | Encoder B (Dir): 10 (Delta: 0)
+Encoder A (Esq): 343 (Delta: 121) | Encoder B (Dir): 10 (Delta: 0)
+Encoder A (Esq): 471 (Delta: 128) | Encoder B (Dir): 292 (Delta: 282)
+Encoder A (Esq): 597 (Delta: 126) | Encoder B (Dir): 985 (Delta: 693)
+Encoder A (Esq): 720 (Delta: 123) | Encoder B (Dir): 1002 (Delta: 17)
+Encoder A (Esq): 846 (Delta: 126) | Encoder B (Dir): 1035 (Delta: 33)
+Encoder A (Esq): 970 (Delta: 124) | Encoder B (Dir): 1046 (Delta: 11)
+Encoder A (Esq): 1100 (Delta: 130) | Encoder B (Dir): 1046 (Delta: 0)
+Encoder A (Esq): 1232 (Delta: 132) | Encoder B (Dir): 1081 (Delta: 35)
+Encoder A (Esq): 1370 (Delta: 138) | Encoder B (Dir): 1081 (Delta: 0)
+Encoder A (Esq): 1498 (Delta: 128) | Encoder B (Dir): 1081 (Delta: 0)
+Encoder A (Esq): 1629 (Delta: 131) | Encoder B (Dir): 1114 (Delta: 33)
+Encoder A (Esq): 1755 (Delta: 126) | Encoder B (Dir): 1125 (Delta: 11)
+Encoder A (Esq): 1882 (Delta: 127) | Encoder B (Dir): 1125 (Delta: 0)
+Encoder A (Esq): 2010 (Delta: 128) | Encoder B (Dir): 1125 (Delta: 0)
+Encoder A (Esq): 2138 (Delta: 128) | Encoder B (Dir): 1125 (Delta: 0)
+Encoder A (Esq): 2260 (Delta: 122) | Encoder B (Dir): 1142 (Delta: 17)
+Encoder A (Esq): 2382 (Delta: 122) | Encoder B (Dir): 1155 (Delta: 13)
+Encoder A (Esq): 2501 (Delta: 119) | Encoder B (Dir): 1155 (Delta: 0)
+Encoder A (Esq): 2626 (Delta: 125) | Encoder B (Dir): 1155 (Delta: 0)
+Encoder A (Esq): 2746 (Delta: 120) | Encoder B (Dir): 1155 (Delta: 0)
+Encoder A (Esq): 2874 (Delta: 128) | Encoder B (Dir): 1155 (Delta: 0)
+Encoder A (Esq): 2998 (Delta: 124) | Encoder B (Dir): 1155 (Delta: 0)
+Encoder A (Esq): 3123 (Delta: 125) | Encoder B (Dir): 1155 (Delta: 0)
+Encoder A (Esq): 3249 (Delta: 126) | Encoder B (Dir): 2737 (Delta: 1582)
+Encoder A (Esq): 3373 (Delta: 124) | Encoder B (Dir): 3056 (Delta: 319)
+Encoder A (Esq): 3497 (Delta: 124) | Encoder B (Dir): 3103 (Delta: 47)
+Encoder A (Esq): 3625 (Delta: 128) | Encoder B (Dir): 3103 (Delta: 0)
+Encoder A (Esq): 3747 (Delta: 122) | Encoder B (Dir): 3103 (Delta: 0)
+Encoder A (Esq): 3868 (Delta: 121) | Encoder B (Dir): 3110 (Delta: 7)
+Encoder A (Esq): 3988 (Delta: 120) | Encoder B (Dir): 3134 (Delta: 24)
+Encoder A (Esq): 4112 (Delta: 124) | Encoder B (Dir): 3156 (Delta: 22)
+Encoder A (Esq): 4227 (Delta: 115) | Encoder B (Dir): 3220 (Delta: 64)
+Encoder A (Esq): 4345 (Delta: 118) | Encoder B (Dir): 3235 (Delta: 15)
+Encoder A (Esq): 4462 (Delta: 117) | Encoder B (Dir): 3254 (Delta: 19)
+Encoder A (Esq): 4579 (Delta: 117) | Encoder B (Dir): 3263 (Delta: 9)
+Encoder A (Esq): 4690 (Delta: 111) | Encoder B (Dir): 3346 (Delta: 83)
+Encoder A (Esq): 4806 (Delta: 116) | Encoder B (Dir): 3383 (Delta: 37)
+Encoder A (Esq): 4918 (Delta: 112) | Encoder B (Dir): 3466 (Delta: 83)
+Encoder A (Esq): 5033 (Delta: 115) | Encoder B (Dir): 3496 (Delta: 30)
+Encoder A (Esq): 5144 (Delta: 111) | Encoder B (Dir): 3542 (Delta: 46)
+Encoder A (Esq): 5251 (Delta: 107) | Encoder B (Dir): 3593 (Delta: 51)
+Encoder A (Esq): 5358 (Delta: 107) | Encoder B (Dir): 3655 (Delta: 62)
+Encoder A (Esq): 5468 (Delta: 110) | Encoder B (Dir): 3719 (Delta: 64)
+Encoder A (Esq): 5582 (Delta: 114) | Encoder B (Dir): 3775 (Delta: 56)
+Encoder A (Esq): 5692 (Delta: 110) | Encoder B (Dir): 3799 (Delta: 24)
+Encoder A (Esq): 5805 (Delta: 113) | Encoder B (Dir): 3825 (Delta: 26)
+Encoder A (Esq): 5918 (Delta: 113) | Encoder B (Dir): 3842 (Delta: 17)
+Encoder A (Esq): 6032 (Delta: 114) | Encoder B (Dir): 3874 (Delta: 32)
+Encoder A (Esq): 6145 (Delta: 113) | Encoder B (Dir): 3896 (Delta: 22)
+Encoder A (Esq): 6261 (Delta: 116) | Encoder B (Dir): 3903 (Delta: 7)
+Encoder A (Esq): 6377 (Delta: 116) | Encoder B (Dir): 3944 (Delta: 41)
+Encoder A (Esq): 6490 (Delta: 113) | Encoder B (Dir): 3979 (Delta: 35)
+Encoder A (Esq): 6607 (Delta: 117) | Encoder B (Dir): 3983 (Delta: 4)
+Encoder A (Esq): 6724 (Delta: 117) | Encoder B (Dir): 3991 (Delta: 8)
+Encoder A (Esq): 6847 (Delta: 123) | Encoder B (Dir): 4046 (Delta: 55)
+Encoder A (Esq): 6968 (Delta: 121) | Encoder B (Dir): 4061 (Delta: 15)
+Encoder A (Esq): 7088 (Delta: 120) | Encoder B (Dir): 4061 (Delta: 0)
+Encoder A (Esq): 7204 (Delta: 116) | Encoder B (Dir): 4063 (Delta: 2)
+Encoder A (Esq): 7319 (Delta: 115) | Encoder B (Dir): 4068 (Delta: 5)
+Encoder A (Esq): 7430 (Delta: 111) | Encoder B (Dir): 4068 (Delta: 0)
+Encoder A (Esq): 7543 (Delta: 113) | Encoder B (Dir): 4076 (Delta: 8)
+Encoder A (Esq): 7661 (Delta: 118) | Encoder B (Dir): 4080 (Delta: 4)
+Encoder A (Esq): 7776 (Delta: 115) | Encoder B (Dir): 4103 (Delta: 23)
+Encoder A (Esq): 7895 (Delta: 119) | Encoder B (Dir): 4120 (Delta: 17)
+Encoder A (Esq): 8009 (Delta: 114) | Encoder B (Dir): 4150 (Delta: 30)
+Encoder A (Esq): 8131 (Delta: 122) | Encoder B (Dir): 4184 (Delta: 34)
+Encoder A (Esq): 8247 (Delta: 116) | Encoder B (Dir): 4209 (Delta: 25)
+Encoder A (Esq): 8365 (Delta: 118) | Encoder B (Dir): 4250 (Delta: 41)
+Encoder A (Esq): 8486 (Delta: 121) | Encoder B (Dir): 4382 (Delta: 132)
+Encoder A (Esq): 8602 (Delta: 116) | Encoder B (Dir): 4412 (Delta: 30)
+Encoder A (Esq): 8718 (Delta: 116) | Encoder B (Dir): 4439 (Delta: 27)
+Encoder A (Esq): 8832 (Delta: 114) | Encoder B (Dir): 4462 (Delta: 23)
+Encoder A (Esq): 8947 (Delta: 115) | Encoder B (Dir): 4470 (Delta: 8)
+Encoder A (Esq): 9063 (Delta: 116) | Encoder B (Dir): 4470 (Delta: 0)
+Encoder A (Esq): 9180 (Delta: 117) | Encoder B (Dir): 4470 (Delta: 0)
+Encoder A (Esq): 9300 (Delta: 120) | Encoder B (Dir): 4473 (Delta: 3)
+Encoder A (Esq): 9421 (Delta: 121) | Encoder B (Dir): 4528 (Delta: 55)
+Encoder A (Esq): 9540 (Delta: 119) | Encoder B (Dir): 4585 (Delta: 57)
+Encoder A (Esq): 9664 (Delta: 124) | Encoder B (Dir): 4642 (Delta: 57)
+Encoder A (Esq): 9787 (Delta: 123) | Encoder B (Dir): 4702 (Delta: 60)
+Encoder A (Esq): 9908 (Delta: 121) | Encoder B (Dir): 4769 (Delta: 67)
+Encoder A (Esq): 10024 (Delta: 116) | Encoder B (Dir): 4835 (Delta: 66)
+Encoder A (Esq): 10144 (Delta: 120) | Encoder B (Dir): 4875 (Delta: 40)
+Encoder A (Esq): 10263 (Delta: 119) | Encoder B (Dir): 4910 (Delta: 35)
+Encoder A (Esq): 10383 (Delta: 120) | Encoder B (Dir): 4912 (Delta: 2)
+Encoder A (Esq): 10500 (Delta: 117) | Encoder B (Dir): 4912 (Delta: 0)
+Encoder A (Esq): 10623 (Delta: 123) | Encoder B (Dir): 4913 (Delta: 1)
+Encoder A (Esq): 10742 (Delta: 119) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 10864 (Delta: 122) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 10988 (Delta: 124) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 11115 (Delta: 127) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 11241 (Delta: 126) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 11364 (Delta: 123) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 11486 (Delta: 122) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 11608 (Delta: 122) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 11736 (Delta: 128) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 11861 (Delta: 125) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 11989 (Delta: 128) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 12116 (Delta: 127) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 12246 (Delta: 130) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 12368 (Delta: 122) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 12489 (Delta: 121) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 12617 (Delta: 128) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 12743 (Delta: 126) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 12864 (Delta: 121) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 12989 (Delta: 125) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 13111 (Delta: 122) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 13232 (Delta: 121) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 13358 (Delta: 126) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 13478 (Delta: 120) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 13605 (Delta: 127) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 13736 (Delta: 131) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 13858 (Delta: 122) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 13983 (Delta: 125) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 14115 (Delta: 132) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 14235 (Delta: 120) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 14355 (Delta: 120) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 14475 (Delta: 120) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 14603 (Delta: 128) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 14726 (Delta: 123) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 14845 (Delta: 119) | Encoder B (Dir): 4913 (Delta: 0)
+Encoder A (Esq): 14964 (Delta: 119) | Encoder B (Dir): 4954 (Delta: 41)
+Encoder A (Esq): 15083 (Delta: 119) | Encoder B (Dir): 5008 (Delta: 54)
+Encoder A (Esq): 15204 (Delta: 121) | Encoder B (Dir): 5040 (Delta: 32)
+Encoder A (Esq): 15325 (Delta: 121) | Encoder B (Dir): 5043 (Delta: 3)
+Encoder A (Esq): 15443 (Delta: 118) | Encoder B (Dir): 5054 (Delta: 11)
+Encoder A (Esq): 15562 (Delta: 119) | Encoder B (Dir): 5069 (Delta: 15)
+Encoder A (Esq): 15681 (Delta: 119) | Encoder B (Dir): 5076 (Delta: 7)
+Encoder A (Esq): 15801 (Delta: 120) | Encoder B (Dir): 5081 (Delta: 5)
+Encoder A (Esq): 15919 (Delta: 118) | Encoder B (Dir): 5165 (Delta: 84)
+Encoder A (Esq): 16039 (Delta: 120) | Encoder B (Dir): 5182 (Delta: 17)
+Encoder A (Esq): 16155 (Delta: 116) | Encoder B (Dir): 5201 (Delta: 19)
+Encoder A (Esq): 16269 (Delta: 114) | Encoder B (Dir): 5217 (Delta: 16)
+Encoder A (Esq): 16386 (Delta: 117) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 16500 (Delta: 114) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 16610 (Delta: 110) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 16725 (Delta: 115) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 16840 (Delta: 115) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 16957 (Delta: 117) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 17077 (Delta: 120) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 17198 (Delta: 121) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 17318 (Delta: 120) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 17436 (Delta: 118) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 17555 (Delta: 119) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 17671 (Delta: 116) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 17791 (Delta: 120) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 17909 (Delta: 118) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 18031 (Delta: 122) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 18146 (Delta: 115) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 18264 (Delta: 118) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 18378 (Delta: 114) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 18491 (Delta: 113) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 18602 (Delta: 111) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 18716 (Delta: 114) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 18832 (Delta: 116) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 18946 (Delta: 114) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 19056 (Delta: 110) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 19167 (Delta: 111) | Encoder B (Dir): 5217 (Delta: 0)
+Encoder A (Esq): 19278 (Delta: 111) | Encoder B (Dir): 5226 (Delta: 9)
+Encoder A (Esq): 19385 (Delta: 107) | Encoder B (Dir): 5329 (Delta: 103)
+Encoder A (Esq): 19492 (Delta: 107) | Encoder B (Dir): 5388 (Delta: 59)
+Encoder A (Esq): 19603 (Delta: 111) | Encoder B (Dir): 5521 (Delta: 133)
+Encoder A (Esq): 19713 (Delta: 110) | Encoder B (Dir): 5535 (Delta: 14)
+Encoder A (Esq): 19827 (Delta: 114) | Encoder B (Dir): 5535 (Delta: 0)
+������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2cch ( 41676) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=0001a2f4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0001c62c vaddr=40080000 size=039ech ( 14828) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1125ch ( 70236) map[0m
+[0;32mI (189) esp_image: segment 4: paddr=00031284 vaddr=400839ec size=0918ch ( 37260) load[0m
+[0;32mI (211) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (211) boot: Disabling RNG early entropy source...[0m
+[0;32mI (222) cpu_start: Multicore app[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) cpu_start: Application information:[0m
+[0;32mI (235) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (241) cpu_start: App version:      e18ea92[0m
+[0;32mI (246) cpu_start: Compile time:     Dec 12 2025 10:43:53[0m
+[0;32mI (252) cpu_start: ELF file SHA256:  aa72dff82...[0m
+[0;32mI (257) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (263) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (268) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (273) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (278) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (310) heap_init: At 4008CB78 len 00013488 (77 KiB): IRAM[0m
+[0;32mI (318) spi_flash: detected chip: generic[0m
+[0;32mI (321) spi_flash: flash io: dio[0m
+[0;33mW (325) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+=== INICIANDO TESTE BRUTO (HARDWARE ONLY) ===
+[0;32mI (348) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (358) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (368) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (368) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (378) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (388) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+>>> Hardware Configurado. Ligando motores em 3 segundos...
+>>> APLICANDO PWM 0 (Logica Invertida = MAX POWER)
+Encoder A (Esq): 0 (Delta: 0) | Encoder B (Dir): 0 (Delta: 0)
+Encoder A (Esq): 0 (Delta: 0) | Encoder B (Dir): 0 (Delta: 0)
+Encoder A (Esq): 0 (Delta: 0) | Encoder B (Dir): 0 (Delta: 0)
+Encoder A (Esq): 0 (Delta: 0) | Encoder B (Dir): 0 (Delta: 0)
+Encoder A (Esq): 0 (Delta: 0) | Encoder B (Dir): 0 (Delta: 0)
+Encoder A (Esq): 0 (Delta: 0) | Encoder B (Dir): 0 (Delta: 0)
+Encoder A (Esq): 0 (Delta: 0) | Encoder B (Dir): 1 (Delta: 1)
+Encoder A (Esq): 65 (Delta: 65) | Encoder B (Dir): 141 (Delta: 140)
+Encoder A (Esq): 153 (Delta: 88) | Encoder B (Dir): 297 (Delta: 156)
+Encoder A (Esq): 248 (Delta: 95) | Encoder B (Dir): 443 (Delta: 146)
+Encoder A (Esq): 338 (Delta: 90) | Encoder B (Dir): 589 (Delta: 146)
+Encoder A (Esq): 416 (Delta: 78) | Encoder B (Dir): 729 (Delta: 140)
+Encoder A (Esq): 485 (Delta: 69) | Encoder B (Dir): 874 (Delta: 145)
+Encoder A (Esq): 560 (Delta: 75) | Encoder B (Dir): 1019 (Delta: 145)
+Encoder A (Esq): 624 (Delta: 64) | Encoder B (Dir): 1167 (Delta: 148)
+Encoder A (Esq): 672 (Delta: 48) | Encoder B (Dir): 1306 (Delta: 139)
+Encoder A (Esq): 731 (Delta: 59) | Encoder B (Dir): 1450 (Delta: 144)
+Encoder A (Esq): 782 (Delta: 51) | Encoder B (Dir): 1593 (Delta: 143)
+Encoder A (Esq): 833 (Delta: 51) | Encoder B (Dir): 1735 (Delta: 142)
+Encoder A (Esq): 877 (Delta: 44) | Encoder B (Dir): 1880 (Delta: 145)
+Encoder A (Esq): 916 (Delta: 39) | Encoder B (Dir): 2026 (Delta: 146)
+Encoder A (Esq): 978 (Delta: 62) | Encoder B (Dir): 2166 (Delta: 140)
+Encoder A (Esq): 1043 (Delta: 65) | Encoder B (Dir): 2311 (Delta: 145)
+Encoder A (Esq): 1102 (Delta: 59) | Encoder B (Dir): 2449 (Delta: 138)
+Encoder A (Esq): 1159 (Delta: 57) | Encoder B (Dir): 2588 (Delta: 139)
+Encoder A (Esq): 1216 (Delta: 57) | Encoder B (Dir): 2734 (Delta: 146)
+Encoder A (Esq): 1253 (Delta: 37) | Encoder B (Dir): 2872 (Delta: 138)
+Encoder A (Esq): 1253 (Delta: 0) | Encoder B (Dir): 3004 (Delta: 132)
+Encoder A (Esq): 1284 (Delta: 31) | Encoder B (Dir): 3130 (Delta: 126)
+Encoder A (Esq): 1311 (Delta: 27) | Encoder B (Dir): 3260 (Delta: 130)
+Encoder A (Esq): 1340 (Delta: 29) | Encoder B (Dir): 3391 (Delta: 131)
+Encoder A (Esq): 1380 (Delta: 40) | Encoder B (Dir): 3527 (Delta: 136)
+Encoder A (Esq): 1419 (Delta: 39) | Encoder B (Dir): 3659 (Delta: 132)
+Encoder A (Esq): 1456 (Delta: 37) | Encoder B (Dir): 3796 (Delta: 137)
+Encoder A (Esq): 1494 (Delta: 38) | Encoder B (Dir): 3934 (Delta: 138)
+Encoder A (Esq): 1514 (Delta: 20) | Encoder B (Dir): 4076 (Delta: 142)
+Encoder A (Esq): 1514 (Delta: 0) | Encoder B (Dir): 4211 (Delta: 135)
+Encoder A (Esq): 1514 (Delta: 0) | Encoder B (Dir): 4350 (Delta: 139)
+Encoder A (Esq): 1913 (Delta: 399) | Encoder B (Dir): 4488 (Delta: 138)
+Encoder A (Esq): 1928 (Delta: 15) | Encoder B (Dir): 4615 (Delta: 127)
+Encoder A (Esq): 1939 (Delta: 11) | Encoder B (Dir): 4758 (Delta: 143)
+Encoder A (Esq): 1963 (Delta: 24) | Encoder B (Dir): 4894 (Delta: 136)
+Encoder A (Esq): 1998 (Delta: 35) | Encoder B (Dir): 5027 (Delta: 133)
+Encoder A (Esq): 2052 (Delta: 54) | Encoder B (Dir): 5159 (Delta: 132)
+Encoder A (Esq): 2106 (Delta: 54) | Encoder B (Dir): 5295 (Delta: 136)
+Encoder A (Esq): 2169 (Delta: 63) | Encoder B (Dir): 5432 (Delta: 137)
+Encoder A (Esq): 2224 (Delta: 55) | Encoder B (Dir): 5570 (Delta: 138)
+Encoder A (Esq): 2282 (Delta: 58) | Encoder B (Dir): 5701 (Delta: 131)
+Encoder A (Esq): 2337 (Delta: 55) | Encoder B (Dir): 5844 (Delta: 143)
+Encoder A (Esq): 2398 (Delta: 61) | Encoder B (Dir): 5979 (Delta: 135)
+Encoder A (Esq): 2457 (Delta: 59) | Encoder B (Dir): 6116 (Delta: 137)
+Encoder A (Esq): 2515 (Delta: 58) | Encoder B (Dir): 6260 (Delta: 144)
+Encoder A (Esq): 2570 (Delta: 55) | Encoder B (Dir): 6399 (Delta: 139)
+Encoder A (Esq): 2630 (Delta: 60) | Encoder B (Dir): 6532 (Delta: 133)
+Encoder A (Esq): 2683 (Delta: 53) | Encoder B (Dir): 6669 (Delta: 137)
+Encoder A (Esq): 2739 (Delta: 56) | Encoder B (Dir): 6809 (Delta: 140)
+Encoder A (Esq): 2816 (Delta: 77) | Encoder B (Dir): 6951 (Delta: 142)
+Encoder A (Esq): 2870 (Delta: 54) | Encoder B (Dir): 7091 (Delta: 140)
+Encoder A (Esq): 2924 (Delta: 54) | Encoder B (Dir): 7233 (Delta: 142)
+Encoder A (Esq): 2979 (Delta: 55) | Encoder B (Dir): 7369 (Delta: 136)
+Encoder A (Esq): 3031 (Delta: 52) | Encoder B (Dir): 7508 (Delta: 139)
+Encoder A (Esq): 3078 (Delta: 47) | Encoder B (Dir): 7645 (Delta: 137)
+Encoder A (Esq): 3125 (Delta: 47) | Encoder B (Dir): 7786 (Delta: 141)
+Encoder A (Esq): 3163 (Delta: 38) | Encoder B (Dir): 7926 (Delta: 140)
+Encoder A (Esq): 3199 (Delta: 36) | Encoder B (Dir): 8070 (Delta: 144)
+Encoder A (Esq): 3253 (Delta: 54) | Encoder B (Dir): 8209 (Delta: 139)
+Encoder A (Esq): 3286 (Delta: 33) | Encoder B (Dir): 8353 (Delta: 144)
+Encoder A (Esq): 3290 (Delta: 4) | Encoder B (Dir): 8490 (Delta: 137)
+Encoder A (Esq): 3304 (Delta: 14) | Encoder B (Dir): 8630 (Delta: 140)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 8769 (Delta: 139)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 8908 (Delta: 139)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 9048 (Delta: 140)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 9188 (Delta: 140)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 9329 (Delta: 141)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 9472 (Delta: 143)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 9615 (Delta: 143)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 9758 (Delta: 143)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 9901 (Delta: 143)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 10043 (Delta: 142)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 10183 (Delta: 140)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 10318 (Delta: 135)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 10458 (Delta: 140)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 10595 (Delta: 137)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 10731 (Delta: 136)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 10864 (Delta: 133)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 10998 (Delta: 134)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 11132 (Delta: 134)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 11268 (Delta: 136)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 11406 (Delta: 138)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 11539 (Delta: 133)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 11669 (Delta: 130)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 11807 (Delta: 138)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 11936 (Delta: 129)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 12067 (Delta: 131)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 12205 (Delta: 138)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 12345 (Delta: 140)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 12480 (Delta: 135)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 12621 (Delta: 141)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 12757 (Delta: 136)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 12891 (Delta: 134)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 13026 (Delta: 135)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 13166 (Delta: 140)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 13305 (Delta: 139)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 13436 (Delta: 131)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 13579 (Delta: 143)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 13724 (Delta: 145)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 13864 (Delta: 140)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 14005 (Delta: 141)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 14153 (Delta: 148)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 14301 (Delta: 148)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 14434 (Delta: 133)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 14575 (Delta: 141)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 14711 (Delta: 136)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 14863 (Delta: 152)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 15002 (Delta: 139)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 15142 (Delta: 140)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 15279 (Delta: 137)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 15420 (Delta: 141)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 15559 (Delta: 139)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 15695 (Delta: 136)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 15830 (Delta: 135)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 15968 (Delta: 138)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 16106 (Delta: 138)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 16241 (Delta: 135)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 16384 (Delta: 143)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 16522 (Delta: 138)
+Encoder A (Esq): 3304 (Delta: 0) | Encoder B (Dir): 16656 (Delta: 134)
+Encoder A (Esq): 3305 (Delta: 1) | Encoder B (Dir): 16794 (Delta: 138)
+Encoder A (Esq): 3355 (Delta: 50) | Encoder B (Dir): 16937 (Delta: 143)
+Encoder A (Esq): 3419 (Delta: 64) | Encoder B (Dir): 17078 (Delta: 141)
+Encoder A (Esq): 3482 (Delta: 63) | Encoder B (Dir): 17218 (Delta: 140)
+Encoder A (Esq): 3603 (Delta: 121) | Encoder B (Dir): 17352 (Delta: 134)
+Encoder A (Esq): 3653 (Delta: 50) | Encoder B (Dir): 17492 (Delta: 140)
+Encoder A (Esq): 3673 (Delta: 20) | Encoder B (Dir): 17633 (Delta: 141)
+Encoder A (Esq): 3673 (Delta: 0) | Encoder B (Dir): 17768 (Delta: 135)
+Encoder A (Esq): 3673 (Delta: 0) | Encoder B (Dir): 17906 (Delta: 138)
+Encoder A (Esq): 3675 (Delta: 2) | Encoder B (Dir): 18042 (Delta: 136)
+Encoder A (Esq): 3812 (Delta: 137) | Encoder B (Dir): 18179 (Delta: 137)
+Encoder A (Esq): 3947 (Delta: 135) | Encoder B (Dir): 18322 (Delta: 143)
+Encoder A (Esq): 4086 (Delta: 139) | Encoder B (Dir): 18459 (Delta: 137)
+Encoder A (Esq): 4226 (Delta: 140) | Encoder B (Dir): 18596 (Delta: 137)
+Encoder A (Esq): 4366 (Delta: 140) | Encoder B (Dir): 18738 (Delta: 142)
+Encoder A (Esq): 4500 (Delta: 134) | Encoder B (Dir): 18872 (Delta: 134)
+Encoder A (Esq): 4633 (Delta: 133) | Encoder B (Dir): 19005 (Delta: 133)
+Encoder A (Esq): 4768 (Delta: 135) | Encoder B (Dir): 19137 (Delta: 132)
+Encoder A (Esq): 4907 (Delta: 139) | Encoder B (Dir): 19268 (Delta: 131)
+Encoder A (Esq): 5044 (Delta: 137) | Encoder B (Dir): 19405 (Delta: 137)
+Encoder A (Esq): 5189 (Delta: 145) | Encoder B (Dir): 19542 (Delta: 137)
+Encoder A (Esq): 5333 (Delta: 144) | Encoder B (Dir): 19677 (Delta: 135)
+Encoder A (Esq): 5471 (Delta: 138) | Encoder B (Dir): 19812 (Delta: 135)
+Encoder A (Esq): 5610 (Delta: 139) | Encoder B (Dir): 19946 (Delta: 134)
+Encoder A (Esq): 5749 (Delta: 139) | Encoder B (Dir): 20080 (Delta: 134)
+Encoder A (Esq): 5883 (Delta: 134) | Encoder B (Dir): 20214 (Delta: 134)
+Encoder A (Esq): 6025 (Delta: 142) | Encoder B (Dir): 20346 (Delta: 132)
+Encoder A (Esq): 6164 (Delta: 139) | Encoder B (Dir): 20479 (Delta: 133)
+Encoder A (Esq): 6307 (Delta: 143) | Encoder B (Dir): 20617 (Delta: 138)
+Encoder A (Esq): 6449 (Delta: 142) | Encoder B (Dir): 20745 (Delta: 128)
+Encoder A (Esq): 6592 (Delta: 143) | Encoder B (Dir): 20872 (Delta: 127)
+Encoder A (Esq): 6730 (Delta: 138) | Encoder B (Dir): 21005 (Delta: 133)
+Encoder A (Esq): 6873 (Delta: 143) | Encoder B (Dir): 21144 (Delta: 139)
+Encoder A (Esq): 7014 (Delta: 141) | Encoder B (Dir): 21278 (Delta: 134)
+Encoder A (Esq): 7156 (Delta: 142) | Encoder B (Dir): 21415 (Delta: 137)
+Encoder A (Esq): 7293 (Delta: 137) | Encoder B (Dir): 21552 (Delta: 137)
+Encoder A (Esq): 7430 (Delta: 137) | Encoder B (Dir): 21691 (Delta: 139)
+Encoder A (Esq): 7569 (Delta: 139) | Encoder B (Dir): 21834 (Delta: 143)
+Encoder A (Esq): 7706 (Delta: 137) | Encoder B (Dir): 21972 (Delta: 138)
+Encoder A (Esq): 7846 (Delta: 140) | Encoder B (Dir): 22107 (Delta: 135)
+Encoder A (Esq): 7984 (Delta: 138) | Encoder B (Dir): 22245 (Delta: 138)
+Encoder A (Esq): 8119 (Delta: 135) | Encoder B (Dir): 22381 (Delta: 136)
+Encoder A (Esq): 8259 (Delta: 140) | Encoder B (Dir): 22521 (Delta: 140)
+Encoder A (Esq): 8396 (Delta: 137) | Encoder B (Dir): 22655 (Delta: 134)
+Encoder A (Esq): 8531 (Delta: 135) | Encoder B (Dir): 22788 (Delta: 133)
+Encoder A (Esq): 8668 (Delta: 137) | Encoder B (Dir): 22924 (Delta: 136)
+Encoder A (Esq): 8802 (Delta: 134) | Encoder B (Dir): 23066 (Delta: 142)
+Encoder A (Esq): 8942 (Delta: 140) | Encoder B (Dir): 23199 (Delta: 133)
+Encoder A (Esq): 9081 (Delta: 139) | Encoder B (Dir): 23337 (Delta: 138)
+Encoder A (Esq): 9216 (Delta: 135) | Encoder B (Dir): 23474 (Delta: 137)
+Encoder A (Esq): 9348 (Delta: 132) | Encoder B (Dir): 23609 (Delta: 135)
+Encoder A (Esq): 9483 (Delta: 135) | Encoder B (Dir): 23738 (Delta: 129)
+Encoder A (Esq): 9610 (Delta: 127) | Encoder B (Dir): 23869 (Delta: 131)
+Encoder A (Esq): 9743 (Delta: 133) | Encoder B (Dir): 24001 (Delta: 132)
+Encoder A (Esq): 9875 (Delta: 132) | Encoder B (Dir): 24140 (Delta: 139)
+Encoder A (Esq): 10004 (Delta: 129) | Encoder B (Dir): 24279 (Delta: 139)
+Encoder A (Esq): 10135 (Delta: 131) | Encoder B (Dir): 24412 (Delta: 133)
+Encoder A (Esq): 10259 (Delta: 124) | Encoder B (Dir): 24547 (Delta: 135)
+Encoder A (Esq): 10389 (Delta: 130) | Encoder B (Dir): 24688 (Delta: 141)
+Encoder A (Esq): 10519 (Delta: 130) | Encoder B (Dir): 24829 (Delta: 141)
+Encoder A (Esq): 10652 (Delta: 133) | Encoder B (Dir): 24967 (Delta: 138)
+Encoder A (Esq): 10782 (Delta: 130) | Encoder B (Dir): 25117 (Delta: 150)
+Encoder A (Esq): 10909 (Delta: 127) | Encoder B (Dir): 25254 (Delta: 137)
+Encoder A (Esq): 11033 (Delta: 124) | Encoder B (Dir): 25395 (Delta: 141)
+Encoder A (Esq): 11157 (Delta: 124) | Encoder B (Dir): 25537 (Delta: 142)
+Encoder A (Esq): 11279 (Delta: 122) | Encoder B (Dir): 25675 (Delta: 138)
+Encoder A (Esq): 11399 (Delta: 120) | Encoder B (Dir): 25817 (Delta: 142)
+Encoder A (Esq): 11516 (Delta: 117) | Encoder B (Dir): 25955 (Delta: 138)
+Encoder A (Esq): 11637 (Delta: 121) | Encoder B (Dir): 26099 (Delta: 144)
+Encoder A (Esq): 11756 (Delta: 119) | Encoder B (Dir): 26241 (Delta: 142)
+Encoder A (Esq): 11877 (Delta: 121) | Encoder B (Dir): 26380 (Delta: 139)
+Encoder A (Esq): 12005 (Delta: 128) | Encoder B (Dir): 26521 (Delta: 141)
+Encoder A (Esq): 12125 (Delta: 120) | Encoder B (Dir): 26666 (Delta: 145)
+Encoder A (Esq): 12251 (Delta: 126) | Encoder B (Dir): 26814 (Delta: 148)
+Encoder A (Esq): 12372 (Delta: 121) | Encoder B (Dir): 26951 (Delta: 137)
+Encoder A (Esq): 12435 (Delta: 63) | Encoder B (Dir): 27099 (Delta: 148)
+Encoder A (Esq): 12435 (Delta: 0) | Encoder B (Dir): 27239 (Delta: 140)
+Encoder A (Esq): 12435 (Delta: 0) | Encoder B (Dir): 27380 (Delta: 141)
+Encoder A (Esq): 12435 (Delta: 0) | Encoder B (Dir): 27518 (Delta: 138)
+Encoder A (Esq): 12435 (Delta: 0) | Encoder B (Dir): 27657 (Delta: 139)
+Encoder A (Esq): 12497 (Delta: 62) | Encoder B (Dir): 27799 (Delta: 142)
+Encoder A (Esq): 12594 (Delta: 97) | Encoder B (Dir): 27942 (Delta: 143)
+Encoder A (Esq): 12611 (Delta: 17) | Encoder B (Dir): 28087 (Delta: 145)
+Encoder A (Esq): 12733 (Delta: 122) | Encoder B (Dir): 28227 (Delta: 140)
+Encoder A (Esq): 12845 (Delta: 112) | Encoder B (Dir): 28366 (Delta: 139)
+Encoder A (Esq): 12922 (Delta: 77) | Encoder B (Dir): 28505 (Delta: 139)
+Encoder A (Esq): 13045 (Delta: 123) | Encoder B (Dir): 28643 (Delta: 138)
+Encoder A (Esq): 13108 (Delta: 63) | Encoder B (Dir): 28791 (Delta: 148)
+Encoder A (Esq): 13108 (Delta: 0) | Encoder B (Dir): 28930 (Delta: 139)
+Encoder A (Esq): 13108 (Delta: 0) | Encoder B (Dir): 29073 (Delta: 143)
+Encoder A (Esq): 13114 (Delta: 6) | Encoder B (Dir): 29213 (Delta: 140)
+Encoder A (Esq): 13244 (Delta: 130) | Encoder B (Dir): 29355 (Delta: 142)
+Encoder A (Esq): 13314 (Delta: 70) | Encoder B (Dir): 29493 (Delta: 138)
+Encoder A (Esq): 13318 (Delta: 4) | Encoder B (Dir): 29629 (Delta: 136)
+Encoder A (Esq): 13318 (Delta: 0) | Encoder B (Dir): 29768 (Delta: 139)
+Encoder A (Esq): 13318 (Delta: 0) | Encoder B (Dir): 29912 (Delta: 144)
+Encoder A (Esq): 13318 (Delta: 0) | Encoder B (Dir): 30055 (Delta: 143)
+Encoder A (Esq): 13318 (Delta: 0) | Encoder B (Dir): 30198 (Delta: 143)
+Encoder A (Esq): 13318 (Delta: 0) | Encoder B (Dir): 30339 (Delta: 141)
+Encoder A (Esq): 13318 (Delta: 0) | Encoder B (Dir): 30481 (Delta: 142)
+Encoder A (Esq): 13364 (Delta: 46) | Encoder B (Dir): 30616 (Delta: 135)
+Encoder A (Esq): 13487 (Delta: 123) | Encoder B (Dir): 30754 (Delta: 138)
+Encoder A (Esq): 13613 (Delta: 126) | Encoder B (Dir): 30892 (Delta: 138)
+Encoder A (Esq): 13719 (Delta: 106) | Encoder B (Dir): 31029 (Delta: 137)
+Encoder A (Esq): 13729 (Delta: 10) | Encoder B (Dir): 31168 (Delta: 139)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 31308 (Delta: 140)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 31445 (Delta: 137)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 31584 (Delta: 139)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 31726 (Delta: 142)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 31868 (Delta: 142)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 32007 (Delta: 139)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 32147 (Delta: 140)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 32286 (Delta: 139)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 32426 (Delta: 140)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 32567 (Delta: 141)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 32706 (Delta: 139)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 32852 (Delta: 146)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 32987 (Delta: 135)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 33131 (Delta: 144)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 33273 (Delta: 142)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 33413 (Delta: 140)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 33557 (Delta: 144)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 33699 (Delta: 142)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 33838 (Delta: 139)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 33979 (Delta: 141)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 34119 (Delta: 140)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 34258 (Delta: 139)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 34394 (Delta: 136)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 34530 (Delta: 136)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 34667 (Delta: 137)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 34815 (Delta: 148)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 34953 (Delta: 138)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 35088 (Delta: 135)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 35231 (Delta: 143)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 35372 (Delta: 141)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 35510 (Delta: 138)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 35655 (Delta: 145)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 35796 (Delta: 141)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 35932 (Delta: 136)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 36072 (Delta: 140)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 36218 (Delta: 146)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 36360 (Delta: 142)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 36497 (Delta: 137)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 36635 (Delta: 138)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 36772 (Delta: 137)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 36913 (Delta: 141)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 37053 (Delta: 140)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 37194 (Delta: 141)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 37338 (Delta: 144)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 37476 (Delta: 138)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 37616 (Delta: 140)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 37757 (Delta: 141)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 37901 (Delta: 144)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 38040 (Delta: 139)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 38185 (Delta: 145)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 38330 (Delta: 145)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 38472 (Delta: 142)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 38614 (Delta: 142)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 38754 (Delta: 140)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 38893 (Delta: 139)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 39029 (Delta: 136)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 39166 (Delta: 137)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 39310 (Delta: 144)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 39452 (Delta: 142)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 39593 (Delta: 141)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 39732 (Delta: 139)
+Encoder A (Esq): 13729 (Delta: 0) | Encoder B (Dir): 39877 (Delta: 145)
+Encoder A (Esq): 13733 (Delta: 4) | Encoder B (Dir): 40019 (Delta: 142)
+Encoder A (Esq): 13805 (Delta: 72) | Encoder B (Dir): 40163 (Delta: 144)
+Encoder A (Esq): 13809 (Delta: 4) | Encoder B (Dir): 40300 (Delta: 137)
+Encoder A (Esq): 13809 (Delta: 0) | Encoder B (Dir): 40450 (Delta: 150)
+Encoder A (Esq): 13809 (Delta: 0) | Encoder B (Dir): 40582 (Delta: 132)
+Encoder A (Esq): 13810 (Delta: 1) | Encoder B (Dir): 40720 (Delta: 138)
+Encoder A (Esq): 13945 (Delta: 135) | Encoder B (Dir): 40861 (Delta: 141)
+Encoder A (Esq): 14074 (Delta: 129) | Encoder B (Dir): 40998 (Delta: 137)
+Encoder A (Esq): 14198 (Delta: 124) | Encoder B (Dir): 41141 (Delta: 143)
+Encoder A (Esq): 14319 (Delta: 121) | Encoder B (Dir): 41285 (Delta: 144)
+Encoder A (Esq): 14457 (Delta: 138) | Encoder B (Dir): 41422 (Delta: 137)
+Encoder A (Esq): 14580 (Delta: 123) | Encoder B (Dir): 41561 (Delta: 139)
+Encoder A (Esq): 14709 (Delta: 129) | Encoder B (Dir): 41704 (Delta: 143)
+Encoder A (Esq): 14839 (Delta: 130) | Encoder B (Dir): 41844 (Delta: 140)
+Encoder A (Esq): 14959 (Delta: 120) | Encoder B (Dir): 41988 (Delta: 144)
+Encoder A (Esq): 15082 (Delta: 123) | Encoder B (Dir): 42130 (Delta: 142)
+Encoder A (Esq): 15204 (Delta: 122) | Encoder B (Dir): 42271 (Delta: 141)
+Encoder A (Esq): 15326 (Delta: 122) | Encoder B (Dir): 42418 (Delta: 147)
+Encoder A (Esq): 15447 (Delta: 121) | Encoder B (Dir): 42558 (Delta: 140)
+Encoder A (Esq): 15567 (Delta: 120) | Encoder B (Dir): 42694 (Delta: 136)
+Encoder A (Esq): 15688 (Delta: 121) | Encoder B (Dir): 42836 (Delta: 142)
+Encoder A (Esq): 15812 (Delta: 124) | Encoder B (Dir): 42977 (Delta: 141)
+Encoder A (Esq): 15933 (Delta: 121) | Encoder B (Dir): 43119 (Delta: 142)
+Encoder A (Esq): 16054 (Delta: 121) | Encoder B (Dir): 43267 (Delta: 148)
+Encoder A (Esq): 16175 (Delta: 121) | Encoder B (Dir): 43412 (Delta: 145)
+Encoder A (Esq): 16292 (Delta: 117) | Encoder B (Dir): 43560 (Delta: 148)
+Encoder A (Esq): 16413 (Delta: 121) | Encoder B (Dir): 43707 (Delta: 147)
+Encoder A (Esq): 16527 (Delta: 114) | Encoder B (Dir): 43855 (Delta: 148)
+Encoder A (Esq): 16640 (Delta: 113) | Encoder B (Dir): 43992 (Delta: 137)
+Encoder A (Esq): 16748 (Delta: 108) | Encoder B (Dir): 44134 (Delta: 142)
+Encoder A (Esq): 16855 (Delta: 107) | Encoder B (Dir): 44276 (Delta: 142)
+Encoder A (Esq): 16954 (Delta: 99) | Encoder B (Dir): 44415 (Delta: 139)
+Encoder A (Esq): 17055 (Delta: 101) | Encoder B (Dir): 44560 (Delta: 145)
+Encoder A (Esq): 17108 (Delta: 53) | Encoder B (Dir): 44705 (Delta: 145)
+������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2cch ( 41676) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=0001a2f4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0001c62c vaddr=40080000 size=039ech ( 14828) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1125ch ( 70236) map[0m
+[0;32mI (189) esp_image: segment 4: paddr=00031284 vaddr=400839ec size=0918ch ( 37260) load[0m
+[0;32mI (211) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (211) boot: Disabling RNG early entropy source...[0m
+[0;32mI (222) cpu_start: Multicore app[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) cpu_start: Application information:[0m
+[0;32mI (235) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (241) cpu_start: App version:      e18ea92[0m
+[0;32mI (246) cpu_start: Compile time:     Dec 12 2025 10:43:53[0m
+[0;32mI (252) cpu_start: ELF file SHA256:  aa72dff82...[0m
+[0;32mI (257) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (263) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (268) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (273) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (278) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (310) heap_init: At 4008CB78 len 00013488 (77 KiB): IRAM[0m
+[0;32mI (318) spi_flash: detected chip: generic[0m
+[0;32mI (321) spi_flash: flash io: dio[0m
+[0;33mW (325) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+=== INICIANDO TESTE BRUTO (HARDWARE ONLY) ===
+[0;32mI (348) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (358) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (368) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (368) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (378) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (388) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+>>> Hardware Configurado. Ligando motores em 3 segundos...
+>>> APLICANDO PWM 0 (Logica Invertida = MAX POWER)
+Encoder A (Esq): 0 (Delta: 0) | Encoder B (Dir): 129 (Delta: 129)
+Encoder A (Esq): 0 (Delta: 0) | Encoder B (Dir): 269 (Delta: 140)
+Encoder A (Esq): 0 (Delta: 0) | Encoder B (Dir): 410 (Delta: 141)
+Encoder A (Esq): 8 (Delta: 8) | Encoder B (Dir): 552 (Delta: 142)
+Encoder A (Esq): 23 (Delta: 15) | Encoder B (Dir): 700 (Delta: 148)
+Encoder A (Esq): 27 (Delta: 4) | Encoder B (Dir): 845 (Delta: 145)
+Encoder A (Esq): 32 (Delta: 5) | Encoder B (Dir): 987 (Delta: 142)
+Encoder A (Esq): 42 (Delta: 10) | Encoder B (Dir): 1136 (Delta: 149)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 1278 (Delta: 142)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 1422 (Delta: 144)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 1569 (Delta: 147)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 1715 (Delta: 146)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 1865 (Delta: 150)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 2002 (Delta: 137)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 2146 (Delta: 144)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 2290 (Delta: 144)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 2439 (Delta: 149)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 2584 (Delta: 145)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 2727 (Delta: 143)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 2871 (Delta: 144)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 3010 (Delta: 139)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 3155 (Delta: 145)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 3300 (Delta: 145)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 3447 (Delta: 147)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 3598 (Delta: 151)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 3744 (Delta: 146)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 3889 (Delta: 145)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 4032 (Delta: 143)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 4177 (Delta: 145)
+Encoder A (Esq): 42 (Delta: 0) | Encoder B (Dir): 4317 (Delta: 140)
+Encoder A (Esq): 55 (Delta: 13) | Encoder B (Dir): 4459 (Delta: 142)
+Encoder A (Esq): 59 (Delta: 4) | Encoder B (Dir): 4610 (Delta: 151)
+Encoder A (Esq): 59 (Delta: 0) | Encoder B (Dir): 4753 (Delta: 143)
+Encoder A (Esq): 59 (Delta: 0) | Encoder B (Dir): 4900 (Delta: 147)
+Encoder A (Esq): 59 (Delta: 0) | Encoder B (Dir): 5038 (Delta: 138)
+Encoder A (Esq): 59 (Delta: 0) | Encoder B (Dir): 5181 (Delta: 143)
+Encoder A (Esq): 59 (Delta: 0) | Encoder B (Dir): 5322 (Delta: 141)
+Encoder A (Esq): 59 (Delta: 0) | Encoder B (Dir): 5466 (Delta: 144)
+Encoder A (Esq): 59 (Delta: 0) | Encoder B (Dir): 5603 (Delta: 137)
+Encoder A (Esq): 59 (Delta: 0) | Encoder B (Dir): 5749 (Delta: 146)
+Encoder A (Esq): 115 (Delta: 56) | Encoder B (Dir): 5893 (Delta: 144)
+Encoder A (Esq): 241 (Delta: 126) | Encoder B (Dir): 6033 (Delta: 140)
+Encoder A (Esq): 368 (Delta: 127) | Encoder B (Dir): 6176 (Delta: 143)
+Encoder A (Esq): 496 (Delta: 128) | Encoder B (Dir): 6322 (Delta: 146)
+Encoder A (Esq): 621 (Delta: 125) | Encoder B (Dir): 6464 (Delta: 142)
+Encoder A (Esq): 673 (Delta: 52) | Encoder B (Dir): 6605 (Delta: 141)
+Encoder A (Esq): 673 (Delta: 0) | Encoder B (Dir): 6748 (Delta: 143)
+Encoder A (Esq): 692 (Delta: 19) | Encoder B (Dir): 6889 (Delta: 141)
+Encoder A (Esq): 734 (Delta: 42) | Encoder B (Dir): 7030 (Delta: 141)
+Encoder A (Esq): 777 (Delta: 43) | Encoder B (Dir): 7177 (Delta: 147)
+Encoder A (Esq): 827 (Delta: 50) | Encoder B (Dir): 7320 (Delta: 143)
+Encoder A (Esq): 878 (Delta: 51) | Encoder B (Dir): 7456 (Delta: 136)
+Encoder A (Esq): 919 (Delta: 41) | Encoder B (Dir): 7604 (Delta: 148)
+Encoder A (Esq): 1017 (Delta: 98) | Encoder B (Dir): 7753 (Delta: 149)
+Encoder A (Esq): 1034 (Delta: 17) | Encoder B (Dir): 7905 (Delta: 152)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 8046 (Delta: 141)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 8191 (Delta: 145)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 8341 (Delta: 150)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 8493 (Delta: 152)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 8646 (Delta: 153)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 8796 (Delta: 150)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 8944 (Delta: 148)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 9092 (Delta: 148)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 9235 (Delta: 143)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 9377 (Delta: 142)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 9526 (Delta: 149)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 9675 (Delta: 149)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 9829 (Delta: 154)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 9977 (Delta: 148)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 10123 (Delta: 146)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 10271 (Delta: 148)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 10416 (Delta: 145)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 10562 (Delta: 146)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 10709 (Delta: 147)
+Encoder A (Esq): 1034 (Delta: 0) | Encoder B (Dir): 10855 (Delta: 146)
+Encoder A (Esq): 1047 (Delta: 13) | Encoder B (Dir): 11008 (Delta: 153)
+Encoder A (Esq): 1047 (Delta: 0) | Encoder B (Dir): 11159 (Delta: 151)
+Encoder A (Esq): 1050 (Delta: 3) | Encoder B (Dir): 11302 (Delta: 143)
+Encoder A (Esq): 1059 (Delta: 9) | Encoder B (Dir): 11451 (Delta: 149)
+Encoder A (Esq): 1059 (Delta: 0) | Encoder B (Dir): 11596 (Delta: 145)
+Encoder A (Esq): 1059 (Delta: 0) | Encoder B (Dir): 11741 (Delta: 145)
+Encoder A (Esq): 1116 (Delta: 57) | Encoder B (Dir): 11886 (Delta: 145)
+Encoder A (Esq): 1259 (Delta: 143) | Encoder B (Dir): 12026 (Delta: 140)
+Encoder A (Esq): 1335 (Delta: 76) | Encoder B (Dir): 12167 (Delta: 141)
+Encoder A (Esq): 1335 (Delta: 0) | Encoder B (Dir): 12310 (Delta: 143)
+Encoder A (Esq): 1335 (Delta: 0) | Encoder B (Dir): 12453 (Delta: 143)
+Encoder A (Esq): 1335 (Delta: 0) | Encoder B (Dir): 12596 (Delta: 143)
+Encoder A (Esq): 1335 (Delta: 0) | Encoder B (Dir): 12743 (Delta: 147)
+Encoder A (Esq): 1339 (Delta: 4) | Encoder B (Dir): 12896 (Delta: 153)
+Encoder A (Esq): 1396 (Delta: 57) | Encoder B (Dir): 13046 (Delta: 150)
+Encoder A (Esq): 1446 (Delta: 50) | Encoder B (Dir): 13196 (Delta: 150)
+Encoder A (Esq): 1446 (Delta: 0) | Encoder B (Dir): 13342 (Delta: 146)
+Encoder A (Esq): 1580 (Delta: 134) | Encoder B (Dir): 13490 (Delta: 148)
+Encoder A (Esq): 1725 (Delta: 145) | Encoder B (Dir): 13642 (Delta: 152)
+Encoder A (Esq): 1869 (Delta: 144) | Encoder B (Dir): 13790 (Delta: 148)
+Encoder A (Esq): 2017 (Delta: 148) | Encoder B (Dir): 13941 (Delta: 151)
+Encoder A (Esq): 2168 (Delta: 151) | Encoder B (Dir): 14090 (Delta: 149)
+Encoder A (Esq): 2302 (Delta: 134) | Encoder B (Dir): 14243 (Delta: 153)
+Encoder A (Esq): 2439 (Delta: 137) | Encoder B (Dir): 14387 (Delta: 144)
+Encoder A (Esq): 2575 (Delta: 136) | Encoder B (Dir): 14539 (Delta: 152)
+Encoder A (Esq): 2714 (Delta: 139) | Encoder B (Dir): 14688 (Delta: 149)
+Encoder A (Esq): 2852 (Delta: 138) | Encoder B (Dir): 14834 (Delta: 146)
+Encoder A (Esq): 2990 (Delta: 138) | Encoder B (Dir): 14978 (Delta: 144)
+Encoder A (Esq): 3127 (Delta: 137) | Encoder B (Dir): 15127 (Delta: 149)
+Encoder A (Esq): 3261 (Delta: 134) | Encoder B (Dir): 15267 (Delta: 140)
+Encoder A (Esq): 3388 (Delta: 127) | Encoder B (Dir): 15417 (Delta: 150)
+Encoder A (Esq): 3537 (Delta: 149) | Encoder B (Dir): 15572 (Delta: 155)
+Encoder A (Esq): 3667 (Delta: 130) | Encoder B (Dir): 15724 (Delta: 152)
+Encoder A (Esq): 3723 (Delta: 56) | Encoder B (Dir): 15885 (Delta: 161)
+Encoder A (Esq): 3723 (Delta: 0) | Encoder B (Dir): 16037 (Delta: 152)
+Encoder A (Esq): 3723 (Delta: 0) | Encoder B (Dir): 16181 (Delta: 144)
+Encoder A (Esq): 3728 (Delta: 5) | Encoder B (Dir): 16327 (Delta: 146)
+Encoder A (Esq): 3826 (Delta: 98) | Encoder B (Dir): 16472 (Delta: 145)
+Encoder A (Esq): 3974 (Delta: 148) | Encoder B (Dir): 16610 (Delta: 138)
+Encoder A (Esq): 4118 (Delta: 144) | Encoder B (Dir): 16752 (Delta: 142)
+Encoder A (Esq): 4264 (Delta: 146) | Encoder B (Dir): 16895 (Delta: 143)
+Encoder A (Esq): 4414 (Delta: 150) | Encoder B (Dir): 17039 (Delta: 144)
+Encoder A (Esq): 4567 (Delta: 153) | Encoder B (Dir): 17180 (Delta: 141)
+Encoder A (Esq): 4722 (Delta: 155) | Encoder B (Dir): 17324 (Delta: 144)
+Encoder A (Esq): 4878 (Delta: 156) | Encoder B (Dir): 17470 (Delta: 146)
+Encoder A (Esq): 5033 (Delta: 155) | Encoder B (Dir): 17611 (Delta: 141)
+Encoder A (Esq): 5174 (Delta: 141) | Encoder B (Dir): 17752 (Delta: 141)
+Encoder A (Esq): 5307 (Delta: 133) | Encoder B (Dir): 17889 (Delta: 137)
+Encoder A (Esq): 5450 (Delta: 143) | Encoder B (Dir): 18026 (Delta: 137)
+Encoder A (Esq): 5591 (Delta: 141) | Encoder B (Dir): 18166 (Delta: 140)
+Encoder A (Esq): 5742 (Delta: 151) | Encoder B (Dir): 18303 (Delta: 137)
+Encoder A (Esq): 5886 (Delta: 144) | Encoder B (Dir): 18435 (Delta: 132)
+Encoder A (Esq): 6020 (Delta: 134) | Encoder B (Dir): 18578 (Delta: 143)
+Encoder A (Esq): 6070 (Delta: 50) | Encoder B (Dir): 18710 (Delta: 132)
+Encoder A (Esq): 6170 (Delta: 100) | Encoder B (Dir): 18850 (Delta: 140)
+Encoder A (Esq): 6272 (Delta: 102) | Encoder B (Dir): 18990 (Delta: 140)
+Encoder A (Esq): 6282 (Delta: 10) | Encoder B (Dir): 19125 (Delta: 135)
+Encoder A (Esq): 6300 (Delta: 18) | Encoder B (Dir): 19261 (Delta: 136)
+Encoder A (Esq): 6441 (Delta: 141) | Encoder B (Dir): 19400 (Delta: 139)
+Encoder A (Esq): 6523 (Delta: 82) | Encoder B (Dir): 19535 (Delta: 135)
+Encoder A (Esq): 6602 (Delta: 79) | Encoder B (Dir): 19675 (Delta: 140)
+Encoder A (Esq): 6747 (Delta: 145) | Encoder B (Dir): 19816 (Delta: 141)
+Encoder A (Esq): 6890 (Delta: 143) | Encoder B (Dir): 19959 (Delta: 143)
+Encoder A (Esq): 7037 (Delta: 147) | Encoder B (Dir): 20107 (Delta: 148)
+Encoder A (Esq): 7139 (Delta: 102) | Encoder B (Dir): 20249 (Delta: 142)
+Encoder A (Esq): 7284 (Delta: 145) | Encoder B (Dir): 20389 (Delta: 140)
+Encoder A (Esq): 7420 (Delta: 136) | Encoder B (Dir): 20534 (Delta: 145)
+Encoder A (Esq): 7559 (Delta: 139) | Encoder B (Dir): 20678 (Delta: 144)
+Encoder A (Esq): 7703 (Delta: 144) | Encoder B (Dir): 20822 (Delta: 144)
+Encoder A (Esq): 7850 (Delta: 147) | Encoder B (Dir): 20970 (Delta: 148)
+Encoder A (Esq): 7990 (Delta: 140) | Encoder B (Dir): 21113 (Delta: 143)
+Encoder A (Esq): 8143 (Delta: 153) | Encoder B (Dir): 21256 (Delta: 143)
+Encoder A (Esq): 8288 (Delta: 145) | Encoder B (Dir): 21393 (Delta: 137)
+Encoder A (Esq): 8437 (Delta: 149) | Encoder B (Dir): 21534 (Delta: 141)
+Encoder A (Esq): 8585 (Delta: 148) | Encoder B (Dir): 21667 (Delta: 133)

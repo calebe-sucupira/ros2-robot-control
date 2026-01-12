@@ -1,0 +1,500 @@
+.Rձ�29 2019 12:21:46
+
+rst:0x1 (POWERON_RESets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1af00h (110336) map[0m
+[0;32mI (144) esp_image: segment 1: paddr=0002af28 vaddr=3ffb0000 size=0470ch ( 18188) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002f63c vaddr=40080000 size=009dch (  2524) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=942b8h (606904) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c42e0 vaddr=400809dc size=16b60h ( 93024) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (426) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (435) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) cpu_start: Application information:[0m
+[0;32mI (438) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (444) cpu_start: App version:      e18ea92[0m
+[0;32mI (449) cpu_start: Compile time:     Dec 12 2025 10:43:53[0m
+[0;32mI (455) cpu_start: ELF file SHA256:  40c8fa3d2...[0m
+[0;32mI (461) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (467) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (472) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (476) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (488) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFBB490 len 00024B70 (146 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 4009753C len 00008AC4 (34 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (552) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (552) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (562) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (572) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (582) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (592) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+
+
+=== SISTEMA URGENTE - CONTROLE AGGRESSIVO ===
+REALIDADE: Robô atinge NO MÁXIMO 0.15 m/s
+ESCALONAMENTO: Comandos ROS 1.0 = 0.15 m/s reais
+CONTROLE: PID FORTE (KP=1.5, KI=0.6, KD=0.4)
+PWM: Mínimo 0.55, Feedforward agressivo
+OBJETIVO: Atingir velocidades dentro da capacidade REAL
+[0;32mI (652) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (662) wifi:wifi driver task: 3ffc3718, prio:23, stack:6656, core=0[0m
+[0;32mI (672) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (672) wifi:wifi certification version: v7.0[0m
+[0;32mI (672) wifi:config NVS flash: enabled[0m
+[0;32mI (672) wifi:config nano formating: disabled[0m
+[0;32mI (672) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (682) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (682) wifi:Init management short buffer num: 32[0m
+[0;32mI (692) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (692) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (692) wifi:Init static rx buffer num: 10[0m
+[0;32mI (702) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (702) wifi_init: rx ba win: 6[0m
+[0;32mI (712) wifi_init: tcpip mbox: 32[0m
+[0;32mI (712) wifi_init: udp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp mbox: 6[0m
+[0;32mI (722) wifi_init: tcp tx win: 5760[0m
+[0;32mI (722) wifi_init: tcp rx win: 5760[0m
+[0;32mI (732) wifi_init: tcp mss: 1440[0m
+[0;32mI (732) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (732) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (742) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (752) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (842) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (842) wifi:enable tsf[0m
+[0;32mI (842) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (912) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (912) wifi:state: init -> auth (b0)[0m
+[0;32mI (922) wifi:state: auth -> assoc (0)[0m
+[0;32mI (972) wifi:state: assoc -> run (10)[0m
+[0;32mI (982) wifi:connected with Calebe, aid = 3, channel 1, BW20, bssid = 4a:25:d1:86:77:3a[0m
+[0;32mI (992) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (992) wifi:pm start, type: 1[0m
+
+[0;32mI (992) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1012) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1012) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2002) esp_netif_handlers: sta ip: 10.250.183.207, mask: 255.255.255.0, gw: 10.250.183.108[0m
+[0;32mI (2002) wifi_station_netif: got ip:10.250.183.207[0m
+[0;32mI (2002) wifi_station_netif: connected to ap SSID:Calebe password:88111447[0m
+[0;32mI (2012) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (2072) wifi:<ba-add>idx:0 (ifx:0, 4a:25:d1:86:77:3a), tid:0, ssn:3, winSize:64[0m
+
+=== SISTEMA PRONTO - TESTE URGENTE ===
+
+ENVIE APENAS ESTES COMANDOS:
+1. linear_x = 0.33 (equivale a 0.05 m/s real)
+2. linear_x = 0.67 (equivale a 0.10 m/s real)
+3. linear_x = 1.00 (equivale a 0.15 m/s real - MÁXIMO!)
+
+NÃO ENVIE MAIS QUE 1.0! O robô NÃO CONSEGUE!
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.000 Real=0.000 PWM=0.00 I=0.000
+DIR: Alvo=0.000 Real=0.000 PWM=0.00 I=0.000
+Ticks: ESQ=0 DIR=0 | Estimado: ESQ=0.000 DIR=0.000
+========================
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.000 PWM=0.55 I=0.005
+DIR: Alvo=0.050 Real=0.000 PWM=0.55 I=0.005
+Ticks: ESQ=231 DIR=142 | Estimado: ESQ=0.249 DIR=0.153
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.024 PWM=0.55 I=0.010
+DIR: Alvo=0.050 Real=0.016 PWM=0.55 I=0.011
+Ticks: ESQ=25 DIR=16 | Estimado: ESQ=0.027 DIR=0.017
+========================
+[KICK] Motor 0: Finalizado
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.024 PWM=0.55 I=0.014
+DIR: Alvo=0.050 Real=0.098 PWM=0.55 I=0.007
+Ticks: ESQ=174 DIR=155 | Estimado: ESQ=0.188 DIR=0.167
+========================
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.024 PWM=0.55 I=0.018
+DIR: Alvo=0.050 Real=0.098 PWM=0.55 I=0.000
+Ticks: ESQ=159 DIR=154 | Estimado: ESQ=0.172 DIR=0.166
+========================
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.018 PWM=0.55 I=0.023
+DIR: Alvo=0.050 Real=0.019 PWM=0.55 I=0.004
+Ticks: ESQ=17 DIR=15 | Estimado: ESQ=0.018 DIR=0.016
+========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.013 PWM=0.55 I=0.027
+DIR: Alvo=0.050 Real=0.009 PWM=0.55 I=0.009
+Ticks: ESQ=12 DIR=8 | Estimado: ESQ=0.013 DIR=0.009
+========================
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.017 PWM=0.55 I=0.033
+DIR: Alvo=0.050 Real=0.009 PWM=0.55 I=0.016
+Ticks: ESQ=18 DIR=9 | Estimado: ESQ=0.019 DIR=0.010
+========================
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.015 PWM=0.55 I=0.038
+DIR: Alvo=0.050 Real=0.025 PWM=0.55 I=0.016
+Ticks: ESQ=233 DIR=151 | Estimado: ESQ=0.252 DIR=0.163
+========================
+[CMD] ROS:0.33→0.05 m/s | ESQ=0.050 DIR=0.050
+[KICK] Motor 0: PWM=0.95 por 100ms
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.028 PWM=0.55 I=0.043
+DIR: Alvo=0.050 Real=0.020 PWM=0.55 I=0.022
+Ticks: ESQ=30 DIR=21 | Estimado: ESQ=0.032 DIR=0.023
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.017 PWM=0.55 I=0.048
+DIR: Alvo=0.050 Real=0.013 PWM=0.55 I=0.028
+Ticks: ESQ=17 DIR=14 | Estimado: ESQ=0.018 DIR=0.015
+========================
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.016 PWM=0.56 I=0.053
+DIR: Alvo=0.050 Real=0.013 PWM=0.55 I=0.033
+Ticks: ESQ=14 DIR=11 | Estimado: ESQ=0.015 DIR=0.012
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:0.00→0.00 m/s | ESQ=0.000 DIR=0.000
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.000 Real=0.011 PWM=0.00 I=0.000
+DIR: Alvo=0.000 Real=0.008 PWM=0.00 I=0.000
+Ticks: ESQ=2400 DIR=1478 | Estimado: ESQ=2.592 DIR=1.596
+========================
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.000 Real=0.000 PWM=0.00 I=0.000
+DIR: Alvo=0.000 Real=0.000 PWM=0.00 I=0.000
+Ticks: ESQ=0 DIR=0 | Estimado: ESQ=0.000 DIR=0.000
+========================
+[CMD] ROS:0.00→0.00 m/s | ESQ=0.000 DIR=0.000
+[CMD] ROS:0.67→0.05 m/s | ESQ=0.050 DIR=0.050
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.100 DIR=0.100
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.100 Real=0.000 PWM=0.87 I=0.007
+DIR: Alvo=0.100 Real=0.000 PWM=0.85 I=0.007
+Ticks: ESQ=246 DIR=162 | Estimado: ESQ=0.266 DIR=0.175
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.101 DIR=0.101
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.101 Real=0.014 PWM=0.75 I=0.020
+DIR: Alvo=0.101 Real=0.010 PWM=0.74 I=0.021
+Ticks: ESQ=12 DIR=8 | Estimado: ESQ=0.013 DIR=0.009
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.101 DIR=0.101
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.101 Real=0.013 PWM=0.73 I=0.034
+DIR: Alvo=0.101 Real=0.010 PWM=0.72 I=0.035
+Ticks: ESQ=13 DIR=10 | Estimado: ESQ=0.014 DIR=0.011
+========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 1: PWM=0.93 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.101 Real=0.014 PWM=0.74 I=0.047
+DIR: Alvo=0.101 Real=0.009 PWM=0.73 I=0.049
+Ticks: ESQ=13 DIR=9 | Estimado: ESQ=0.014 DIR=0.010
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+[KICK] Motor 1: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.101 Real=0.015 PWM=0.73 I=0.060
+DIR: Alvo=0.101 Real=0.014 PWM=0.72 I=0.062
+Ticks: ESQ=15 DIR=14 | Estimado: ESQ=0.016 DIR=0.015
+========================
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.101 DIR=0.101
+[KICK] Motor 0: Finalizado
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.101 DIR=0.101
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.101 Real=0.026 PWM=0.75 I=0.072
+DIR: Alvo=0.101 Real=0.021 PWM=0.74 I=0.074
+Ticks: ESQ=194 DIR=170 | Estimado: ESQ=0.210 DIR=0.184
+========================
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.101 DIR=0.101
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.101 DIR=0.101
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.101 Real=0.021 PWM=0.75 I=0.084
+DIR: Alvo=0.101 Real=0.015 PWM=0.74 I=0.087
+Ticks: ESQ=216 DIR=194 | Estimado: ESQ=0.233 DIR=0.210
+========================
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.101 DIR=0.101
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.101 Real=0.005 PWM=0.78 I=0.098
+DIR: Alvo=0.101 Real=0.006 PWM=0.77 I=0.100
+Ticks: ESQ=3 DIR=4 | Estimado: ESQ=0.003 DIR=0.004
+========================
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.101 DIR=0.101
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.101 Real=0.016 PWM=0.75 I=0.111
+DIR: Alvo=0.101 Real=0.010 PWM=0.74 I=0.114
+Ticks: ESQ=16 DIR=10 | Estimado: ESQ=0.017 DIR=0.011
+========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.101 Real=0.014 PWM=0.76 I=0.124
+DIR: Alvo=0.101 Real=0.010 PWM=0.75 I=0.128
+Ticks: ESQ=13 DIR=9 | Estimado: ESQ=0.014 DIR=0.010
+========================
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.101 DIR=0.101
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:0.67→0.10 m/s | ESQ=0.101 DIR=0.101
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.101 Real=0.019 PWM=0.76 I=0.136
+DIR: Alvo=0.101 Real=0.037 PWM=0.74 I=0.133
+Ticks: ESQ=244 DIR=200 | Estimado: ESQ=0.264 DIR=0.216
+========================
+[CMD] ROS:1.00→0.15 m/s | ESQ=0.150 DIR=0.150
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.150 Real=0.008 PWM=0.82 I=0.154
+DIR: Alvo=0.150 Real=0.007 PWM=0.82 I=0.151
+Ticks: ESQ=4 DIR=3 | Estimado: ESQ=0.004 DIR=0.003
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:1.00→0.15 m/s | ESQ=0.150 DIR=0.150
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.150 Real=0.012 PWM=0.79 I=0.175
+DIR: Alvo=0.150 Real=0.012 PWM=0.78 I=0.171
+Ticks: ESQ=222 DIR=167 | Estimado: ESQ=0.240 DIR=0.180
+========================
+[CMD] ROS:1.00→0.15 m/s | ESQ=0.150 DIR=0.150
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.150 Real=0.005 PWM=0.81 I=0.196
+DIR: Alvo=0.150 Real=0.005 PWM=0.79 I=0.193
+Ticks: ESQ=4 DIR=4 | Estimado: ESQ=0.004 DIR=0.004
+========================
+[CMD] ROS:1.00→0.15 m/s | ESQ=0.150 DIR=0.150
+[KICK] Motor 0: Finalizado
+[CMD] ROS:1.00→0.15 m/s | ESQ=0.150 DIR=0.150
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:1.00→0.15 m/s | ESQ=0.150 DIR=0.150
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.150 Real=0.005 PWM=0.80 I=0.218
+DIR: Alvo=0.150 Real=0.005 PWM=0.79 I=0.214
+Ticks: ESQ=250 DIR=196 | Estimado: ESQ=0.270 DIR=0.212
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:1.00→0.15 m/s | ESQ=0.150 DIR=0.150
+[KICK] Motor 0: Finalizado
+[CMD] ROS:1.00→0.15 m/s | ESQ=0.150 DIR=0.150
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.150 Real=0.017 PWM=0.80 I=0.238
+DIR: Alvo=0.150 Real=0.011 PWM=0.79 I=0.235
+Ticks: ESQ=254 DIR=194 | Estimado: ESQ=0.274 DIR=0.210
+========================
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.150 Real=0.015 PWM=0.79 I=0.258
+DIR: Alvo=0.150 Real=0.011 PWM=0.79 I=0.256
+Ticks: ESQ=15 DIR=11 | Estimado: ESQ=0.016 DIR=0.012
+========================
+[CMD] ROS:1.00→0.15 m/s | ESQ=0.150 DIR=0.150
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:1.00→0.15 m/s | ESQ=0.150 DIR=0.150
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.150 Real=0.017 PWM=0.81 I=0.278
+DIR: Alvo=0.150 Real=0.011 PWM=0.80 I=0.277
+Ticks: ESQ=244 DIR=192 | Estimado: ESQ=0.264 DIR=0.207
+========================
+[CMD] ROS:0.00→0.10 m/s | ESQ=0.100 DIR=0.100
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.100 Real=0.012 PWM=0.79 I=0.294
+DIR: Alvo=0.100 Real=0.008 PWM=0.78 I=0.293
+Ticks: ESQ=12 DIR=8 | Estimado: ESQ=0.013 DIR=0.009
+========================
+[CMD] ROS:0.00→0.05 m/s | ESQ=0.050 DIR=0.050
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.050 Real=0.012 PWM=0.69 I=0.303
+DIR: Alvo=0.050 Real=0.009 PWM=0.68 I=0.302
+Ticks: ESQ=12 DIR=9 | Estimado: ESQ=0.013 DIR=0.010
+========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 1: PWM=0.93 por 100ms
+[CMD] ROS:0.00→0.00 m/s | ESQ=0.000 DIR=0.000
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.000 Real=0.013 PWM=0.00 I=0.000
+DIR: Alvo=0.000 Real=0.009 PWM=0.00 I=0.000
+Ticks: ESQ=227 DIR=198 | Estimado: ESQ=0.245 DIR=0.214
+========================
+[CMD] ROS:0.00→0.00 m/s | ESQ=0.000 DIR=0.000
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.000 Real=0.000 PWM=0.00 I=0.000
+DIR: Alvo=0.000 Real=0.000 PWM=0.00 I=0.000
+Ticks: ESQ=0 DIR=0 | Estimado: ESQ=0.000 DIR=0.000
+========================
+[CMD] ROS:0.20→0.03 m/s | ESQ=0.030 DIR=0.030
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:0.20→0.03 m/s | ESQ=0.030 DIR=0.030
+[KICK] Motor 0: Finalizado
+[KICK] Motor 1: PWM=0.93 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.030 Real=0.011 PWM=0.55 I=0.004
+DIR: Alvo=0.030 Real=0.006 PWM=0.55 I=0.004
+Ticks: ESQ=13 DIR=7 | Estimado: ESQ=0.014 DIR=0.008
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+[KICK] Motor 0: Finalizado
+[KICK] Motor 1: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.030 Real=0.039 PWM=0.55 I=0.004
+DIR: Alvo=0.030 Real=0.034 PWM=0.55 I=0.004
+Ticks: ESQ=36 DIR=31 | Estimado: ESQ=0.039 DIR=0.033
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.030 Real=0.016 PWM=0.55 I=0.006
+DIR: Alvo=0.030 Real=0.013 PWM=0.55 I=0.007
+Ticks: ESQ=15 DIR=12 | Estimado: ESQ=0.016 DIR=0.013
+========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.030 Real=0.019 PWM=0.55 I=0.008
+DIR: Alvo=0.030 Real=0.010 PWM=0.55 I=0.010
+Ticks: ESQ=21 DIR=11 | Estimado: ESQ=0.023 DIR=0.012
+========================
+[CMD] ROS:0.20→0.03 m/s | ESQ=0.030 DIR=0.030
+[KICK] Motor 0: Finalizado
+[CMD] ROS:0.20→0.03 m/s | ESQ=0.030 DIR=0.030
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.030 Real=0.018 PWM=0.55 I=0.008
+DIR: Alvo=0.030 Real=0.013 PWM=0.55 I=0.011
+Ticks: ESQ=204 DIR=157 | Estimado: ESQ=0.220 DIR=0.170
+========================
+[CMD] ROS:0.20→0.03 m/s | ESQ=0.030 DIR=0.030
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.030 Real=0.013 PWM=0.55 I=0.011
+DIR: Alvo=0.030 Real=0.008 PWM=0.55 I=0.015
+Ticks: ESQ=237 DIR=147 | Estimado: ESQ=0.256 DIR=0.159
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+[CMD] ROS:0.20→0.03 m/s | ESQ=0.030 DIR=0.030
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.030 Real=0.012 PWM=0.55 I=0.013
+DIR: Alvo=0.030 Real=0.008 PWM=0.55 I=0.018
+Ticks: ESQ=230 DIR=145 | Estimado: ESQ=0.248 DIR=0.157
+========================
+[KICK] Motor 0: PWM=0.95 por 100ms
+
+=== CONTROLE URGENTE ===
+ESQ: Alvo=0.030 Real=0.014 PWM=0.55 I=0.016
+DIR: Alvo=0.030 Real=0.009 PWM=0.55 I=0.021
+Ticks: ESQ=13 DIR=8 | Estimado: ESQ=0.014 DIR=0.009
+========================

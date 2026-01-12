@@ -1,0 +1,173 @@
+[0/2] Re-checking globbed directories...
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/home/calebe/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.2.6-224-g72d06017df\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/config -I/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main -I/home/calebe/esp/esp-idf/components/newlib/platform_include -I/home/calebe/esp/esp-idf/components/freertos/config/include -I/home/calebe/esp/esp-idf/components/freertos/config/include/freertos -I/home/calebe/esp/esp-idf/components/freertos/config/xtensa/include -I/home/calebe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/calebe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/calebe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/calebe/esp/esp-idf/components/freertos/esp_additions/include -I/home/calebe/esp/esp-idf/components/esp_hw_support/include -I/home/calebe/esp/esp-idf/components/esp_hw_support/include/soc -I/home/calebe/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/calebe/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/calebe/esp/esp-idf/components/heap/include -I/home/calebe/esp/esp-idf/components/log/include -I/home/calebe/esp/esp-idf/components/soc/include -I/home/calebe/esp/esp-idf/components/soc/esp32 -I/home/calebe/esp/esp-idf/components/soc/esp32/include -I/home/calebe/esp/esp-idf/components/hal/platform_port/include -I/home/calebe/esp/esp-idf/components/hal/esp32/include -I/home/calebe/esp/esp-idf/components/hal/include -I/home/calebe/esp/esp-idf/components/esp_rom/include -I/home/calebe/esp/esp-idf/components/esp_rom/include/esp32 -I/home/calebe/esp/esp-idf/components/esp_rom/esp32 -I/home/calebe/esp/esp-idf/components/esp_common/include -I/home/calebe/esp/esp-idf/components/esp_system/include -I/home/calebe/esp/esp-idf/components/esp_system/port/soc -I/home/calebe/esp/esp-idf/components/esp_system/port/include/private -I/home/calebe/esp/esp-idf/components/xtensa/esp32/include -I/home/calebe/esp/esp-idf/components/xtensa/include -I/home/calebe/esp/esp-idf/components/xtensa/deprecated_include -I/home/calebe/esp/esp-idf/components/lwip/include -I/home/calebe/esp/esp-idf/components/lwip/include/apps -I/home/calebe/esp/esp-idf/components/lwip/include/apps/sntp -I/home/calebe/esp/esp-idf/components/lwip/lwip/src/include -I/home/calebe/esp/esp-idf/components/lwip/port/include -I/home/calebe/esp/esp-idf/components/lwip/port/freertos/include -I/home/calebe/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/calebe/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/calebe/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/network_interfaces -I/home/calebe/esp/esp-idf/components/nvs_flash/include -I/home/calebe/esp/esp-idf/components/spi_flash/include -I/home/calebe/esp/esp-idf/components/esp_partition/include -I/home/calebe/esp/esp-idf/components/esp_wifi/include -I/home/calebe/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/calebe/esp/esp-idf/components/esp_event/include -I/home/calebe/esp/esp-idf/components/esp_phy/include -I/home/calebe/esp/esp-idf/components/esp_phy/esp32/include -I/home/calebe/esp/esp-idf/components/esp_netif/include -I/home/calebe/esp/esp-idf/components/esp_eth/include -I/home/calebe/esp/esp-idf/components/driver/include -I/home/calebe/esp/esp-idf/components/driver/deprecated -I/home/calebe/esp/esp-idf/components/driver/analog_comparator/include -I/home/calebe/esp/esp-idf/components/driver/dac/include -I/home/calebe/esp/esp-idf/components/driver/gpio/include -I/home/calebe/esp/esp-idf/components/driver/gptimer/include -I/home/calebe/esp/esp-idf/components/driver/i2c/include -I/home/calebe/esp/esp-idf/components/driver/i2s/include -I/home/calebe/esp/esp-idf/components/driver/ledc/include -I/home/calebe/esp/esp-idf/components/driver/mcpwm/include -I/home/calebe/esp/esp-idf/components/driver/parlio/include -I/home/calebe/esp/esp-idf/components/driver/pcnt/include -I/home/calebe/esp/esp-idf/components/driver/rmt/include -I/home/calebe/esp/esp-idf/components/driver/sdio_slave/include -I/home/calebe/esp/esp-idf/components/driver/sdmmc/include -I/home/calebe/esp/esp-idf/components/driver/sigma_delta/include -I/home/calebe/esp/esp-idf/components/driver/spi/include -I/home/calebe/esp/esp-idf/components/driver/temperature_sensor/include -I/home/calebe/esp/esp-idf/components/driver/touch_sensor/include -I/home/calebe/esp/esp-idf/components/driver/twai/include -I/home/calebe/esp/esp-idf/components/driver/uart/include -I/home/calebe/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/calebe/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/calebe/esp/esp-idf/components/esp_pm/include -I/home/calebe/esp/esp-idf/components/esp_ringbuf/include -I/home/calebe/esp/esp-idf/components/esp_timer/include -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/action_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/actionlib_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/builtin_interfaces -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/composition_interfaces -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/diagnostic_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/example_interfaces -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/geometry_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/include -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/lifecycle_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/micro_ros_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/micro_ros_utilities -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/nav_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rcl -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rcl_action -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rcl_interfaces -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rcl_lifecycle -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rcl_logging_interface -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rclc -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rclc_lifecycle -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rclc_parameter -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rcutils -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rmw -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rmw_microros -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rmw_microxrcedds_c -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rosgraph_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rosidl_runtime_c -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rosidl_typesupport_c -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rosidl_typesupport_interface -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rosidl_typesupport_introspection_c -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/rosidl_typesupport_microxrcedds_c -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/sensor_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/shape_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/statistics_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/std_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/std_srvs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/stereo_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/test_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/tracetools -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/trajectory_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/ucdr -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/unique_identifier_msgs -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/uxr -isystem /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/components/micro_ros_espidf_component/include/visualization_msgs -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware=. -fmacro-prefix-map=/home/calebe/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c: In function 'calibrar_motores_sistematico':
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:6:5: error: implicit declaration of function 'ESP_LOGI' [-Werror=implicit-function-declaration]
+    6 |     ESP_LOGI("CALIB", "========================================");
+      |     ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:10:5: error: implicit declaration of function 'setup_hardware' [-Werror=implicit-function-declaration]
+   10 |     setup_hardware();
+      |     ^~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:16:5: error: implicit declaration of function 'gpio_set_level' [-Werror=implicit-function-declaration]
+   16 |     gpio_set_level(MOTOR_ESQ_IN3, 0);
+      |     ^~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:16:20: error: 'MOTOR_ESQ_IN3' undeclared (first use in this function)
+   16 |     gpio_set_level(MOTOR_ESQ_IN3, 0);
+      |                    ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:16:20: note: each undeclared identifier is reported only once for each function it appears in
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:17:20: error: 'MOTOR_ESQ_IN4' undeclared (first use in this function)
+   17 |     gpio_set_level(MOTOR_ESQ_IN4, 1);
+      |                    ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:18:20: error: 'MOTOR_DIR_IN1' undeclared (first use in this function)
+   18 |     gpio_set_level(MOTOR_DIR_IN1, 0);
+      |                    ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:19:20: error: 'MOTOR_DIR_IN2' undeclared (first use in this function)
+   19 |     gpio_set_level(MOTOR_DIR_IN2, 0);
+      |                    ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:21:5: error: unknown type name 'uint32_t'
+   21 |     uint32_t duty_esq = 1023 - (1023 * 50 / 100); // 50%
+      |     ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | // ============================================
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:22:5: error: implicit declaration of function 'ledc_set_duty' [-Werror=implicit-function-declaration]
+   22 |     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_1, duty_esq);
+      |     ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:22:19: error: 'LEDC_LOW_SPEED_MODE' undeclared (first use in this function)
+   22 |     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_1, duty_esq);
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:22:40: error: 'LEDC_CHANNEL_1' undeclared (first use in this function)
+   22 |     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_1, duty_esq);
+      |                                        ^~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:23:5: error: implicit declaration of function 'ledc_update_duty' [-Werror=implicit-function-declaration]
+   23 |     ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_1);
+      |     ^~~~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:25:5: error: unknown type name 'uint32_t'
+   25 |     uint32_t inicio_esq = g_ticks_esq_total;
+      |     ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:25:5: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:25:27: error: 'g_ticks_esq_total' undeclared (first use in this function)
+   25 |     uint32_t inicio_esq = g_ticks_esq_total;
+      |                           ^~~~~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:26:5: error: implicit declaration of function 'vTaskDelay' [-Werror=implicit-function-declaration]
+   26 |     vTaskDelay(pdMS_TO_TICKS(2000));
+      |     ^~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:26:16: error: implicit declaration of function 'pdMS_TO_TICKS' [-Werror=implicit-function-declaration]
+   26 |     vTaskDelay(pdMS_TO_TICKS(2000));
+      |                ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:29:5: error: unknown type name 'uint32_t'
+   29 |     uint32_t ticks_esq = g_ticks_esq_total - inicio_esq;
+      |     ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:29:5: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:41:5: error: unknown type name 'uint32_t'
+   41 |     uint32_t duty_dir = 1023 - (1023 * 50 / 100); // 50%
+      |     ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:41:5: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:42:40: error: 'LEDC_CHANNEL_0' undeclared (first use in this function)
+   42 |     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, duty_dir);
+      |                                        ^~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:45:5: error: unknown type name 'uint32_t'
+   45 |     uint32_t inicio_dir = g_ticks_dir_total;
+      |     ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:45:5: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:45:27: error: 'g_ticks_dir_total' undeclared (first use in this function)
+   45 |     uint32_t inicio_dir = g_ticks_dir_total;
+      |                           ^~~~~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:49:5: error: unknown type name 'uint32_t'
+   49 |     uint32_t ticks_dir = g_ticks_dir_total - inicio_dir;
+      |     ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:49:5: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:74:9: error: unknown type name 'uint32_t'
+   74 |         uint32_t duty = 1023 - (1023 * vel / 100);
+      |         ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:74:9: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:80:9: error: unknown type name 'uint32_t'
+   80 |         uint32_t inicio_esq2 = g_ticks_esq_total;
+      |         ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:80:9: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:81:9: error: unknown type name 'uint32_t'
+   81 |         uint32_t inicio_dir2 = g_ticks_dir_total;
+      |         ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:81:9: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c: In function 'mover_com_compensacao_otimizada':
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:147:5: error: unknown type name 'uint32_t'
+  147 |     uint32_t duty_esq = 1023 - (1023 * vel_esq_ajustada / 100);
+      |     ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:147:5: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:148:5: error: unknown type name 'uint32_t'
+  148 |     uint32_t duty_dir = 1023 - (1023 * vel_dir_ajustada / 100);
+      |     ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:148:5: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:150:19: error: 'LEDC_LOW_SPEED_MODE' undeclared (first use in this function)
+  150 |     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, duty_dir);
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:150:40: error: 'LEDC_CHANNEL_0' undeclared (first use in this function)
+  150 |     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, duty_dir);
+      |                                        ^~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:151:40: error: 'LEDC_CHANNEL_1' undeclared (first use in this function)
+  151 |     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_1, duty_esq);
+      |                                        ^~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:156:20: error: 'MOTOR_ESQ_IN3' undeclared (first use in this function)
+  156 |     gpio_set_level(MOTOR_ESQ_IN3, 0);
+      |                    ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:157:20: error: 'MOTOR_ESQ_IN4' undeclared (first use in this function)
+  157 |     gpio_set_level(MOTOR_ESQ_IN4, vel_esq_ajustada > 0 ? 1 : 0);
+      |                    ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:158:20: error: 'MOTOR_DIR_IN1' undeclared (first use in this function)
+  158 |     gpio_set_level(MOTOR_DIR_IN1, vel_dir_ajustada > 0 ? 1 : 0);
+      |                    ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:159:20: error: 'MOTOR_DIR_IN2' undeclared (first use in this function)
+  159 |     gpio_set_level(MOTOR_DIR_IN2, 0);
+      |                    ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c: In function 'teste_nova_compensacao':
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:186:9: error: unknown type name 'uint32_t'
+  186 |         uint32_t inicio_esq = g_ticks_esq_total;
+      |         ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:186:9: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:186:31: error: 'g_ticks_esq_total' undeclared (first use in this function)
+  186 |         uint32_t inicio_esq = g_ticks_esq_total;
+      |                               ^~~~~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:187:9: error: unknown type name 'uint32_t'
+  187 |         uint32_t inicio_dir = g_ticks_dir_total;
+      |         ^~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:187:9: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:187:31: error: 'g_ticks_dir_total' undeclared (first use in this function)
+  187 |         uint32_t inicio_dir = g_ticks_dir_total;
+      |                               ^~~~~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:192:24: error: 'MOTOR_ESQ_IN3' undeclared (first use in this function)
+  192 |         gpio_set_level(MOTOR_ESQ_IN3, 0);
+      |                        ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:193:24: error: 'MOTOR_ESQ_IN4' undeclared (first use in this function)
+  193 |         gpio_set_level(MOTOR_ESQ_IN4, 0);
+      |                        ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:194:24: error: 'MOTOR_DIR_IN1' undeclared (first use in this function)
+  194 |         gpio_set_level(MOTOR_DIR_IN1, 0);
+      |                        ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:195:24: error: 'MOTOR_DIR_IN2' undeclared (first use in this function)
+  195 |         gpio_set_level(MOTOR_DIR_IN2, 0);
+      |                        ^~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:196:23: error: 'LEDC_LOW_SPEED_MODE' undeclared (first use in this function)
+  196 |         ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 1023);
+      |                       ^~~~~~~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:196:44: error: 'LEDC_CHANNEL_0' undeclared (first use in this function)
+  196 |         ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 1023);
+      |                                            ^~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:197:44: error: 'LEDC_CHANNEL_1' undeclared (first use in this function)
+  197 |         ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_1, 1023);
+      |                                            ^~~~~~~~~~~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:201:27: error: implicit declaration of function 'fabsf' [-Werror=implicit-function-declaration]
+  201 |         float diferenca = fabsf(vel_d - vel_e) / ((vel_e + vel_d) / 2.0f) * 100.0f;
+      |                           ^~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:1:1: note: include '<math.h>' or provide a declaration of 'fabsf'
+  +++ |+#include <math.h>
+    1 | // ============================================
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:201:27: warning: incompatible implicit declaration of built-in function 'fabsf' [-Wbuiltin-declaration-mismatch]
+  201 |         float diferenca = fabsf(vel_d - vel_e) / ((vel_e + vel_d) / 2.0f) * 100.0f;
+      |                           ^~~~~
+/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c:201:27: note: include '<math.h>' or provide a declaration of 'fabsf'
+cc1: some warnings being treated as errors
+[2/9] Performing build step for 'bootloader'
+[1/1] cd /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/bootloader/esp-idf/esptool_py && /home/calebe/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/calebe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/bootloader/bootloader.bin
+Bootloader binary size 0x68c0 bytes. 0x740 bytes (6%) free.
+ninja: build stopped: subcommand failed.

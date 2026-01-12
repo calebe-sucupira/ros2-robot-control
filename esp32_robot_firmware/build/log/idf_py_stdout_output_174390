@@ -1,0 +1,1364 @@
+8������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),booets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (213) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 284, DIR: 383[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (10461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (12461) CALIB: Ticks ESQ: 98, DIR: 426[0m
+[0;32mI (14461) CALIB: 
+=== MEDIÇÃO 3/3 ===[0m
+[0;32mI (14461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (17461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (19461) CALIB: Ticks ESQ: 0, DIR: 470[0m
+[0;32mI (21461) CALIB: 
+=== RESULTADOS FINAIS ===[0m
+[0;32mI (21461) CALIB: Média ticks ESQ: 127.3[0m
+[0;32mI (21461) CALIB: Média ticks DIR: 426.3[0m
+[0;32mI (21461) CALIB: 
+=== CALIBRAÇÃO FINAL ===[0m
+[0;32mI (21461) CALIB: Ticks por metro (ESQ): 424[0m
+[0;32mI (21471) CALIB: Ticks por metro (DIR): 1421[0m
+[0;32mI (21471) CALIB: Ticks por metro (MÉDIO): 923[0m
+[0;32mI (21481) CALIB: Ticks por cm: 9.2[0m
+[0;32mI (21481) CALIB: Diferença ESQ/DIR: 108.0%[0m
+[0;33mW (21491) CALIB: ⚠️ Calibração aceitável[0m
+[0;32mI (21491) MAIN: 
+========================================[0m
+[0;32mI (21501) MAIN:    COMO USAR NO SEU CÓDIGO[0m
+[0;32mI (21501) MAIN: ========================================[0m
+[0;32mI (21511) MAIN: 
+1. Adicione no início do seu código:[0m
+[0;32mI (21521) MAIN: #define TICKS_POR_METRO 900 // Substitua pelo seu valor[0m
+[0;32mI (21521) MAIN: [0m
+[0;32mI (21531) MAIN: 2. Função para calcular distância:[0m
+[0;32mI (21531) MAIN: float calcular_distancia(uint32_t ticks) {[0m
+[0;32mI (21541) MAIN:     return (float)ticks / TICKS_POR_METRO;[0m
+[0;32mI (21541) MAIN: }[0m
+[0;32mI (21551) MAIN: [0m
+[0;32mI (21551) MAIN: 3. Para odometria em tempo real:[0m
+[0;32mI (21551) MAIN: float distancia_esq = calcular_distancia(ticks_esq);[0m
+[0;32mI (21561) MAIN: float distancia_dir = calcular_distancia(ticks_dir);[0m
+[0;32mI (21571) MAIN: float distancia_media = (distancia_esq + distancia_dir) / 2.0f;[0m
+[0;32mI (21581) MAIN: [0m
+[0;32mI (21581) MAIN: 4. Para navegação:[0m
+[0;32mI (21581) MAIN: // Para andar 1 metro:[0m
+[0;32mI (21591) MAIN: uint32_t ticks_necessarios = TICKS_POR_METRO;[0m
+[0;32mI (21591) MAIN: // Mova até ticks_atual >= ticks_necessarios[0m
+[0;32mI (21601) MAIN: 
+========================================[0m
+[0;32mI (21611) MAIN: DICA: Use o Método 4 (30cm, 3 medições)[0m
+[0;32mI (21611) MAIN: para máxima precisão no espaço limitado![0m
+[0;32mI (21621) MAIN: ========================================[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (213) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 1, DIR: 495[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (10461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (12461) CALIB: Ticks ESQ: 241, DIR: 515[0m
+[0;32mI (14461) CALIB: 
+=== MEDIÇÃO 3/3 ===[0m
+[0;32mI (14461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (17461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (19461) CALIB: Ticks ESQ: 895, DIR: 429[0m
+[0;32mI (21461) CALIB: 
+=== RESULTADOS FINAIS ===[0m
+[0;32mI (21461) CALIB: Média ticks ESQ: 379.0[0m
+[0;32mI (21461) CALIB: Média ticks DIR: 479.7[0m
+[0;32mI (21461) CALIB: 
+=== CALIBRAÇÃO FINAL ===[0m
+[0;32mI (21461) CALIB: Ticks por metro (ESQ): 1263[0m
+[0;32mI (21471) CALIB: Ticks por metro (DIR): 1599[0m
+[0;32mI (21471) CALIB: Ticks por metro (MÉDIO): 1431[0m
+[0;32mI (21481) CALIB: Ticks por cm: 14.3[0m
+[0;32mI (21481) CALIB: Diferença ESQ/DIR: 23.4%[0m
+[0;33mW (21491) CALIB: ⚠️ Calibração aceitável[0m
+[0;32mI (21491) MAIN: 
+========================================[0m
+[0;32mI (21501) MAIN:    COMO USAR NO SEU CÓDIGO[0m
+[0;32mI (21501) MAIN: ========================================[0m
+[0;32mI (21511) MAIN: 
+1. Adicione no início do seu código:[0m
+[0;32mI (21521) MAIN: #define TICKS_POR_METRO 900 // Substitua pelo seu valor[0m
+[0;32mI (21521) MAIN: [0m
+[0;32mI (21531) MAIN: 2. Função para calcular distância:[0m
+[0;32mI (21531) MAIN: float calcular_distancia(uint32_t ticks) {[0m
+[0;32mI (21541) MAIN:     return (float)ticks / TICKS_POR_METRO;[0m
+[0;32mI (21541) MAIN: }[0m
+[0;32mI (21551) MAIN: [0m
+[0;32mI (21551) MAIN: 3. Para odometria em tempo real:[0m
+[0;32mI (21551) MAIN: float distancia_esq = calcular_distancia(ticks_esq);[0m
+[0;32mI (21561) MAIN: float distancia_dir = calcular_distancia(ticks_dir);[0m
+[0;32mI (21571) MAIN: float distancia_media = (distancia_esq + distancia_dir) / 2.0f;[0m
+[0;32mI (21581) MAIN: [0m
+[0;32mI (21581) MAIN: 4. Para navegação:[0m
+[0;32mI (21581) MAIN: // Para andar 1 metro:[0m
+[0;32mI (21591) MAIN: uint32_t ticks_necessarios = TICKS_POR_METRO;[0m
+[0;32mI (21591) MAIN: // Mova até ticks_atual >= ticks_necessarios[0m
+[0;32mI (21601) MAIN: 
+========================================[0m
+[0;32mI (21611) MAIN: DICA: Use o Método 4 (30cm, 3 medições)[0m
+[0;32mI (21611) MAIN: para máxima precisão no espaço limitado![0m
+[0;32mI (21621) MAIN: ========================================[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (213) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 379, DIR: 537[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (10461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (12461) CALIB: Ticks ESQ: 0, DIR: 0[0m
+[0;32mI (14461) CALIB: 
+=== MEDIÇÃO 3/3 ===[0m
+[0;32mI (14461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (17461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (19461) CALIB: Ticks ESQ: 0, DIR: 0[0m
+[0;32mI (21461) CALIB: 
+=== RESULTADOS FINAIS ===[0m
+[0;32mI (21461) CALIB: Média ticks ESQ: 126.3[0m
+[0;32mI (21461) CALIB: Média ticks DIR: 179.0[0m
+[0;32mI (21461) CALIB: 
+=== CALIBRAÇÃO FINAL ===[0m
+[0;32mI (21461) CALIB: Ticks por metro (ESQ): 421[0m
+[0;32mI (21471) CALIB: Ticks por metro (DIR): 597[0m
+[0;32mI (21471) CALIB: Ticks por metro (MÉDIO): 509[0m
+[0;32mI (21481) CALIB: Ticks por cm: 5.1[0m
+[0;32mI (21481) CALIB: Diferença ESQ/DIR: 34.5%[0m
+[0;33mW (21491) CALIB: ⚠️ Calibração aceitável[0m
+[0;32mI (21491) MAIN: 
+========================================[0m
+[0;32mI (21501) MAIN:    COMO USAR NO SEU CÓDIGO[0m
+[0;32mI (21501) MAIN: ========================================[0m
+[0;32mI (21511) MAIN: 
+1. Adicione no início do seu código:[0m
+[0;32mI (21521) MAIN: #define TICKS_POR_METRO 900 // Substitua pelo seu valor[0m
+[0;32mI (21521) MAIN: [0m
+[0;32mI (21521) MAIN: 2. Função para calcular distância:[0m
+[0;32mI (21531) MAIN: float calcular_distancia(uint32_t ticks) {[0m
+[0;32mI (21541) MAIN:     return (float)ticks / TICKS_POR_METRO;[0m
+[0;32mI (21541) MAIN: }[0m
+[0;32mI (21551) MAIN: [0m
+[0;32mI (21551) MAIN: 3. Para odometria em tempo real:[0m
+[0;32mI (21551) MAIN: float distancia_esq = calcular_distancia(ticks_esq);[0m
+[0;32mI (21561) MAIN: float distancia_dir = calcular_distancia(ticks_dir);[0m
+[0;32mI (21571) MAIN: float distancia_media = (distancia_esq + distancia_dir) / 2.0f;[0m
+[0;32mI (21581) MAIN: [0m
+[0;32mI (21581) MAIN: 4. Para navegação:[0m
+[0;32mI (21581) MAIN: // Para andar 1 metro:[0m
+[0;32mI (21591) MAIN: uint32_t ticks_necessarios = TICKS_POR_METRO;[0m
+[0;32mI (21591) MAIN: // Mova até ticks_atual >= ticks_necessarios[0m
+[0;32mI (21601) MAIN: 
+========================================[0m
+[0;32mI (21611) MAIN: DICA: Use o Método 4 (30cm, 3 medições)[0m
+[0;32mI (21611) MAIN: para máxima precisão no espaço limitado![0m
+[0;32mI (21621) MAIN: ========================================[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (214) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 272, DIR: 411[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (10461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (12461) CALIB: Ticks ESQ: 293, DIR: 379[0m
+[0;32mI (14461) CALIB: 
+=== MEDIÇÃO 3/3 ===[0m
+[0;32mI (14461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (17461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (19461) CALIB: Ticks ESQ: 147, DIR: 379[0m
+[0;32mI (21461) CALIB: 
+=== RESULTADOS FINAIS ===[0m
+[0;32mI (21461) CALIB: Média ticks ESQ: 237.3[0m
+[0;32mI (21461) CALIB: Média ticks DIR: 389.7[0m
+[0;32mI (21461) CALIB: 
+=== CALIBRAÇÃO FINAL ===[0m
+[0;32mI (21461) CALIB: Ticks por metro (ESQ): 791[0m
+[0;32mI (21471) CALIB: Ticks por metro (DIR): 1299[0m
+[0;32mI (21471) CALIB: Ticks por metro (MÉDIO): 1045[0m
+[0;32mI (21481) CALIB: Ticks por cm: 10.4[0m
+[0;32mI (21481) CALIB: Diferença ESQ/DIR: 48.6%[0m
+[0;33mW (21491) CALIB: ⚠️ Calibração aceitável[0m
+[0;32mI (21491) MAIN: 
+========================================[0m
+[0;32mI (21501) MAIN:    COMO USAR NO SEU CÓDIGO[0m
+[0;32mI (21501) MAIN: ========================================[0m
+[0;32mI (21511) MAIN: 
+1. Adicione no início do seu código:[0m
+[0;32mI (21521) MAIN: #define TICKS_POR_METRO 900 // Substitua pelo seu valor[0m
+[0;32mI (21521) MAIN: [0m
+[0;32mI (21531) MAIN: 2. Função para calcular distância:[0m
+[0;32mI (21531) MAIN: float calcular_distancia(uint32_t ticks) {[0m
+[0;32mI (21541) MAIN:     return (float)ticks / TICKS_POR_METRO;[0m
+[0;32mI (21541) MAIN: }[0m
+[0;32mI (21551) MAIN: [0m
+[0;32mI (21551) MAIN: 3. Para odometria em tempo real:[0m
+[0;32mI (21551) MAIN: float distancia_esq = calcular_distancia(ticks_esq);[0m
+[0;32mI (21561) MAIN: float distancia_dir = calcular_distancia(ticks_dir);[0m
+[0;32mI (21571) MAIN: float distancia_media = (distancia_esq + distancia_dir) / 2.0f;[0m
+[0;32mI (21581) MAIN: [0m
+[0;32mI (21581) MAIN: 4. Para navegação:[0m
+[0;32mI (21581) MAIN: // Para andar 1 metro:[0m
+[0;32mI (21591) MAIN: uint32_t ticks_necessarios = TICKS_POR_METRO;[0m
+[0;32mI (21591) MAIN: // Mova até ticks_atual >= ticks_necessarios[0m
+[0;32mI (21601) MAIN: 
+========================================[0m
+[0;32mI (21611) MAIN: DICA: Use o Método 4 (30cm, 3 medições)[0m
+[0;32mI (21611) MAIN: para máxima precisão no espaço limitado![0m
+[0;32mI (21621) MAIN: ========================================[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (213) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 253, DIR: 279[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (10461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (12461) CALIB: Ticks ESQ: 0, DIR: 281[0m
+[0;32mI (14461) CALIB: 
+=== MEDIÇÃO 3/3 ===[0m
+[0;32mI (14461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (17461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (19461) CALIB: Ticks ESQ: 0, DIR: 472[0m
+[0;32mI (21461) CALIB: 
+=== RESULTADOS FINAIS ===[0m
+[0;32mI (21461) CALIB: Média ticks ESQ: 84.3[0m
+[0;32mI (21461) CALIB: Média ticks DIR: 344.0[0m
+[0;32mI (21461) CALIB: 
+=== CALIBRAÇÃO FINAL ===[0m
+[0;32mI (21461) CALIB: Ticks por metro (ESQ): 281[0m
+[0;32mI (21471) CALIB: Ticks por metro (DIR): 1147[0m
+[0;32mI (21471) CALIB: Ticks por metro (MÉDIO): 714[0m
+[0;32mI (21481) CALIB: Ticks por cm: 7.1[0m
+[0;32mI (21481) CALIB: Diferença ESQ/DIR: 121.2%[0m
+[0;33mW (21491) CALIB: ⚠️ Calibração aceitável[0m
+[0;32mI (21491) MAIN: 
+========================================[0m
+[0;32mI (21501) MAIN:    COMO USAR NO SEU CÓDIGO[0m
+[0;32mI (21501) MAIN: ========================================[0m
+[0;32mI (21511) MAIN: 
+1. Adicione no início do seu código:[0m
+[0;32mI (21521) MAIN: #define TICKS_POR_METRO 900 // Substitua pelo seu valor[0m
+[0;32mI (21521) MAIN: [0m
+[0;32mI (21521) MAIN: 2. Função para calcular distância:[0m
+[0;32mI (21531) MAIN: float calcular_distancia(uint32_t ticks) {[0m
+[0;32mI (21541) MAIN:     return (float)ticks / TICKS_POR_METRO;[0m
+[0;32mI (21541) MAIN: }[0m
+[0;32mI (21551) MAIN: [0m
+[0;32mI (21551) MAIN: 3. Para odometria em tempo real:[0m
+[0;32mI (21551) MAIN: float distancia_esq = calcular_distancia(ticks_esq);[0m
+[0;32mI (21561) MAIN: float distancia_dir = calcular_distancia(ticks_dir);[0m
+[0;32mI (21571) MAIN: float distancia_media = (distancia_esq + distancia_dir) / 2.0f;[0m
+[0;32mI (21581) MAIN: [0m
+[0;32mI (21581) MAIN: 4. Para navegação:[0m
+[0;32mI (21581) MAIN: // Para andar 1 metro:[0m
+[0;32mI (21591) MAIN: uint32_t ticks_necessarios = TICKS_POR_METRO;[0m
+[0;32mI (21591) MAIN: // Mova até ticks_atual >= ticks_necessarios[0m
+[0;32mI (21601) MAIN: 
+========================================[0m
+[0;32mI (21611) MAIN: DICA: Use o Método 4 (30cm, 3 medições)[0m
+[0;32mI (21611) MAIN: para máxima precisão no espaço limitado![0m
+[0;32mI (21621) MAIN: ========================================[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (213) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 302, DIR: 458[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (10461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (12461) CALIB: Ticks ESQ: 174, DIR: 362[0m
+[0;32mI (14461) CALIB: 
+=== MEDIÇÃO 3/3 ===[0m
+[0;32mI (14461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (17461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (19461) CALIB: Ticks ESQ: 329, DIR: 0[0m
+[0;32mI (21461) CALIB: 
+=== RESULTADOS FINAIS ===[0m
+[0;32mI (21461) CALIB: Média ticks ESQ: 268.3[0m
+[0;32mI (21461) CALIB: Média ticks DIR: 273.3[0m
+[0;32mI (21461) CALIB: 
+=== CALIBRAÇÃO FINAL ===[0m
+[0;32mI (21461) CALIB: Ticks por metro (ESQ): 894[0m
+[0;32mI (21471) CALIB: Ticks por metro (DIR): 911[0m
+[0;32mI (21471) CALIB: Ticks por metro (MÉDIO): 903[0m
+[0;32mI (21481) CALIB: Ticks por cm: 9.0[0m
+[0;32mI (21481) CALIB: Diferença ESQ/DIR: 1.8%[0m
+[0;32mI (21491) CALIB: ✅ Calibração PRECISA![0m
+[0;32mI (21491) MAIN: 
+========================================[0m
+[0;32mI (21501) MAIN:    COMO USAR NO SEU CÓDIGO[0m
+[0;32mI (21501) MAIN: ========================================[0m
+[0;32mI (21511) MAIN: 
+1. Adicione no início do seu código:[0m
+[0;32mI (21511) MAIN: #define TICKS_POR_METRO 900 // Substitua pelo seu valor[0m
+[0;32mI (21521) MAIN: [0m
+[0;32mI (21521) MAIN: 2. Função para calcular distância:[0m
+[0;32mI (21531) MAIN: float calcular_distancia(uint32_t ticks) {[0m
+[0;32mI (21541) MAIN:     return (float)ticks / TICKS_POR_METRO;[0m
+[0;32mI (21541) MAIN: }[0m
+[0;32mI (21551) MAIN: [0m
+[0;32mI (21551) MAIN: 3. Para odometria em tempo real:[0m
+[0;32mI (21551) MAIN: float distancia_esq = calcular_distancia(ticks_esq);[0m
+[0;32mI (21561) MAIN: float distancia_dir = calcular_distancia(ticks_dir);[0m
+[0;32mI (21571) MAIN: float distancia_media = (distancia_esq + distancia_dir) / 2.0f;[0m
+[0;32mI (21571) MAIN: [0m
+[0;32mI (21581) MAIN: 4. Para navegação:[0m
+[0;32mI (21581) MAIN: // Para andar 1 metro:[0m
+[0;32mI (21591) MAIN: uint32_t ticks_necessarios = TICKS_POR_METRO;[0m
+[0;32mI (21591) MAIN: // Mova até ticks_atual >= ticks_necessarios[0m
+[0;32mI (21601) MAIN: 
+========================================[0m
+[0;32mI (21611) MAIN: DICA: Use o Método 4 (30cm, 3 medições)[0m
+[0;32mI (21611) MAIN: para máxima precisão no espaço limitado![0m
+[0;32mI (21621) MAIN: ========================================[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (213) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 193, DIR: 262[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (10461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (12461) CALIB: Ticks ESQ: 0, DIR: 52[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (213) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 168, DIR: 271[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (213) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 79, DIR: 367[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (10461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (12461) CALIB: Ticks ESQ: 186, DIR: 493[0m
+[0;32mI (14461) CALIB: 
+=== MEDIÇÃO 3/3 ===[0m
+[0;32mI (14461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (17461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (19461) CALIB: Ticks ESQ: 253, DIR: 352[0m
+[0;32mI (21461) CALIB: 
+=== RESULTADOS FINAIS ===[0m
+[0;32mI (21461) CALIB: Média ticks ESQ: 172.7[0m
+[0;32mI (21461) CALIB: Média ticks DIR: 404.0[0m
+[0;32mI (21461) CALIB: 
+=== CALIBRAÇÃO FINAL ===[0m
+[0;32mI (21461) CALIB: Ticks por metro (ESQ): 576[0m
+[0;32mI (21471) CALIB: Ticks por metro (DIR): 1347[0m
+[0;32mI (21471) CALIB: Ticks por metro (MÉDIO): 961[0m
+[0;32mI (21481) CALIB: Ticks por cm: 9.6[0m
+[0;32mI (21481) CALIB: Diferença ESQ/DIR: 80.2%[0m
+[0;33mW (21491) CALIB: ⚠️ Calibração aceitável[0m
+[0;32mI (21491) MAIN: 
+========================================[0m
+[0;32mI (21501) MAIN:    COMO USAR NO SEU CÓDIGO[0m
+[0;32mI (21501) MAIN: ========================================[0m
+[0;32mI (21511) MAIN: 
+1. Adicione no início do seu código:[0m
+[0;32mI (21521) MAIN: #define TICKS_POR_METRO 900 // Substitua pelo seu valor[0m
+[0;32mI (21521) MAIN: [0m
+[0;32mI (21521) MAIN: 2. Função para calcular distância:[0m
+[0;32mI (21531) MAIN: float calcular_distancia(uint32_t ticks) {[0m
+[0;32mI (21541) MAIN:     return (float)ticks / TICKS_POR_METRO;[0m
+[0;32mI (21541) MAIN: }[0m
+[0;32mI (21551) MAIN: [0m
+[0;32mI (21551) MAIN: 3. Para odometria em tempo real:[0m
+[0;32mI (21551) MAIN: float distancia_esq = calcular_distancia(ticks_esq);[0m
+[0;32mI (21561) MAIN: float distancia_dir = calcular_distancia(ticks_dir);[0m
+[0;32mI (21571) MAIN: float distancia_media = (distancia_esq + distancia_dir) / 2.0f;[0m
+[0;32mI (21581) MAIN: [0m
+[0;32mI (21581) MAIN: 4. Para navegação:[0m
+[0;32mI (21581) MAIN: // Para andar 1 metro:[0m
+[0;32mI (21591) MAIN: uint32_t ticks_necessarios = TICKS_POR_METRO;[0m
+[0;32mI (21591) MAIN: // Mova até ticks_atual >= ticks_necessarios[0m
+[0;32mI (21601) MAIN: 
+========================================[0m
+[0;32mI (21611) MAIN: DICA: Use o Método 4 (30cm, 3 medições)[0m
+[0;32mI (21611) MAIN: para máxima precisão no espaço limitado![0m
+[0;32mI (21621) MAIN: ========================================[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (213) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 0, DIR: 303[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (10461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (12461) CALIB: Ticks ESQ: 19, DIR: 312[0m
+[0;32mI (14461) CALIB: 
+=== MEDIÇÃO 3/3 ===[0m
+[0;32mI (14461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (17461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (19461) CALIB: Ticks ESQ: 0, DIR: 337[0m
+[0;32mI (21461) CALIB: 
+=== RESULTADOS FINAIS ===[0m
+[0;32mI (21461) CALIB: Média ticks ESQ: 6.3[0m
+[0;32mI (21461) CALIB: Média ticks DIR: 317.3[0m
+[0;32mI (21461) CALIB: 
+=== CALIBRAÇÃO FINAL ===[0m
+[0;32mI (21461) CALIB: Ticks por metro (ESQ): 21[0m
+[0;32mI (21471) CALIB: Ticks por metro (DIR): 1058[0m
+[0;32mI (21471) CALIB: Ticks por metro (MÉDIO): 539[0m
+[0;32mI (21481) CALIB: Ticks por cm: 5.4[0m
+[0;32mI (21481) CALIB: Diferença ESQ/DIR: 192.2%[0m
+[0;33mW (21491) CALIB: ⚠️ Calibração aceitável[0m
+[0;32mI (21491) MAIN: 
+========================================[0m
+[0;32mI (21501) MAIN:    COMO USAR NO SEU CÓDIGO[0m
+[0;32mI (21501) MAIN: ========================================[0m
+[0;32mI (21511) MAIN: 
+1. Adicione no início do seu código:[0m
+[0;32mI (21511) MAIN: #define TICKS_POR_METRO 900 // Substitua pelo seu valor[0m
+[0;32mI (21521) MAIN: [0m
+[0;32mI (21521) MAIN: 2. Função para calcular distância:[0m
+[0;32mI (21531) MAIN: float calcular_distancia(uint32_t ticks) {[0m
+[0;32mI (21541) MAIN:     return (float)ticks / TICKS_POR_METRO;[0m
+[0;32mI (21541) MAIN: }[0m
+[0;32mI (21551) MAIN: [0m
+[0;32mI (21551) MAIN: 3. Para odometria em tempo real:[0m
+[0;32mI (21551) MAIN: float distancia_esq = calcular_distancia(ticks_esq);[0m
+[0;32mI (21561) MAIN: float distancia_dir = calcular_distancia(ticks_dir);[0m
+[0;32mI (21571) MAIN: float distancia_media = (distancia_esq + distancia_dir) / 2.0f;[0m
+[0;32mI (21581) MAIN: [0m
+[0;32mI (21581) MAIN: 4. Para navegação:[0m
+[0;32mI (21581) MAIN: // Para andar 1 metro:[0m
+[0;32mI (21591) MAIN: uint32_t ticks_necessarios = TICKS_POR_METRO;[0m
+[0;32mI (21591) MAIN: // Mova até ticks_atual >= ticks_necessarios[0m
+[0;32mI (21601) MAIN: 
+========================================[0m
+[0;32mI (21611) MAIN: DICA: Use o Método 4 (30cm, 3 medições)[0m
+[0;32mI (21611) MAIN: para máxima precisão no espaço limitado![0m
+[0;32mI (21621) MAIN: ========================================[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b524h ( 46372) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b54c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d874 vaddr=40080000 size=027a4h ( 10148) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11890h ( 71824) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=000318b8 vaddr=400827a4 size=0a3b8h ( 41912) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (213) cpu_start: App version:      e18ea92[0m
+[0;32mI (218) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  a2c5a60ab...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (321) MAIN:    CALIBRAÇÃO DE ODOMETRIA[0m
+[0;32mI (321) MAIN: ========================================[0m
+[0;32mI (331) MAIN: Escolha o método de calibração:[0m
+[0;32mI (331) MAIN: 1. Distância conhecida (30-50cm)[0m
+[0;32mI (341) MAIN: 2. Rotação 360° (precisa medir entre-rodas)[0m
+[0;32mI (351) MAIN: 3. Por tempo/velocidade (estimativa)[0m
+[0;32mI (351) MAIN: 4. Preciso com 30cm (3 medições)[0m
+[0;32mI (361) CALIB: ========================================[0m
+[0;32mI (361) CALIB:    CALIBRAÇÃO PRECISA COM 30CM[0m
+[0;32mI (371) CALIB: ========================================[0m
+[0;32mI (371) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (381) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (391) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (401) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (411) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) CALIB: 
+1. Marque EXATAMENTE 30.0 cm no chão[0m
+[0;32mI (441) CALIB: 2. Use régua para máxima precisão[0m
+[0;32mI (441) CALIB: 3. Alinhe o robô cuidadosamente[0m
+[0;32mI (451) CALIB: 4. Execute 3 medições para média[0m
+[0;32mI (451) CALIB: 
+=== MEDIÇÃO 1/3 ===[0m
+[0;32mI (461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (3461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (5461) CALIB: Ticks ESQ: 35, DIR: 392[0m
+[0;32mI (7461) CALIB: 
+=== MEDIÇÃO 2/3 ===[0m
+[0;32mI (7461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (10461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (12461) CALIB: Ticks ESQ: 13, DIR: 428[0m
+[0;32mI (14461) CALIB: 
+=== MEDIÇÃO 3/3 ===[0m
+[0;32mI (14461) CALIB: Posicione o robô e pressione ENTER...[0m
+[0;32mI (17461) CALIB: Andando... pare EXATAMENTE nos 30 cm[0m
+[0;32mI (19461) CALIB: Ticks ESQ: 32, DIR: 439[0m
+[0;32mI (21461) CALIB: 
+=== RESULTADOS FINAIS ===[0m
+[0;32mI (21461) CALIB: Média ticks ESQ: 26.7[0m
+[0;32mI (21461) CALIB: Média ticks DIR: 419.7[0m
+[0;32mI (21461) CALIB: 
+=== CALIBRAÇÃO FINAL ===[0m
+[0;32mI (21461) CALIB: Ticks por metro (ESQ): 89[0m
+[0;32mI (21471) CALIB: Ticks por metro (DIR): 1399[0m
+[0;32mI (21471) CALIB: Ticks por metro (MÉDIO): 744[0m
+[0;32mI (21481) CALIB: Ticks por cm: 7.4[0m
+[0;32mI (21481) CALIB: Diferença ESQ/DIR: 176.1%[0m
+[0;33mW (21491) CALIB: ⚠️ Calibração aceitável[0m
+[0;32mI (21491) MAIN: 
+========================================[0m
+[0;32mI (21501) MAIN:    COMO USAR NO SEU CÓDIGO[0m
+[0;32mI (21501) MAIN: ========================================[0m
+[0;32mI (21511) MAIN: 
+1. Adicione no início do seu código:[0m
+[0;32mI (21521) MAIN: #define TICKS_POR_METRO 900 // Substitua pelo seu valor[0m
+[0;32mI (21521) MAIN: [0m
+[0;32mI (21521) MAIN: 2. Função para calcular distância:[0m
+[0;32mI (21531) MAIN: float calcular_distancia(uint32_t ticks) {[0m
+[0;32mI (21541) MAIN:     return (float)ticks / TICKS_POR_METRO;[0m
+[0;32mI (21541) MAIN: }[0m
+[0;32mI (21551) MAIN: [0m
+[0;32mI (21551) MAIN: 3. Para odometria em tempo real:[0m
+[0;32mI (21551) MAIN: float distancia_esq = calcular_distancia(ticks_esq);[0m
+[0;32mI (21561) MAIN: float distancia_dir = calcular_distancia(ticks_dir);[0m
+[0;32mI (21571) MAIN: float distancia_media = (distancia_esq + distancia_dir) / 2.0f;[0m
+[0;32mI (21581) MAIN: [0m
+[0;32mI (21581) MAIN: 4. Para navegação:[0m
+[0;32mI (21581) MAIN: // Para andar 1 metro:[0m
+[0;32mI (21591) MAIN: uint32_t ticks_necessarios = TICKS_POR_METRO;[0m
+[0;32mI (21591) MAIN: // Mova até ticks_atual >= ticks_necessarios[0m
+[0;32mI (21601) MAIN: 
+========================================[0m
+[0;32mI (21611) MAIN: DICA: Use o Método 4 (30cm, 3 medições)[0m
+[0;32mI (21611) MAIN: para máxima precisão no espaço limitado![0m
+[0;32mI (21621) MAIN: ========================================[0m

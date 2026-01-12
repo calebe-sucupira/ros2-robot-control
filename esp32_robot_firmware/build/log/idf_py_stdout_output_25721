@@ -1,0 +1,296 @@
+ets Jul 29 2019 12:2�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b398h (111512) map[0m
+[0;32mI (144) esp_image: segment 1: paddr=0002b3c0 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0002fa24 vaddr=40080000 size=005f4h (  1524) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93a1ch (604700) map[0m
+[0;32mI (365) esp_image: segment 4: paddr=000c3a44 vaddr=400805f4 size=16f98h ( 94104) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (426) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (435) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) cpu_start: Application information:[0m
+[0;32mI (438) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (444) cpu_start: App version:      e18ea92[0m
+[0;32mI (449) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (455) cpu_start: ELF file SHA256:  0f7810baa...[0m
+[0;32mI (461) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (467) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (472) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (476) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (489) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFBB438 len 00024BC8 (146 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 4009758C len 00008A74 (34 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (552) MAIN: === ROBO INICIALIZANDO (VERSÃO CORRIGIDA) ===[0m
+[0;32mI (552) HW: Configurando hardware (corrigido)...[0m
+[0;32mI (552) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (562) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (572) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (582) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (592) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (602) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (612) HW: Hardware configurado.[0m
+[0;32mI (612) HW: METROS_POR_TICK: 0.003730[0m
+[0;32mI (622) HW: Compensação: Dir=0.85, Esq=1.00[0m
+[0;32mI (622) MAIN: Iniciando Micro-ROS...[0m
+[0;32mI (662) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (672) wifi:wifi driver task: 3ffc383c, prio:23, stack:6656, core=0[0m
+[0;32mI (682) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (682) wifi:wifi certification version: v7.0[0m
+[0;32mI (682) wifi:config NVS flash: enabled[0m
+[0;32mI (682) wifi:config nano formating: disabled[0m
+[0;32mI (692) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (692) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (702) wifi:Init management short buffer num: 32[0m
+[0;32mI (702) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (712) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (712) wifi:Init static rx buffer num: 10[0m
+[0;32mI (712) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (722) wifi_init: rx ba win: 6[0m
+[0;32mI (722) wifi_init: tcpip mbox: 32[0m
+[0;32mI (722) wifi_init: udp mbox: 6[0m
+[0;32mI (732) wifi_init: tcp mbox: 6[0m
+[0;32mI (732) wifi_init: tcp tx win: 5760[0m
+[0;32mI (742) wifi_init: tcp rx win: 5760[0m
+[0;32mI (742) wifi_init: tcp mss: 1440[0m
+[0;32mI (742) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (752) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (752) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (762) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (852) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (852) wifi:enable tsf[0m
+[0;32mI (862) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (872) wifi:new:<2,0>, old:<1,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (872) wifi:state: init -> auth (b0)[0m
+[0;32mI (872) wifi:state: auth -> assoc (0)[0m
+[0;32mI (882) wifi:state: assoc -> init (4a0)[0m
+[0;32mI (892) wifi:new:<2,0>, old:<2,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (892) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (892) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3312) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (3312) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3312) wifi:new:<2,0>, old:<2,0>, ap:<255,255>, sta:<2,0>, prof:1[0m
+[0;32mI (3312) wifi:state: init -> auth (b0)[0m
+[0;32mI (3332) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3332) wifi:state: assoc -> run (10)[0m
+[0;32mI (3362) wifi:connected with MOB-ALTOS, aid = 87, channel 2, BW20, bssid = a4:7c:c9:85:05:64[0m
+[0;32mI (3362) wifi:security: WPA2-PSK, phy: bgn, rssi: -58[0m
+[0;32mI (3372) wifi:pm start, type: 1[0m
+
+[0;32mI (3372) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3442) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (6382) esp_netif_handlers: sta ip: 192.168.18.158, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (6382) wifi_station_netif: got ip:192.168.18.158[0m
+[0;32mI (6382) wifi_station_netif: connected to ap SSID:MOB-ALTOS password:mob3876150[0m
+[0;32mI (6392) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6392) MAIN: Esperando conexão com agente Micro-ROS...[0m
+[0;32mI (6412) MAIN: Agente Micro-ROS encontrado![0m
+[0;32mI (6542) wifi:<ba-add>idx:0 (ifx:0, a4:7c:c9:85:05:64), tid:0, ssn:2, winSize:64[0m
+[0;32mI (6672) MAIN: Robô inicializado com sucesso![0m
+[0;32mI (6672) MAIN: Pronto para receber comandos /cmd_vel[0m
+[0;32mI (6672) MAIN: Publicando odometria em /odom[0m
+[0;32mI (34012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (34032) ODOM: Ticks: ESQ=0 (+0)[0/s], DIR=39 (+39)[390/s][0m
+[0;32mI (34032) ODOM: Vel: E=0.000 (cmd=0.100), D=0.436 (cmd=0.100)[0m
+[0;32mI (34032) ODOM: PWM: E=0.100, D=0.083 | Pos: x=0.022, y=0.069, θ=1.265[0m
+[0;32mI (35032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (36022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (37022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (38032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (39022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (39042) ODOM: Ticks: ESQ=401 (+5)[50/s], DIR=248 (+129)[1290/s][0m
+[0;32mI (39042) ODOM: Vel: E=0.056 (cmd=0.100), D=0.097 (cmd=0.100)[0m
+[0;32mI (39042) ODOM: PWM: E=0.216, D=0.167 | Pos: x=0.024, y=-0.155, θ=1.321[0m
+[0;32mI (40012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (41032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (42022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (43012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (43032) ODOM: Ticks: ESQ=401 (+0)[0/s], DIR=778 (+119)[1190/s][0m
+[0;32mI (43042) ODOM: Vel: E=0.009 (cmd=0.100), D=0.271 (cmd=0.100)[0m
+[0;32mI (43042) ODOM: PWM: E=0.232, D=0.120 | Pos: x=0.284, y=-0.335, θ=-0.338[0m
+[0;32mI (44042) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (45022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (46022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (47032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (48022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (48032) ODOM: Ticks: ESQ=414 (+6)[60/s], DIR=1255 (+69)[690/s][0m
+[0;32mI (48032) ODOM: Vel: E=0.100 (cmd=0.100), D=0.325 (cmd=0.100)[0m
+[0;32mI (48032) ODOM: PWM: E=0.206, D=0.104 | Pos: x=0.169, y=-0.208, θ=2.145[0m
+[0;32mI (49012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (50022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (51022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (52012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (53032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (53042) ODOM: Ticks: ESQ=436 (+0)[0/s], DIR=1280 (+0)[0/s][0m
+[0;32mI (53042) ODOM: Vel: E=0.092 (cmd=0.100), D=0.152 (cmd=0.100)[0m
+[0;32mI (53052) ODOM: PWM: E=0.206, D=0.148 | Pos: x=0.117, y=-0.138, θ=2.242[0m
+[0;32mI (54012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (55012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (56032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (57012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (58012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (58032) ODOM: Ticks: ESQ=484 (+14)[140/s], DIR=1357 (+27)[270/s][0m
+[0;32mI (58032) ODOM: Vel: E=0.311 (cmd=0.100), D=0.496 (cmd=0.100)[0m
+[0;32mI (58032) ODOM: PWM: E=0.137, D=0.060 | Pos: x=-0.102, y=-0.140, θ=-3.100[0m
+[0;32mI (59012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (60012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (61012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (62012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (63022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (63032) ODOM: Ticks: ESQ=494 (+0)[0/s], DIR=1401 (+3)[30/s][0m
+[0;32mI (63032) ODOM: Vel: E=0.094 (cmd=0.100), D=0.410 (cmd=0.100)[0m
+[0;32mI (63032) ODOM: PWM: E=0.200, D=0.082 | Pos: x=-0.166, y=-0.204, θ=-1.998[0m
+[0;32mI (64012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (65032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (66012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (67012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (67022) ODOM: Ticks: ESQ=506 (+0)[0/s], DIR=1403 (+2)[20/s][0m
+[0;32mI (67022) ODOM: Vel: E=0.079 (cmd=0.100), D=0.091 (cmd=0.100)[0m
+[0;32mI (67032) ODOM: PWM: E=0.205, D=0.164 | Pos: x=-0.184, y=-0.222, θ=-2.322[0m
+[0;32mI (68032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (69012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (70012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (71032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (72022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (72032) ODOM: Ticks: ESQ=521 (+0)[0/s], DIR=1431 (+0)[0/s][0m
+[0;32mI (72032) ODOM: Vel: E=0.067 (cmd=0.100), D=0.097 (cmd=0.100)[0m
+[0;32mI (72032) ODOM: PWM: E=0.208, D=0.162 | Pos: x=-0.201, y=-0.300, θ=-1.900[0m
+[0;32mI (73012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (74032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (75012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (76012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (77012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (77022) ODOM: Ticks: ESQ=574 (+1)[10/s], DIR=1543 (+0)[0/s][0m
+[0;32mI (77032) ODOM: Vel: E=0.194 (cmd=0.100), D=0.228 (cmd=0.100)[0m
+[0;32mI (77032) ODOM: PWM: E=0.164, D=0.129 | Pos: x=0.045, y=-0.437, θ=0.013[0m
+[0;32mI (78012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (79012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (80012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (81012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (82012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (82022) ODOM: Ticks: ESQ=624 (+6)[60/s], DIR=1606 (+3)[30/s][0m
+[0;32mI (82022) ODOM: Vel: E=0.236 (cmd=0.100), D=0.252 (cmd=0.100)[0m
+[0;32mI (82022) ODOM: PWM: E=0.149, D=0.123 | Pos: x=0.233, y=-0.341, θ=0.435[0m
+[0;32mI (83022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (84022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (85012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (86032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (87012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (87022) ODOM: Ticks: ESQ=637 (+1)[10/s], DIR=1659 (+48)[480/s][0m
+[0;32mI (87022) ODOM: Vel: E=0.085 (cmd=0.100), D=0.593 (cmd=0.100)[0m
+[0;32mI (87032) ODOM: PWM: E=0.194, D=0.067 | Pos: x=0.249, y=-0.242, θ=1.732[0m
+[0;32mI (88012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (89032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (90012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (91012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (92032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (92052) ODOM: Ticks: ESQ=656 (+0)[0/s], DIR=1675 (+0)[0/s][0m
+[0;32mI (92052) ODOM: Vel: E=0.065 (cmd=0.100), D=0.157 (cmd=0.100)[0m
+[0;32mI (92052) ODOM: PWM: E=0.201, D=0.147 | Pos: x=0.252, y=-0.177, θ=1.635[0m
+[0;32mI (93022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (94012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (95032) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (96022) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (96032) ODOM: Ticks: ESQ=656 (+0)[0/s], DIR=1757 (+0)[0/s][0m
+[0;32mI (96032) ODOM: Vel: E=0.011 (cmd=0.100), D=0.450 (cmd=0.100)[0m
+[0;32mI (96032) ODOM: PWM: E=0.219, D=0.072 | Pos: x=0.131, y=-0.216, θ=-1.988[0m
+[0;32mI (97012) CMD: Recebido: linear=0.100, angular=0.000 -> Esq=0.100, Dir=0.100[0m
+[0;32mI (105082) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (106092) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (107112) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (108092) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (108102) ODOM: Ticks: ESQ=697 (+9)[90/s], DIR=2125 (+176)[1760/s][0m
+[0;32mI (108102) ODOM: Vel: E=0.247 (cmd=0.300), D=0.132 (cmd=0.300)[0m
+[0;32mI (108102) ODOM: PWM: E=0.610, D=0.507 | Pos: x=-0.309, y=-0.081, θ=2.335[0m
+[0;32mI (109092) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (110112) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (111092) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (112092) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (113112) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (113122) ODOM: Ticks: ESQ=759 (+32)[320/s], DIR=3282 (+248)[2480/s][0m
+[0;32mI (113122) ODOM: Vel: E=0.618 (cmd=0.300), D=0.084 (cmd=0.300)[0m
+[0;32mI (113122) ODOM: PWM: E=0.499, D=0.563 | Pos: x=0.041, y=-0.776, θ=0.152[0m
+[0;32mI (114092) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (115092) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (116102) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (117092) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (118092) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (118102) ODOM: Ticks: ESQ=816 (+4)[40/s], DIR=4346 (+225)[2250/s][0m
+[0;32mI (118102) ODOM: Vel: E=0.421 (cmd=0.300), D=0.076 (cmd=0.300)[0m
+[0;32mI (118102) ODOM: PWM: E=0.554, D=0.570 | Pos: x=1.555, y=0.418, θ=1.397[0m
+[0;32mI (119112) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (120092) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (121112) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (122102) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (123082) CMD: Recebido: linear=0.300, angular=0.000 -> Esq=0.300, Dir=0.300[0m
+[0;32mI (123102) ODOM: Ticks: ESQ=975 (+13)[130/s], DIR=5479 (+231)[2310/s][0m
+[0;32mI (123102) ODOM: Vel: E=0.266 (cmd=0.300), D=0.075 (cmd=0.300)[0m
+[0;32mI (123102) ODOM: PWM: E=0.602, D=0.575 | Pos: x=2.662, y=0.654, θ=1.573[0m
+6
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b398h (111512) map[0m
+[0;32mI (175) esp_image: segment 1: paddr=0002b3c0 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=0002fa24 vaddr=40080000 size=005f4h (  1524) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93a1ch (604700) map[0m
+[0;32mI (396) esp_image: segment 4: paddr=000c3a44 vaddr=400805f4 size=16f98h ( 94104) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (445) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m

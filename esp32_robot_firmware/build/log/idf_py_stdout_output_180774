@@ -1,0 +1,285 @@
+ets Jul 29 2019 12:21�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a97ch ( 43388) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001a9a4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001ccdc vaddr=40080000 size=0333ch ( 13116) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=118b0h ( 71856) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=000318d8 vaddr=4008333c size=0983ch ( 38972) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (211) cpu_start: App version:      e18ea92[0m
+[0;32mI (216) cpu_start: Compile time:     Dec 10 2025 10:04:04[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  c0670b94b...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CB78 len 00013488 (77 KiB): IRAM[0m
+[0;32mI (288) spi_flash: detected chip: generic[0m
+[0;32mI (291) spi_flash: flash io: dio[0m
+[0;33mW (295) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (309) main_task: Started on CPU0[0m
+[0;32mI (319) main_task: Calling app_main()[0m
+[0;32mI (319) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (319) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (329) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (339) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (349) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (359) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+
+========================================
+CALIBRAÇÃO AUTOMÁTICA - ROBÔ ESP32
+========================================
+Este programa irá:
+1. Testar múltiplos níveis de PWM
+2. Medir desempenho de cada motor
+3. Calcular fatores de correção
+4. Validar os resultados
+
+LEVANTE O ROBÔ PARA AS RODAS FICAREM LIVRES!
+========================================
+
+
+=== CALIBRAÇÃO AUTOMÁTICA DE MOTORES ===
+Levante o robô (rodas livres)
+Iniciando em 5 segundos...
+
+--- Teste 1/5: PWM 30% ---
+  Ticks Esquerda: 430
+  Ticks Direita:  584
+  Relação: 1.358
+
+--- Teste 2/5: PWM 40% ---
+  Ticks Esquerda: 347
+  Ticks Direita:  577
+  Relação: 1.663
+
+--- Teste 3/5: PWM 50% ---
+  Ticks Esquerda: 299
+  Ticks Direita:  575
+  Relação: 1.923
+
+--- Teste 4/5: PWM 60% ---
+  Ticks Esquerda: 224
+  Ticks Direita:  573
+  Relação: 2.558
+
+--- Teste 5/5: PWM 70% ---
+  Ticks Esquerda: 143
+  Ticks Direita:  556
+  Relação: 3.888
+
+=== ANÁLISE DOS DADOS ===
+Motor mais rápido na maioria dos testes: DIREITA
+Motor esquerdo precisa de mais potência
+Relação média: 2.278
+
+=== FATORES DE CORREÇÃO CALCULADOS ===
+#define CORRECAO_ESQ 2.278f
+#define CORRECAO_DIR 1.000f
+
+=== TESTE DE VALIDAÇÃO ===
+Aplicando correções...
+Sem correção (PWM 50%):
+  Esquerda: 299 ticks
+  Direita:  580 ticks
+  Diferença: 281 ticks (63.9%)
+
+Com correção aplicada (PWM 50% corrigido):
+  Esquerda: 0 ticks
+  Direita:  595 ticks
+  Diferença: 595 ticks (200.0%)
+
+=== RECOMENDAÇÕES ===
+⚠️  Calibração PRECISA DE AJUSTE
+Tente aumentar a correção do motor mais fraco em 10%.
+Novo fator sugerido para ESQUERDA: 2.506
+
+=== RESUMO FINAL ===
+Correção calculada baseada em 5 medidas válidas
+Motor ESQUERDA: multiplique PWM por 2.278
+Motor DIREITA:  multiplique PWM por 1.000
+
+No seu código principal, use:
+  set_motor_pwm(ESQUERDA, velocidade_desejada * 2.278);
+  set_motor_pwm(DIREITA,  velocidade_desejada * 1.000);
+
+========================================
+CALIBRAÇÃO CONCLUÍDA!
+========================================
+����������Ң�j
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a97ch ( 43388) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=0001a9a4 vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0001ccdc vaddr=40080000 size=0333ch ( 13116) load[0m
+[0;32mI (163) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=118b0h ( 71856) map[0m
+[0;32mI (191) esp_image: segment 4: paddr=000318d8 vaddr=4008333c size=0983ch ( 38972) load[0m
+[0;32mI (213) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (213) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (233) cpu_start: Pro cpu start user code[0m
+[0;32mI (233) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (233) cpu_start: Application information:[0m
+[0;32mI (236) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (242) cpu_start: App version:      e18ea92[0m
+[0;32mI (247) cpu_start: Compile time:     Dec 10 2025 10:04:04[0m
+[0;32mI (254) cpu_start: ELF file SHA256:  c0670b94b...[0m
+[0;32mI (259) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (265) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (270) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (275) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (299) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008CB78 len 00013488 (77 KiB): IRAM[0m
+[0;32mI (319) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (326) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (340) main_task: Started on CPU0[0m
+[0;32mI (350) main_task: Calling app_main()[0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (390) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+
+========================================
+CALIBRAÇÃO AUTOMÁTICA - ROBÔ ESP32
+========================================
+Este programa irá:
+1. Testar múltiplos níveis de PWM
+2. Medir desempenho de cada motor
+3. Calcular fatores de correção
+4. Validar os resultados
+
+LEVANTE O ROBÔ PARA AS RODAS FICAREM LIVRES!
+========================================
+
+
+=== CALIBRAÇÃO AUTOMÁTICA DE MOTORES ===
+Levante o robô (rodas livres)
+Iniciando em 5 segundos...
+
+--- Teste 1/5: PWM 30% ---
+  Ticks Esquerda: 437
+  Ticks Direita:  444
+  Relação: 1.016
+
+--- Teste 2/5: PWM 40% ---
+  Ticks Esquerda: 400
+  Ticks Direita:  396
+  Relação: 1.010
+
+--- Teste 3/5: PWM 50% ---
+  Ticks Esquerda: 332
+  Ticks Direita:  325
+  Relação: 1.022
+
+--- Teste 4/5: PWM 60% ---
+  Ticks Esquerda: 253
+  Ticks Direita:  275
+  Relação: 1.087
+
+--- Teste 5/5: PWM 70% ---
+  Ticks Esquerda: 156
+  Ticks Direita:  210
+  Relação: 1.346
+
+=== ANÁLISE DOS DADOS ===
+Motor mais rápido na maioria dos testes: DIREITA
+Motor esquerdo precisa de mais potência
+Relação média: 1.096
+
+=== FATORES DE CORREÇÃO CALCULADOS ===
+#define CORRECAO_ESQ 1.096f
+#define CORRECAO_DIR 1.000f
+
+=== TESTE DE VALIDAÇÃO ===
+Aplicando correções...
+Sem correção (PWM 50%):
+  Esquerda: 338 ticks
+  Direita:  327 ticks
+  Diferença: 11 ticks (3.3%)
+
+Com correção aplicada (PWM 50% corrigido):
+  Esquerda: 293 ticks
+  Direita:  325 ticks
+  Diferença: 32 ticks (10.4%)
+
+=== RECOMENDAÇÕES ===
+⚠️  Calibração RAZOÁVEL
+Use os fatores acima, mas pode precisar de ajuste fino.
+
+=== RESUMO FINAL ===
+Correção calculada baseada em 5 medidas válidas
+Motor ESQUERDA: multiplique PWM por 1.096
+Motor DIREITA:  multiplique PWM por 1.000
+
+No seu código principal, use:
+  set_motor_pwm(ESQUERDA, velocidade_desejada * 1.096);
+  set_motor_pwm(DIREITA,  velocidade_desejada * 1.000);
+
+========================================
+CALIBRAÇÃO CONCLUÍDA!
+========================================

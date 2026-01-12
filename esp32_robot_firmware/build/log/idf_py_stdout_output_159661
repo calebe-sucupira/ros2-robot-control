@@ -1,0 +1,485 @@
+ets Jul 29 2019 12:21:46
+
+�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a194h ( 41364) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a1bc vaddr=3ffb0000 size=02330h (  9008) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c4f4 vaddr=40080000 size=03b24h ( 15140) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=10e28h ( 69160) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=00030e50 vaddr=40083b24 size=08e48h ( 36424) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (209) cpu_start: App version:      e18ea92[0m
+[0;32mI (214) cpu_start: Compile time:     Dec 10 2025 10:04:04[0m
+[0;32mI (220) cpu_start: ELF file SHA256:  8477cc321...[0m
+[0;32mI (225) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C96C len 00013694 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (289) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+
+=== TESTE DE PWM PARA OSCILOSCÓPIO ===
+Ciclo de duty variando de 0% a 100% em loop infinito
+Conecte o osciloscópio aos pinos:
+  - Motor A (Esquerda): GPIO 13
+  - Motor B (Direita):  GPIO 25
+
+Iniciando em 3 segundos...
+Duty Cycle: 1.0%
+Duty Cycle: 2.0%
+Duty Cycle: 3.0%
+Duty Cycle: 4.0%
+Duty Cycle: 5.0%
+Duty Cycle: 6.0%
+Duty Cycle: 7.0%
+Duty Cycle: 8.0%
+Duty Cycle: 9.0%
+Duty Cycle: 10.0%
+Duty Cycle: 11.0%
+Duty Cycle: 12.0%
+Duty Cycle: 13.0%
+Duty Cycle: 14.0%
+Duty Cycle: 15.0%
+Duty Cycle: 16.0%
+Duty Cycle: 17.0%
+Duty Cycle: 18.0%
+Duty Cycle: 19.0%
+Duty Cycle: 20.0%
+Duty Cycle: 21.0%
+Duty Cycle: 22.0%
+Duty Cycle: 23.0%
+Duty Cycle: 24.0%
+Duty Cycle: 25.0%
+Duty Cycle: 26.0%
+Duty Cycle: 27.0%
+Duty Cycle: 28.0%
+Duty Cycle: 29.0%
+Duty Cycle: 30.0%
+Duty Cycle: 31.0%
+Duty Cycle: 32.0%
+Duty Cycle: 33.0%
+Duty Cycle: 34.0%
+Duty Cycle: 35.0%
+Duty Cycle: 36.0%
+Duty Cycle: 37.0%
+Duty Cycle: 38.0%
+Duty Cycle: 39.0%
+Duty Cycle: 40.0%
+Duty Cycle: 41.0%
+Duty Cycle: 42.0%
+Duty Cycle: 43.0%
+Duty Cycle: 44.0%
+Duty Cycle: 45.0%
+Duty Cycle: 46.0%
+Duty Cycle: 47.0%
+Duty Cycle: 48.0%
+Duty Cycle: 49.0%
+Duty Cycle: 50.0%
+Duty Cycle: 51.0%
+Duty Cycle: 52.0%
+Duty Cycle: 53.0%
+Duty Cycle: 54.0%
+Duty Cycle: 55.0%
+Duty Cycle: 56.0%
+Duty Cycle: 57.0%
+Duty Cycle: 58.0%
+Duty Cycle: 59.0%
+Duty Cycle: 60.0%
+Duty Cycle: 61.0%
+Duty Cycle: 62.0%
+Duty Cycle: 63.0%
+Duty Cycle: 64.0%
+Duty Cycle: 65.0%
+Duty Cycle: 66.0%
+Duty Cycle: 67.0%
+Duty Cycle: 68.0%
+Duty Cycle: 69.0%
+Duty Cycle: 70.0%
+Duty Cycle: 71.0%
+Duty Cycle: 72.0%
+Duty Cycle: 73.0%
+Duty Cycle: 74.0%
+Duty Cycle: 75.0%
+Duty Cycle: 76.0%
+Duty Cycle: 77.0%
+Duty Cycle: 78.0%
+Duty Cycle: 79.0%
+Duty Cycle: 80.0%
+Duty Cycle: 81.0%
+Duty Cycle: 82.0%
+Duty Cycle: 83.0%
+Duty Cycle: 84.0%
+Duty Cycle: 85.0%
+Duty Cycle: 86.0%
+Duty Cycle: 87.0%
+Duty Cycle: 88.0%
+Duty Cycle: 89.0%
+Duty Cycle: 90.0%
+Duty Cycle: 91.0%
+Duty Cycle: 92.0%
+Duty Cycle: 93.0%
+Duty Cycle: 94.0%
+Duty Cycle: 95.0%
+Duty Cycle: 96.0%
+Duty Cycle: 97.0%
+Duty Cycle: 98.0%
+Duty Cycle: 99.0%
+Duty Cycle: 100.0%
+Duty Cycle: 100.0%
+Duty Cycle: 99.0%
+Duty Cycle: 98.0%
+Duty Cycle: 97.0%
+Duty Cycle: 96.0%
+Duty Cycle: 95.0%
+Duty Cycle: 94.0%
+Duty Cycle: 93.0%
+Duty Cycle: 92.0%
+Duty Cycle: 91.0%
+Duty Cycle: 90.0%
+Duty Cycle: 89.0%
+Duty Cycle: 88.0%
+Duty Cycle: 87.0%
+Duty Cycle: 86.0%
+Duty Cycle: 85.0%
+Duty Cycle: 84.0%
+Duty Cycle: 83.0%
+Duty Cycle: 82.0%
+Duty Cycle: 81.0%
+Duty Cycle: 80.0%
+Duty Cycle: 79.0%
+Duty Cycle: 78.0%
+Duty Cycle: 77.0%
+Duty Cycle: 76.0%
+Duty Cycle: 75.0%
+Duty Cycle: 74.0%
+Duty Cycle: 73.0%
+Duty Cycle: 72.0%
+Duty Cycle: 71.0%
+Duty Cycle: 70.0%
+Duty Cycle: 69.0%
+Duty Cycle: 68.0%
+Duty Cycle: 67.0%
+Duty Cycle: 66.0%
+Duty Cycle: 65.0%
+Duty Cycle: 64.0%
+Duty Cycle: 63.0%
+Duty Cycle: 62.0%
+Duty Cycle: 61.0%
+Duty Cycle: 60.0%
+Duty Cycle: 59.0%
+Duty Cycle: 58.0%
+Duty Cycle: 57.0%
+Duty Cycle: 56.0%
+Duty Cycle: 55.0%
+Duty Cycle: 54.0%
+Duty Cycle: 53.0%
+Duty Cycle: 52.0%
+Duty Cycle: 51.0%
+Duty Cycle: 50.0%
+Duty Cycle: 49.0%
+Duty Cycle: 48.0%
+Duty Cycle: 47.0%
+Duty Cycle: 46.0%
+Duty Cycle: 45.0%
+Duty Cycle: 44.0%
+Duty Cycle: 43.0%
+Duty Cycle: 42.0%
+Duty Cycle: 41.0%
+Duty Cycle: 40.0%
+Duty Cycle: 39.0%
+Duty Cycle: 38.0%
+Duty Cycle: 37.0%
+Duty Cycle: 36.0%
+Duty Cycle: 35.0%
+Duty Cycle: 34.0%
+Duty Cycle: 33.0%
+Duty Cycle: 32.0%
+Duty Cycle: 31.0%
+Duty Cycle: 30.0%
+Duty Cycle: 29.0%
+Duty Cycle: 28.0%
+Duty Cycle: 27.0%
+Duty Cycle: 26.0%
+Duty Cycle: 25.0%
+Duty Cycle: 24.0%
+Duty Cycle: 23.0%
+Duty Cycle: 22.0%
+Duty Cycle: 21.0%
+Duty Cycle: 20.0%
+Duty Cycle: 19.0%
+Duty Cycle: 18.0%
+Duty Cycle: 17.0%
+Duty Cycle: 16.0%
+Duty Cycle: 15.0%
+Duty Cycle: 14.0%
+Duty Cycle: 13.0%
+Duty Cycle: 12.0%
+Duty Cycle: 11.0%
+Duty Cycle: 10.0%
+Duty Cycle: 9.0%
+Duty Cycle: 8.0%
+Duty Cycle: 7.0%
+Duty Cycle: 6.0%
+Duty Cycle: 5.0%
+Duty Cycle: 4.0%
+Duty Cycle: 3.0%
+Duty Cycle: 2.0%
+Duty Cycle: 1.0%
+Duty Cycle: 0.0%
+Duty Cycle: 0.0%
+Duty Cycle: 1.0%
+Duty Cycle: 2.0%
+Duty Cycle: 3.0%
+Duty Cycle: 4.0%
+Duty Cycle: 5.0%
+Duty Cycle: 6.0%
+Duty Cycle: 7.0%
+Duty Cycle: 8.0%
+Duty Cycle: 9.0%
+Duty Cycle: 10.0%
+Duty Cycle: 11.0%
+Duty Cycle: 12.0%
+Duty Cycle: 13.0%
+Duty Cycle: 14.0%
+Duty Cycle: 15.0%
+Duty Cycle: 16.0%
+Duty Cycle: 17.0%
+Duty Cycle: 18.0%
+Duty Cycle: 19.0%
+Duty Cycle: 20.0%
+Duty Cycle: 21.0%
+Duty Cycle: 22.0%
+Duty Cycle: 23.0%
+Duty Cycle: 24.0%
+Duty Cycle: 25.0%
+Duty Cycle: 26.0%
+Duty Cycle: 27.0%
+Duty Cycle: 28.0%
+Duty Cycle: 29.0%
+Duty Cycle: 30.0%
+Duty Cycle: 31.0%
+Duty Cycle: 32.0%
+Duty Cycle: 33.0%
+Duty Cycle: 34.0%
+Duty Cycle: 35.0%
+Duty Cycle: 36.0%
+Duty Cycle: 37.0%
+Duty Cycle: 38.0%
+Duty Cycle: 39.0%
+Duty Cycle: 40.0%
+Duty Cycle: 41.0%
+Duty Cycle: 42.0%
+Duty Cycle: 43.0%
+Duty Cycle: 44.0%
+Duty Cycle: 45.0%
+Duty Cycle: 46.0%
+Duty Cycle: 47.0%
+Duty Cycle: 48.0%
+Duty Cycle: 49.0%
+Duty Cycle: 50.0%
+Duty Cycle: 51.0%
+Duty Cycle: 52.0%
+Duty Cycle: 53.0%
+Duty Cycle: 54.0%
+Duty Cycle: 55.0%
+Duty Cycle: 56.0%
+Duty Cycle: 57.0%
+Duty Cycle: 58.0%
+Duty Cycle: 59.0%
+Duty Cycle: 60.0%
+Duty Cycle: 61.0%
+Duty Cycle: 62.0%
+Duty Cycle: 63.0%
+Duty Cycle: 64.0%
+Duty Cycle: 65.0%
+Duty Cycle: 66.0%
+Duty Cycle: 67.0%
+Duty Cycle: 68.0%
+Duty Cycle: 69.0%
+Duty Cycle: 70.0%
+Duty Cycle: 71.0%
+Duty Cycle: 72.0%
+Duty Cycle: 73.0%
+Duty Cycle: 74.0%
+Duty Cycle: 75.0%
+Duty Cycle: 76.0%
+Duty Cycle: 77.0%
+Duty Cycle: 78.0%
+Duty Cycle: 79.0%
+Duty Cycle: 80.0%
+Duty Cycle: 81.0%
+Duty Cycle: 82.0%
+Duty Cycle: 83.0%
+Duty Cycle: 84.0%
+Duty Cycle: 85.0%
+Duty Cycle: 86.0%
+Duty Cycle: 87.0%
+Duty Cycle: 88.0%
+Duty Cycle: 89.0%
+Duty Cycle: 90.0%
+Duty Cycle: 91.0%
+Duty Cycle: 92.0%
+Duty Cycle: 93.0%
+Duty Cycle: 94.0%
+Duty Cycle: 95.0%
+Duty Cycle: 96.0%
+Duty Cycle: 97.0%
+Duty Cycle: 98.0%
+Duty Cycle: 99.0%
+Duty Cycle: 100.0%
+Duty Cycle: 100.0%
+Duty Cycle: 99.0%
+Duty Cycle: 98.0%
+Duty Cycle: 97.0%
+Duty Cycle: 96.0%
+Duty Cycle: 95.0%
+Duty Cycle: 94.0%
+Duty Cycle: 93.0%
+Duty Cycle: 92.0%
+Duty Cycle: 91.0%
+Duty Cycle: 90.0%
+Duty Cycle: 89.0%
+Duty Cycle: 88.0%
+Duty Cycle: 87.0%
+Duty Cycle: 86.0%
+Duty Cycle: 85.0%
+Duty Cycle: 84.0%
+Duty Cycle: 83.0%
+Duty Cycle: 82.0%
+Duty Cycle: 81.0%
+Duty Cycle: 80.0%
+Duty Cycle: 79.0%
+Duty Cycle: 78.0%
+Duty Cycle: 77.0%
+Duty Cycle: 76.0%
+Duty Cycle: 75.0%
+Duty Cycle: 74.0%
+Duty Cycle: 73.0%
+Duty Cycle: 72.0%
+Duty Cycle: 71.0%
+Duty Cycle: 70.0%
+Duty Cycle: 69.0%
+Duty Cycle: 68.0%
+Duty Cycle: 67.0%
+Duty Cycle: 66.0%
+Duty Cycle: 65.0%
+Duty Cycle: 64.0%
+Duty Cycle: 63.0%
+Duty Cycle: 62.0%
+Duty Cycle: 61.0%
+Duty Cycle: 60.0%
+Duty Cycle: 59.0%
+Duty Cycle: 58.0%
+Duty Cycle: 57.0%
+Duty Cycle: 56.0%
+Duty Cycle: 55.0%
+Duty Cycle: 54.0%
+Duty Cycle: 53.0%
+Duty Cycle: 52.0%
+Duty Cycle: 51.0%
+Duty Cycle: 50.0%
+Duty Cycle: 49.0%
+Duty Cycle: 48.0%
+Duty Cycle: 47.0%
+Duty Cycle: 46.0%
+Duty Cycle: 45.0%
+Duty Cycle: 44.0%
+Duty Cycle: 43.0%
+Duty Cycle: 42.0%
+Duty Cycle: 41.0%
+Duty Cycle: 40.0%
+Duty Cycle: 39.0%
+Duty Cycle: 38.0%
+Duty Cycle: 37.0%
+Duty Cycle: 36.0%
+Duty Cycle: 35.0%
+Duty Cycle: 34.0%
+Duty Cycle: 33.0%
+Duty Cycle: 32.0%
+Duty Cycle: 31.0%
+Duty Cycle: 30.0%
+Duty Cycle: 29.0%
+Duty Cycle: 28.0%
+Duty Cycle: 27.0%
+Duty Cycle: 26.0%
+Duty Cycle: 25.0%
+Duty Cycle: 24.0%
+Duty Cycle: 23.0%
+Duty Cycle: 22.0%
+Duty Cycle: 21.0%
+Duty Cycle: 20.0%
+Duty Cycle: 19.0%
+Duty Cycle: 18.0%
+Duty Cycle: 17.0%
+Duty Cycle: 16.0%
+Duty Cycle: 15.0%
+Duty Cycle: 14.0%
+Duty Cycle: 13.0%
+Duty Cycle: 12.0%
+Duty Cycle: 11.0%
+Duty Cycle: 10.0%
+Duty Cycle: 9.0%
+Duty Cycle: 8.0%
+Duty Cycle: 7.0%
+Duty Cycle: 6.0%
+Duty Cycle: 5.0%
+Duty Cycle: 4.0%
+Duty Cycle: 3.0%
+Duty Cycle: 2.0%
+Duty Cycle: 1.0%
+Duty Cycle: 0.0%
+Duty Cycle: 0.0%
+Duty Cycle: 1.0%
+Duty Cycle: 2.0%
+Duty Cycle: 3.0%
+Duty Cycle: 4.0%
+Duty Cycle: 5.0%
+Duty Cycle: 6.0%
+Duty Cycle: 7.0%
+Duty Cycle: 8.0%
+Duty Cycle: 9.0%
+Duty Cycle: 10.0%

@@ -1,0 +1,368 @@
+ets Jul 29 2019 12:2ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ac40h (109632) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002ac68 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002f2cc vaddr=40080000 size=00d4ch (  3404) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93bb8h (605112) map[0m
+[0;32mI (365) esp_image: segment 4: paddr=000c3be0 vaddr=40080d4c size=167f0h ( 92144) load[0m
+[0;32mI (413) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (425) cpu_start: Multicore app[0m
+[0;32mI (434) cpu_start: Pro cpu start user code[0m
+[0;32mI (434) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (434) cpu_start: Application information:[0m
+[0;32mI (437) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (443) cpu_start: App version:      e18ea92[0m
+[0;32mI (448) cpu_start: Compile time:     Dec 12 2025 10:43:53[0m
+[0;32mI (454) cpu_start: ELF file SHA256:  4f16956ff...[0m
+[0;32mI (459) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (466) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (470) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (475) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (480) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (487) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFBB400 len 00024C00 (147 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (506) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 4009753C len 00008AC4 (34 KiB): IRAM[0m
+[0;32mI (520) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (541) main_task: Started on CPU0[0m
+[0;32mI (551) main_task: Calling app_main()[0m
+[0;32mI (551) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (551) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (561) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (571) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (581) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (591) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (621) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (631) wifi:wifi driver task: 3ffc3688, prio:23, stack:6656, core=0[0m
+[0;32mI (641) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (641) wifi:wifi certification version: v7.0[0m
+[0;32mI (641) wifi:config NVS flash: enabled[0m
+[0;32mI (641) wifi:config nano formating: disabled[0m
+[0;32mI (641) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (651) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (651) wifi:Init management short buffer num: 32[0m
+[0;32mI (661) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (661) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (661) wifi:Init static rx buffer num: 10[0m
+[0;32mI (671) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (671) wifi_init: rx ba win: 6[0m
+[0;32mI (681) wifi_init: tcpip mbox: 32[0m
+[0;32mI (681) wifi_init: udp mbox: 6[0m
+[0;32mI (681) wifi_init: tcp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp tx win: 5760[0m
+[0;32mI (691) wifi_init: tcp rx win: 5760[0m
+[0;32mI (701) wifi_init: tcp mss: 1440[0m
+[0;32mI (701) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (701) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (711) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (721) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (811) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (811) wifi:enable tsf[0m
+[0;32mI (811) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (821) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (831) wifi:state: init -> auth (b0)[0m
+[0;32mI (831) wifi:state: auth -> init (1c0)[0m
+[0;32mI (841) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (841) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (841) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3261) wifi_station_netif: retry to connect to the AP[0m
+[0;32mI (3261) wifi_station_netif: connect to the AP fail[0m
+[0;32mI (3261) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (3261) wifi:state: init -> auth (b0)[0m
+[0;32mI (3301) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3311) wifi:state: assoc -> run (10)[0m
+[0;32mI (3331) wifi:connected with Calebe, aid = 4, channel 11, BW20, bssid = c6:9a:e5:df:0c:d5[0m
+[0;32mI (3331) wifi:security: WPA2-PSK, phy: bgn, rssi: -50[0m
+[0;32mI (3331) wifi:pm start, type: 1[0m
+
+[0;32mI (3331) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3381) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3381) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4341) esp_netif_handlers: sta ip: 10.250.183.207, mask: 255.255.255.0, gw: 10.250.183.108[0m
+[0;32mI (4341) wifi_station_netif: got ip:10.250.183.207[0m
+[0;32mI (4341) wifi_station_netif: connected to ap SSID:Calebe password:88111447[0m
+[0;32mI (4351) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4521) wifi:<ba-add>idx:0 (ifx:0, c6:9a:e5:df:0c:d5), tid:0, ssn:4, winSize:64[0m
+
+
+=== MODO OPERACIONAL: CORREÇÃO DE LÓGICA PWM ATIVA ===
+O controle PID está ativo. O carrinho deve andar reto.
+��������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ac40h (109632) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=0002ac68 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (181) esp_image: segment 2: paddr=0002f2cc vaddr=40080000 size=00d4ch (  3404) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93bb8h (605112) map[0m
+[0;32mI (396) esp_image: segment 4: paddr=000c3be0 vaddr=40080d4c size=167f0h ( 92144) load[0m
+[0;32mI (444) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (444) boot: Disabling RNG early entropy source...[0m
+[0;32mI (455) cpu_start: Multicore app[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (32) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ac40h (109632) map[0m
+[0;32mI (144) esp_image: segment 1: paddr=0002ac68 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0002f2cc vaddr=40080000 size=00d4ch (  3404) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93bb8h (605112) map[0m
+[0;32mI (365) esp_image: segment 4: paddr=000c3be0 vaddr=40080d4c size=167f0h ( 92144) load[0m
+[0;32mI (413) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (425) cpu_start: Multicore app[0m
+[0;32mI (434) cpu_start: Pro cpu start user code[0m
+[0;32mI (434) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (434) cpu_start: Application information:[0m
+[0;32mI (437) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (443) cpu_start: App version:      e18ea92[0m
+[0;32mI (448) cpu_start: Compile time:     Dec 12 2025 10:43:53[0m
+[0;32mI (454) cpu_start: ELF file SHA256:  4f16956ff...[0m
+[0;32mI (460) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (466) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (471) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (476) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (488) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFBB400 len 00024C00 (147 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (506) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 4009753C len 00008AC4 (34 KiB): IRAM[0m
+[0;32mI (520) spi_flash: detected chip: generic[0m
+[0;32mI (523) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (541) main_task: Started on CPU0[0m
+[0;32mI (551) main_task: Calling app_main()[0m
+[0;32mI (551) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (551) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (561) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (571) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (581) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (591) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (621) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (631) wifi:wifi driver task: 3ffc3688, prio:23, stack:6656, core=0[0m
+[0;32mI (641) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (641) wifi:wifi certification version: v7.0[0m
+[0;32mI (641) wifi:config NVS flash: enabled[0m
+[0;32mI (641) wifi:config nano formating: disabled[0m
+[0;32mI (641) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (651) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (651) wifi:Init management short buffer num: 32[0m
+[0;32mI (661) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (661) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (661) wifi:Init static rx buffer num: 10[0m
+[0;32mI (671) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (671) wifi_init: rx ba win: 6[0m
+[0;32mI (681) wifi_init: tcpip mbox: 32[0m
+[0;32mI (681) wifi_init: udp mbox: 6[0m
+[0;32mI (681) wifi_init: tcp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp tx win: 5760[0m
+[0;32mI (691) wifi_init: tcp rx win: 5760[0m
+[0;32mI (701) wifi_init: tcp mss: 1440[0m
+[0;32mI (701) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (701) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (711) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (721) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (811) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (811) wifi:enable tsf[0m
+[0;32mI (811) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (821) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (831) wifi:state: init -> auth (b0)[0m
+[0;32mI (861) wifi:state: auth -> assoc (0)[0m
+[0;32mI (891) wifi:state: assoc -> run (10)[0m
+[0;32mI (971) wifi:connected with Calebe, aid = 5, channel 11, BW20, bssid = c6:9a:e5:df:0c:d5[0m
+[0;32mI (971) wifi:security: WPA2-PSK, phy: bgn, rssi: -42[0m
+[0;32mI (971) wifi:pm start, type: 1[0m
+
+[0;32mI (971) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1041) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1041) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1981) esp_netif_handlers: sta ip: 10.250.183.207, mask: 255.255.255.0, gw: 10.250.183.108[0m
+[0;32mI (1981) wifi_station_netif: got ip:10.250.183.207[0m
+[0;32mI (1981) wifi_station_netif: connected to ap SSID:Calebe password:88111447[0m
+[0;32mI (1991) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (2351) wifi:<ba-add>idx:0 (ifx:0, c6:9a:e5:df:0c:d5), tid:0, ssn:3, winSize:64[0m
+
+
+=== MODO OPERACIONAL: CORREÇÃO DE LÓGICA PWM ATIVA ===
+O controle PID está ativo. O carrinho deve andar reto.
+E: Tgt=0.000, Cur=0.000, PWM=0.000 | D: Tgt=0.000, Cur=0.000, PWM=0.000
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.013 | D: Tgt=0.500, Cur=0.000, PWM=1.013
+E: Tgt=0.500, Cur=0.611, PWM=-0.212 | D: Tgt=0.500, Cur=0.896, PWM=-0.790
+E: Tgt=0.500, Cur=-0.387, PWM=1.806 | D: Tgt=0.500, Cur=-0.387, PWM=1.799
+E: Tgt=0.500, Cur=0.102, PWM=0.838 | D: Tgt=0.500, Cur=0.020, PWM=0.996
+E: Tgt=0.500, Cur=0.346, PWM=0.353 | D: Tgt=0.500, Cur=0.428, PWM=0.183
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=1.650, PWM=-2.282 | D: Tgt=0.500, Cur=1.365, PWM=-1.712
+E: Tgt=0.500, Cur=-0.204, PWM=1.442 | D: Tgt=0.500, Cur=-0.122, PWM=1.277
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.047 | D: Tgt=0.500, Cur=0.000, PWM=1.045
+E: Tgt=0.500, Cur=0.387, PWM=0.276 | D: Tgt=0.500, Cur=0.489, PWM=0.068
+E: Tgt=0.500, Cur=0.265, PWM=0.526 | D: Tgt=0.500, Cur=0.305, PWM=0.439
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.068 | D: Tgt=0.500, Cur=0.000, PWM=1.063
+E: Tgt=0.500, Cur=0.570, PWM=-0.074 | D: Tgt=0.500, Cur=0.692, PWM=-0.327
+E: Tgt=0.500, Cur=-0.102, PWM=1.285 | D: Tgt=0.500, Cur=-0.143, PWM=1.359
+E: Tgt=0.500, Cur=0.305, PWM=0.475 | D: Tgt=0.500, Cur=0.224, PWM=0.633
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.099 | D: Tgt=0.500, Cur=0.000, PWM=1.093
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.111 | D: Tgt=0.500, Cur=0.000, PWM=1.106
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.124 | D: Tgt=0.500, Cur=0.000, PWM=1.118
+E: Tgt=0.500, Cur=0.204, PWM=0.724 | D: Tgt=0.500, Cur=0.183, PWM=0.760
+E: Tgt=0.500, Cur=0.326, PWM=0.484 | D: Tgt=0.500, Cur=0.346, PWM=0.438
+E: Tgt=0.500, Cur=0.061, PWM=1.024 | D: Tgt=0.500, Cur=0.102, PWM=0.936
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.159 | D: Tgt=0.500, Cur=0.000, PWM=1.153
+E: Tgt=0.500, Cur=0.081, PWM=1.007 | D: Tgt=0.500, Cur=0.102, PWM=0.959
+E: Tgt=0.500, Cur=0.305, PWM=0.563 | D: Tgt=0.500, Cur=0.326, PWM=0.515
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.187 | D: Tgt=0.500, Cur=0.000, PWM=1.179
+E: Tgt=0.500, Cur=0.061, PWM=1.076 | D: Tgt=0.500, Cur=0.102, PWM=0.986
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.210 | D: Tgt=0.500, Cur=0.000, PWM=1.202
+E: Tgt=0.500, Cur=0.122, PWM=0.975 | D: Tgt=0.500, Cur=0.102, PWM=1.008
+E: Tgt=0.500, Cur=0.305, PWM=0.614 | D: Tgt=0.500, Cur=0.305, PWM=0.606
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.237 | D: Tgt=0.500, Cur=0.000, PWM=1.229
+E: Tgt=0.500, Cur=0.285, PWM=0.672 | D: Tgt=0.500, Cur=0.428, PWM=0.376
+E: Tgt=0.500, Cur=0.489, PWM=0.265 | D: Tgt=0.500, Cur=0.631, PWM=-0.035
+E: Tgt=0.500, Cur=0.326, PWM=0.596 | D: Tgt=0.500, Cur=-0.285, PWM=1.818
+E: Tgt=0.500, Cur=0.143, PWM=0.971 | D: Tgt=0.500, Cur=0.163, PWM=0.930
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.269 | D: Tgt=0.500, Cur=0.000, PWM=1.268
+E: Tgt=0.500, Cur=0.265, PWM=0.745 | D: Tgt=0.500, Cur=0.285, PWM=0.703
+E: Tgt=0.500, Cur=0.081, PWM=1.122 | D: Tgt=0.500, Cur=0.143, PWM=0.997
+E: Tgt=0.500, Cur=0.346, PWM=0.596 | D: Tgt=0.500, Cur=0.326, PWM=0.635
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.301 | D: Tgt=0.500, Cur=0.000, PWM=1.299
+E: Tgt=0.500, Cur=0.244, PWM=0.819 | D: Tgt=0.500, Cur=0.285, PWM=0.734
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.320 | D: Tgt=0.500, Cur=0.000, PWM=1.317
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.333 | D: Tgt=0.500, Cur=0.000, PWM=1.330
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.345 | D: Tgt=0.500, Cur=0.000, PWM=1.342
+E: Tgt=0.500, Cur=0.081, PWM=1.193 | D: Tgt=0.500, Cur=0.143, PWM=1.066
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.368 | D: Tgt=0.500, Cur=0.000, PWM=1.364
+E: Tgt=0.500, Cur=0.998, PWM=-0.640 | D: Tgt=0.500, Cur=1.161, PWM=-0.975
+E: Tgt=0.500, Cur=-1.324, PWM=4.049 | D: Tgt=0.500, Cur=-0.224, PWM=1.813
+E: Tgt=0.500, Cur=0.163, PWM=1.084 | D: Tgt=0.500, Cur=0.102, PWM=1.172
+E: Tgt=0.500, Cur=0.102, PWM=1.216 | D: Tgt=0.500, Cur=0.102, PWM=1.181
+E: Tgt=0.500, Cur=0.265, PWM=0.896 | D: Tgt=0.500, Cur=0.224, PWM=0.944
+E: Tgt=0.500, Cur=0.407, PWM=0.613 | D: Tgt=0.500, Cur=0.326, PWM=0.745
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.440 | D: Tgt=0.500, Cur=0.000, PWM=1.409
+E: Tgt=0.500, Cur=0.061, PWM=1.329 | D: Tgt=0.500, Cur=0.102, PWM=1.215
+E: Tgt=0.500, Cur=0.367, PWM=0.722 | D: Tgt=0.500, Cur=0.428, PWM=0.565
+E: Tgt=0.500, Cur=0.224, PWM=1.014 | D: Tgt=0.500, Cur=0.244, PWM=0.938
+E: Tgt=0.500, Cur=0.183, PWM=1.103 | D: Tgt=0.500, Cur=0.183, PWM=1.068
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.482 | D: Tgt=0.500, Cur=0.000, PWM=1.447
+E: Tgt=0.500, Cur=0.102, PWM=1.288 | D: Tgt=0.500, Cur=0.122, PWM=1.212
+E: Tgt=0.500, Cur=0.326, PWM=0.845 | D: Tgt=0.500, Cur=0.387, PWM=0.686
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.500 | D: Tgt=0.500, Cur=0.000, PWM=1.472
+E: Tgt=0.500, Cur=0.346, PWM=0.808 | D: Tgt=0.500, Cur=0.346, PWM=0.784
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.500 | D: Tgt=0.500, Cur=0.000, PWM=1.489
+E: Tgt=0.500, Cur=0.244, PWM=1.011 | D: Tgt=0.500, Cur=0.265, PWM=0.965
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.500 | D: Tgt=0.500, Cur=0.000, PWM=1.500
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.500 | D: Tgt=0.500, Cur=0.000, PWM=1.500
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.500 | D: Tgt=0.500, Cur=0.000, PWM=1.500
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.500 | D: Tgt=0.500, Cur=0.000, PWM=1.500
+E: Tgt=0.500, Cur=0.143, PWM=1.215 | D: Tgt=0.500, Cur=0.102, PWM=1.296
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.500 | D: Tgt=0.500, Cur=0.000, PWM=1.500
+E: Tgt=0.500, Cur=0.265, PWM=0.970 | D: Tgt=0.500, Cur=0.285, PWM=0.930
+E: Tgt=0.500, Cur=0.224, PWM=1.052 | D: Tgt=0.500, Cur=0.224, PWM=1.052
+E: Tgt=0.500, Cur=0.122, PWM=1.256 | D: Tgt=0.500, Cur=0.143, PWM=1.215
+E: Tgt=0.500, Cur=0.244, PWM=1.011 | D: Tgt=0.500, Cur=0.285, PWM=0.930
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.500 | D: Tgt=0.500, Cur=0.000, PWM=1.500
+E: Tgt=0.500, Cur=0.081, PWM=1.337 | D: Tgt=0.500, Cur=0.081, PWM=1.337
+E: Tgt=0.500, Cur=0.305, PWM=0.889 | D: Tgt=0.500, Cur=0.407, PWM=0.685
+ROS Rx: Linear X=0.500, Angular Z=0.000
+E: Tgt=0.500, Cur=0.000, PWM=1.500 | D: Tgt=0.500, Cur=0.000, PWM=1.500
+E: Tgt=0.500, Cur=0.061, PWM=1.378 | D: Tgt=0.500, Cur=0.102, PWM=1.296

@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/CMakeFiles/picotoolBuild
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/CMakeFiles/picotoolBuild.rule
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/CMakeFiles/picotoolBuild-complete.rule
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule

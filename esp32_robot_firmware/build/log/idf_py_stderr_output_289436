@@ -1,0 +1,31 @@
+[0;33m--- esp-idf-monitor 1.8.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4008187a: [0;33mpanic_abort[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x40089975: [0;33mesp_system_abort[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x400911f1: [0;33m__assert_func[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/newlib/assert.c[0m[0m:[1;31m81[0m
+[0m--- 0x40082326: [0;33mheap_caps_realloc_base[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m198[0m
+[0m--- 0x40081ff4: [0;33mheap_caps_realloc[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/heap/heap_caps.c[0m[0m:[1;31m243[0m
+[0m--- 0x4008202b: [0;33mheap_caps_realloc_default[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/heap/heap_caps.c[0m[0m:[1;31m143[0m
+[0m--- 0x40091211: [0;33mrealloc[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/newlib/heap.c[0m[0m:[1;31m34[0m
+[0m--- 0x400da771: [0;33m__default_reallocate[0m[0m at [0;32mallocator.c[0m[0m:[1;31m?[0m
+[0m--- 0x400db445: [0;33mrosidl_runtime_c__String__assign[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400d73c1: [0;33mmicro_ros_task[0m[0m at [0;32m/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c[0m[0m:[1;31m278[0m
+[0m--- 0x4008a4c1: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4008187a: [0;33mpanic_abort[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m482[0m
+[0m--- 0x40089975: [0;33mesp_system_abort[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m93[0m
+[0m--- 0x400911f1: [0;33m__assert_func[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/newlib/assert.c[0m[0m:[1;31m81[0m
+[0m--- 0x40082326: [0;33mheap_caps_realloc_base[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m198[0m
+[0m--- 0x40081ff4: [0;33mheap_caps_realloc[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/heap/heap_caps.c[0m[0m:[1;31m243[0m
+[0m--- 0x4008202b: [0;33mheap_caps_realloc_default[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/heap/heap_caps.c[0m[0m:[1;31m143[0m
+[0m--- 0x40091211: [0;33mrealloc[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/newlib/heap.c[0m[0m:[1;31m34[0m
+[0m--- 0x400da771: [0;33m__default_reallocate[0m[0m at [0;32mallocator.c[0m[0m:[1;31m?[0m
+[0m--- 0x400db445: [0;33mrosidl_runtime_c__String__assign[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400d73c1: [0;33mmicro_ros_task[0m[0m at [0;32m/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/main/main.c[0m[0m:[1;31m278[0m
+[0m--- 0x4008a4c1: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/calebe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m

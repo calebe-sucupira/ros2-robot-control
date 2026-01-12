@@ -1,0 +1,182 @@
+���29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b574h ( 46452) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001b59c vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d8c4 vaddr=40080000 size=02754h ( 10068) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11b2ch ( 72492) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00031b54 vaddr=40082754 size=0a408h ( 41992) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) cpu_start: Application information:[0m
+[0;32mI (208) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (214) cpu_start: App version:      e18ea92[0m
+[0;32mI (219) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  54a8b1bc5...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CB5C len 000134A4 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) MAIN: ========================================[0m
+[0;32mI (322) MAIN:    CALIBRAÇÃO DEFINITIVA - RESUMO[0m
+[0;32mI (322) MAIN: ========================================[0m
+[0;32mI (332) FINAL: ========================================[0m
+[0;32mI (342) FINAL:    FUNÇÃO FINAL OTIMIZADA[0m
+[0;32mI (342) FINAL: ========================================[0m
+[0;32mI (352) FINAL: DADOS CONSOLIDADOS:[0m
+[0;32mI (352) FINAL: 1. Limiares mínimos:[0m
+[0;32mI (352) FINAL:    - Direito: 30% PWM (23% não funciona)[0m
+[0;32mI (362) FINAL:    - Esquerdo: 40% PWM[0m
+[0;32mI (372) FINAL: [0m
+[0;32mI (372) FINAL: 2. Velocidades a 50% PWM:[0m
+[0;32mI (372) FINAL:    - Teste 1: ESQ=256.0/s, DIR=310.5/s[0m
+[0;32mI (382) FINAL:    - Teste 2: ESQ=245.0/s, DIR=0.0/s (DIR=23%)[0m
+[0;32mI (382) FINAL:    - Teste 3: ESQ=294.5/s, DIR=402.5/s[0m
+[0;32mI (392) FINAL: [0m
+[0;32mI (392) FINAL: 3. Relação média DIR/ESQ:[0m
+[0;32mI (402) FINAL:    - (310.5 + 402.5) / (256.0 + 294.5) / 2 = ~1.30[0m
+[0;32mI (402) FINAL:    - Direito é ~30% mais rápido[0m
+[0;32mI (412) FINAL:    - Fator de compensação: 1/1.30 = 0.77[0m
+[0;32mI (422) FINAL: [0m
+[0;32mI (422) FINAL: FUNÇÃO FINAL DE COMPENSAÇÃO:[0m
+[0;32mI (422) FINAL: ========================================[0m
+[0;32mI (432) FINAL: void mover_robo_ajustado(int vel_esq, int vel_dir) {[0m
+[0;32mI (442) FINAL:     // 1. Aplica limiares mínimos[0m
+[0;32mI (442) FINAL:     if (vel_esq > 0 && vel_esq < 40) {[0m
+[0;32mI (452) FINAL:         vel_esq = 40;[0m
+[0;32mI (452) FINAL:     }[0m
+[0;32mI (452) FINAL:     [0m
+[0;32mI (462) FINAL:     if (vel_dir > 0 && vel_dir < 30) {[0m
+[0;32mI (462) FINAL:         vel_dir = 30;[0m
+[0;32mI (472) FINAL:     }[0m
+[0;32mI (472) FINAL:     [0m
+[0;32mI (472) FINAL:     // 2. Compensação de velocidade (direito 30% mais rápido)[0m
+[0;32mI (482) FINAL:     float compensacao = 0.77f;  // 1 / 1.30[0m
+[0;32mI (492) FINAL:     vel_dir = (int)(vel_dir * compensacao);[0m
+[0;32mI (492) FINAL:     [0m
+[0;32mI (502) FINAL:     // 3. Garante que não ultrapasse 100%[0m
+[0;32mI (502) FINAL:     if (vel_esq > 100) vel_esq = 100;[0m
+[0;32mI (512) FINAL:     if (vel_dir > 100) vel_dir = 100;[0m
+[0;32mI (512) FINAL:     [0m
+[0;32mI (522) FINAL:     // 4. Aplica aos motores[0m
+[0;32mI (522) FINAL:     motor_esquerdo(vel_esq);[0m
+[0;32mI (532) FINAL:     motor_direito(vel_dir);[0m
+[0;32mI (532) FINAL: }[0m
+[0;32mI (532) FINAL: ========================================[0m
+[0;32mI (542) FINAL: EXEMPLOS PRÁTICOS:[0m
+[0;32mI (542) FINAL: 1. Andar reto a 30%:[0m
+[0;32mI (552) FINAL:    mover_robo_ajustado(30, 30);[0m
+[0;32mI (552) FINAL:    → Ajusta: ESQ=40%, DIR=30%[0m
+[0;32mI (562) FINAL:    → Compensa: ESQ=40%, DIR=23%[0m
+[0;32mI (562) FINAL: [0m
+[0;32mI (562) FINAL: 2. Andar reto a 50%:[0m
+[0;32mI (572) FINAL:    mover_robo_ajustado(50, 50);[0m
+[0;32mI (572) FINAL:    → Ajusta: ESQ=50%, DIR=50%[0m
+[0;32mI (582) FINAL:    → Compensa: ESQ=50%, DIR=38%[0m
+[0;32mI (582) FINAL: [0m
+[0;32mI (592) FINAL: 3. Curva suave:[0m
+[0;32mI (592) FINAL:    mover_robo_ajustado(40, 70);[0m
+[0;32mI (602) FINAL:    → Ajusta: ESQ=40%, DIR=70%[0m
+[0;32mI (602) FINAL:    → Compensa: ESQ=40%, DIR=54%[0m
+[0;32mI (612) FINAL: ========================================[0m
+[0;32mI (2612) TESTE: ========================================[0m
+[0;32mI (2612) TESTE:    TESTE FINAL DA FUNÇÃO[0m
+[0;32mI (2612) TESTE: ========================================[0m
+[0;32mI (2612) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (2622) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (2632) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2642) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2652) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2662) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2672) TESTE: 
+--- Teste 1: ESQ=30%, DIR=30% ---[0m
+[0;32mI (2672) TESTE: Ajustado para: ESQ=40%, DIR=23%[0m
+[0;32mI (4682) TESTE: Resultado: ESQ=236.5/s, DIR=206.5/s[0m
+[0;32mI (4682) TESTE: Diferença: ±13.5%[0m
+[0;32mI (4682) TESTE: ✅ COMPENSAÇÃO EFETIVA![0m
+[0;32mI (5682) TESTE: 
+--- Teste 2: ESQ=50%, DIR=50% ---[0m
+[0;32mI (5682) TESTE: Ajustado para: ESQ=50%, DIR=38%[0m
+[0;32mI (7682) TESTE: Resultado: ESQ=261.5/s, DIR=319.5/s[0m
+[0;32mI (7682) TESTE: Diferença: ±20.0%[0m
+[0;33mW (7682) TESTE: ⚠️ Pode melhorar[0m
+[0;32mI (8682) TESTE: 
+--- Teste 3: ESQ=70%, DIR=70% ---[0m
+[0;32mI (8682) TESTE: Ajustado para: ESQ=70%, DIR=53%[0m
+[0;32mI (10682) TESTE: Resultado: ESQ=296.0/s, DIR=386.5/s[0m
+[0;32mI (10682) TESTE: Diferença: ±26.5%[0m
+[0;33mW (10682) TESTE: ⚠️ Pode melhorar[0m
+[0;32mI (11682) TESTE: 
+--- Teste 4: ESQ=40%, DIR=60% ---[0m
+[0;32mI (11682) TESTE: Ajustado para: ESQ=40%, DIR=46%[0m
+[0;32mI (13682) TESTE: Resultado: ESQ=236.0/s, DIR=376.0/s[0m
+[0;32mI (13682) TESTE: Diferença: ±45.8%[0m
+[0;33mW (13682) TESTE: ⚠️ Pode melhorar[0m
+[0;32mI (14682) TESTE: 
+--- Teste 5: ESQ=60%, DIR=40% ---[0m
+[0;32mI (14682) TESTE: Ajustado para: ESQ=60%, DIR=30%[0m
+[0;32mI (16682) TESTE: Resultado: ESQ=280.0/s, DIR=270.0/s[0m
+[0;32mI (16682) TESTE: Diferença: ±3.6%[0m
+[0;32mI (16682) TESTE: ✅ COMPENSAÇÃO EFETIVA![0m
+[0;32mI (17682) MAIN: ========================================[0m
+[0;32mI (17682) MAIN:    FUNÇÃO FINAL PARA SEU CÓDIGO:[0m
+[0;32mI (17682) MAIN: ========================================[0m
+[0;32mI (17682) MAIN: void mover_compensado(int vel_esq, int vel_dir) {[0m
+[0;32mI (17692) MAIN:     // Limiares mínimos[0m
+[0;32mI (17692) MAIN:     if (vel_esq > 0 && vel_esq < 40) vel_esq = 40;[0m
+[0;32mI (17702) MAIN:     if (vel_dir > 0 && vel_dir < 30) vel_dir = 30;[0m
+[0;32mI (17712) MAIN:     [0m
+[0;32mI (17712) MAIN:     // Compensação (direito 30% mais rápido)[0m
+[0;32mI (17722) MAIN:     vel_dir = (int)(vel_dir * 0.77f);[0m
+[0;32mI (17722) MAIN:     [0m
+[0;32mI (17722) MAIN:     // Limita[0m
+[0;32mI (17732) MAIN:     if (vel_esq > 100) vel_esq = 100;[0m
+[0;32mI (17732) MAIN:     if (vel_dir > 100) vel_dir = 100;[0m
+[0;32mI (17742) MAIN:     [0m
+[0;32mI (17742) MAIN:     // Aplica[0m
+[0;32mI (17752) MAIN:     motor_esquerdo(vel_esq);[0m
+[0;32mI (17752) MAIN:     motor_direito(vel_dir);[0m
+[0;32mI (17762) MAIN: }[0m
+[0;32mI (17762) MAIN: ========================================[0m
+[0;32mI (17762) MAIN: TESTE ESTA FUNÇÃO NO SEU ROBÔ![0m
+[0;32mI (17772) MAIN: Para andar reto: mover_compensado(50, 50);[0m
+[0;32mI (17782) MAIN: ========================================[0m

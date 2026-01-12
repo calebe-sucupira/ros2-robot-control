@@ -1,0 +1,553 @@
+�Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RES�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b060h (110688) map[0m
+[0;32mI (144) esp_image: segment 1: paddr=0002b088 vaddr=3ffb0000 size=0470ch ( 18188) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0002f79c vaddr=40080000 size=0087ch (  2172) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=943b8h (607160) map[0m
+[0;32mI (366) esp_image: segment 4: paddr=000c43e0 vaddr=4008087c size=16cc0h ( 93376) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (415) boot: Disabling RNG early entropy source...[0m
+[0;32mI (426) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (435) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) cpu_start: Application information:[0m
+[0;32mI (438) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (445) cpu_start: App version:      e18ea92[0m
+[0;32mI (449) cpu_start: Compile time:     Dec 12 2025 10:43:53[0m
+[0;32mI (456) cpu_start: ELF file SHA256:  7cc59300e...[0m
+[0;32mI (461) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (467) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (472) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (477) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (482) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (489) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFBB490 len 00024B70 (146 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 4009753C len 00008AC4 (34 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (525) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (553) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (563) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (573) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (583) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (593) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+
+
+=== SISTEMA REALISTA COM ESCALONAMENTO ===
+Mudanças CRÍTICAS:
+1. METROS_POR_TICK: 0.000057 (CALIBRADO com dados reais!)
+2. VELOCIDADE_MAX_REAL: 0.25 m/s (capacidade real do robô)
+3. ESCALONAMENTO: Comandos 0-1 m/s → 0-0.2 m/s
+4. PWM BASE: ESQ=0.70, DIR=0.68 (otimizado)
+5. Feedforward para faixa REAL (0-0.2 m/s)
+
+Objetivo: Controle PRECISO na faixa REAL do robô!
+[0;32mI (653) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (673) wifi:wifi driver task: 3ffc3718, prio:23, stack:6656, core=0[0m
+[0;32mI (683) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (683) wifi:wifi certification version: v7.0[0m
+[0;32mI (683) wifi:config NVS flash: enabled[0m
+[0;32mI (683) wifi:config nano formating: disabled[0m
+[0;32mI (683) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (693) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (693) wifi:Init management short buffer num: 32[0m
+[0;32mI (703) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (703) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (703) wifi:Init static rx buffer num: 10[0m
+[0;32mI (713) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (713) wifi_init: rx ba win: 6[0m
+[0;32mI (723) wifi_init: tcpip mbox: 32[0m
+[0;32mI (723) wifi_init: udp mbox: 6[0m
+[0;32mI (723) wifi_init: tcp mbox: 6[0m
+[0;32mI (733) wifi_init: tcp tx win: 5760[0m
+[0;32mI (733) wifi_init: tcp rx win: 5760[0m
+[0;32mI (743) wifi_init: tcp mss: 1440[0m
+[0;32mI (743) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (743) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (753) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (763) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (853) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (853) wifi:enable tsf[0m
+[0;32mI (853) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (873) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (873) wifi:state: init -> auth (b0)[0m
+[0;32mI (883) wifi:state: auth -> assoc (0)[0m
+[0;32mI (923) wifi:state: assoc -> run (10)[0m
+[0;32mI (943) wifi:connected with Calebe, aid = 5, channel 11, BW20, bssid = 02:28:f4:05:5d:03[0m
+[0;32mI (943) wifi:security: WPA2-PSK, phy: bgn, rssi: -55[0m
+[0;32mI (943) wifi:pm start, type: 1[0m
+
+[0;32mI (943) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (953) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (963) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1973) esp_netif_handlers: sta ip: 10.250.183.207, mask: 255.255.255.0, gw: 10.250.183.108[0m
+[0;32mI (1973) wifi_station_netif: got ip:10.250.183.207[0m
+[0;32mI (1973) wifi_station_netif: connected to ap SSID:Calebe password:88111447[0m
+[0;32mI (1983) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (2053) wifi:<ba-add>idx:0 (ifx:0, 02:28:f4:05:5d:03), tid:0, ssn:3, winSize:64[0m
+
+=== SISTEMA PRONTO - TESTE REALISTA ===
+
+Testes sugeridos (enviar via ROS):
+1. linear_x = 0.05 (5% da velocidade máxima)
+2. linear_x = 0.10 (10% da velocidade máxima)
+3. linear_x = 0.15 (15% da velocidade máxima)
+4. linear_x = 0.20 (20% da velocidade máxima)
+5. linear_x = 0.25 (25% da velocidade máxima)
+
+IMPORTANTE: Comandos são automaticamente escalados!
+Envie valores de 0.0 a 1.0 no ROS, serão convertidos para 0.0 a 0.2 m/s
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.000 Cur=0.000 Erro=0.000 PWM=0.00 KS=0 I=0.000
+DIR: Tgt=0.000 Cur=0.000 Erro=0.000 PWM=0.00 KS=0 I=0.000
+Ticks/50ms: ESQ=0 DIR=0
+Vel estimada: ESQ=0.000 DIR=0.000
+===========================
+[CMD ESCALADO] linear_x=0.20->0.04, angular_z=0.00->0.00 -> ESQ=0.04, DIR=0.04
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.000 Erro=0.040 PWM=0.89 KS=1 I=0.002
+DIR: Tgt=0.040 Cur=0.000 Erro=0.040 PWM=0.87 KS=0 I=0.002
+Ticks/50ms: ESQ=0 DIR=0
+Vel estimada: ESQ=0.000 DIR=0.000
+===========================
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.028 Erro=0.012 PWM=0.64 KS=0 I=0.009
+DIR: Tgt=0.040 Cur=0.022 Erro=0.018 PWM=0.64 KS=0 I=0.009
+Ticks/50ms: ESQ=35 DIR=28
+Vel estimada: ESQ=0.040 DIR=0.032
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.012 Erro=0.028 PWM=0.74 KS=1 I=0.015
+DIR: Tgt=0.040 Cur=0.011 Erro=0.029 PWM=0.72 KS=0 I=0.016
+Ticks/50ms: ESQ=9 DIR=8
+Vel estimada: ESQ=0.010 DIR=0.009
+===========================
+[KICK] Motor 0: Finalizado
+[CMD ESCALADO] linear_x=0.20->0.04, angular_z=0.00->0.00 -> ESQ=0.04, DIR=0.04
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.021 Erro=0.019 PWM=0.73 KS=0 I=0.019
+DIR: Tgt=0.040 Cur=0.019 Erro=0.021 PWM=0.71 KS=0 I=0.021
+Ticks/50ms: ESQ=17 DIR=16
+Vel estimada: ESQ=0.019 DIR=0.018
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.012 Erro=0.028 PWM=0.72 KS=1 I=0.025
+DIR: Tgt=0.040 Cur=0.011 Erro=0.029 PWM=0.71 KS=0 I=0.028
+Ticks/50ms: ESQ=12 DIR=10
+Vel estimada: ESQ=0.014 DIR=0.011
+===========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.010 Erro=0.030 PWM=0.75 KS=1 I=0.032
+DIR: Tgt=0.040 Cur=0.010 Erro=0.030 PWM=0.72 KS=0 I=0.035
+Ticks/50ms: ESQ=7 DIR=8
+Vel estimada: ESQ=0.008 DIR=0.009
+===========================
+[CMD ESCALADO] linear_x=0.20->0.04, angular_z=0.00->0.00 -> ESQ=0.04, DIR=0.04
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.025 Erro=0.015 PWM=0.73 KS=0 I=0.035
+DIR: Tgt=0.040 Cur=0.021 Erro=0.019 PWM=0.71 KS=0 I=0.039
+Ticks/50ms: ESQ=21 DIR=18
+Vel estimada: ESQ=0.024 DIR=0.021
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+[CMD ESCALADO] linear_x=0.20->0.04, angular_z=0.00->0.00 -> ESQ=0.04, DIR=0.04
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.026 Erro=0.014 PWM=0.72 KS=0 I=0.033
+DIR: Tgt=0.040 Cur=0.022 Erro=0.018 PWM=0.71 KS=0 I=0.039
+Ticks/50ms: ESQ=23 DIR=19
+Vel estimada: ESQ=0.026 DIR=0.022
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.010 Erro=0.030 PWM=0.76 KS=1 I=0.039
+DIR: Tgt=0.040 Cur=0.009 Erro=0.031 PWM=0.74 KS=0 I=0.046
+Ticks/50ms: ESQ=6 DIR=5
+Vel estimada: ESQ=0.007 DIR=0.006
+===========================
+[KICK] Motor 0: Finalizado
+[CMD ESCALADO] linear_x=0.20->0.04, angular_z=0.00->0.00 -> ESQ=0.04, DIR=0.04
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.031 Erro=0.009 PWM=0.85 KS=0 I=0.042
+DIR: Tgt=0.040 Cur=0.027 Erro=0.013 PWM=0.83 KS=0 I=0.050
+Ticks/50ms: ESQ=8 DIR=6
+Vel estimada: ESQ=0.009 DIR=0.007
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.011 Erro=0.029 PWM=0.75 KS=1 I=0.048
+DIR: Tgt=0.040 Cur=0.012 Erro=0.028 PWM=0.73 KS=0 I=0.056
+Ticks/50ms: ESQ=9 DIR=10
+Vel estimada: ESQ=0.010 DIR=0.011
+===========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.012 Erro=0.028 PWM=0.76 KS=1 I=0.055
+DIR: Tgt=0.040 Cur=0.013 Erro=0.027 PWM=0.74 KS=0 I=0.063
+Ticks/50ms: ESQ=8 DIR=9
+Vel estimada: ESQ=0.009 DIR=0.010
+===========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.011 Erro=0.029 PWM=0.75 KS=1 I=0.062
+DIR: Tgt=0.040 Cur=0.011 Erro=0.029 PWM=0.73 KS=0 I=0.070
+Ticks/50ms: ESQ=10 DIR=10
+Vel estimada: ESQ=0.011 DIR=0.011
+===========================
+[CMD ESCALADO] linear_x=0.20->0.04, angular_z=0.00->0.00 -> ESQ=0.04, DIR=0.04
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.017 Erro=0.023 PWM=0.76 KS=1 I=0.067
+DIR: Tgt=0.040 Cur=0.015 Erro=0.025 PWM=0.73 KS=0 I=0.076
+Ticks/50ms: ESQ=13 DIR=13
+Vel estimada: ESQ=0.015 DIR=0.015
+===========================
+[CMD ESCALADO] linear_x=0.20->0.04, angular_z=0.00->0.00 -> ESQ=0.04, DIR=0.04
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.040 Cur=0.036 Erro=0.004 PWM=0.79 KS=0 I=0.066
+DIR: Tgt=0.040 Cur=0.031 Erro=0.009 PWM=0.77 KS=0 I=0.076
+Ticks/50ms: ESQ=23 DIR=19
+Vel estimada: ESQ=0.026 DIR=0.022
+===========================
+[CMD ESCALADO] linear_x=0.20->0.04, angular_z=0.00->0.00 -> ESQ=0.04, DIR=0.04
+[CMD ESCALADO] linear_x=0.00->0.00, angular_z=0.00->0.00 -> ESQ=0.00, DIR=0.00
+[BRAKE] Motor 0: Vel=0.11, Brake PWM=-0.30
+[BRAKE] Motor 1: Vel=0.10, Brake PWM=-0.30
+[BRAKE] Motor 0: Vel=0.04, Brake PWM=-0.30
+[BRAKE] Motor 1: Vel=0.04, Brake PWM=-0.30
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.000 Cur=0.044 Erro=-0.044 PWM=0.00 KS=0 I=0.000
+DIR: Tgt=0.000 Cur=0.040 Erro=-0.040 PWM=0.00 KS=0 I=0.000
+Ticks/50ms: ESQ=0 DIR=0
+Vel estimada: ESQ=0.000 DIR=0.000
+===========================
+[CMD ESCALADO] linear_x=0.00->0.00, angular_z=0.00->0.00 -> ESQ=0.00, DIR=0.00
+[CMD ESCALADO] linear_x=0.50->0.10, angular_z=0.00->0.00 -> ESQ=0.10, DIR=0.10
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.005 Erro=0.095 PWM=0.88 KS=1 I=0.014
+DIR: Tgt=0.100 Cur=0.007 Erro=0.093 PWM=0.85 KS=0 I=0.014
+Ticks/50ms: ESQ=5 DIR=8
+Vel estimada: ESQ=0.006 DIR=0.009
+===========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.019 Erro=0.081 PWM=0.90 KS=1 I=0.035
+DIR: Tgt=0.100 Cur=0.018 Erro=0.082 PWM=0.86 KS=0 I=0.035
+Ticks/50ms: ESQ=14 DIR=15
+Vel estimada: ESQ=0.016 DIR=0.017
+===========================
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.031 Erro=0.069 PWM=0.89 KS=0 I=0.054
+DIR: Tgt=0.100 Cur=0.028 Erro=0.072 PWM=0.88 KS=0 I=0.054
+Ticks/50ms: ESQ=25 DIR=22
+Vel estimada: ESQ=0.029 DIR=0.025
+===========================
+[CMD ESCALADO] linear_x=0.50->0.10, angular_z=0.00->0.00 -> ESQ=0.10, DIR=0.10
+[CMD ESCALADO] linear_x=0.50->0.10, angular_z=0.00->0.00 -> ESQ=0.10, DIR=0.10
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.062 Erro=0.038 PWM=0.95 KS=0 I=0.063
+DIR: Tgt=0.100 Cur=0.055 Erro=0.045 PWM=0.95 KS=0 I=0.064
+Ticks/50ms: ESQ=19 DIR=16
+Vel estimada: ESQ=0.022 DIR=0.018
+===========================
+[CMD ESCALADO] linear_x=0.50->0.10, angular_z=0.00->0.00 -> ESQ=0.10, DIR=0.10
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.032 Erro=0.068 PWM=0.95 KS=0 I=0.076
+DIR: Tgt=0.100 Cur=0.029 Erro=0.071 PWM=0.94 KS=0 I=0.078
+Ticks/50ms: ESQ=17 DIR=15
+Vel estimada: ESQ=0.019 DIR=0.017
+===========================
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.032 Erro=0.068 PWM=0.91 KS=0 I=0.091
+DIR: Tgt=0.100 Cur=0.031 Erro=0.069 PWM=0.89 KS=0 I=0.094
+Ticks/50ms: ESQ=25 DIR=25
+Vel estimada: ESQ=0.029 DIR=0.029
+===========================
+[CMD ESCALADO] linear_x=0.50->0.10, angular_z=0.00->0.00 -> ESQ=0.10, DIR=0.10
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.042 Erro=0.058 PWM=0.95 KS=0 I=0.107
+DIR: Tgt=0.100 Cur=0.039 Erro=0.061 PWM=0.95 KS=0 I=0.110
+Ticks/50ms: ESQ=22 DIR=20
+Vel estimada: ESQ=0.025 DIR=0.023
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.024 Erro=0.076 PWM=0.91 KS=1 I=0.126
+DIR: Tgt=0.100 Cur=0.024 Erro=0.076 PWM=0.89 KS=0 I=0.130
+Ticks/50ms: ESQ=22 DIR=22
+Vel estimada: ESQ=0.025 DIR=0.025
+===========================
+[KICK] Motor 0: Finalizado
+[CMD ESCALADO] linear_x=0.50->0.10, angular_z=0.00->0.00 -> ESQ=0.10, DIR=0.10
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.026 Erro=0.074 PWM=0.93 KS=1 I=0.144
+DIR: Tgt=0.100 Cur=0.025 Erro=0.075 PWM=0.89 KS=0 I=0.148
+Ticks/50ms: ESQ=21 DIR=23
+Vel estimada: ESQ=0.024 DIR=0.026
+===========================
+[KICK] Motor 0: Finalizado
+[CMD ESCALADO] linear_x=0.50->0.10, angular_z=0.00->0.00 -> ESQ=0.10, DIR=0.10
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.026 Erro=0.074 PWM=0.95 KS=0 I=0.157
+DIR: Tgt=0.100 Cur=0.024 Erro=0.076 PWM=0.95 KS=0 I=0.163
+Ticks/50ms: ESQ=6 DIR=8
+Vel estimada: ESQ=0.007 DIR=0.009
+===========================
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.031 Erro=0.069 PWM=0.90 KS=0 I=0.175
+DIR: Tgt=0.100 Cur=0.027 Erro=0.073 PWM=0.89 KS=0 I=0.181
+Ticks/50ms: ESQ=31 DIR=27
+Vel estimada: ESQ=0.035 DIR=0.031
+===========================
+[CMD ESCALADO] linear_x=0.50->0.10, angular_z=0.00->0.00 -> ESQ=0.10, DIR=0.10
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.026 Erro=0.074 PWM=0.95 KS=0 I=0.182
+DIR: Tgt=0.100 Cur=0.025 Erro=0.075 PWM=0.95 KS=0 I=0.189
+Ticks/50ms: ESQ=14 DIR=13
+Vel estimada: ESQ=0.016 DIR=0.015
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.044 Erro=0.056 PWM=0.95 KS=0 I=0.197
+DIR: Tgt=0.100 Cur=0.041 Erro=0.059 PWM=0.95 KS=0 I=0.204
+Ticks/50ms: ESQ=21 DIR=18
+Vel estimada: ESQ=0.024 DIR=0.021
+===========================
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.013 Erro=0.087 PWM=0.95 KS=0 I=0.214
+DIR: Tgt=0.100 Cur=0.014 Erro=0.086 PWM=0.94 KS=0 I=0.222
+Ticks/50ms: ESQ=10 DIR=11
+Vel estimada: ESQ=0.011 DIR=0.013
+===========================
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.016 Erro=0.084 PWM=0.95 KS=0 I=0.234
+DIR: Tgt=0.100 Cur=0.020 Erro=0.080 PWM=0.93 KS=0 I=0.241
+Ticks/50ms: ESQ=14 DIR=19
+Vel estimada: ESQ=0.016 DIR=0.022
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+[CMD ESCALADO] linear_x=0.00->0.00, angular_z=0.00->0.00 -> ESQ=0.00, DIR=0.00
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.000 Cur=0.001 Erro=-0.001 PWM=0.00 KS=0 I=0.000
+DIR: Tgt=0.000 Cur=0.001 Erro=-0.001 PWM=0.00 KS=0 I=0.000
+Ticks/50ms: ESQ=0 DIR=0
+Vel estimada: ESQ=0.000 DIR=0.000
+===========================
+[CMD ESCALADO] linear_x=0.00->0.00, angular_z=0.00->0.00 -> ESQ=0.00, DIR=0.00
+[CMD ESCALADO] linear_x=1.00->0.10, angular_z=0.00->0.00 -> ESQ=0.10, DIR=0.10
+[KICK] Motor 0: PWM=0.85 por 200ms
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.030 Erro=0.070 PWM=0.87 KS=0 I=0.012
+DIR: Tgt=0.100 Cur=0.032 Erro=0.068 PWM=0.87 KS=0 I=0.011
+Ticks/50ms: ESQ=24 DIR=23
+Vel estimada: ESQ=0.027 DIR=0.026
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.100 Cur=0.012 Erro=0.088 PWM=0.92 KS=1 I=0.033
+DIR: Tgt=0.100 Cur=0.012 Erro=0.088 PWM=0.89 KS=0 I=0.032
+Ticks/50ms: ESQ=6 DIR=6
+Vel estimada: ESQ=0.007 DIR=0.007
+===========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.85 por 200ms
+[CMD ESCALADO] linear_x=1.00->0.20, angular_z=0.00->0.00 -> ESQ=0.20, DIR=0.20
+[CMD ESCALADO] linear_x=1.00->0.20, angular_z=0.00->0.00 -> ESQ=0.20, DIR=0.20
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.018 Erro=0.182 PWM=0.95 KS=0 I=0.046
+DIR: Tgt=0.200 Cur=0.014 Erro=0.186 PWM=0.95 KS=0 I=0.046
+Ticks/50ms: ESQ=237 DIR=240
+Vel estimada: ESQ=0.270 DIR=0.274
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.011 Erro=0.189 PWM=0.95 KS=1 I=0.035
+DIR: Tgt=0.200 Cur=0.014 Erro=0.186 PWM=0.95 KS=0 I=0.035
+Ticks/50ms: ESQ=9 DIR=13
+Vel estimada: ESQ=0.010 DIR=0.015
+===========================
+[KICK] Motor 0: Finalizado
+[CMD ESCALADO] linear_x=1.00->0.20, angular_z=0.00->0.00 -> ESQ=0.20, DIR=0.20
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.048 Erro=0.152 PWM=0.95 KS=0 I=0.027
+DIR: Tgt=0.200 Cur=0.047 Erro=0.153 PWM=0.95 KS=0 I=0.027
+Ticks/50ms: ESQ=12 DIR=11
+Vel estimada: ESQ=0.014 DIR=0.013
+===========================
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.027 Erro=0.173 PWM=0.95 KS=0 I=0.021
+DIR: Tgt=0.200 Cur=0.027 Erro=0.173 PWM=0.95 KS=0 I=0.021
+Ticks/50ms: ESQ=21 DIR=22
+Vel estimada: ESQ=0.024 DIR=0.025
+===========================
+[CMD ESCALADO] linear_x=1.00->0.20, angular_z=0.00->0.00 -> ESQ=0.20, DIR=0.20
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.020 Erro=0.180 PWM=0.95 KS=1 I=0.016
+DIR: Tgt=0.200 Cur=0.019 Erro=0.181 PWM=0.95 KS=0 I=0.016
+Ticks/50ms: ESQ=19 DIR=18
+Vel estimada: ESQ=0.022 DIR=0.021
+===========================
+[CMD ESCALADO] linear_x=1.00->0.20, angular_z=0.00->0.00 -> ESQ=0.20, DIR=0.20
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.030 Erro=0.170 PWM=0.95 KS=0 I=0.017
+DIR: Tgt=0.200 Cur=0.029 Erro=0.171 PWM=0.95 KS=0 I=0.017
+Ticks/50ms: ESQ=14 DIR=14
+Vel estimada: ESQ=0.016 DIR=0.016
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+[CMD ESCALADO] linear_x=1.00->0.20, angular_z=0.00->0.00 -> ESQ=0.20, DIR=0.20
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.118 Erro=0.082 PWM=0.57 KS=0 I=0.018
+DIR: Tgt=0.200 Cur=0.116 Erro=0.084 PWM=0.55 KS=0 I=0.018
+Ticks/50ms: ESQ=163 DIR=162
+Vel estimada: ESQ=0.186 DIR=0.185
+===========================
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.012 Erro=0.188 PWM=0.95 KS=0 I=0.014
+DIR: Tgt=0.200 Cur=0.012 Erro=0.188 PWM=0.95 KS=0 I=0.014
+Ticks/50ms: ESQ=6 DIR=6
+Vel estimada: ESQ=0.007 DIR=0.007
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+[CMD ESCALADO] linear_x=1.00->0.20, angular_z=0.00->0.00 -> ESQ=0.20, DIR=0.20
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.018 Erro=0.182 PWM=0.95 KS=0 I=0.015
+DIR: Tgt=0.200 Cur=0.017 Erro=0.183 PWM=0.95 KS=0 I=0.015
+Ticks/50ms: ESQ=9 DIR=8
+Vel estimada: ESQ=0.010 DIR=0.009
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.021 Erro=0.179 PWM=0.95 KS=1 I=0.011
+DIR: Tgt=0.200 Cur=0.019 Erro=0.181 PWM=0.95 KS=0 I=0.012
+Ticks/50ms: ESQ=21 DIR=19
+Vel estimada: ESQ=0.024 DIR=0.022
+===========================
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.85 por 200ms
+[KICK] Motor 0: Finalizado
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.017 Erro=0.183 PWM=0.95 KS=0 I=0.009
+DIR: Tgt=0.200 Cur=0.017 Erro=0.183 PWM=0.95 KS=0 I=0.009
+Ticks/50ms: ESQ=12 DIR=12
+Vel estimada: ESQ=0.014 DIR=0.014
+===========================
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.023 Erro=0.177 PWM=0.95 KS=1 I=0.007
+DIR: Tgt=0.200 Cur=0.021 Erro=0.179 PWM=0.95 KS=0 I=0.007
+Ticks/50ms: ESQ=21 DIR=21
+Vel estimada: ESQ=0.024 DIR=0.024
+===========================
+[CMD ESCALADO] linear_x=1.00->0.20, angular_z=0.00->0.00 -> ESQ=0.20, DIR=0.20
+[KICK] Motor 0: Finalizado
+[KICK] Motor 0: PWM=0.85 por 200ms
+
+=== CONTROLE REALISTA ===
+ESQ: Tgt=0.200 Cur=0.010 Erro=0.190 PWM=0.95 KS=1 I=0.005
+DIR: Tgt=0.200 Cur=0.010 Erro=0.190 PWM=0.95 KS=0 I=0.005
+Ticks/50ms: ESQ=8 DIR=6
+Vel estimada: ESQ=0.009 DIR=0.007
+===========================
+[KICK] Motor 0: Finalizado

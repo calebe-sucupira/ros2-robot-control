@@ -1,0 +1,356 @@
+��������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),bets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1aef0h (110320) map[0m
+[0;32mI (144) esp_image: segment 1: paddr=0002af18 vaddr=3ffb0000 size=046cch ( 18124) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002f5ec vaddr=40080000 size=00a2ch (  2604) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93df4h (605684) map[0m
+[0;32mI (365) esp_image: segment 4: paddr=000c3e1c vaddr=40080a2c size=16b10h ( 92944) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (425) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (435) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) cpu_start: Application information:[0m
+[0;32mI (438) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (444) cpu_start: App version:      e18ea92[0m
+[0;32mI (449) cpu_start: Compile time:     Dec 12 2025 10:43:53[0m
+[0;32mI (455) cpu_start: ELF file SHA256:  f10f3213c...[0m
+[0;32mI (460) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (466) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (471) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (476) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (488) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFBB438 len 00024BC8 (146 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 4009753C len 00008AC4 (34 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (552) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (552) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (562) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (572) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (582) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (592) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+
+
+=== SISTEMA FINAL OTIMIZADO ===
+MOTORES FUNCIONANDO! 🎉
+Apenas ajuste de calibração necessário.
+
+METROS_POR_TICK atual: 0.012729
+(Ajustado para 50x maior com base nos logs)
+
+=== CALIBRAÇÃO RÁPIDA ===
+Envie os seguintes comandos e anote:
+
+1. Comando: linear.x = 0.5
+   Observe a velocidade medida: ______ m/s
+   Ajuste METROS_POR_TICK multiplicando por: (0.5 / velocidade_medida)
+
+2. Exemplo: Se mediu 0.02 m/s
+   Fator = 0.5 / 0.02 = 25
+   Novo METROS_POR_TICK = 0.00025458 × 25 = 0.0063645
+
+3. Ajuste no código e recompile!
+[0;32mI (672) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (682) wifi:wifi driver task: 3ffc3798, prio:23, stack:6656, core=0[0m
+[0;32mI (692) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (692) wifi:wifi certification version: v7.0[0m
+[0;32mI (692) wifi:config NVS flash: enabled[0m
+[0;32mI (692) wifi:config nano formating: disabled[0m
+[0;32mI (692) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (702) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (702) wifi:Init management short buffer num: 32[0m
+[0;32mI (712) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (712) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (712) wifi:Init static rx buffer num: 10[0m
+[0;32mI (722) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (722) wifi_init: rx ba win: 6[0m
+[0;32mI (732) wifi_init: tcpip mbox: 32[0m
+[0;32mI (732) wifi_init: udp mbox: 6[0m
+[0;32mI (732) wifi_init: tcp mbox: 6[0m
+[0;32mI (742) wifi_init: tcp tx win: 5760[0m
+[0;32mI (742) wifi_init: tcp rx win: 5760[0m
+[0;32mI (752) wifi_init: tcp mss: 1440[0m
+[0;32mI (752) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (752) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (762) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (772) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (862) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (882) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (882) wifi:enable tsf[0m
+[0;32mI (882) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (902) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (902) wifi:state: init -> auth (b0)[0m
+[0;32mI (912) wifi:state: auth -> assoc (0)[0m
+[0;32mI (922) wifi:state: assoc -> run (10)[0m
+[0;32mI (942) wifi:connected with Calebe, aid = 2, channel 1, BW20, bssid = 7e:9d:06:0f:e4:62[0m
+[0;32mI (942) wifi:security: WPA2-PSK, phy: bgn, rssi: -42[0m
+[0;32mI (952) wifi:pm start, type: 1[0m
+
+[0;32mI (952) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1032) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1032) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1962) esp_netif_handlers: sta ip: 10.250.183.207, mask: 255.255.255.0, gw: 10.250.183.108[0m
+[0;32mI (1962) wifi_station_netif: got ip:10.250.183.207[0m
+[0;32mI (1962) wifi_station_netif: connected to ap SSID:Calebe password:88111447[0m
+[0;32mI (1972) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (2022) wifi:<ba-add>idx:0 (ifx:0, 7e:9d:06:0f:e4:62), tid:0, ssn:3, winSize:64[0m
+
+
+=== PRONTO PARA USO ===
+Envie comandos Twist para 'cmd_vel'
+
+Sugestão para teste:
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.00 PWM=0.73 Ticks=0
+DIR: Tgt=0.50 Cur=0.00 PWM=0.69 Ticks=0
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.59 PWM=0.61 Ticks=2
+DIR: Tgt=0.50 Cur=0.68 PWM=0.55 Ticks=4
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.59 PWM=0.62 Ticks=65
+DIR: Tgt=0.50 Cur=0.68 PWM=0.59 Ticks=51
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.99 PWM=0.62 Ticks=184
+DIR: Tgt=0.50 Cur=1.15 PWM=0.59 Ticks=148
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=1.03 PWM=0.62 Ticks=156
+DIR: Tgt=0.50 Cur=1.19 PWM=0.59 Ticks=95
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.69 PWM=0.62 Ticks=8
+DIR: Tgt=0.50 Cur=1.13 PWM=0.46 Ticks=6
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.93 PWM=0.62 Ticks=51
+DIR: Tgt=0.50 Cur=0.97 PWM=0.59 Ticks=41
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=1.03 PWM=0.62 Ticks=10
+DIR: Tgt=0.50 Cur=0.89 PWM=0.59 Ticks=10
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.76 PWM=0.57 Ticks=3
+DIR: Tgt=0.50 Cur=1.05 PWM=0.48 Ticks=3
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.89 PWM=0.55 Ticks=4
+DIR: Tgt=0.50 Cur=1.07 PWM=0.47 Ticks=3
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.90 PWM=0.62 Ticks=44
+DIR: Tgt=0.50 Cur=0.91 PWM=0.59 Ticks=40
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.85 PWM=0.56 Ticks=3
+DIR: Tgt=0.50 Cur=0.89 PWM=0.51 Ticks=4
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=1.15 PWM=0.49 Ticks=7
+DIR: Tgt=0.50 Cur=0.62 PWM=0.59 Ticks=8
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.93 PWM=0.54 Ticks=2
+DIR: Tgt=0.50 Cur=0.55 PWM=0.58 Ticks=2
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=1.30 PWM=0.62 Ticks=118
+DIR: Tgt=0.50 Cur=0.83 PWM=0.59 Ticks=121
+=========================
+��������Ғ�Ң�j
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1aef0h (110320) map[0m
+[0;32mI (175) esp_image: segment 1: paddr=0002af18 vaddr=3ffb0000 size=046cch ( 18124) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=0002f5ec vaddr=40080000 size=00a2ch (  2604) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93df4h (605684) map[0m
+[0;32mI (396) esp_image: segment 4: paddr=000c3e1c vaddr=40080a2c size=16b10h ( 92944) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (445) boot: Disabling RNG early entropy source...[0m
+[0;32mI (456) cpu_start: Multicore app[0m
+[0;32mI (466) cpu_start: Pro cpu start user code[0m
+[0;32mI (466) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (466) cpu_start: Application information:[0m
+[0;32mI (469) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (475) cpu_start: App version:      e18ea92[0m
+[0;32mI (480) cpu_start: Compile time:     Dec 12 2025 10:43:53[0m
+[0;32mI (486) cpu_start: ELF file SHA256:  f10f3213c...[0m
+[0;32mI (491) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (498) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFBB438 len 00024BC8 (146 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 4009753C len 00008AC4 (34 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;32mI (583) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (583) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (593) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (603) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (613) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (623) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+
+
+=== SISTEMA FINAL OTIMIZADO ===
+MOTORES FUNCIONANDO! 🎉
+Apenas ajuste de calibração necessário.
+
+METROS_POR_TICK atual: 0.012729
+(Ajustado para 50x maior com base nos logs)
+
+=== CALIBRAÇÃO RÁPIDA ===
+Envie os seguintes comandos e anote:
+
+1. Comando: linear.x = 0.5
+   Observe a velocidade medida: ______ m/s
+   Ajuste METROS_POR_TICK multiplicando por: (0.5 / velocidade_medida)
+
+2. Exemplo: Se mediu 0.02 m/s
+   Fator = 0.5 / 0.02 = 25
+   Novo METROS_POR_TICK = 0.00025458 × 25 = 0.0063645
+
+3. Ajuste no código e recompile!
+[0;32mI (703) wifi_station_netif: ESP_WIFI_MODE_STA[0m
+[0;32mI (713) wifi:wifi driver task: 3ffc3798, prio:23, stack:6656, core=0[0m
+[0;32mI (723) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (723) wifi:wifi certification version: v7.0[0m
+[0;32mI (723) wifi:config NVS flash: enabled[0m
+[0;32mI (723) wifi:config nano formating: disabled[0m
+[0;32mI (723) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (733) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (733) wifi:Init management short buffer num: 32[0m
+[0;32mI (743) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (743) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (743) wifi:Init static rx buffer num: 10[0m
+[0;32mI (753) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (753) wifi_init: rx ba win: 6[0m
+[0;32mI (763) wifi_init: tcpip mbox: 32[0m
+[0;32mI (763) wifi_init: udp mbox: 6[0m
+[0;32mI (763) wifi_init: tcp mbox: 6[0m
+[0;32mI (773) wifi_init: tcp tx win: 5760[0m
+[0;32mI (773) wifi_init: tcp rx win: 5760[0m
+[0;32mI (783) wifi_init: tcp mss: 1440[0m
+[0;32mI (783) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (783) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (793) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (803) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (893) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (893) wifi:enable tsf[0m
+[0;32mI (903) wifi_station_netif: wifi_init_sta finished.[0m
+[0;32mI (2133) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (2143) wifi:state: init -> auth (b0)[0m
+[0;32mI (2153) wifi:state: auth -> assoc (0)[0m
+[0;32mI (2183) wifi:state: assoc -> run (10)[0m
+[0;32mI (2213) wifi:connected with Calebe, aid = 2, channel 11, BW20, bssid = 12:d4:0c:5b:cd:6c[0m
+[0;32mI (2213) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (2223) wifi:pm start, type: 1[0m
+
+[0;32mI (2223) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2273) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2273) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3233) esp_netif_handlers: sta ip: 10.250.183.207, mask: 255.255.255.0, gw: 10.250.183.108[0m
+[0;32mI (3233) wifi_station_netif: got ip:10.250.183.207[0m
+[0;32mI (3233) wifi_station_netif: connected to ap SSID:Calebe password:88111447[0m
+[0;32mI (3243) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3263) wifi:<ba-add>idx:0 (ifx:0, 12:d4:0c:5b:cd:6c), tid:0, ssn:3, winSize:64[0m
+
+
+=== PRONTO PARA USO ===
+Envie comandos Twist para 'cmd_vel'
+
+Sugestão para teste:
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.00 Cur=0.00 PWM=0.00 Ticks=0
+DIR: Tgt=0.00 Cur=0.00 PWM=0.00 Ticks=0
+=========================
+
+=== SISTEMA OTIMIZADO ===
+ESQ: Tgt=0.50 Cur=0.62 PWM=0.62 Ticks=42
+DIR: Tgt=0.50 Cur=0.57 PWM=0.59 Ticks=39
+=========================

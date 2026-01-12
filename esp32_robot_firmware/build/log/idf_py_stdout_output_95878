@@ -1,0 +1,71 @@
+[0/2] Re-checking globbed directories...
+[1/5] cd /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/esp-idf/esptool_py && /home/calebe/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/calebe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/partition_table/partition-table.bin /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/esp32_robot_firmware.bin
+esp32_robot_firmware.bin binary size 0xc49c0 bytes. Smallest app partition is 0x100000 bytes. 0x3b640 bytes (23%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/bootloader/esp-idf/esptool_py && /home/calebe/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/calebe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build/bootloader/bootloader.bin
+Bootloader binary size 0x68c0 bytes. 0x740 bytes (6%) free.
+[2/3] cd /home/calebe/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/calebe/esp/esp-idf -D "SERIAL_TOOL=/home/calebe/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/calebe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build -P /home/calebe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 esp32_robot_firmware.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port /dev/ttyACM0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ec:e3:34:48:40:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d4fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26816 bytes to 16424...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000789f... (100 %)
+Wrote 26816 bytes (16424 compressed) at 0x00001000 in 0.5 seconds (effective 416.7 kbit/s)...
+Hash of data verified.
+Compressed 805312 bytes to 507647...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cc75... (6 %)
+Writing at 0x000256c0... (9 %)
+Writing at 0x0003095e... (12 %)
+Writing at 0x00036474... (16 %)
+Writing at 0x0003cce5... (19 %)
+Writing at 0x0004271d... (22 %)
+Writing at 0x0004860f... (25 %)
+Writing at 0x0004de66... (29 %)
+Writing at 0x00053923... (32 %)
+Writing at 0x00059612... (35 %)
+Writing at 0x0005f2be... (38 %)
+Writing at 0x0006535b... (41 %)
+Writing at 0x0006ac71... (45 %)
+Writing at 0x00070f78... (48 %)
+Writing at 0x00076571... (51 %)
+Writing at 0x0007bfaf... (54 %)
+Writing at 0x00081b60... (58 %)
+Writing at 0x0008737f... (61 %)
+Writing at 0x0008ca6f... (64 %)
+Writing at 0x00092554... (67 %)
+Writing at 0x0009826e... (70 %)
+Writing at 0x0009dde2... (74 %)
+Writing at 0x000a3ae8... (77 %)
+Writing at 0x000a94a2... (80 %)
+Writing at 0x000af790... (83 %)
+Writing at 0x000b7db5... (87 %)
+Writing at 0x000bda11... (90 %)
+Writing at 0x000c383d... (93 %)
+Writing at 0x000c9556... (96 %)
+Writing at 0x000cf229... (100 %)
+Wrote 805312 bytes (507647 compressed) at 0x00010000 in 11.5 seconds (effective 561.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1410.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

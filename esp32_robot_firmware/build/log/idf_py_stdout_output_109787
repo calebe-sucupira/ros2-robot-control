@@ -1,0 +1,2388 @@
+�Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_R�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=2, DIR=2[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=8, DIR=8[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=17, DIR=16[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=29, DIR=24[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=41, DIR=34[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=55, DIR=46[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=69, DIR=57[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=84, DIR=69[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=98, DIR=81[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=113, DIR=93[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=128, DIR=105[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=143, DIR=118[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=157, DIR=130[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=172, DIR=142[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 187[0m
+[0;32mI (8960) TESTE: Ticks DIR: 155[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 0.829[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (9000) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 187[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 155[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 187 = 0.001711[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 155 = 0.002065[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 187[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 155[0m
+[0;32mI (9070) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=202, DIR=194[0m
+[0;32mI (14090) STATUS: Ticks totais: ESQ=214, DIR=198[0m
+[0;32mI (19090) STATUS: Ticks totais: ESQ=214, DIR=200[0m
+[0;32mI (24090) STATUS: Ticks totais: ESQ=214, DIR=200[0m
+[0;32mI (29090) STATUS: Ticks totais: ESQ=214, DIR=200[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=2[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=0, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=0, DIR=8[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=0, DIR=12[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=0, DIR=17[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=0, DIR=23[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=0, DIR=28[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=0, DIR=34[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=0, DIR=38[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=0, DIR=42[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=0, DIR=45[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=0, DIR=48[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=0, DIR=50[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=0, DIR=52[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 0[0m
+[0;32mI (8960) TESTE: Ticks DIR: 55[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: inf[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 0[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 55[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 0 = inf[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 55 = 0.005818[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 0[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 55[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=0, DIR=69[0m
+[0;32mI (14080) STATUS: Ticks totais: ESQ=0, DIR=69[0m
+[0;32mI (19080) STATUS: Ticks totais: ESQ=0, DIR=69[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=2[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=0, DIR=5[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=4, DIR=9[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=9, DIR=15[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=16, DIR=22[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=23, DIR=29[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=32, DIR=37[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=40, DIR=45[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=48, DIR=54[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=58, DIR=63[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=67, DIR=73[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=77, DIR=82[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=87, DIR=92[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=96, DIR=101[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 105[0m
+[0;32mI (8960) TESTE: Ticks DIR: 110[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 1.048[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (9000) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 105[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 110[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 105 = 0.003048[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 110 = 0.002909[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 105[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 110[0m
+[0;32mI (9070) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=110, DIR=134[0m
+[0;32mI (14090) STATUS: Ticks totais: ESQ=110, DIR=143[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=0, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=0, DIR=8[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=0, DIR=14[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=0, DIR=20[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=0, DIR=26[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=0, DIR=33[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=0, DIR=39[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=0, DIR=45[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=0, DIR=51[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=0, DIR=56[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=0, DIR=61[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=0, DIR=65[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=0, DIR=70[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 0[0m
+[0;32mI (8960) TESTE: Ticks DIR: 73[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: inf[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 0[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 73[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 0 = inf[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 73 = 0.004384[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 0[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 73[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=0, DIR=88[0m
+[0;32mI (14080) STATUS: Ticks totais: ESQ=0, DIR=88[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=0, DIR=3[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=0, DIR=6[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=0, DIR=8[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 0[0m
+[0;32mI (8960) TESTE: Ticks DIR: 9[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: inf[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 0[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 9[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 0 = inf[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 9 = 0.035556[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 0[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 9[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=0, DIR=27[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=1, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=4, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=10, DIR=10[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=16, DIR=17[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=22, DIR=24[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=30, DIR=32[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=38, DIR=40[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=47, DIR=49[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=56, DIR=58[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=65, DIR=66[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=74, DIR=72[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=83, DIR=79[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=91, DIR=85[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=97, DIR=90[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 103[0m
+[0;32mI (8960) TESTE: Ticks DIR: 96[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 0.932[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (9000) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 103[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 96[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 103 = 0.003107[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 96 = 0.003333[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 103[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 96[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=106, DIR=109[0m
+[0;32mI (14080) STATUS: Ticks totais: ESQ=106, DIR=109[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=1, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=4, DIR=5[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=10, DIR=11[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=16, DIR=17[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=24, DIR=25[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=33, DIR=32[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=42, DIR=40[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=51, DIR=48[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=60, DIR=55[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=68, DIR=62[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=77, DIR=69[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=84, DIR=76[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=89, DIR=83[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=92, DIR=89[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 94[0m
+[0;32mI (8960) TESTE: Ticks DIR: 95[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 1.011[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 94[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 95[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 94 = 0.003404[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 95 = 0.003368[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 94[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 95[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=95, DIR=114[0m
+[0;32mI (14080) STATUS: Ticks totais: ESQ=95, DIR=119[0m
+[0;32mI (19080) STATUS: Ticks totais: ESQ=95, DIR=126[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=0, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=0, DIR=8[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=0, DIR=14[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=0, DIR=20[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=0, DIR=26[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=0, DIR=33[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=1, DIR=38[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=4, DIR=43[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=4, DIR=48[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=5, DIR=55[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=5, DIR=63[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=5, DIR=72[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=5, DIR=82[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 6[0m
+[0;32mI (8960) TESTE: Ticks DIR: 94[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 15.667[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 6[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 94[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 6 = 0.053333[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 94 = 0.003404[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 6[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 94[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=6, DIR=117[0m
+[0;32mI (14080) STATUS: Ticks totais: ESQ=7, DIR=121[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=2[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=0, DIR=5[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=0, DIR=15[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=0, DIR=21[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=0, DIR=27[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=0, DIR=32[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=0, DIR=35[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=0, DIR=38[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=0, DIR=40[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=0, DIR=40[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=0, DIR=42[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=0, DIR=48[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=0, DIR=55[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 3[0m
+[0;32mI (8960) TESTE: Ticks DIR: 66[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 22.000[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 3[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 66[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 3 = 0.106667[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 66 = 0.004848[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 3[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 66[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=6, DIR=106[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=0, DIR=5[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=0, DIR=15[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=0, DIR=21[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=0, DIR=26[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=0, DIR=31[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=0, DIR=33[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=0, DIR=37[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=0, DIR=45[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=0, DIR=55[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=0, DIR=65[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=0, DIR=77[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=0, DIR=89[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 0[0m
+[0;32mI (8960) TESTE: Ticks DIR: 100[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: inf[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 0[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 100[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 0 = inf[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 100 = 0.003200[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 0[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 100[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=2, DIR=137[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=0, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=0, DIR=15[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=0, DIR=21[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=0, DIR=28[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=0, DIR=33[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=0, DIR=38[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=0, DIR=43[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=0, DIR=48[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=0, DIR=53[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=0, DIR=58[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=0, DIR=63[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=0, DIR=68[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 0[0m
+[0;32mI (8960) TESTE: Ticks DIR: 73[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: inf[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 0[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 73[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 0 = inf[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 73 = 0.004384[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 0[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 73[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=0, DIR=100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=1, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=4, DIR=8[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=9, DIR=14[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=14, DIR=21[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=17, DIR=27[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=19, DIR=33[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=23, DIR=40[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=27, DIR=46[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=30, DIR=53[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=32, DIR=59[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=36, DIR=65[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=38, DIR=70[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=41, DIR=74[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 45[0m
+[0;32mI (8960) TESTE: Ticks DIR: 76[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 1.689[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 45[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 76[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 45 = 0.007111[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 76 = 0.004211[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 45[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 76[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=47, DIR=91[0m
+[0;32mI (14080) STATUS: Ticks totais: ESQ=47, DIR=119[0m
+[0;32mI (19080) STATUS: Ticks totais: ESQ=47, DIR=119[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=2[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=0, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=0, DIR=9[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=1, DIR=14[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=1, DIR=20[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=1, DIR=26[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=1, DIR=32[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=1, DIR=38[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=1, DIR=44[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=1, DIR=50[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=1, DIR=55[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=1, DIR=61[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=1, DIR=66[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=1, DIR=71[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 1[0m
+[0;32mI (8960) TESTE: Ticks DIR: 76[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 76.000[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 1[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 76[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 1 = 0.320000[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 76 = 0.004211[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 1[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 76[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=1, DIR=98[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=0, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=0, DIR=8[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=0, DIR=13[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=0, DIR=19[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=0, DIR=25[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=0, DIR=32[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=0, DIR=38[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=0, DIR=43[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=0, DIR=50[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=1, DIR=58[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=3, DIR=68[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=6, DIR=79[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=7, DIR=90[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 7[0m
+[0;32mI (8960) TESTE: Ticks DIR: 102[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 14.571[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (9000) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 7[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 102[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 7 = 0.045714[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 102 = 0.003137[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 7[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 102[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=7, DIR=148[0m
+[0;32mI (14080) STATUS: Ticks totais: ESQ=7, DIR=166[0m
+[0;32mI (19080) STATUS: Ticks totais: ESQ=7, DIR=170[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=1, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=1, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=1, DIR=9[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=1, DIR=14[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=1, DIR=20[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=1, DIR=27[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=1, DIR=33[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=1, DIR=40[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=1, DIR=46[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=1, DIR=51[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=1, DIR=56[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=1, DIR=62[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=1, DIR=66[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=1, DIR=71[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 1[0m
+[0;32mI (8960) TESTE: Ticks DIR: 75[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 75.000[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 1[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 75[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 1 = 0.320000[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 75 = 0.004267[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 1[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 75[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=1, DIR=90[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=1[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=1, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=1, DIR=8[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=1, DIR=13[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=1, DIR=19[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=1, DIR=25[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=1, DIR=29[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=1, DIR=33[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=1, DIR=38[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=1, DIR=43[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=1, DIR=48[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=1, DIR=52[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=2, DIR=56[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=6, DIR=61[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 9[0m
+[0;32mI (8960) TESTE: Ticks DIR: 67[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 7.444[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 9[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 67[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 9 = 0.035556[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 67 = 0.004776[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 9[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 67[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=34, DIR=110[0m
+[0;32mI (14080) STATUS: Ticks totais: ESQ=34, DIR=110[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=0, DIR=2[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=2, DIR=4[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=4, DIR=8[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=7, DIR=14[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=11, DIR=20[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=14, DIR=27[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=17, DIR=34[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=21, DIR=40[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=26, DIR=47[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=30, DIR=54[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=34, DIR=60[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=37, DIR=66[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=40, DIR=70[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=42, DIR=73[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 43[0m
+[0;32mI (8960) TESTE: Ticks DIR: 75[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 1.744[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (8990) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 43[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 75[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 43 = 0.007442[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 75 = 0.004267[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 43[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 75[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=43, DIR=114[0m
+[0;32mI (14080) STATUS: Ticks totais: ESQ=43, DIR=114[0m
+[0;32mI (19080) STATUS: Ticks totais: ESQ=43, DIR=114[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aba4h ( 43940) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001abcc vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cef4 vaddr=40080000 size=03124h ( 12580) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1176ch ( 71532) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=00031794 vaddr=40083124 size=09ac0h ( 39616) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (212) cpu_start: App version:      e18ea92[0m
+[0;32mI (217) cpu_start: Compile time:     Jan  5 2026 14:24:57[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  8fe6609ec...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (234) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (262) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 4008CBE4 len 0001341C (77 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (292) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (320) MAIN: === TESTE DE CALIBRAÇÃO 30CM ===[0m
+[0;32mI (320) MAIN: ========================================[0m
+[0;32mI (330) HW: === CONFIGURACAO PARA TESTE 30CM ===[0m
+[0;32mI (340) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (340) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (350) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: === TESTE PRECISO DE 30CM ===[0m
+[0;32mI (2390) TESTE: ========================================[0m
+[0;32mI (2390) TESTE: INSTRUÇÕES:[0m
+[0;32mI (2390) TESTE: 1. COLOQUE O ROBÔ NO CHÃO[0m
+[0;32mI (2400) TESTE: 2. POSICIONE A RODA DIANTEIRA NA LINHA 0cm[0m
+[0;32mI (2410) TESTE: 3. MARQUE O ALVO EM 30cm (use régua)[0m
+[0;32mI (2410) TESTE: 4. ROBÔ DEVE PARAR ANTES DE 50cm[0m
+[0;32mI (2420) TESTE: Estimativa baseada em dados anteriores:[0m
+[0;32mI (2420) TESTE: - Motor ESQ: ~193.5 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Motor DIR: ~166.0 ticks/s = ~0.20 m/s[0m
+[0;32mI (2430) TESTE: - Para 0.30m (30cm): ~1.5 segundos[0m
+[0;32mI (2440) TESTE: Iniciando contagem regressiva...[0m
+[0;32mI (2450) TESTE: 5...[0m
+[0;32mI (3450) TESTE: 4...[0m
+[0;32mI (4450) TESTE: 3...[0m
+[0;32mI (5450) TESTE: 2...[0m
+[0;32mI (6450) TESTE: 1...[0m
+[0;32mI (7450) TESTE: === INICIANDO ===[0m
+[0;32mI (7450) TESTE: PWM: 15% (velocidade baixa para precisão)[0m
+[0;32mI (7450) TESTE: Andando por 1500 ms (1.5 segundos)...[0m
+[0;32mI (7450) PROGRESSO: Tempo: 0 ms | Ticks: ESQ=0, DIR=0[0m
+[0;32mI (7560) PROGRESSO: Tempo: 100 ms | Ticks: ESQ=1, DIR=3[0m
+[0;32mI (7660) PROGRESSO: Tempo: 200 ms | Ticks: ESQ=3, DIR=7[0m
+[0;32mI (7760) PROGRESSO: Tempo: 300 ms | Ticks: ESQ=7, DIR=11[0m
+[0;32mI (7860) PROGRESSO: Tempo: 400 ms | Ticks: ESQ=12, DIR=17[0m
+[0;32mI (7960) PROGRESSO: Tempo: 500 ms | Ticks: ESQ=18, DIR=25[0m
+[0;32mI (8060) PROGRESSO: Tempo: 600 ms | Ticks: ESQ=25, DIR=32[0m
+[0;32mI (8160) PROGRESSO: Tempo: 700 ms | Ticks: ESQ=31, DIR=40[0m
+[0;32mI (8260) PROGRESSO: Tempo: 800 ms | Ticks: ESQ=37, DIR=49[0m
+[0;32mI (8360) PROGRESSO: Tempo: 900 ms | Ticks: ESQ=44, DIR=57[0m
+[0;32mI (8460) PROGRESSO: Tempo: 1000 ms | Ticks: ESQ=51, DIR=65[0m
+[0;32mI (8560) PROGRESSO: Tempo: 1100 ms | Ticks: ESQ=59, DIR=74[0m
+[0;32mI (8660) PROGRESSO: Tempo: 1200 ms | Ticks: ESQ=66, DIR=83[0m
+[0;32mI (8760) PROGRESSO: Tempo: 1300 ms | Ticks: ESQ=74, DIR=91[0m
+[0;32mI (8860) PROGRESSO: Tempo: 1400 ms | Ticks: ESQ=81, DIR=99[0m
+[0;32mI (8960) TESTE: ========================================[0m
+[0;32mI (8960) TESTE: === RESULTADOS BRUTOS ===[0m
+[0;32mI (8960) TESTE: Ticks ESQ: 87[0m
+[0;32mI (8960) TESTE: Ticks DIR: 106[0m
+[0;32mI (8960) TESTE: Relação DIR/ESQ: 1.218[0m
+[0;32mI (8970) TESTE: ========================================[0m
+[0;32mI (8970) MEDIR: === AGORA MEÇA COM RÉGUA ===[0m
+[0;32mI (8980) MEDIR: 1. Meça a distância REAL percorrida[0m
+[0;32mI (8980) MEDIR: 2. Meça do ponto INICIAL ao ponto FINAL[0m
+[0;32mI (8990) MEDIR: 3. Anote em CENTÍMETROS: ______ cm[0m
+[0;32mI (9000) MEDIR: 4. Converta para METROS: ______ m (ex: 32cm = 0.32m)[0m
+[0;32mI (9000) CALC: === FÓRMULAS DE CÁLCULO ===[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_ESQ = distancia_metros / 87[0m
+[0;32mI (9010) CALC: METROS_POR_TICK_DIR = distancia_metros / 106[0m
+[0;32mI (9020) EXEMPLO: === EXEMPLO ===[0m
+[0;32mI (9020) EXEMPLO: Se andou 32cm (0.32m):[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_ESQ = 0.32 / 87 = 0.003678[0m
+[0;32mI (9030) EXEMPLO: METROS_POR_TICK_DIR = 0.32 / 106 = 0.003019[0m
+[0;32mI (9040) TESTE: ========================================[0m
+[0;32mI (9050) TESTE: === ANOTE ESTES 3 VALORES: ===[0m
+[0;32mI (9050) TESTE: 1. Distância REAL: ______ m[0m
+[0;32mI (9060) TESTE: 2. Ticks ESQ: 87[0m
+[0;32mI (9060) TESTE: 3. Ticks DIR: 106[0m
+[0;32mI (9060) TESTE: ========================================[0m
+[0;32mI (9070) MAIN: Teste concluído![0m
+[0;32mI (9070) MAIN: Pressione RESET para repetir[0m
+[0;32mI (9080) STATUS: Ticks totais: ESQ=89, DIR=345[0m
+[0;32mI (14080) STATUS: Ticks totais: ESQ=89, DIR=347[0m
+[0;32mI (19080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (24080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (29080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (34080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (39080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (44080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (49080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (54080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (59080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (64080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (69080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (74080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (79080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (84080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (89080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (94080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (99080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (104080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (109080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (114080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (119080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (124080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (129080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (134080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (139080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (144080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (149080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (154080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (159080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (164080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (169080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (174080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (179080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (184080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (189080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (194080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (199080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (204080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (209080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (214080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (219080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (224080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (229080) STATUS: Ticks totais: ESQ=89, DIR=355[0m
+[0;32mI (234080) STATUS: Ticks totais: ESQ=89, DIR=355[0m

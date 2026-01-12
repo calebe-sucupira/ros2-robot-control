@@ -1,0 +1,570 @@
+�Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_R�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a990h (108944) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002a9b8 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0002f01c vaddr=40080000 size=00ffch (  4092) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93434h (603188) map[0m
+[0;32mI (364) esp_image: segment 4: paddr=000c345c vaddr=40080ffc size=166ach ( 91820) load[0m
+[0;32mI (412) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (412) boot: Disabling RNG early entropy source...[0m
+[0;32mI (424) cpu_start: Multicore app[0m
+[0;32mI (433) cpu_start: Pro cpu start user code[0m
+[0;32mI (433) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (433) cpu_start: Application information:[0m
+[0;32mI (436) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (442) cpu_start: App version:      e18ea92[0m
+[0;32mI (447) cpu_start: Compile time:     Jan  7 2026 11:36:47[0m
+[0;32mI (453) cpu_start: ELF file SHA256:  a557dc824...[0m
+[0;32mI (458) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (465) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (469) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (474) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (479) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (486) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFBB0F8 len 00024F08 (147 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (505) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 400976A8 len 00008958 (34 KiB): IRAM[0m
+[0;32mI (519) spi_flash: detected chip: generic[0m
+[0;32mI (522) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) main_task: Started on CPU0[0m
+[0;32mI (550) main_task: Calling app_main()[0m
+[0;32mI (590) wifi:wifi driver task: 3ffc323c, prio:23, stack:6656, core=0[0m
+[0;32mI (600) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (600) wifi:wifi certification version: v7.0[0m
+[0;32mI (600) wifi:config NVS flash: enabled[0m
+[0;32mI (600) wifi:config nano formating: disabled[0m
+[0;32mI (610) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (610) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (620) wifi:Init management short buffer num: 32[0m
+[0;32mI (620) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (620) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (630) wifi:Init static rx buffer num: 10[0m
+[0;32mI (630) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (640) wifi_init: rx ba win: 6[0m
+[0;32mI (640) wifi_init: tcpip mbox: 32[0m
+[0;32mI (640) wifi_init: udp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp mbox: 6[0m
+[0;32mI (650) wifi_init: tcp tx win: 5760[0m
+[0;32mI (660) wifi_init: tcp rx win: 5760[0m
+[0;32mI (660) wifi_init: tcp mss: 1440[0m
+[0;32mI (660) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (670) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (670) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (680) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (770) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (770) wifi:enable tsf[0m
+[0;32mI (780) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (780) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (790) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (790) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (810) wifi:state: init -> auth (b0)[0m
+[0;32mI (810) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (810) wifi:state: auth -> init (1c0)[0m
+[0;32mI (820) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (830) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (840) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (850) main_task: Returned from app_main()[0m
+[0;32mI (1300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (1800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (2300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (2800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (3300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (3350) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (3350) wifi:state: init -> auth (b0)[0m
+[0;32mI (3370) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3400) wifi:state: assoc -> run (10)[0m
+[0;32mI (3420) wifi:connected with Calebe, aid = 2, channel 11, BW20, bssid = 76:63:07:9c:2b:4f[0m
+[0;32mI (3420) wifi:security: WPA2-PSK, phy: bgn, rssi: -55[0m
+[0;32mI (3440) wifi:pm start, type: 1[0m
+
+[0;32mI (3440) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3550) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3560) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (4300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (4440) esp_netif_handlers: sta ip: 10.243.102.207, mask: 255.255.255.0, gw: 10.243.102.152[0m
+[0;32mI (4800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (5300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (5800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (6300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (6800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (7300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (7800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (8300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (8800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (9300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (9800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (10300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (10800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (11300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (11800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (12300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (12800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (13300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (13800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (14300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (14800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (15300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (15800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (16300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (16800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (17300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (17800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (18300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (18800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (19300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (19800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (20300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (20800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (21300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (21800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (22300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (22800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (23300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (23800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (24300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (24800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (25300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (25800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (26300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (26800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (27300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (27800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (28300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (28800) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (29300) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+ 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a990h (108944) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=0002a9b8 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (181) esp_image: segment 2: paddr=0002f01c vaddr=40080000 size=00ffch (  4092) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93434h (603188) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000c345c vaddr=40080ffc size=166ach ( 91820) load[0m
+[0;32mI (443) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (443) boot: Disabling RNG early entropy source...[0m
+[0;32mI (454) cpu_start: Multicore app[0m
+������Ң�j
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a990h (108944) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=0002a9b8 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (181) esp_image: segment 2: paddr=0002f01c vaddr=40080000 size=00ffch (  4092) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93434h (603188) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000c345c vaddr=40080ffc size=166ach ( 91820) load[0m
+[0;32mI (443) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (443) boot: Disabling RNG early entropy source...[0m
+[0;32mI (455) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu start user code[0m
+[0;32mI (464) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (464) cpu_start: Application information:[0m
+[0;32mI (467) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (473) cpu_start: App version:      e18ea92[0m
+[0;32mI (478) cpu_start: Compile time:     Jan  7 2026 11:36:47[0m
+[0;32mI (484) cpu_start: ELF file SHA256:  a557dc824...[0m
+[0;32mI (490) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (496) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (501) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (505) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (510) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFBB0F8 len 00024F08 (147 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 400976A8 len 00008958 (34 KiB): IRAM[0m
+[0;32mI (550) spi_flash: detected chip: generic[0m
+[0;32mI (553) spi_flash: flash io: dio[0m
+[0;33mW (557) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (571) main_task: Started on CPU0[0m
+[0;32mI (581) main_task: Calling app_main()[0m
+[0;32mI (621) wifi:wifi driver task: 3ffc323c, prio:23, stack:6656, core=0[0m
+[0;32mI (631) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (631) wifi:wifi certification version: v7.0[0m
+[0;32mI (631) wifi:config NVS flash: enabled[0m
+[0;32mI (631) wifi:config nano formating: disabled[0m
+[0;32mI (641) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (641) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (651) wifi:Init management short buffer num: 32[0m
+[0;32mI (651) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (651) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (661) wifi:Init static rx buffer num: 10[0m
+[0;32mI (661) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (671) wifi_init: rx ba win: 6[0m
+[0;32mI (671) wifi_init: tcpip mbox: 32[0m
+[0;32mI (671) wifi_init: udp mbox: 6[0m
+[0;32mI (681) wifi_init: tcp mbox: 6[0m
+[0;32mI (681) wifi_init: tcp tx win: 5760[0m
+[0;32mI (691) wifi_init: tcp rx win: 5760[0m
+[0;32mI (691) wifi_init: tcp mss: 1440[0m
+[0;32mI (691) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (701) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (701) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (711) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (801) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (801) wifi:enable tsf[0m
+[0;32mI (811) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (811) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (821) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (831) wifi:state: init -> auth (b0)[0m
+[0;32mI (831) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (841) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (851) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (861) wifi:state: auth -> assoc (0)[0m
+[0;32mI (861) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (871) main_task: Returned from app_main()[0m
+[0;32mI (871) wifi:state: assoc -> run (10)[0m
+[0;32mI (891) wifi:connected with Calebe, aid = 3, channel 11, BW20, bssid = 76:63:07:9c:2b:4f[0m
+[0;32mI (891) wifi:security: WPA2-PSK, phy: bgn, rssi: -54[0m
+[0;32mI (901) wifi:pm start, type: 1[0m
+
+[0;32mI (901) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1031) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1031) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (1821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (1911) esp_netif_handlers: sta ip: 10.243.102.207, mask: 255.255.255.0, gw: 10.243.102.152[0m
+[0;32mI (2321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (2821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (3321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (3821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (4321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (4821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (5321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (5821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (6321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (6821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (7321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (7821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (8321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (8821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (9321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (9821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (10321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (10821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (11321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (11821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (12321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (12821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (13321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (13821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (14321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (14821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (15321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (15821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (16321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (16821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (17321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (17821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (18321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (18621) wifi:<ba-add>idx:0 (ifx:0, 76:63:07:9c:2b:4f), tid:0, ssn:4, winSize:64[0m
+[0;32mI (18821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (19321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (19821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (20321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (20821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (21321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+ Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.6-224-g72d06017df 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Nov 28 2025 21:50:15[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (85) boot: Enabling RNG early entropy source...[0m
+[0;32mI (90) boot: Partition Table:[0m
+[0;32mI (94) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (101) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (109) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (116) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (124) boot: End of partition table[0m
+[0;32mI (128) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1a990h (108944) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=0002a9b8 vaddr=3ffb0000 size=0465ch ( 18012) load[0m
+[0;32mI (181) esp_image: segment 2: paddr=0002f01c vaddr=40080000 size=00ffch (  4092) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=93434h (603188) map[0m
+[0;32mI (395) esp_image: segment 4: paddr=000c345c vaddr=40080ffc size=166ach ( 91820) load[0m
+[0;32mI (443) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (443) boot: Disabling RNG early entropy source...[0m
+[0;32mI (455) cpu_start: Multicore app[0m
+[0;32mI (464) cpu_start: Pro cpu start user code[0m
+[0;32mI (464) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (464) cpu_start: Application information:[0m
+[0;32mI (467) cpu_start: Project name:     esp32_robot_firmware[0m
+[0;32mI (473) cpu_start: App version:      e18ea92[0m
+[0;32mI (478) cpu_start: Compile time:     Jan  7 2026 11:36:47[0m
+[0;32mI (484) cpu_start: ELF file SHA256:  a557dc824...[0m
+[0;32mI (490) cpu_start: ESP-IDF:          v5.2.6-224-g72d06017df[0m
+[0;32mI (496) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (501) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (505) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (510) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFBB0F8 len 00024F08 (147 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 400976A8 len 00008958 (34 KiB): IRAM[0m
+[0;32mI (550) spi_flash: detected chip: generic[0m
+[0;32mI (553) spi_flash: flash io: dio[0m
+[0;33mW (557) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (571) main_task: Started on CPU0[0m
+[0;32mI (581) main_task: Calling app_main()[0m
+[0;32mI (621) wifi:wifi driver task: 3ffc323c, prio:23, stack:6656, core=0[0m
+[0;32mI (631) wifi:wifi firmware version: 82d80cd[0m
+[0;32mI (631) wifi:wifi certification version: v7.0[0m
+[0;32mI (631) wifi:config NVS flash: enabled[0m
+[0;32mI (631) wifi:config nano formating: disabled[0m
+[0;32mI (641) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (641) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (651) wifi:Init management short buffer num: 32[0m
+[0;32mI (651) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (651) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (661) wifi:Init static rx buffer num: 10[0m
+[0;32mI (661) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (671) wifi_init: rx ba win: 6[0m
+[0;32mI (671) wifi_init: tcpip mbox: 32[0m
+[0;32mI (671) wifi_init: udp mbox: 6[0m
+[0;32mI (681) wifi_init: tcp mbox: 6[0m
+[0;32mI (681) wifi_init: tcp tx win: 5760[0m
+[0;32mI (691) wifi_init: tcp rx win: 5760[0m
+[0;32mI (691) wifi_init: tcp mss: 1440[0m
+[0;32mI (691) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (701) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (701) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (711) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (801) wifi:mode : sta (ec:e3:34:48:40:44)[0m
+[0;32mI (801) wifi:enable tsf[0m
+[0;32mI (811) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (811) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (821) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (831) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (841) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (841) wifi:state: init -> auth (b0)[0m
+[0;32mI (851) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (861) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (871) main_task: Returned from app_main()[0m
+[0;32mI (891) wifi:state: auth -> assoc (0)[0m
+[0;32mI (911) wifi:state: assoc -> run (10)[0m
+[0;32mI (941) wifi:connected with Calebe, aid = 5, channel 11, BW20, bssid = 76:63:07:9c:2b:4f[0m
+[0;32mI (941) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (951) wifi:pm start, type: 1[0m
+
+[0;32mI (951) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1041) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1041) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (1821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (1961) esp_netif_handlers: sta ip: 10.243.102.207, mask: 255.255.255.0, gw: 10.243.102.152[0m
+[0;32mI (2001) wifi:<ba-add>idx:0 (ifx:0, 76:63:07:9c:2b:4f), tid:0, ssn:4, winSize:64[0m
+[0;32mI (2321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (2821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (3321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (3821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (4321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (4821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (5321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (5821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (6321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (6821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (7321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (7821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (8321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (8821) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (9321) CTRL: Set:0.0 | Vel:0.0/0.0 | Pwr:0/0 | Ticks:0/0[0m
+[0;32mI (9821) CTRL: Set:10.0 | Vel:23.4/19.4 | Pwr:6/8 | Ticks:12/10[0m
+[0;32mI (10321) CTRL: Set:10.0 | Vel:8.2/14.8 | Pwr:15/11 | Ticks:12/14[0m
+[0;32mI (10821) CTRL: Set:10.0 | Vel:11.9/11.0 | Pwr:12/13 | Ticks:19/18[0m
+[0;32mI (11321) CTRL: Set:10.0 | Vel:9.4/8.6 | Pwr:14/14 | Ticks:23/22[0m
+[0;32mI (11821) CTRL: Set:10.0 | Vel:7.5/14.4 | Pwr:15/11 | Ticks:27/30[0m
+[0;32mI (12321) CTRL: Set:10.0 | Vel:11.1/11.5 | Pwr:13/13 | Ticks:34/34[0m
+[0;32mI (12821) CTRL: Set:10.0 | Vel:7.4/8.7 | Pwr:15/14 | Ticks:37/38[0m
+[0;32mI (13321) CTRL: Set:10.0 | Vel:12.9/13.1 | Pwr:12/12 | Ticks:45/45[0m
+[0;32mI (13821) CTRL: Set:10.0 | Vel:8.9/10.4 | Pwr:14/13 | Ticks:48/49[0m
+[0;32mI (14321) CTRL: Set:10.0 | Vel:13.2/8.4 | Pwr:12/14 | Ticks:55/53[0m
+[0;32mI (14821) CTRL: Set:10.0 | Vel:10.4/6.7 | Pwr:13/15 | Ticks:59/57[0m
+[0;32mI (15321) CTRL: Set:10.0 | Vel:8.4/10.5 | Pwr:14/13 | Ticks:63/64[0m
+[0;32mI (15821) CTRL: Set:10.0 | Vel:13.0/8.4 | Pwr:12/14 | Ticks:70/68[0m
+[0;32mI (16321) CTRL: Set:10.0 | Vel:10.4/6.8 | Pwr:13/15 | Ticks:74/72[0m
+[0;32mI (16821) CTRL: Set:10.0 | Vel:7.2/10.9 | Pwr:15/13 | Ticks:77/79[0m
+[0;32mI (17321) CTRL: Set:10.0 | Vel:9.2/8.5 | Pwr:14/14 | Ticks:83/83[0m
+[0;32mI (17821) CTRL: Set:0.0 | Vel:7.0/6.8 | Pwr:-4/-4 | Ticks:87/87[0m
+[0;32mI (18321) CTRL: Set:0.0 | Vel:2.5/2.4 | Pwr:-1/-1 | Ticks:87/87[0m
+[0;32mI (18821) CTRL: Set:-10.0 | Vel:-13.2/-11.9 | Pwr:-12/-13 | Ticks:76/77[0m
+[0;32mI (19321) CTRL: Set:-10.0 | Vel:-9.8/-8.9 | Pwr:-14/-15 | Ticks:72/73[0m
+[0;32mI (19821) CTRL: Set:-10.0 | Vel:-7.7/-10.5 | Pwr:-15/-13 | Ticks:68/67[0m
+[0;32mI (20321) CTRL: Set:-10.0 | Vel:-13.0/-14.9 | Pwr:-12/-11 | Ticks:60/60[0m
+[0;32mI (20821) CTRL: Set:-10.0 | Vel:-9.8/-11.0 | Pwr:-14/-13 | Ticks:56/56[0m
+[0;32mI (21321) CTRL: Set:-10.0 | Vel:-12.6/-8.6 | Pwr:-12/-14 | Ticks:50/52[0m
+[0;32mI (21821) CTRL: Set:-10.0 | Vel:-8.3/-14.8 | Pwr:-15/-11 | Ticks:47/44[0m
+[0;32mI (22321) CTRL: Set:-10.0 | Vel:-14.3/-11.6 | Pwr:-11/-12 | Ticks:39/40[0m
+[0;32mI (22821) CTRL: Set:-10.0 | Vel:-11.5/-9.3 | Pwr:-13/-14 | Ticks:35/36[0m
+[0;32mI (23321) CTRL: Set:-10.0 | Vel:-9.3/-7.5 | Pwr:-14/-15 | Ticks:31/32[0m
+[0;32mI (23821) CTRL: Set:-10.0 | Vel:-7.1/-10.1 | Pwr:-15/-13 | Ticks:27/26[0m
+[0;32mI (24321) CTRL: Set:-10.0 | Vel:-12.8/-14.7 | Pwr:-12/-11 | Ticks:19/19[0m
+[0;32mI (24821) CTRL: Set:-10.0 | Vel:-8.8/-10.0 | Pwr:-14/-14 | Ticks:16/16[0m
+[0;32mI (25321) CTRL: Set:0.6 | Vel:-3.1/-3.5 | Pwr:3/1 | Ticks:16/16[0m
+[0;32mI (25821) CTRL: Set:0.6 | Vel:-1.1/-1.2 | Pwr:2/-1 | Ticks:16/16[0m
+[0;32mI (26321) CTRL: Set:0.6 | Vel:-0.4/-0.4 | Pwr:2/-1 | Ticks:16/16[0m
+[0;32mI (26821) CTRL: Set:0.6 | Vel:-0.1/-0.1 | Pwr:2/-1 | Ticks:16/16[0m
+[0;32mI (27321) CTRL: Set:0.6 | Vel:-0.0/-0.1 | Pwr:2/-1 | Ticks:16/16[0m
+[0;32mI (27821) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (28321) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (28821) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (29321) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (29821) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:2/-2 | Ticks:16/16[0m
+[0;32mI (30321) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:2/-2 | Ticks:16/16[0m
+[0;32mI (30821) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:2/-2 | Ticks:16/16[0m
+[0;32mI (31321) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:2/-2 | Ticks:16/16[0m
+[0;32mI (31821) CTRL: Set:-0.6 | Vel:-0.0/-0.0 | Pwr:-1/1 | Ticks:16/16[0m
+[0;32mI (32321) CTRL: Set:-0.6 | Vel:-0.0/-0.0 | Pwr:-1/1 | Ticks:16/16[0m
+[0;32mI (32821) CTRL: Set:-0.6 | Vel:-0.0/-0.0 | Pwr:-1/1 | Ticks:16/16[0m
+[0;32mI (33321) CTRL: Set:-0.6 | Vel:-0.0/-0.0 | Pwr:-1/1 | Ticks:16/16[0m
+[0;32mI (33821) CTRL: Set:-0.6 | Vel:-0.0/-0.0 | Pwr:-1/1 | Ticks:16/16[0m
+[0;32mI (34321) CTRL: Set:-0.6 | Vel:-0.0/-0.0 | Pwr:-1/1 | Ticks:16/16[0m
+[0;32mI (34821) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (35321) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (35821) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:2/-2 | Ticks:16/16[0m
+[0;32mI (36321) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:2/-2 | Ticks:16/16[0m
+[0;32mI (36821) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (37321) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (37821) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (38321) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (38821) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (39321) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (39821) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (40321) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (40821) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (41321) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (41821) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (42321) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (42821) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (43321) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (43821) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (44321) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (44821) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (45321) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (45821) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (46321) CTRL: Set:0.6 | Vel:-0.0/-0.0 | Pwr:1/-1 | Ticks:16/16[0m
+[0;32mI (46821) CTRL: Set:0.0 | Vel:-0.0/-0.0 | Pwr:0/0 | Ticks:16/16[0m
+[0;32mI (47321) CTRL: Set:19.5 | Vel:6.0/6.0 | Pwr:36/36 | Ticks:19/19[0m
+[0;32mI (47821) CTRL: Set:19.5 | Vel:35.5/43.5 | Pwr:16/11 | Ticks:51/55[0m
+[0;32mI (48321) CTRL: Set:19.5 | Vel:36.9/36.8 | Pwr:14/13 | Ticks:70/71[0m
+[0;32mI (48821) CTRL: Set:19.5 | Vel:33.1/40.7 | Pwr:14/10 | Ticks:86/90[0m
+[0;32mI (49321) CTRL: Set:19.5 | Vel:29.9/28.2 | Pwr:15/16 | Ticks:101/101[0m
+[0;32mI (49821) CTRL: Set:19.5 | Vel:28.7/25.8 | Pwr:14/16 | Ticks:116/115[0m
+[0;32mI (50321) CTRL: Set:19.5 | Vel:27.5/26.3 | Pwr:14/15 | Ticks:130/130[0m
+[0;32mI (50821) CTRL: Set:19.5 | Vel:28.4/25.4 | Pwr:13/15 | Ticks:144/143[0m
+[0;32mI (51321) CTRL: Set:19.5 | Vel:22.0/27.4 | Pwr:16/13 | Ticks:154/157[0m
+[0;32mI (51821) CTRL: Set:19.5 | Vel:24.2/27.9 | Pwr:14/12 | Ticks:168/170[0m
+[0;32mI (52321) CTRL: Set:0.0 | Vel:11.9/11.5 | Pwr:-7/-7 | Ticks:172/172[0m
+[0;32mI (52821) CTRL: Set:21.4 | Vel:42.4/49.4 | Pwr:17/13 | Ticks:196/199[0m
+[0;32mI (53321) CTRL: Set:23.5 | Vel:57.3/48.0 | Pwr:9/15 | Ticks:229/224[0m
+[0;32mI (53821) CTRL: Set:28.5 | Vel:65.7/58.1 | Pwr:15/19 | Ticks:259/255[0m
+[0;32mI (54321) CTRL: Set:29.4 | Vel:64.1/65.8 | Pwr:14/13 | Ticks:289/290[0m
+[0;32mI (54821) CTRL: Set:29.4 | Vel:36.3/40.3 | Pwr:36/34 | Ticks:305/308[0m
+[0;32mI (55321) CTRL: Set:0.0 | Vel:66.6/68.8 | Pwr:-41/-42 | Ticks:350/352[0m
+[0;32mI (55821) CTRL: Set:29.4 | Vel:70.1/68.0 | Pwr:13/14 | Ticks:384/384[0m
+[0;32mI (56321) CTRL: Set:29.4 | Vel:67.6/55.5 | Pwr:11/18 | Ticks:415/410[0m
+[0;32mI (56821) CTRL: Set:29.4 | Vel:55.0/57.0 | Pwr:15/14 | Ticks:439/440[0m
+[0;32mI (57321) CTRL: Set:29.4 | Vel:48.4/48.7 | Pwr:17/17 | Ticks:463/463[0m
+[0;32mI (57821) CTRL: Set:29.4 | Vel:56.8/44.6 | Pwr:9/17 | Ticks:492/486[0m
+[0;32mI (58321) CTRL: Set:29.4 | Vel:44.4/42.8 | Pwr:15/16 | Ticks:511/509[0m
+[0;32mI (58821) CTRL: Set:29.4 | Vel:44.2/42.6 | Pwr:14/15 | Ticks:533/531[0m
+[0;32mI (59321) CTRL: Set:29.4 | Vel:44.4/43.9 | Pwr:12/13 | Ticks:554/553[0m
+[0;32mI (59821) CTRL: Set:29.4 | Vel:47.4/36.3 | Pwr:10/17 | Ticks:576/570[0m
+[0;32mI (60321) CTRL: Set:29.4 | Vel:39.2/38.5 | Pwr:15/16 | Ticks:593/591[0m
+[0;32mI (60821) CTRL: Set:29.4 | Vel:41.7/44.1 | Pwr:14/12 | Ticks:615/615[0m
+[0;32mI (61321) CTRL: Set:29.4 | Vel:42.5/46.4 | Pwr:13/11 | Ticks:636/636[0m
+[0;32mI (61821) CTRL: Set:29.4 | Vel:44.6/49.2 | Pwr:12/9 | Ticks:658/658[0m
+[0;32mI (62321) CTRL: Set:29.4 | Vel:36.3/38.3 | Pwr:17/16 | Ticks:674/673[0m
+[0;32mI (62821) CTRL: Set:29.4 | Vel:40.2/41.0 | Pwr:15/14 | Ticks:697/695[0m
+[0;32mI (63321) CTRL: Set:29.4 | Vel:39.5/42.3 | Pwr:15/13 | Ticks:717/716[0m
+[0;32mI (63821) CTRL: Set:29.4 | Vel:41.8/47.1 | Pwr:14/11 | Ticks:739/739[0m
+[0;32mI (64321) CTRL: Set:29.4 | Vel:41.9/38.1 | Pwr:14/16 | Ticks:760/755[0m
+[0;32mI (64821) CTRL: Set:29.4 | Vel:44.8/39.8 | Pwr:12/15 | Ticks:782/777[0m
+[0;32mI (65321) CTRL: Set:29.4 | Vel:46.4/42.7 | Pwr:11/13 | Ticks:803/799[0m
+[0;32mI (65821) CTRL: Set:0.0 | Vel:16.8/11.1 | Pwr:-10/-7 | Ticks:806/799[0m
