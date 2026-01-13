@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "esp32_robot_firmware",
-    "project_version":    "e18ea92",
+    "project_version":    "7912b2d-dirty",
     "project_path":       "/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware",
     "idf_path":           "/home/calebe/esp/esp-idf",
     "build_dir":          "/home/calebe/Documentos/Faculdade/Robotica-I/esp32_robot_firmware/build",
