@@ -250,7 +250,7 @@ void control_task(void *pvParameters)
         if (fabs(pidEsq.setpoint) > 0.01)
         {
             double err_e = pidEsq.setpoint - pidEsq.current_vel;
-            pidEsq.error_sum = fmax(fmin(pidEsq.error_sum + err_e * 0.05, MAX_I_TERM), -MAX_I_TERM); // Integrador com limite
+            pidEsq.error_sum = fmax(fmin(pidEsq.error_sum + err_e * 0.05, MAX_I_TERM), -MAX_I_TERM); 
             // FeedForward + Proporcional + Integral + Sincronia
             pwr_e = (pidEsq.setpoint * FF_ESQ) + (KP * err_e) + (KI * pidEsq.error_sum) + sync_corr;
         }
@@ -282,7 +282,7 @@ void cmd_vel_callback(const void *msvgin)
     const geometry_msgs__msg__Twist *msg = (const geometry_msgs__msg__Twist *)msvgin;
     last_cmd_time = esp_timer_get_time(); // Reseta watchdog
     
-    // Cinemática Inversa: Converte Twist (v, w) para velocidade de cada roda
+    // Cinemática Inversa
     pidEsq.setpoint = (msg->linear.x - (msg->angular.z * L_TRACK / 2.0f)) * TICKS_PER_METER;
     pidDir.setpoint = (msg->linear.x + (msg->angular.z * L_TRACK / 2.0f)) * TICKS_PER_METER;
 }
