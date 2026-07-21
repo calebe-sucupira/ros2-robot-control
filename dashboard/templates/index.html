@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Análise Cinemática do Carrinho</title>
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', path='/style.css') }}"
+    >
+</head>
+<body>
+    <main class="home">
+        <section class="hero">
+            <span class="eyebrow">Robótica móvel · ROS 2</span>
+            <h1>Análise Cinemática do Carrinho</h1>
+            <p>
+                Visualização em tempo real da odometria e das grandezas
+                físicas calculadas durante o movimento.
+            </p>
+        </section>
+
+        <section class="page-grid">
+            {% for slug, page in pages.items() %}
+            <a class="page-card" href="/{{ slug }}">
+                <span class="card-index">0{{ loop.index }}</span>
+                <h2>{{ page.title }}</h2>
+                <p>{{ page.description }}</p>
+                <span class="card-action">Abrir análise →</span>
+            </a>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+</html>

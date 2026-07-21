@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }} · Análise Cinemática</title>
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', path='/style.css') }}"
+    >
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body data-page="{{ page }}">
+    <header class="topbar">
+        <a href="/" class="brand">Análise Cinemática</a>
+        <nav>
+            <a href="/mru">Movimento</a>
+            <a href="/rotacao">Rotação</a>
+            <a href="/frenagem">Frenagem</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <section class="dashboard-heading">
+            <div>
+                <span class="eyebrow">Dados de odometria em tempo real</span>
+                <h1>{{ title }}</h1>
+                <p>{{ description }}</p>
+            </div>
+            <div class="connection-status">
+                <span id="status-dot"></span>
+                <span id="status-text">Aguardando dados</span>
+            </div>
+        </section>
+
+        <section class="metrics">
+            <article>
+                <span>Tempo</span>
+                <strong id="metric-time">—</strong>
+                <small>s</small>
+            </article>
+            <article>
+                <span>Velocidade</span>
+                <strong id="metric-speed">—</strong>
+                <small>m/s</small>
+            </article>
+            <article>
+                <span>Aceleração</span>
+                <strong id="metric-acceleration">—</strong>
+                <small>m/s²</small>
+            </article>
+            <article>
+                <span>Raio da curva</span>
+                <strong id="metric-radius">—</strong>
+                <small>m</small>
+            </article>
+        </section>
+
+        <section id="charts" class="charts"></section>
+    </main>
+
+    <script src="{{ url_for('static', path='/dashboard.js') }}"></script>
+</body>
+</html>
