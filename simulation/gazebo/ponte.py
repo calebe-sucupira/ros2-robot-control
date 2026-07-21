@@ -1,72 +1,115 @@
+from copy import deepcopy
+
 import rclpy
-from rclpy.node import Node
-from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
-from nav_msgs.msg import Odometry
 from gazebo_msgs.srv import SetEntityState
+from nav_msgs.msg import Odometry
+from rclpy.node import Node
+from rclpy.qos import HistoryPolicy, QoSProfile, ReliabilityPolicy
 
-class Ponte(Node):
+ROBOT_NAME = "carrinho"
+ODOMETRY_TOPIC = "/odom"
+GAZEBO_SERVICE = "/gazebo/set_entity_state"
+UPDATE_PERIOD_SECONDS = 0.05
+
+
+class GazeboOdometryBridge(Node):
     def __init__(self):
-        super().__init__('ponte_gazebo')
-        
-        # --- CONFIGURAÇÕES ---
-        self.robot_name = 'carrinho'  # Nome definido no seu URDF/Spawn
-        topic_name = '/odom'          # Nome definido no seu código C do ESP32
-        # ---------------------
+        super().__init__("gazebo_odometry_bridge")
 
-        # CONFIGURAÇÃO DE QoS (CRUCIAL PARA MICRO-ROS)
-        # Permite ler dados "Best Effort" que vêm do ESP32
         qos_profile = QoSProfile(
             reliability=ReliabilityPolicy.BEST_EFFORT,
             history=HistoryPolicy.KEEP_LAST,
-            depth=10
+            depth=10,
         )
 
-        # Cliente para comandar o Gazebo
-        self.client = self.create_client(SetEntityState, '/gazebo/set_entity_state')
-        
-        self.get_logger().info('--- INICIANDO PONTE ---')
-        self.get_logger().info('Aguardando serviço do Gazebo...')
-        while not self.client.wait_for_service(timeout_sec=2.0):
-            self.get_logger().warn('Gazebo não encontrado. Verifique se a simulação está aberta.')
+        self._client = self.create_client(
+            SetEntityState,
+            GAZEBO_SERVICE,
+        )
+        self._latest_pose = None
+        self._pending_request = None
+        self._last_service_warning_ns = 0
 
-        # Assina o tópico do ESP32
-        self.subscription = self.create_subscription(
+        self._subscription = self.create_subscription(
             Odometry,
-            topic_name,
-            self.listener_callback,
-            qos_profile) # <--- O segredo está aqui
-            
-        self.get_logger().info(f'Ponte conectada! Movendo "{self.robot_name}" conforme dados de {topic_name}')
+            ODOMETRY_TOPIC,
+            self._on_odometry,
+            qos_profile,
+        )
 
-    def listener_callback(self, msg):
-        # Mostra no terminal para você saber que está funcionando
-        self.get_logger().info(f'Atualizando Posição -> X: {msg.pose.pose.position.x:.2f} | Y: {msg.pose.pose.position.y:.2f}')
+        self._timer = self.create_timer(
+            UPDATE_PERIOD_SECONDS,
+            self._update_gazebo,
+        )
 
-        req = SetEntityState.Request()
-        req.state.name = self.robot_name
-        req.state.pose = msg.pose.pose
-        
-        # Zera a física do Gazebo para não ter conflito (gravidade/atrito)
-        req.state.twist.linear.x = 0.0
-        req.state.twist.linear.y = 0.0
-        req.state.twist.linear.z = 0.0
-        req.state.twist.angular.x = 0.0
-        req.state.twist.angular.y = 0.0
-        req.state.twist.angular.z = 0.0
-        
-        # Envia o comando
-        self.client.call_async(req)
+        self.get_logger().info(
+            f'Aguardando odometria em "{ODOMETRY_TOPIC}"'
+        )
 
-def main(args=None):
+    def _on_odometry(self, message: Odometry) -> None:
+        self._latest_pose = deepcopy(message.pose.pose)
+
+    def _update_gazebo(self) -> None:
+        if self._latest_pose is None:
+            return
+
+        if not self._client.service_is_ready():
+            self._warn_service_unavailable()
+            return
+
+        if (
+            self._pending_request is not None
+            and not self._pending_request.done()
+        ):
+            return
+
+        request = SetEntityState.Request()
+        request.state.name = ROBOT_NAME
+        request.state.pose = deepcopy(self._latest_pose)
+        request.state.reference_frame = "world"
+
+        self._pending_request = self._client.call_async(request)
+        self._pending_request.add_done_callback(
+            self._on_update_complete
+        )
+
+    def _warn_service_unavailable(self) -> None:
+        now_ns = self.get_clock().now().nanoseconds
+
+        if now_ns - self._last_service_warning_ns >= 5_000_000_000:
+            self.get_logger().warning(
+                f'Serviço "{GAZEBO_SERVICE}" indisponível'
+            )
+            self._last_service_warning_ns = now_ns
+
+    def _on_update_complete(self, future) -> None:
+        try:
+            response = future.result()
+
+            if not response.success:
+                self.get_logger().warning(response.status_message)
+        except Exception as error:
+            self.get_logger().error(
+                f"Falha ao atualizar o Gazebo: {error}"
+            )
+        finally:
+            self._pending_request = None
+
+
+def main(args=None) -> None:
     rclpy.init(args=args)
-    node = Ponte()
+    node = GazeboOdometryBridge()
+
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
     finally:
         node.destroy_node()
-        rclpy.shutdown()
 
-if __name__ == '__main__':
+        if rclpy.ok():
+            rclpy.shutdown()
+
+
+if __name__ == "__main__":
     main()

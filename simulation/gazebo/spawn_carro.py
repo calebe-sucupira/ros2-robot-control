@@ -1,51 +1,84 @@
-import os
-import sys
+from pathlib import Path
+
 import rclpy
 from gazebo_msgs.srv import SpawnEntity
 
-def main():
-    # 1. Pega o caminho do arquivo URDF (Assumindo que está na mesma pasta)
-    # Se der erro, coloque o caminho completo absoluto aqui embaixo:
-    urdf_file_path = 'carrinho.urdf' 
-    
-    # Leitura do arquivo XML
+ROBOT_NAME = "carrinho"
+SPAWN_SERVICE = "/spawn_entity"
+URDF_PATH = Path(__file__).with_name("carrinho.urdf")
+
+
+def main(args=None) -> int:
+    rclpy.init(args=args)
+    node = rclpy.create_node("spawn_carrinho")
+
     try:
-        with open(urdf_file_path, 'r') as infp:
-            robot_desc = infp.read()
-    except FileNotFoundError:
-        print(f"ERRO: Não achei o arquivo {urdf_file_path}. Rode o terminal na mesma pasta do arquivo!")
-        return
+        if not URDF_PATH.is_file():
+            node.get_logger().error(
+                f"URDF não encontrado: {URDF_PATH}"
+            )
+            return 1
 
-    rclpy.init()
-    node = rclpy.create_node('spawn_entity_node')
-    
-    # Cria o cliente para spawnar no Gazebo
-    client = node.create_client(SpawnEntity, '/spawn_entity')
-    
-    print("Esperando serviço /spawn_entity...")
-    while not client.wait_for_service(timeout_sec=1.0):
-        print("Serviço não disponível, esperando...")
+        client = node.create_client(
+            SpawnEntity,
+            SPAWN_SERVICE,
+        )
 
-    # Configura o pedido de Spawn
-    request = SpawnEntity.Request()
-    request.name = 'carrinho'   # O nome crucial
-    request.xml = robot_desc
-    request.robot_namespace = ""
-    request.initial_pose.position.x = 0.0
-    request.initial_pose.position.y = 0.0
-    request.initial_pose.position.z = 0.2 # Nasce um pouco no ar para não bugar no chão
+        node.get_logger().info(
+            f'Aguardando serviço "{SPAWN_SERVICE}"'
+        )
 
-    print("Enviando comando de Spawn...")
-    future = client.call_async(request)
-    rclpy.spin_until_future_complete(node, future)
+        if not client.wait_for_service(timeout_sec=30.0):
+            node.get_logger().error(
+                "Serviço de spawn indisponível"
+            )
+            return 1
 
-    if future.result() is not None:
-        print(f"Sucesso: {future.result().status_message}")
-    else:
-        print("Falha ao chamar serviço.")
+        request = SpawnEntity.Request()
+        request.name = ROBOT_NAME
+        request.xml = URDF_PATH.read_text(encoding="utf-8")
+        request.robot_namespace = ""
+        request.reference_frame = "world"
 
-    node.destroy_node()
-    rclpy.shutdown()
+        future = client.call_async(request)
 
-if __name__ == '__main__':
-    main()
+        rclpy.spin_until_future_complete(
+            node,
+            future,
+            timeout_sec=15.0,
+        )
+
+        if not future.done():
+            node.get_logger().error(
+                "Tempo limite excedido durante o spawn"
+            )
+            return 1
+
+        response = future.result()
+
+        if response is None:
+            node.get_logger().error(
+                "O Gazebo não retornou uma resposta"
+            )
+            return 1
+
+        if not response.success:
+            node.get_logger().error(response.status_message)
+            return 1
+
+        node.get_logger().info(
+            f'"{ROBOT_NAME}" inserido no Gazebo'
+        )
+        return 0
+    except Exception as error:
+        node.get_logger().error(f"Falha no spawn: {error}")
+        return 1
+    finally:
+        node.destroy_node()
+
+        if rclpy.ok():
+            rclpy.shutdown()
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
