@@ -1,4 +1,4 @@
-# Robótica I — Carrinho móvel com ROS 2
+# ROS 2 Robot Control
 
 Projeto de um carrinho robótico diferencial integrado a ESP32, Raspberry Pi Pico W, micro-ROS, ROS 2, Gazebo, MATLAB/Simulink e uma aplicação web para análise de telemetria.
 
