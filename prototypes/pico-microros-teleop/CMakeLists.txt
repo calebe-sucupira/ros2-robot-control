@@ -1,54 +1,109 @@
 cmake_minimum_required(VERSION 3.13)
 
-set(PICO_SDK_PATH "/home/calebe/micro_ros_ws/src/pico-sdk")
-set(PICO_BOARD pico_w)
+set(PICO_BOARD pico_w CACHE STRING "Target board")
 
-# 1. Defina o caminho para a pasta 'libmicroros'
-set(MICROROS_LIB_DIR "/home/calebe/micro_ros_ws/src/micro_ros_raspberrypi_pico_sdk/libmicroros")
+if(NOT DEFINED PICO_SDK_PATH AND DEFINED ENV{PICO_SDK_PATH})
+    set(PICO_SDK_PATH "$ENV{PICO_SDK_PATH}")
+endif()
 
-# 2. Prepara o SDK
-include(${PICO_SDK_PATH}/pico_sdk_init.cmake)
+if(NOT PICO_SDK_PATH)
+    message(FATAL_ERROR "Define PICO_SDK_PATH")
+endif()
 
-# 3. Define o projeto e CARREGA O TOOLCHAIN PRINCIPAL
-project(RemoteCart_teleop C CXX ASM)
+include("${PICO_SDK_PATH}/pico_sdk_init.cmake")
 
-# 4. Finaliza a configuração do SDK para este projeto
+project(remote_cart_teleop C CXX ASM)
+
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+
 pico_sdk_init()
 
-# 5. Crie seu executável
-add_executable(pico_car_main
-    main.c
-    picow_udp_transports.c
+set(
+    MICROROS_LIB_DIR
+    "$ENV{MICROROS_LIB_DIR}"
+    CACHE PATH
+    "Directory containing libmicroros.a and include/"
 )
 
-# 6. Diga ao CMake onde encontrar os HEADERS (.h) do micro-ROS
-#    (Dentro de .../libmicroros/include)
-target_include_directories(pico_car_main PUBLIC
-    ${CMAKE_CURRENT_LIST_DIR}
-    "${MICROROS_LIB_DIR}/include" 
+set(
+    REMOTE_CART_WIFI_SSID
+    "YOUR_WIFI_SSID"
+    CACHE STRING
+    "Wi-Fi network name"
 )
 
-# 7. REMOVEMOS o comando link_directories()
-#    Não precisamos mais dele.
-
-# 8. Linke TODAS as bibliotecas necessárias
-target_link_libraries(pico_car_main
-    # Bibliotecas do Pico W
-    pico_stdlib
-    pico_cyw43_arch_lwip_threadsafe_background
-    hardware_pwm
-    hardware_gpio
-    
-    # --- A GRANDE MUDANÇA ---
-    # Fornecemos o caminho completo e absoluto para o arquivo .a
-    # Isso elimina qualquer ambiguidade de busca do linker.
-    "${MICROROS_LIB_DIR}/libmicroros.a"
-    
-    # A biblioteca de matemática (necessária para o micro-ROS)
-    m
+set(
+    REMOTE_CART_WIFI_PASSWORD
+    "YOUR_WIFI_PASSWORD"
+    CACHE STRING
+    "Wi-Fi network password"
 )
 
-# 9. Configurações de stdio e .uf2
-pico_enable_stdio_usb(pico_car_main 1)
-pico_enable_stdio_uart(pico_car_main 0)
-pico_add_uf2_output(pico_car_main)
+set(
+    REMOTE_CART_AGENT_IP
+    "10.42.0.1"
+    CACHE STRING
+    "micro-ROS Agent IPv4 address"
+)
+
+set(
+    REMOTE_CART_AGENT_PORT
+    "8888"
+    CACHE STRING
+    "micro-ROS Agent UDP port"
+)
+
+if(NOT EXISTS "${MICROROS_LIB_DIR}/libmicroros.a")
+    message(FATAL_ERROR "libmicroros.a not found in MICROROS_LIB_DIR")
+endif()
+
+if(NOT EXISTS "${MICROROS_LIB_DIR}/include")
+    message(FATAL_ERROR "micro-ROS headers not found")
+endif()
+
+configure_file(
+    "config/remote_cart_config.h.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/generated/remote_cart_config.h"
+    @ONLY
+)
+
+add_executable(
+    pico_car_teleop
+    "src/main.c"
+    "src/microros_app.c"
+    "src/motor_control.c"
+    "src/picow_udp_transport.c"
+)
+
+target_include_directories(
+    pico_car_teleop
+    PRIVATE
+        "${CMAKE_CURRENT_LIST_DIR}"
+        "${CMAKE_CURRENT_LIST_DIR}/inc"
+        "${CMAKE_CURRENT_BINARY_DIR}/generated"
+        "${MICROROS_LIB_DIR}/include"
+)
+
+target_link_libraries(
+    pico_car_teleop
+    PRIVATE
+        pico_stdlib
+        pico_cyw43_arch_lwip_threadsafe_background
+        hardware_clocks
+        hardware_gpio
+        hardware_pwm
+        "${MICROROS_LIB_DIR}/libmicroros.a"
+        m
+)
+
+target_compile_options(
+    pico_car_teleop
+    PRIVATE
+        -Wall
+        -Wextra
+)
+
+pico_enable_stdio_usb(pico_car_teleop 1)
+pico_enable_stdio_uart(pico_car_teleop 0)
+pico_add_extra_outputs(pico_car_teleop)
