@@ -337,7 +337,12 @@ void micro_ros_task(void *arg)
         odom_msg.pose.pose.orientation.z = sin(pos_theta / 2.0);
         odom_msg.pose.pose.orientation.w = cos(pos_theta / 2.0);
         
-        (void)rcl_publish(&odom_pub, &odom_msg, NULL);
+        rcl_ret_t publish_ret = rcl_publish(&odom_pub, &odom_msg, NULL);
+
+        if (publish_ret != RCL_RET_OK)
+        {
+            ESP_LOGW(TAG, "Falha ao publicar odometria: %d", (int)publish_ret);
+        }
         
         // Processa callbacks (checa se chegou cmd_vel)
         rclc_executor_spin_some(&exec, RCL_MS_TO_NS(10));
