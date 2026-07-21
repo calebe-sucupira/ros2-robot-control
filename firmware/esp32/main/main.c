@@ -62,9 +62,10 @@ const float TICKS_PER_METER = 1.0f / ((M_PI * D_WHEEL) / TICKS_PER_REV);
 static const char *TAG = "ROBOT_CORE";
 static EventGroupHandle_t s_wifi_event_group;
 static portMUX_TYPE s_encoder_mux = portMUX_INITIALIZER_UNLOCKED;
+static portMUX_TYPE s_odom_mux = portMUX_INITIALIZER_UNLOCKED;
 
 // Variáveis Globais de Estado (Volatile pois são usadas em interrupções/tasks diferentes)
-volatile double pos_x = 0, pos_y = 0, pos_theta = 0;
+double pos_x = 0, pos_y = 0, pos_theta = 0;
 volatile int32_t g_ticks_esq = 0, g_ticks_dir = 0;
 double pwr_esq_global = 0, pwr_dir_global = 0;
 
@@ -236,10 +237,27 @@ void control_task(void *pvParameters)
         float dist_centro = (de_m + dd_m) / 2.0f; // Distância média percorrida
         float delta_theta = (dd_m - de_m) / L_TRACK; // Variação angular
 
-        // Atualiza posição global
-        pos_x += dist_centro * cos(pos_theta + delta_theta / 2.0f);
-        pos_y += dist_centro * sin(pos_theta + delta_theta / 2.0f);
-        pos_theta += delta_theta;
+        // Calcula a próxima pose usando um snapshot consistente
+        double current_x;
+        double current_y;
+        double current_theta;
+
+        portENTER_CRITICAL(&s_odom_mux);
+        current_x = pos_x;
+        current_y = pos_y;
+        current_theta = pos_theta;
+        portEXIT_CRITICAL(&s_odom_mux);
+
+        double next_theta = current_theta + delta_theta;
+        double theta_mid = current_theta + (delta_theta / 2.0);
+        double next_x = current_x + dist_centro * cos(theta_mid);
+        double next_y = current_y + dist_centro * sin(theta_mid);
+
+        portENTER_CRITICAL(&s_odom_mux);
+        pos_x = next_x;
+        pos_y = next_y;
+        pos_theta = next_theta;
+        portEXIT_CRITICAL(&s_odom_mux);
 
         // --- CÁLCULO DE VELOCIDADE ATUAL ---
         double ve_raw = (double)de_ticks * 20.0; 
@@ -340,12 +358,22 @@ void micro_ros_task(void *arg)
         int64_t t = esp_timer_get_time();
         odom_msg.header.stamp.sec = t / 1000000;
         odom_msg.header.stamp.nanosec = (t % 1000000) * 1000;
-        odom_msg.pose.pose.position.x = pos_x;
-        odom_msg.pose.pose.position.y = pos_y;
-        
-        // Conversão Euler -> Quaternion (simplificada para 2D)
-        odom_msg.pose.pose.orientation.z = sin(pos_theta / 2.0);
-        odom_msg.pose.pose.orientation.w = cos(pos_theta / 2.0);
+        double odom_x;
+        double odom_y;
+        double odom_theta;
+
+        portENTER_CRITICAL(&s_odom_mux);
+        odom_x = pos_x;
+        odom_y = pos_y;
+        odom_theta = pos_theta;
+        portEXIT_CRITICAL(&s_odom_mux);
+
+        odom_msg.pose.pose.position.x = odom_x;
+        odom_msg.pose.pose.position.y = odom_y;
+
+        // Conversão Euler -> Quaternion para movimento 2D
+        odom_msg.pose.pose.orientation.z = sin(odom_theta / 2.0);
+        odom_msg.pose.pose.orientation.w = cos(odom_theta / 2.0);
         
         rcl_ret_t publish_ret = rcl_publish(&odom_pub, &odom_msg, NULL);
 
