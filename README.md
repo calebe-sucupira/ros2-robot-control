@@ -41,7 +41,7 @@ Dashboard de análise física
 ## Estrutura
 
 ```text
-Robotica-I/
+ros2-robot-control/
 ├── firmware/
 │   └── esp32/
 ├── prototypes/
