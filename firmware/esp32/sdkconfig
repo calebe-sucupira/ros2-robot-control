@@ -375,6 +375,13 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# Robot configuration
+#
+CONFIG_ROBOT_AGENT_IP="10.243.102.224"
+CONFIG_ROBOT_AGENT_PORT=8888
+# end of Robot configuration
+
+#
 # micro-ROS Settings
 #
 CONFIG_MICRO_ROS_ESP_XRCE_DDS_MIDDLEWARE=y
