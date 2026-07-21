@@ -1,7 +1,0 @@
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/_deps/picotool/picotool
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/_deps/picotool/picotoolTargets.cmake
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/_deps/picotool/picotoolTargets-release.cmake
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/_deps/picotool/picotoolConfig.cmake
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/_deps/picotool/picotoolConfigVersion.cmake
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/_deps/picotool/enc_bootloader.elf
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/_deps/picotool/enc_bootloader_mbedtls.elf

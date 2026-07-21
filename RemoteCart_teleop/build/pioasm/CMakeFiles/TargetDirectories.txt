@@ -1,7 +1,0 @@
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm/CMakeFiles/pioasm.dir
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm/CMakeFiles/edit_cache.dir
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm/CMakeFiles/rebuild_cache.dir
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm/CMakeFiles/list_install_components.dir
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm/CMakeFiles/install.dir
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm/CMakeFiles/install/local.dir
-/home/calebe/Documentos/Faculdade/Robotica-I/RemoteCart_teleop/build/pioasm/CMakeFiles/install/strip.dir

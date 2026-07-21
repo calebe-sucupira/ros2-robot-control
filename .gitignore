@@ -1,4 +1,83 @@
-/RemoteCart/remoteCart/build/
-/esp32_robot_firmwae/build/
-/RemoteCart_teleop/build/
-/RemoteCart_teleop/.vscode/
+# ==========================================
+# Build artifacts
+# ==========================================
+
+**/build/
+**/bin/
+**/obj/
+**/out/
+**/dist/
+**/install/
+**/log/
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+build.ninja
+.ninja_deps
+.ninja_log
+
+# ==========================================
+# ESP-IDF
+# ==========================================
+
+sdkconfig.old
+managed_components/
+
+# Keep sdkconfig when it represents the
+# reproducible configuration of the project.
+
+# ==========================================
+# Compiled files
+# ==========================================
+
+*.o
+*.a
+*.so
+*.elf
+*.bin
+*.hex
+*.map
+*.out
+
+# ==========================================
+# Python
+# ==========================================
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ==========================================
+# Editors and operating systems
+# ==========================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# Development tools
+# ==========================================
+
+tags
+cscope.out
+cscope.files
+.cache/
+
+# ==========================================
+# MATLAB
+# ==========================================
+
+*.asv
+*.autosave
