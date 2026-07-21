@@ -1,0 +1,22 @@
+idf_component_register(
+    SRCS
+        "src/app_main.c"
+        "src/encoder.c"
+        "src/microros_node.c"
+        "src/motor_control.c"
+        "src/odometry.c"
+        "src/robot_control.c"
+        "src/udp_transport.c"
+        "src/wifi_manager.c"
+    INCLUDE_DIRS
+        "inc"
+    REQUIRES
+        micro_ros_espidf_component
+        nvs_flash
+        esp_wifi
+        esp_event
+        esp_netif
+        driver
+        esp_timer
+        lwip
+)

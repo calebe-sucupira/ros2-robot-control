@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <title>Controle RemoteCart</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            font-family: system-ui, sans-serif;
+            background: #08111d;
+            color: #edf5ff;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            background:
+                radial-gradient(
+                    circle at top,
+                    #173451,
+                    transparent 55%
+                ),
+                #08111d;
+            user-select: none;
+        }
+
+        main {
+            width: min(100% - 32px, 430px);
+            text-align: center;
+        }
+
+        .label {
+            color: #64d8ff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 10px 0 8px;
+            font-size: clamp(2rem, 10vw, 3.2rem);
+        }
+
+        p {
+            margin: 0 0 32px;
+            color: #9bacc1;
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        button {
+            min-height: 88px;
+            border: 1px solid #2a3c55;
+            border-radius: 18px;
+            background: #122238;
+            color: #edf5ff;
+            font: inherit;
+            font-size: 1.15rem;
+            font-weight: 700;
+            cursor: pointer;
+            touch-action: none;
+        }
+
+        button:active,
+        button.active {
+            transform: scale(0.96);
+            border-color: #64d8ff;
+            background: #193551;
+        }
+
+        .forward {
+            grid-column: 2;
+        }
+
+        .left {
+            grid-column: 1;
+        }
+
+        .stop {
+            grid-column: 2;
+            background: #b92e42;
+            border-color: #e45e70;
+        }
+
+        .right {
+            grid-column: 3;
+        }
+
+        .reverse {
+            grid-column: 2;
+        }
+
+        #status {
+            min-height: 24px;
+            margin-top: 24px;
+            color: #9bacc1;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <span class="label">ESP32 · Controle Wi-Fi</span>
+        <h1>RemoteCart</h1>
+        <p>Segure uma direção para movimentar.</p>
+
+        <section class="controls">
+            <button
+                class="forward"
+                data-command="forward"
+                aria-label="Mover para frente"
+            >▲</button>
+
+            <button
+                class="left"
+                data-command="left"
+                aria-label="Virar à esquerda"
+            >◀</button>
+
+            <button
+                class="stop"
+                data-command="stop"
+                aria-label="Parar"
+            >PARAR</button>
+
+            <button
+                class="right"
+                data-command="right"
+                aria-label="Virar à direita"
+            >▶</button>
+
+            <button
+                class="reverse"
+                data-command="reverse"
+                aria-label="Mover para trás"
+            >▼</button>
+        </section>
+
+        <div id="status">Pronto</div>
+    </main>
+
+    <script>
+        const statusElement =
+            document.querySelector("#status");
+
+        const buttons = [
+            ...document.querySelectorAll(
+                "[data-command]"
+            ),
+        ];
+
+        let activeButton = null;
+        let repeatTimer = null;
+
+        async function sendCommand(command) {
+            try {
+                const response = await fetch(
+                    `/api/${command}`,
+                    {
+                        method: "POST",
+                        cache: "no-store",
+                    },
+                );
+
+                if (!response.ok) {
+                    throw new Error(
+                        `HTTP ${response.status}`
+                    );
+                }
+
+                statusElement.textContent =
+                    command === "stop"
+                        ? "Parado"
+                        : `Comando: ${command}`;
+            } catch {
+                statusElement.textContent =
+                    "Falha de comunicação";
+            }
+        }
+
+        function clearActiveState() {
+            if (repeatTimer !== null) {
+                clearInterval(repeatTimer);
+                repeatTimer = null;
+            }
+
+            if (activeButton !== null) {
+                activeButton.classList.remove("active");
+                activeButton = null;
+            }
+        }
+
+        function stopMovement() {
+            clearActiveState();
+            sendCommand("stop");
+        }
+
+        function startMovement(button) {
+            const command = button.dataset.command;
+
+            if (command === "stop") {
+                stopMovement();
+                return;
+            }
+
+            clearActiveState();
+            activeButton = button;
+            activeButton.classList.add("active");
+
+            sendCommand(command);
+
+            repeatTimer = setInterval(
+                () => sendCommand(command),
+                200,
+            );
+        }
+
+        buttons.forEach((button) => {
+            button.addEventListener(
+                "pointerdown",
+                (event) => {
+                    event.preventDefault();
+                    startMovement(button);
+                },
+            );
+        });
+
+        window.addEventListener("pointerup", stopMovement);
+        window.addEventListener(
+            "pointercancel",
+            stopMovement,
+        );
+        window.addEventListener("blur", stopMovement);
+
+        document.addEventListener(
+            "visibilitychange",
+            () => {
+                if (document.hidden) {
+                    stopMovement();
+                }
+            },
+        );
+
+        const keyboardCommands = {
+            ArrowUp: "forward",
+            ArrowDown: "reverse",
+            ArrowLeft: "left",
+            ArrowRight: "right",
+        };
+
+        window.addEventListener("keydown", (event) => {
+            if (
+                event.repeat ||
+                !(event.key in keyboardCommands)
+            ) {
+                return;
+            }
+
+            event.preventDefault();
+
+            const command = keyboardCommands[event.key];
+            const button = document.querySelector(
+                `[data-command="${command}"]`
+            );
+
+            startMovement(button);
+        });
+
+        window.addEventListener("keyup", (event) => {
+            if (event.key in keyboardCommands) {
+                event.preventDefault();
+                stopMovement();
+            }
+        });
+    </script>
+</body>
+</html>

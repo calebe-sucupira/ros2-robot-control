@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<robot name="carrinho">
+  <material name="chassis_blue">
+    <color rgba="0.05 0.25 0.85 1.0"/>
+  </material>
+
+  <material name="wheel_black">
+    <color rgba="0.03 0.03 0.03 1.0"/>
+  </material>
+
+  <material name="front_green">
+    <color rgba="0.0 0.9 0.25 1.0"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0.0525"/>
+      <geometry>
+        <box size="0.15 0.10 0.04"/>
+      </geometry>
+      <material name="chassis_blue"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0.0525"/>
+      <geometry>
+        <box size="0.15 0.10 0.04"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <origin xyz="0 0 0.0525"/>
+      <mass value="0.5"/>
+      <inertia
+        ixx="0.000483"
+        ixy="0"
+        ixz="0"
+        iyy="0.001004"
+        iyz="0"
+        izz="0.001354"
+      />
+    </inertial>
+  </link>
+
+  <link name="front_indicator">
+    <visual>
+      <geometry>
+        <box size="0.02 0.02 0.02"/>
+      </geometry>
+      <material name="front_green"/>
+    </visual>
+  </link>
+
+  <joint name="front_indicator_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="front_indicator"/>
+    <origin xyz="0.065 0 0.0825"/>
+  </joint>
+
+  <link name="left_wheel">
+    <visual>
+      <origin rpy="1.570796 0 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.0325"/>
+      </geometry>
+      <material name="wheel_black"/>
+    </visual>
+
+    <collision>
+      <origin rpy="1.570796 0 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.0325"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="0.05"/>
+      <inertia
+        ixx="0.0000158"
+        ixy="0"
+        ixz="0"
+        iyy="0.0000264"
+        iyz="0"
+        izz="0.0000158"
+      />
+    </inertial>
+  </link>
+
+  <joint name="left_wheel_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <origin xyz="0 0.0675 0.0325"/>
+  </joint>
+
+  <link name="right_wheel">
+    <visual>
+      <origin rpy="1.570796 0 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.0325"/>
+      </geometry>
+      <material name="wheel_black"/>
+    </visual>
+
+    <collision>
+      <origin rpy="1.570796 0 0"/>
+      <geometry>
+        <cylinder length="0.025" radius="0.0325"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="0.05"/>
+      <inertia
+        ixx="0.0000158"
+        ixy="0"
+        ixz="0"
+        iyy="0.0000264"
+        iyz="0"
+        izz="0.0000158"
+      />
+    </inertial>
+  </link>
+
+  <joint name="right_wheel_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <origin xyz="0 -0.0675 0.0325"/>
+  </joint>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+    <gravity>false</gravity>
+  </gazebo>
+
+  <gazebo reference="front_indicator">
+    <material>Gazebo/Green</material>
+    <gravity>false</gravity>
+  </gazebo>
+
+  <gazebo reference="left_wheel">
+    <material>Gazebo/Black</material>
+    <gravity>false</gravity>
+  </gazebo>
+
+  <gazebo reference="right_wheel">
+    <material>Gazebo/Black</material>
+    <gravity>false</gravity>
+  </gazebo>
+</robot>
