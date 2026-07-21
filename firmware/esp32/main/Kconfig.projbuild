@@ -1,0 +1,12 @@
+menu "Robot configuration"
+
+config ROBOT_AGENT_IP
+    string "micro-ROS Agent IPv4 address"
+    default "10.243.102.224"
+
+config ROBOT_AGENT_PORT
+    int "micro-ROS Agent UDP port"
+    range 1 65535
+    default 8888
+
+endmenu
