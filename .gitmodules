@@ -1,0 +1,3 @@
+[submodule "firmware/esp32/components/micro_ros_espidf_component"]
+	path = firmware/esp32/components/micro_ros_espidf_component
+	url = https://github.com/micro-ROS/micro_ros_espidf_component.git
