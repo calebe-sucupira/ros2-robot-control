@@ -61,6 +61,7 @@ const float TICKS_PER_METER = 1.0f / ((M_PI * D_WHEEL) / TICKS_PER_REV);
 
 static const char *TAG = "ROBOT_CORE";
 static EventGroupHandle_t s_wifi_event_group;
+static portMUX_TYPE s_encoder_mux = portMUX_INITIALIZER_UNLOCKED;
 
 // Variáveis Globais de Estado (Volatile pois são usadas em interrupções/tasks diferentes)
 volatile double pos_x = 0, pos_y = 0, pos_theta = 0;
@@ -183,10 +184,14 @@ void set_motor_dir(double power, double setpoint)
 // ============================================
 static void IRAM_ATTR encoder_isr(void *arg)
 {
-    if ((uint32_t)arg == ENCODER_ESQ)
+    portENTER_CRITICAL_ISR(&s_encoder_mux);
+
+    if ((uintptr_t)arg == ENCODER_ESQ)
         g_ticks_esq++;
     else
         g_ticks_dir++;
+
+    portEXIT_CRITICAL_ISR(&s_encoder_mux);
 }
 
 void control_task(void *pvParameters)
@@ -204,8 +209,13 @@ void control_task(void *pvParameters)
             pidDir.error_sum = 0;
         }
 
-        int32_t cur_e = g_ticks_esq;
-        int32_t cur_d = g_ticks_dir;
+        int32_t cur_e;
+        int32_t cur_d;
+
+        portENTER_CRITICAL(&s_encoder_mux);
+        cur_e = g_ticks_esq;
+        cur_d = g_ticks_dir;
+        portEXIT_CRITICAL(&s_encoder_mux);
 
         // Calcula delta ticks
         int32_t de_ticks = cur_e - last_e;
