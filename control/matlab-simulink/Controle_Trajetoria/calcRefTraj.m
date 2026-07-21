@@ -1,4 +1,4 @@
-%Cálculo da Trajetória de Referência
+% CÃ¡lculo da trajetÃ³ria de referÃªncia.
 
 function [trajPX, trajPY, trajPTeta]=calcRefTraj(lTi,SRx,SRy,SRt,trajX,trajY,trajTeta,...
     V,W,N2,trajXp,trajYp)

@@ -1,42 +1,27 @@
-% =======================================================
-%         SCRIPT DE CONTROLE DO TURTLEBOT3
-% =======================================================
+function control_turtlebot()
+node = ros2node("/matlab_turtlebot_controller");
+publisher = ros2publisher(node, "/cmd_vel", "geometry_msgs/Twist");
+message = ros2message(publisher);
 
-% --- Lógica Principal do Script (Vem primeiro) ---
-clear
-clc
+cleanup = onCleanup( ...
+    @() sendVelocity(publisher, message, 0.0, 0.0));
 
-disp('Inicializando o nó MATLAB no ROS 2...');
-ros2node = ros2node("/matlab_turtlebot_controller");
+disp("Movendo para frente por 2 segundos...")
+sendVelocity(publisher, message, 0.2, 0.0);
+pause(2)
 
-disp('Criando publicador para o tópico /cmd_vel...');
-velPub = ros2publisher(ros2node, '/cmd_vel', 'geometry_msgs/Twist');
-velMsg = ros2message(velPub);
+disp("Girando para a direita por 2 segundos...")
+sendVelocity(publisher, message, 0.0, -0.5);
+pause(2)
 
-send_velocity = @(linear, angular) set_vel(velPub, velMsg, linear, angular);
+disp("Parando o robô...")
+sendVelocity(publisher, message, 0.0, 0.0);
 
-% ----- Sequência de Movimentos -----
+disp("Sequência de movimentos concluída.")
+end
 
-disp('Movendo para frente por 2 segundos...');
-send_velocity(0.2, 0.0);
-pause(2);
-
-disp('Girando para a direita por 2 segundos...');
-send_velocity(0.0, -0.5);
-pause(2);
-
-disp('Parando o robô...');
-send_velocity(0.0, 0.0);
-
-clear velPub velMsg ros2node;
-
-disp('Sequência de movimentos completa!');
-
-
-% --- Definições de Funções Auxiliares (SEMPRE NO FINAL) ---
-
-function set_vel(pub, msg, lin, ang)
-    msg.linear.x = lin;
-    msg.angular.z = ang;
-    send(pub, msg);
+function sendVelocity(publisher, message, linearVelocity, angularVelocity)
+message.linear.x = linearVelocity;
+message.angular.z = angularVelocity;
+send(publisher, message);
 end

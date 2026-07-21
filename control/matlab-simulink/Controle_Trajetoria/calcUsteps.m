@@ -1,21 +1,27 @@
-%Cálculo da Trajetória de Referência
+function dU = calcUsteps(U, Nu, delta)
+dU = zeros(2, Nu * 4);
 
-function [dU]=calcUsteps(U,Nu,delta)
+for index = 1:Nu
+    column = 4 * (index - 1);
 
-dU=zeros(2,(Nu*4));
+    dU(:, column + 1) = [
+        U(1, index) + delta
+        U(2, index)
+    ];
 
-  for i=0:1:Nu-1
-    dU(1,1+4*i)=U(1,i+1)+delta;
-    dU(2,1+4*i)=U(2,i+1);
-    
-    dU(1,2+4*i)=U(1,i+1)-delta;
-    dU(2,2+4*i)=U(2,i+1);
-    
-    dU(1,3+4*i)=U(1,i+1);
-    dU(2,3+4*i)=U(2,i+1)+delta;
-    
-    dU(1,4+4*i)=U(1,i+1);
-    dU(2,4+4*i)=U(2,i+1)-delta;
-  end
+    dU(:, column + 2) = [
+        U(1, index) - delta
+        U(2, index)
+    ];
 
+    dU(:, column + 3) = [
+        U(1, index)
+        U(2, index) + delta
+    ];
+
+    dU(:, column + 4) = [
+        U(1, index)
+        U(2, index) - delta
+    ];
+end
 end
