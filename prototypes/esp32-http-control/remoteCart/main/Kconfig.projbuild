@@ -1,0 +1,26 @@
+menu "RemoteCart configuration"
+
+config REMOTECART_WIFI_SSID
+    string "Access point name"
+    default "ESP-RemoteCart"
+
+config REMOTECART_WIFI_PASSWORD
+    string "Access point password"
+    default "12345678"
+
+config REMOTECART_WIFI_CHANNEL
+    int "Wi-Fi channel"
+    range 1 13
+    default 6
+
+config REMOTECART_MAX_CONNECTIONS
+    int "Maximum connected devices"
+    range 1 10
+    default 4
+
+config REMOTECART_COMMAND_TIMEOUT_MS
+    int "Motor command timeout in milliseconds"
+    range 100 5000
+    default 500
+
+endmenu

@@ -2,4 +2,4 @@
 
 #include "esp_err.h"
 
-esp_err_t wifi_ap_start(void);
+esp_err_t web_server_start(void);

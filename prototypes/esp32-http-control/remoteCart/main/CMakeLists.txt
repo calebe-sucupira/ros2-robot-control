@@ -1,4 +1,19 @@
-file(GLOB_RECURSE srcs "remoteCart.c" "src/*.c")
-
-idf_component_register(SRCS "${srcs}"
-                    INCLUDE_DIRS "./inc")
+idf_component_register(
+    SRCS
+        "src/app_main.c"
+        "src/motor_control.c"
+        "src/web_server.c"
+        "src/wifi_ap.c"
+    INCLUDE_DIRS
+        "inc"
+    EMBED_TXTFILES
+        "index.html"
+    REQUIRES
+        driver
+        esp_event
+        esp_http_server
+        esp_netif
+        esp_timer
+        esp_wifi
+        nvs_flash
+)
