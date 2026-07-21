@@ -76,8 +76,13 @@ cscope.files
 .cache/
 
 # ==========================================
-# MATLAB
+# MATLAB and Simulink
 # ==========================================
 
+**/slprj/
+*.slxc
 *.asv
 *.autosave
+
+# Arquivo compactado duplicado
+/MatLab/Controle_Trajetoria.zip
