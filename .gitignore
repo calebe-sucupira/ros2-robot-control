@@ -84,5 +84,10 @@ cscope.files
 *.asv
 *.autosave
 
-# Arquivo compactado duplicado
-/MatLab/Controle_Trajetoria.zip
+
+
+# ==========================================
+# Local build logs
+# ==========================================
+
+/firmware/esp32/build.log
